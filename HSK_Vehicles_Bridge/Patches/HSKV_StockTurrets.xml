@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: stock vehicle weapons with HSK ammo. -->
+
+	<!-- VVE_Highwayman: stock HSKV_Turret_MG762 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]/turretDef</xpath>
+		<value>
+			<turretDef>HSKV_Turret_MG762</turretDef>
+		</value>
+	</Operation>
+
+	<!-- VVE_Tango: stock HSKV_Turret_HMG50 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]/turretDef</xpath>
+		<value>
+			<turretDef>HSKV_Turret_HMG50</turretDef>
+		</value>
+	</Operation>
+
+	<!-- VVE_Bunsen: stock HSKV_Turret_Flamer -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]/turretDef</xpath>
+		<value>
+			<turretDef>HSKV_Turret_Flamer</turretDef>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"][@Class]</xpath>
+		<match Class="PatchOperationAttributeRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]</xpath>
+			<attribute>Class</attribute>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/comps/li[@Class="Vehicles.CompProperties_FueledTravel"]/fuelCapacity</xpath>
+		<value>
+			<fuelCapacity>120</fuelCapacity>
+		</value>
+	</Operation>
+
+	<!-- VVE_Roadkill: stock HSKV_Turret_Cannon90 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]/turretDef</xpath>
+		<value>
+			<turretDef>HSKV_Turret_Cannon90</turretDef>
+		</value>
+	</Operation>
+
+	<!-- VVE_Bulldog: stock HSKV_Turret_Cannon120 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]/turretDef</xpath>
+		<value>
+			<turretDef>HSKV_Turret_Cannon120</turretDef>
+		</value>
+	</Operation>
+
+	<!-- VVE_Scytheman: stock HSKV_Turret_MRL130 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]/turretDef</xpath>
+		<value>
+			<turretDef>HSKV_Turret_MRL130</turretDef>
+		</value>
+	</Operation>
+
+	<!-- VVE_Toad: stock HSKV_Turret_Howitzer155 -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/comps/li[@Class="Vehicles.CompProperties_VehicleTurrets"]/turrets/li[key="mainTurret"]/turretDef</xpath>
+		<value>
+			<turretDef>HSKV_Turret_Howitzer155</turretDef>
+		</value>
+	</Operation>
+
+</Patch>

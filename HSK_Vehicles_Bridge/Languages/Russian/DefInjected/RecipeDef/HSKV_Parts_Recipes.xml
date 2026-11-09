@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HSKV_Make_Engine_Diesel.label>изготовить: двигатель внутреннего сгорания</HSKV_Make_Engine_Diesel.label>
+  <HSKV_Make_Engine_Diesel.description>Изготовить: двигатель внутреннего сгорания.</HSKV_Make_Engine_Diesel.description>
+  <HSKV_Make_Engine_Diesel.jobString>Изготавливает: двигатель внутреннего сгорания.</HSKV_Make_Engine_Diesel.jobString>
+  <HSKV_Make_Engine_Turbine.label>изготовить: газотурбинный двигатель</HSKV_Make_Engine_Turbine.label>
+  <HSKV_Make_Engine_Turbine.description>Изготовить: газотурбинный двигатель.</HSKV_Make_Engine_Turbine.description>
+  <HSKV_Make_Engine_Turbine.jobString>Изготавливает: газотурбинный двигатель.</HSKV_Make_Engine_Turbine.jobString>
+  <HSKV_Make_Engine_Impulse.label>изготовить: импульсный двигательный блок</HSKV_Make_Engine_Impulse.label>
+  <HSKV_Make_Engine_Impulse.description>Изготовить: импульсный двигательный блок.</HSKV_Make_Engine_Impulse.description>
+  <HSKV_Make_Engine_Impulse.jobString>Изготавливает: импульсный двигательный блок.</HSKV_Make_Engine_Impulse.jobString>
+  <HSKV_Make_Chassis_WheeledLight.label>изготовить: колёсное шасси</HSKV_Make_Chassis_WheeledLight.label>
+  <HSKV_Make_Chassis_WheeledLight.description>Изготовить: колёсное шасси.</HSKV_Make_Chassis_WheeledLight.description>
+  <HSKV_Make_Chassis_WheeledLight.jobString>Изготавливает: колёсное шасси.</HSKV_Make_Chassis_WheeledLight.jobString>
+  <HSKV_Make_Chassis_Tracked.label>изготовить: гусеничная ходовая часть</HSKV_Make_Chassis_Tracked.label>
+  <HSKV_Make_Chassis_Tracked.description>Изготовить: гусеничная ходовая часть.</HSKV_Make_Chassis_Tracked.description>
+  <HSKV_Make_Chassis_Tracked.jobString>Изготавливает: гусеничная ходовая часть.</HSKV_Make_Chassis_Tracked.jobString>
+  <HSKV_Make_Body_Car.label>изготовить: кузов</HSKV_Make_Body_Car.label>
+  <HSKV_Make_Body_Car.description>Изготовить: кузов.</HSKV_Make_Body_Car.description>
+  <HSKV_Make_Body_Car.jobString>Изготавливает: кузов.</HSKV_Make_Body_Car.jobString>
+  <HSKV_Make_Body_Airframe.label>изготовить: секция планера</HSKV_Make_Body_Airframe.label>
+  <HSKV_Make_Body_Airframe.description>Изготовить: секция планера.</HSKV_Make_Body_Airframe.description>
+  <HSKV_Make_Body_Airframe.jobString>Изготавливает: секция планера.</HSKV_Make_Body_Airframe.jobString>
+  <HSKV_Make_Armor_Light.label>изготовить: лёгкая броневая плита</HSKV_Make_Armor_Light.label>
+  <HSKV_Make_Armor_Light.description>Изготовить: лёгкая броневая плита.</HSKV_Make_Armor_Light.description>
+  <HSKV_Make_Armor_Light.jobString>Изготавливает: лёгкая броневая плита.</HSKV_Make_Armor_Light.jobString>
+  <HSKV_Make_Armor_Heavy.label>изготовить: тяжёлая броневая плита</HSKV_Make_Armor_Heavy.label>
+  <HSKV_Make_Armor_Heavy.description>Изготовить: тяжёлая броневая плита.</HSKV_Make_Armor_Heavy.description>
+  <HSKV_Make_Armor_Heavy.jobString>Изготавливает: тяжёлая броневая плита.</HSKV_Make_Armor_Heavy.jobString>
+  <HSKV_Make_Electronics_Onboard.label>изготовить: бортовая электроника и связь</HSKV_Make_Electronics_Onboard.label>
+  <HSKV_Make_Electronics_Onboard.description>Изготовить: бортовая электроника и связь.</HSKV_Make_Electronics_Onboard.description>
+  <HSKV_Make_Electronics_Onboard.jobString>Изготавливает: бортовая электроника и связь.</HSKV_Make_Electronics_Onboard.jobString>
+  <HSKV_Make_FireControl.label>изготовить: система управления огнём</HSKV_Make_FireControl.label>
+  <HSKV_Make_FireControl.description>Изготовить: система управления огнём.</HSKV_Make_FireControl.description>
+  <HSKV_Make_FireControl.jobString>Изготавливает: система управления огнём.</HSKV_Make_FireControl.jobString>
+  <HSKV_Make_Avionics.label>изготовить: авионика</HSKV_Make_Avionics.label>
+  <HSKV_Make_Avionics.description>Изготовить: авионика.</HSKV_Make_Avionics.description>
+  <HSKV_Make_Avionics.jobString>Изготавливает: авионика.</HSKV_Make_Avionics.jobString>
+  <HSKV_Make_EngineControl_Advanced.label>изготовить: продвинутый блок управления двигателем</HSKV_Make_EngineControl_Advanced.label>
+  <HSKV_Make_EngineControl_Advanced.description>Изготовить: продвинутый блок управления двигателем.</HSKV_Make_EngineControl_Advanced.description>
+  <HSKV_Make_EngineControl_Advanced.jobString>Изготавливает: продвинутый блок управления двигателем.</HSKV_Make_EngineControl_Advanced.jobString>
+  <HSKV_Make_Mount_MG.label>изготовить: установка лёгкого вооружения</HSKV_Make_Mount_MG.label>
+  <HSKV_Make_Mount_MG.description>Изготовить: установка лёгкого вооружения.</HSKV_Make_Mount_MG.description>
+  <HSKV_Make_Mount_MG.jobString>Изготавливает: установка лёгкого вооружения.</HSKV_Make_Mount_MG.jobString>
+  <HSKV_Make_Mount_Rockets.label>изготовить: пусковая установка</HSKV_Make_Mount_Rockets.label>
+  <HSKV_Make_Mount_Rockets.description>Изготовить: пусковая установка.</HSKV_Make_Mount_Rockets.description>
+  <HSKV_Make_Mount_Rockets.jobString>Изготавливает: пусковая установка.</HSKV_Make_Mount_Rockets.jobString>
+  <HSKV_Make_Mount_Autocannon.label>изготовить: установка автопушки</HSKV_Make_Mount_Autocannon.label>
+  <HSKV_Make_Mount_Autocannon.description>Изготовить: установка автопушки.</HSKV_Make_Mount_Autocannon.description>
+  <HSKV_Make_Mount_Autocannon.jobString>Изготавливает: установка автопушки.</HSKV_Make_Mount_Autocannon.jobString>
+  <HSKV_Make_Mount_Mortar.label>изготовить: миномётно-гаубичная установка</HSKV_Make_Mount_Mortar.label>
+  <HSKV_Make_Mount_Mortar.description>Изготовить: миномётно-гаубичная установка.</HSKV_Make_Mount_Mortar.description>
+  <HSKV_Make_Mount_Mortar.jobString>Изготавливает: миномётно-гаубичная установка.</HSKV_Make_Mount_Mortar.jobString>
+  <HSKV_Make_Mount_TankGun.label>изготовить: танковое орудие</HSKV_Make_Mount_TankGun.label>
+  <HSKV_Make_Mount_TankGun.description>Изготовить: танковое орудие.</HSKV_Make_Mount_TankGun.description>
+  <HSKV_Make_Mount_TankGun.jobString>Изготавливает: танковое орудие.</HSKV_Make_Mount_TankGun.jobString>
+  <HSKV_Make_Armor_Superheavy.label>изготовить: сверхтяжёлая броня (керамит)</HSKV_Make_Armor_Superheavy.label>
+  <HSKV_Make_Armor_Superheavy.description>Изготовить: сверхтяжёлая броня (керамит).</HSKV_Make_Armor_Superheavy.description>
+  <HSKV_Make_Armor_Superheavy.jobString>Изготавливает: сверхтяжёлая броня (керамит).</HSKV_Make_Armor_Superheavy.jobString>
+  <HSKV_Make_Actuator_Myomer.label>изготовить: миомерный привод</HSKV_Make_Actuator_Myomer.label>
+  <HSKV_Make_Actuator_Myomer.description>Изготовить: миомерный привод.</HSKV_Make_Actuator_Myomer.description>
+  <HSKV_Make_Actuator_Myomer.jobString>Изготавливает: миомерный привод.</HSKV_Make_Actuator_Myomer.jobString>
+  <HSKV_Make_ShieldEmitter.label>изготовить: генератор поля</HSKV_Make_ShieldEmitter.label>
+  <HSKV_Make_ShieldEmitter.description>Изготовить: генератор поля.</HSKV_Make_ShieldEmitter.description>
+  <HSKV_Make_ShieldEmitter.jobString>Изготавливает: генератор поля.</HSKV_Make_ShieldEmitter.jobString>
+  <HSKV_Make_Reactor_Fusion.label>изготовить: термоядерный реактор</HSKV_Make_Reactor_Fusion.label>
+  <HSKV_Make_Reactor_Fusion.description>Изготовить: термоядерный реактор.</HSKV_Make_Reactor_Fusion.description>
+  <HSKV_Make_Reactor_Fusion.jobString>Изготавливает: термоядерный реактор.</HSKV_Make_Reactor_Fusion.jobString>
+  <HSKV_Make_Cogitator.label>изготовить: когитатор</HSKV_Make_Cogitator.label>
+  <HSKV_Make_Cogitator.description>Изготовить: когитатор.</HSKV_Make_Cogitator.description>
+  <HSKV_Make_Cogitator.jobString>Изготавливает: когитатор.</HSKV_Make_Cogitator.jobString>
+  <HSKV_Make_Drive_Gravitic.label>изготовить: гравитационный привод</HSKV_Make_Drive_Gravitic.label>
+  <HSKV_Make_Drive_Gravitic.description>Изготовить: гравитационный привод.</HSKV_Make_Drive_Gravitic.description>
+  <HSKV_Make_Drive_Gravitic.jobString>Изготавливает: гравитационный привод.</HSKV_Make_Drive_Gravitic.jobString>
+</LanguageData>

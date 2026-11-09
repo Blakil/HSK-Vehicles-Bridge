@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Simply Bicycle / Wheel Barrow vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Wheel_Wood"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases/MarketValue</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases/MarketValue</xpath>
+					<value><MarketValue>100</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases</xpath>
+						<value><MarketValue>100</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]</xpath>
+						<value><statBases><MarketValue>100</MarketValue></statBases></value>
+					</nomatch>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases/MarketValue</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases/MarketValue</xpath>
+					<value><MarketValue>300</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]/statBases</xpath>
+						<value><MarketValue>300</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrow"]</xpath>
+						<value><statBases><MarketValue>300</MarketValue></statBases></value>
+					</nomatch>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Wheel_Wood"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases/MarketValue</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases/MarketValue</xpath>
+					<value><MarketValue>100</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases</xpath>
+						<value><MarketValue>100</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]</xpath>
+						<value><statBases><MarketValue>100</MarketValue></statBases></value>
+					</nomatch>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases/MarketValue</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases/MarketValue</xpath>
+					<value><MarketValue>300</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]/statBases</xpath>
+						<value><MarketValue>300</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="MWB_WheelBarrowC"]</xpath>
+						<value><statBases><MarketValue>300</MarketValue></statBases></value>
+					</nomatch>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="Wheel_Wood_Large"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="MWB_WheelBarrowBluePrint"]</xpath>
+				<match Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases/MarketValue</xpath>
+						<value><MarketValue>150</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases</xpath>
+							<value><MarketValue>150</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]</xpath>
+							<value><statBases><MarketValue>150</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases/MarketValue</xpath>
+						<value><MarketValue>500</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases</xpath>
+							<value><MarketValue>500</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]</xpath>
+							<value><statBases><MarketValue>500</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases/MarketValue</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases/MarketValue</xpath>
+					<value><MarketValue>500</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]/statBases</xpath>
+						<value><MarketValue>500</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleDef[defName="SIMB_SimpleBicycle"]</xpath>
+						<value><statBases><MarketValue>500</MarketValue></statBases></value>
+					</nomatch>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>MWB_WheelBarrow</li><li>MWB_WheelBarrowC</li><li>SIMB_SimpleBicycle</li></value>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- HSK Vehicles Bridge: weapon module upgrade trees. -->
+
+	<HSKV_VVE_Highwayman_UpgradeTree.nodes.0.label>Крупнокалиберный пулемёт .50 BMG</HSKV_VVE_Highwayman_UpgradeTree.nodes.0.label>
+	<HSKV_VVE_Highwayman_UpgradeTree.nodes.0.description>Бьёт дальше и сильнее винтовочного калибра, берёт лёгкую броню.</HSKV_VVE_Highwayman_UpgradeTree.nodes.0.description>
+	<HSKV_VVE_Highwayman_UpgradeTree.nodes.1.label>Автоматический гранатомёт 30×29</HSKV_VVE_Highwayman_UpgradeTree.nodes.1.label>
+	<HSKV_VVE_Highwayman_UpgradeTree.nodes.1.description>Очереди осколочно-фугасных гранат навесом: смертелен для пехоты в поле и за лёгкими укрытиями, по броне бесполезен.</HSKV_VVE_Highwayman_UpgradeTree.nodes.1.description>
+	<HSKV_VVE_Tango_UpgradeTree.nodes.0.label>Автоматическая пушка 20×102</HSKV_VVE_Tango_UpgradeTree.nodes.0.label>
+	<HSKV_VVE_Tango_UpgradeTree.nodes.0.description>20-мм автопушка: скорострельная и настильная, косит пехоту и лёгкую технику, прогрызает броневики.</HSKV_VVE_Tango_UpgradeTree.nodes.0.description>
+	<HSKV_VVE_Tango_UpgradeTree.nodes.1.label>Автоматический гранатомёт 30×29</HSKV_VVE_Tango_UpgradeTree.nodes.1.label>
+	<HSKV_VVE_Tango_UpgradeTree.nodes.1.description>Очереди осколочно-фугасных гранат навесом: смертелен для пехоты в поле и за лёгкими укрытиями, по броне бесполезен.</HSKV_VVE_Tango_UpgradeTree.nodes.1.description>
+	<HSKV_VVE_Bunsen_UpgradeTree.nodes.0.label>Автоматическая пушка 20×102</HSKV_VVE_Bunsen_UpgradeTree.nodes.0.label>
+	<HSKV_VVE_Bunsen_UpgradeTree.nodes.0.description>20-мм автопушка: скорострельная и настильная, косит пехоту и лёгкую технику, прогрызает броневики.</HSKV_VVE_Bunsen_UpgradeTree.nodes.0.description>
+	<HSKV_VVE_Roadkill_UpgradeTree.nodes.0.label>Автоматическая пушка 20×102</HSKV_VVE_Roadkill_UpgradeTree.nodes.0.label>
+	<HSKV_VVE_Roadkill_UpgradeTree.nodes.0.description>20-мм автопушка: скорострельная и настильная, косит пехоту и лёгкую технику, прогрызает броневики.</HSKV_VVE_Roadkill_UpgradeTree.nodes.0.description>
+	<HSKV_VVE_Scytheman_UpgradeTree.nodes.0.label>Миномёт 81 мм</HSKV_VVE_Scytheman_UpgradeTree.nodes.0.label>
+	<HSKV_VVE_Scytheman_UpgradeTree.nodes.0.description>Навесной огонь через стены и холмы. С корректировщиком точен, без него — как повезёт.</HSKV_VVE_Scytheman_UpgradeTree.nodes.0.description>
+	<HSKV_VVE_Toad_UpgradeTree.nodes.0.label>Миномёт 81 мм</HSKV_VVE_Toad_UpgradeTree.nodes.0.label>
+	<HSKV_VVE_Toad_UpgradeTree.nodes.0.description>Навесной огонь через стены и холмы. С корректировщиком точен, без него — как повезёт.</HSKV_VVE_Toad_UpgradeTree.nodes.0.description>
+
+</LanguageData>

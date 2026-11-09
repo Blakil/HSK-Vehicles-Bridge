@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicle raids in HSK. The core brings vehicles to nobody; here are the factions that bring vehicles "by tech level" (vehicles of their tech level and below). GrimWorld and Astartes use their own Imperium faction lists (Mods/GrimWorld, Mods/Astartes). Left out: tribes and medieval factions, Horax, ancients and salvagers. Factions missing from the game are skipped. The player can change everything in the mod settings. -->
+	<!-- vehicle price: vehicles with the HSK economy already have HSK-scale market value, so the global multiplier is x1 instead of the core x6. Vehicles whose value the bridge did not recalculate (addon not adapted) get a x6 markup. The adapted ones are listed in adaptedVehicles by the economy generators. The core without HSK has no markup (0). -->
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/costMultiplier</xpath>
+		<value>
+			<costMultiplier>1</costMultiplier>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/unadaptedCostMultiplier</xpath>
+		<value>
+			<unadaptedCostMultiplier>6</unadaptedCostMultiplier>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/factions</xpath>
+		<value>
+			<!-- industrial -->
+			<li>Pirate</li>
+			<li>CannibalPirate</li>
+			<li>PirateYttakin</li>
+			<li>PirateWaster</li>
+			<li>OutlanderCivil</li>
+			<li>OutlanderRough</li>
+			<li>OutlanderRoughPig</li>
+			<li>Feral</li>
+			<li>Orassan</li>
+			<li>OrassanEvil</li>
+			<li>Predators</li>
+			<li>ChjAndroidEnclave</li>
+			<li>Rakinia</li>
+			<li>Rakiniville</li>
+			<!-- spacer and above -->
+			<li>Brotherhood</li>
+			<li>NovaAlliance</li>
+			<li>Orion</li>
+			<li>Sectarian</li>
+			<li>Syndicate</li>
+			<li>AsariHunters</li>
+			<li>TradersGuild</li>
+			<li>Empire</li>
+		</value>
+	</Operation>
+
+</Patch>

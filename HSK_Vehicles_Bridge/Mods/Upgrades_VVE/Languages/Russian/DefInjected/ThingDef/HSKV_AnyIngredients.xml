@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<HSKV_AnySturdyMetal.label>прочный металл (любой)</HSKV_AnySturdyMetal.label>
+	<HSKV_AnySturdyMetal.description>Любой прочный конструкционный металл: сталь, альсифер, биоферрит, инвар, ферротитан, титан. Без медных сплавов, полимеров и редких сплавов. Носильщики сначала несут самый дешёвый из имеющихся.</HSKV_AnySturdyMetal.description>
+
+	<HSKV_AnyFabric.label>ткань (любая)</HSKV_AnyFabric.label>
+	<HSKV_AnyFabric.description>Любая ткань: хлопок, лён, конопля, шерсть, синтетика, кевлар и тому подобное. Не кожа. Носильщики сначала несут самую дешёвую из имеющихся.</HSKV_AnyFabric.description>
+
+</LanguageData>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Root: shared by all versions (translations); <version>/: the build for that game version. ModPatches/<mod>/: CE data for a vehicle mod (armor, structure, CE fixes, ammo on stock CE), loaded only when that mod is active. -->
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpanded">ModPatches/VanillaVehiclesExpanded</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">ModPatches/Tier3</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">ModPatches/Tier39</li>
+    <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">ModPatches/Skyranger</li>
+    <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">ModPatches/Titan</li>
+    <li IfModActive="sarg.alphavehiclesageofsail">ModPatches/AgeOfSail</li>
+    <li IfModActive="sarg.alphavehiclesneolithic">ModPatches/Neolithic</li>
+    <li IfModActive="NCFC.SMVehicles">ModPatches/Astartes</li>
+    <li IfModActive="NCFC.SMVehicles, Grimworld.Core">ModPatches/Warhammer40k</li>
+    <li IfModActive="RimThunder.Core">ModPatches/RimThunder</li>
+  </v1.5>
+  <!-- v1.6: the same data as 1.5, plus GrimWorld -->
+  <!-- Astartes Whirlwind under CE: kept by skipping Astartes' own removal patch (Source/Compat_AstartesWhirlwind.cs), no copy of its defs here -->
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpanded">ModPatches/VanillaVehiclesExpanded</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">ModPatches/Tier3</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">ModPatches/Tier39</li>
+    <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">ModPatches/Skyranger</li>
+    <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">ModPatches/Titan</li>
+    <li IfModActive="sarg.alphavehiclesageofsail">ModPatches/AgeOfSail</li>
+    <li IfModActive="sarg.alphavehiclesneolithic">ModPatches/Neolithic</li>
+    <li IfModActive="NCFC.SMVehicles">ModPatches/Astartes</li>
+    <li IfModActive="NCFC.SMVehicles, Grimworld.Core">ModPatches/Warhammer40k</li>
+    <li IfModActive="Grimworld.Core">ModPatches/GrimWorld</li>
+    <!-- super-heavy shells of Hammer of the Imperium: Baneblade / Stormhammer 200 mm cannons, 300 mm Demolisher (defs only) -->
+    <li IfModActive="Grimworld.AstraMilitarum">ModPatches/GrimWorldHammer</li>
+    <!-- RimThunder: WW2 tanks by real armor, M10 Booker, BM-13 (the rest - automatic armor by class) -->
+    <li IfModActive="RimThunder.Core">ModPatches/RimThunder</li>
+  </v1.6>
+</loadFolders>

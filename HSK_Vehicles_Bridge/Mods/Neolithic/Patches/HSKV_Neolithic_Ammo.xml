@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: HSK ammo for Alpha Vehicles: Neolithic turrets. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/projectile</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/projectile</xpath>
+						<value>
+							<projectile>Projectile_Arrow_Explosive</projectile>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<projectile>Projectile_Arrow_Explosive</projectile>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/genericAmmo</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/genericAmmo</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_Arrow</ammoSet>
+								<shotHeight>2.1</shotHeight>
+								<speed>50</speed>
+								<sway>10</sway>
+								<spread>0.1</spread>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_Arrow</ammoSet>
+								<shotHeight>2.1</shotHeight>
+								<speed>50</speed>
+								<sway>10</sway>
+								<spread>0.1</spread>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>12</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<reloadTimer>12</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/warmUpTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/warmUpTimer</xpath>
+						<value>
+							<warmUpTimer>3</warmUpTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<warmUpTimer>3</warmUpTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>64</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<magazineCapacity>64</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/maxRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/maxRange</xpath>
+						<value>
+							<maxRange>20</maxRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<maxRange>20</maxRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/fireModes</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]/fireModes</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>64</shotsPerBurst>
+									<ticksBetweenShots>6</ticksBetweenShots>
+									<ticksBetweenBursts>15</ticksBetweenBursts>
+									<label>Full Barrage</label>
+									<texPath>UI/Gizmos/AV_ArrowBarrage</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>32</shotsPerBurst>
+									<ticksBetweenShots>6</ticksBetweenShots>
+									<ticksBetweenBursts>15</ticksBetweenBursts>
+									<label>Half Barrage</label>
+									<texPath>UI/Gizmos/FireRate_Auto</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>8</shotsPerBurst>
+									<ticksBetweenShots>6</ticksBetweenShots>
+									<ticksBetweenBursts>15</ticksBetweenBursts>
+									<label>Burst</label>
+									<texPath>UI/Gizmos/FireRate_Burst</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Hwacha_Turret"]</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>64</shotsPerBurst>
+									<ticksBetweenShots>6</ticksBetweenShots>
+									<ticksBetweenBursts>15</ticksBetweenBursts>
+									<label>Full Barrage</label>
+									<texPath>UI/Gizmos/AV_ArrowBarrage</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>32</shotsPerBurst>
+									<ticksBetweenShots>6</ticksBetweenShots>
+									<ticksBetweenBursts>15</ticksBetweenBursts>
+									<label>Half Barrage</label>
+									<texPath>UI/Gizmos/FireRate_Auto</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>8</shotsPerBurst>
+									<ticksBetweenShots>6</ticksBetweenShots>
+									<ticksBetweenBursts>15</ticksBetweenBursts>
+									<label>Burst</label>
+									<texPath>UI/Gizmos/FireRate_Burst</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/projectile</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/projectile</xpath>
+						<value>
+							<projectile>Projectile_Arrow_Steel</projectile>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]</xpath>
+						<value>
+							<projectile>Projectile_Arrow_Steel</projectile>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/genericAmmo</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/genericAmmo</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_Arrow</ammoSet>
+								<shotHeight>2</shotHeight>
+								<speed>50</speed>
+								<sway>2</sway>
+								<spread>1</spread>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_Arrow</ammoSet>
+								<shotHeight>2</shotHeight>
+								<speed>50</speed>
+								<sway>2</sway>
+								<spread>1</spread>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>1.6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]</xpath>
+						<value>
+							<reloadTimer>1.6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/warmUpTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/warmUpTimer</xpath>
+						<value>
+							<warmUpTimer>1.3</warmUpTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]</xpath>
+						<value>
+							<warmUpTimer>1.3</warmUpTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/maxRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]/maxRange</xpath>
+						<value>
+							<maxRange>30</maxRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_WarChariot_Turret"]</xpath>
+						<value>
+							<maxRange>30</maxRange>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

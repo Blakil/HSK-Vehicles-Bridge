@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: high-tech vehicle research needs both the HSK multi-analyzer and the lab station. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="LabStation"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_Ceramite"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_Ceramite"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_Ceramite"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_Ceramite"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_Myomer"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_Myomer"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_Myomer"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_Myomer"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_ShieldEmitter"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_ShieldEmitter"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_ShieldEmitter"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_ShieldEmitter"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_FusionReactor"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_FusionReactor"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_FusionReactor"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_FusionReactor"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_Cogitator"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_Cogitator"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_Cogitator"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_Cogitator"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_GravDrive"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_GravDrive"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_GravDrive"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_GravDrive"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Astartes"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Astartes"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Astartes"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Astartes"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Custodes"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Custodes"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Custodes"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_GW_Custodes"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalPods"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalPods"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalPods"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalPods"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalAssault"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalAssault"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalAssault"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="HSKV_OrbitalAssault"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VVE39_Skip"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="VVE39_Skip"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Skip"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Skip"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VVE39_Freighter"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="VVE39_Freighter"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Freighter"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Freighter"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VVE39_Albatross"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="VVE39_Albatross"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Albatross"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Albatross"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VVE39_Phoenix"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="VVE39_Phoenix"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Phoenix"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Phoenix"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VVE39_Genesis"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="VVE39_Genesis"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Genesis"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Genesis"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VVE39_TEKSeven"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="VVE39_TEKSeven"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_TEKSeven"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_TEKSeven"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="VVE39_Pelican"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="VVE39_Pelican"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Pelican"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="VVE39_Pelican"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<!-- Astartes -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<!-- GrimWorld Core -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryLightVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryLightVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryLightVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryLightVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryMediumVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryMediumVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryMediumVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryMediumVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryHeavyVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryHeavyVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryHeavyVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryHeavyVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryEliteVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryEliteVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryEliteVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryEliteVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryTitanicVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryTitanicVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryTitanicVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialLandMilitaryTitanicVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryEliteVehicleResearch"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryEliteVehicleResearch"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryEliteVehicleResearch"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirMilitaryEliteVehicleResearch"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_DrugProduction"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_DrugProduction"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_DrugProduction"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_DrugProduction"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaReactor"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaReactor"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaReactor"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaReactor"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_Cogitator"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_Cogitator"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Cogitator"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Cogitator"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="indoctrination_chamber"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="indoctrination_chamber"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="indoctrination_chamber"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="indoctrination_chamber"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_GrimworldMaterials"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_GrimworldMaterials"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_GrimworldMaterials"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_GrimworldMaterials"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedGrimworldMaterials"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedGrimworldMaterials"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedGrimworldMaterials"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedGrimworldMaterials"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_BlastDoors"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_BlastDoors"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_BlastDoors"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_BlastDoors"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_Chainswords"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_Chainswords"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Chainswords"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Chainswords"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_PowerMeleeWeapons"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_PowerMeleeWeapons"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_PowerMeleeWeapons"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_PowerMeleeWeapons"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaWeapons"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaWeapons"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaWeapons"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_PlasmaWeapons"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_MeltaWeapons"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_MeltaWeapons"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_MeltaWeapons"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_MeltaWeapons"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_Launchers"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_Launchers"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Launchers"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Launchers"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_Flamers"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_Flamers"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Flamers"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Flamers"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_Bolters"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_Bolters"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Bolters"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Bolters"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolters"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolters"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolters"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolters"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolterMunitions"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolterMunitions"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolterMunitions"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_AdvancedBolterMunitions"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_Autoguns"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_Autoguns"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Autoguns"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Autoguns"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_RepairBench"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_RepairBench"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_RepairBench"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_RepairBench"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_GeneSeeding"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_GeneSeeding"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_GeneSeeding"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_GeneSeeding"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="MPI_GW_ForceWeaponry"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="MPI_GW_ForceWeaponry"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="MPI_GW_ForceWeaponry"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="MPI_GW_ForceWeaponry"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AdvancedLasguns"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AdvancedLasguns"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AdvancedLasguns"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AdvancedLasguns"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AerythmeticaDiscontinuity"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AerythmeticaDiscontinuity"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AerythmeticaDiscontinuity"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="MPI_GW_AerythmeticaDiscontinuity"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<!-- GrimWorld Astra Militarum -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_LuciferBlack"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_LuciferBlack"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_LuciferBlack"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_LuciferBlack"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_Tanith1st"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_Tanith1st"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Tanith1st"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_Tanith1st"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<!-- GrimWorld Angels of Death -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_CodexAstartes"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_CodexAstartes"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_CodexAstartes"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_CodexAstartes"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesFabrication"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesFabrication"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesFabrication"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesFabrication"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesBasicShields"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesBasicShields"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesBasicShields"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesBasicShields"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_Jump_Packs"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_Jump_Packs"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_Jump_Packs"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_Jump_Packs"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesLight"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesLight"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesLight"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesLight"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesMedium"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesMedium"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesMedium"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesMedium"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesHeavy"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesHeavy"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesHeavy"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_AstartesHeavy"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_Ultarmarines"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_Ultarmarines"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_Ultarmarines"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_Ultarmarines"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_DarkAngels"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_DarkAngels"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_DarkAngels"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_DarkAngels"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_NightLord"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_NightLord"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_NightLord"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_NightLord"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_SM_Salamander"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_SM_Salamander"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_Salamander"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_SM_Salamander"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<!-- GrimWorld Talons of the Emperor -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesFabrication"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesFabrication"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesFabrication"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesFabrication"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesGuard"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesGuard"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesGuard"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_TotE_CustodesGuard"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_TotE_Allarus"]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GW_TotE_Allarus"]/requiredResearchFacilities</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GW_TotE_Allarus"]/requiredResearchFacilities</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GW_TotE_Allarus"]</xpath>
+							<value><requiredResearchFacilities><li>MultiAnalyzer</li><li>LabStation</li></requiredResearchFacilities></value>
+						</nomatch>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

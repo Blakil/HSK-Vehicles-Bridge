@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Vehicle Framework 1.4 strings missing from its Russian translation (Upgrades tab). -->
+  <VF_Upgrade>Установить</VF_Upgrade>
+  <VF_DisabledFromOtherNode>Нельзя установить: узел недоступен из-за ранее установленного улучшения.</VF_DisabledFromOtherNode>
+  <VF_MissingPrerequisiteUpgrade>Нет предыдущего узла.</VF_MissingPrerequisiteUpgrade>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HSKV_Turret_HMG50.label>установка крупнокалиберного пулемёта .50 BMG</HSKV_Turret_HMG50.label>
+  <HSKV_Turret_HMG50.description>Крупнокалиберный пулемёт в лёгкой башне машины. Бьёт сильнее и дальше винтовочного калибра, берёт лёгкую броню.</HSKV_Turret_HMG50.description>
+  <HSKV_Turret_AGL30.label>установка автоматического гранатомёта 30×29</HSKV_Turret_AGL30.label>
+  <HSKV_Turret_AGL30.description>Автоматический гранатомёт в лёгкой башне машины. Бросает очереди осколочно-фугасных гранат навесом: против брони бесполезен, против пехоты в поле и за лёгкими укрытиями — страшен.</HSKV_Turret_AGL30.description>
+  <HSKV_Turret_AC20.label>установка автоматической пушки 20×102</HSKV_Turret_AC20.label>
+  <HSKV_Turret_AC20.description>20-мм автоматическая пушка в башне машины. Скорострельная, настильная и мощная: косит пехоту и лёгкую технику, понемногу прогрызает броневики и БТР.</HSKV_Turret_AC20.description>
+  <HSKV_Turret_Mortar81.label>установка 81-мм миномёта</HSKV_Turret_Mortar81.label>
+  <HSKV_Turret_Mortar81.description>81-мм миномёт на машине. Навесной огонь через стены и холмы; с корректировщиком точен, без него — как повезёт.</HSKV_Turret_Mortar81.description>
+  <HSKV_Turret_MRL130.label>130-мм реактивная установка</HSKV_Turret_MRL130.label>
+  <HSKV_Turret_MRL130.description>Кустарная реактивная система залпового огня под 130-мм термобарические ракеты. Полный залп накрывает площадь, отдельные ракеты сильно разлетаются. Перезарядка пакета долгая.</HSKV_Turret_MRL130.description>
+  <HSKV_Turret_Howitzer155.label>155-мм гаубица</HSKV_Turret_Howitzer155.label>
+  <HSKV_Turret_Howitzer155.description>Компактная 155-мм гаубица с автоматом заряжания и баллистическим вычислителем. Для артиллерии необычайно точна: снаряды ложатся рядом с точкой прицеливания даже без корректировщика.</HSKV_Turret_Howitzer155.description>
+  <HSKV_Turret_MG762.label>установка пулемёта 7,62×51</HSKV_Turret_MG762.label>
+  <HSKV_Turret_MG762.description>Единый пулемёт винтовочного калибра в лёгкой башне машины. Дёшев и надёжен: косит пехоту, броню не берёт.</HSKV_Turret_MG762.description>
+  <HSKV_Turret_Flamer.label>огнемёт машины</HSKV_Turret_Flamer.label>
+  <HSKV_Turret_Flamer.description>Тяжёлый огнемёт с большими баками горючей смеси. Бьёт недалеко, но поджигает всё перед собой.</HSKV_Turret_Flamer.description>
+  <HSKV_Turret_Cannon90.label>90-мм танковая пушка</HSKV_Turret_Cannon90.label>
+  <HSKV_Turret_Cannon90.description>90-мм танковая пушка. Кумулятивные снаряды пробивают любую броню, кроме лба основного боевого танка; осколочно-фугасные — против пехоты и укреплений.</HSKV_Turret_Cannon90.description>
+  <HSKV_Turret_Cannon120.label>120-мм танковая пушка</HSKV_Turret_Cannon120.label>
+  <HSKV_Turret_Cannon120.description>120-мм гладкоствольная пушка с системой управления огнём. Точна на большой дистанции; кумулятивные снаряды пробивают почти всё.</HSKV_Turret_Cannon120.description>
+</LanguageData>

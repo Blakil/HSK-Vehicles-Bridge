@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicles CE Overhaul: CE armor tables for Spacer Vehicles (Titan) vehicles, adapted to the vehicle class progression (armored car, carrier, light, medium and battle tank). -->
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_JASV_Warchief</defName>
+		<vehicle>JASV_Warchief</vehicle>
+		<hullSharp>30</hullSharp>
+		<hullBlunt>150</hullBlunt>
+		<mass>90000</mass>
+		<components>
+			<li><key>FrontArmorPlating</key><sharp>700</sharp><blunt>9800</blunt><health>900</health></li>
+			<li><key>LeftArmorPlating</key><sharp>250</sharp><blunt>3500</blunt><health>850</health></li>
+			<li><key>RightArmorPlating</key><sharp>250</sharp><blunt>3500</blunt><health>850</health></li>
+			<li><key>BackArmorPlating</key><sharp>60</sharp><blunt>840</blunt><health>700</health></li>
+			<li><key>RoofArmorPlating</key><sharp>50</sharp><blunt>175</blunt><health>600</health></li>
+			<li><key>Roof</key><sharp>50</sharp><blunt>175</blunt><health>600</health></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_JASV_Superchief</defName>
+		<vehicle>JASV_Superchief</vehicle>
+		<hullSharp>30</hullSharp>
+		<hullBlunt>150</hullBlunt>
+		<mass>90000</mass>
+		<components>
+			<li><key>FrontArmorPlating</key><sharp>700</sharp><blunt>9800</blunt><health>900</health></li>
+			<li><key>LeftArmorPlating</key><sharp>250</sharp><blunt>3500</blunt><health>850</health></li>
+			<li><key>RightArmorPlating</key><sharp>250</sharp><blunt>3500</blunt><health>850</health></li>
+			<li><key>BackArmorPlating</key><sharp>60</sharp><blunt>840</blunt><health>700</health></li>
+			<li><key>RoofArmorPlating</key><sharp>50</sharp><blunt>175</blunt><health>600</health></li>
+			<li><key>Roof</key><sharp>50</sharp><blunt>175</blunt><health>600</health></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_JAHV_Conquistador</defName>
+		<vehicle>JAHV_Conquistador</vehicle>
+		<hullSharp>15</hullSharp>
+		<hullBlunt>100</hullBlunt>
+		<components>
+			<li><key>Bow</key><sharp>60</sharp><blunt>840</blunt><health>450</health></li>
+			<li><key>Port</key><sharp>36</sharp><blunt>504</blunt><health>420</health></li>
+			<li><key>Starbord</key><sharp>36</sharp><blunt>504</blunt><health>420</health></li>
+			<li><key>Stern</key><sharp>28</sharp><blunt>392</blunt><health>420</health></li>
+			<li><key>hydrogen condenser</key><sharp>15</sharp><blunt>140</blunt></li>
+			<li><key>Rudder</key><sharp>15</sharp><blunt>100</blunt></li>
+		</components>
+		<plates>
+			<li>Bow</li>
+			<li>Port</li>
+			<li>Starbord</li>
+			<li>Stern</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_JAHV_Avenger</defName>
+		<vehicle>JAHV_Avenger</vehicle>
+		<hullSharp>13</hullSharp>
+		<hullBlunt>130</hullBlunt>
+		<components>
+			<li><key>LeftWing</key><sharp>13</sharp><blunt>130</blunt></li>
+			<li><key>RightWing</key><sharp>13</sharp><blunt>130</blunt></li>
+			<li><key>LeftLandingWheel</key><sharp>13</sharp><blunt>130</blunt></li>
+			<li><key>RightLandingWheel</key><sharp>13</sharp><blunt>130</blunt></li>
+			<li><key>RearLeftLandingWheel</key><sharp>13</sharp><blunt>130</blunt></li>
+			<li><key>RearRightLandingWheel</key><sharp>13</sharp><blunt>130</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+</Defs>

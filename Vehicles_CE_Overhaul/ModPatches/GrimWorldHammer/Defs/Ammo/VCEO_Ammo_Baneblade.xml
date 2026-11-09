@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Super-heavy shells of GrimWorld Hammer of the Imperium. The official CE patch gave the Baneblade and Stormhammer cannons the Leman Russ battle cannon (120 mm) and the Demolisher a 155 mm direct-fire gun. By the lore the Baneblade cannon is 180-250 mm with rocket-assisted adamantium-tipped shells, and the Demolisher is a siege mortar. Own sets: 200 mm (high explosive, armor-piercing high explosive) and 300 mm siege. Numbers are on the stock CE scale; sharp above 170 mm and blunt above 45 MPa are not rescaled by the HSK profile, so the same defs serve HSK (the bridge changes only the recipes). Turret sets: ModPatches/GrimWorld and the HSK bridge; this folder loads only with Hammer of the Imperium. -->
+
+	<ThingCategoryDef>
+		<defName>VCEO_AmmoBanebladeShells</defName>
+		<label>Baneblade cannon shells</label>
+		<parent>AmmoShells</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberCannon</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== Sets ==================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>VCEO_AmmoSet_BanebladeCannon</defName>
+		<label>200mm Baneblade cannon shells</label>
+		<ammoTypes>
+			<VCEO_Ammo_BanebladeCannon_HE>VCEO_Bullet_BanebladeCannon_HE</VCEO_Ammo_BanebladeCannon_HE>
+			<VCEO_Ammo_BanebladeCannon_AP>VCEO_Bullet_BanebladeCannon_AP</VCEO_Ammo_BanebladeCannon_AP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<CombatExtended.AmmoSetDef>
+		<defName>VCEO_AmmoSet_BanebladeSiege</defName>
+		<label>300mm demolisher siege shells</label>
+		<ammoTypes>
+			<VCEO_Ammo_BanebladeSiege_HE>VCEO_Bullet_BanebladeSiege_HE</VCEO_Ammo_BanebladeSiege_HE>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Shells (items) ==================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="VCEO_BanebladeShellBase" ParentName="HeavyAmmoBase" Abstract="True">
+		<description>A 200mm rocket-assisted shell for the ten-metre Baneblade cannon: the propellant charge throws it out of the barrel, then a solid-fuel booster keeps the trajectory flat over kilometres.</description>
+		<thingCategories>
+			<li>VCEO_AmmoBanebladeShells</li>
+		</thingCategories>
+		<stackLimit>10</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>100</Mass>
+			<Bulk>95</Bulk>
+		</statBases>
+		<cookOffFlashScale>40</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="VCEO_BanebladeShellBase">
+		<defName>VCEO_Ammo_BanebladeCannon_HE</defName>
+		<label>Baneblade cannon shell (HE)</label>
+		<statBases>
+			<MarketValue>210</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Howitzer/HE-BB</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>GrenadeHE</ammoClass>
+		<detonateProjectile>VCEO_Bullet_BanebladeCannon_HE</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="VCEO_BanebladeShellBase">
+		<defName>VCEO_Ammo_BanebladeCannon_AP</defName>
+		<label>Baneblade cannon shell (AP-HE)</label>
+		<statBases>
+			<MarketValue>260</MarketValue>
+		</statBases>
+		<description>A 200mm rocket-assisted anti-tank shell for the Baneblade cannon: an adamantium tip punches through a battle tank's front plate, the explosive filling goes off inside.</description>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Tank/APHE</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>ExplosiveAP</ammoClass>
+		<detonateProjectile>VCEO_Bullet_BanebladeCannon_HE</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyAmmoBase">
+		<defName>VCEO_Ammo_BanebladeSiege_HE</defName>
+		<label>demolisher siege shell (HE)</label>
+		<description>A short, fat 300mm siege shell for the Baneblade's hull demolisher cannon: slow and short-ranged, made to bring down bunkers and fortress walls point-blank.</description>
+		<thingCategories>
+			<li>VCEO_AmmoBanebladeShells</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Howitzer/HE</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>380</MarketValue>
+			<Mass>180</Mass>
+			<Bulk>170</Bulk>
+		</statBases>
+		<cookOffFlashScale>60</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<ammoClass>GrenadeHE</ammoClass>
+		<detonateProjectile>VCEO_Bullet_BanebladeSiege_HE</detonateProjectile>
+	</ThingDef>
+
+	<!-- ==================== Shells (in flight) ==================== -->
+
+	<ThingDef Name="VCEO_BaseBanebladeShell" ParentName="BaseExplosiveBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>250</speed>
+			<flyOverhead>false</flyOverhead>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
+			<casingFilthDefname>Filth_CannonAmmoCasings</casingFilthDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="VCEO_BaseBanebladeShell">
+		<defName>VCEO_Bullet_BanebladeCannon_HE</defName>
+		<label>Baneblade cannon shell (HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/Howitzer/HE-BB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>800</damageAmountBase>
+			<explosionRadius>7</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<preExplosionSpawnSingleThingDef>CraterMedium</preExplosionSpawnSingleThingDef>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>60</Fragment_Large>
+					<Fragment_Small>120</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VCEO_BaseBanebladeShell">
+		<defName>VCEO_Bullet_BanebladeCannon_AP</defName>
+		<label>Baneblade cannon shell (AP-HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/APHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>900</damageAmountBase>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<armorPenetrationSharp>1000</armorPenetrationSharp>
+			<armorPenetrationBlunt>625000</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>320</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>2</explosiveRadius>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>24</Fragment_Large>
+					<Fragment_Small>30</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VCEO_BaseBanebladeShell">
+		<defName>VCEO_Bullet_BanebladeSiege_HE</defName>
+		<label>demolisher siege shell (HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/Howitzer/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>90</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>1200</damageAmountBase>
+			<explosionRadius>9</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>80</Fragment_Large>
+					<Fragment_Small>160</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ==================== Recipes (stock CE; under HSK the bridge changes bench, research and materials) ==================== -->
+	<!-- Scaled from the stock 155 mm HE by shell mass. -->
+
+	<RecipeDef ParentName="ArtilleryAmmoRecipeBase">
+		<defName>MakeVCEO_Ammo_BanebladeCannon_HE</defName>
+		<label>make Baneblade cannon shells (HE) x1</label>
+		<description>Craft a 200mm rocket-assisted Baneblade cannon shell (HE).</description>
+		<jobString>Making Baneblade cannon shells (HE).</jobString>
+		<researchPrerequisite Inherit="False" />
+		<researchPrerequisites>
+			<li>Mortars</li>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<workAmount>37000</workAmount>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>Steel</li></thingDefs></filter>
+				<count>200</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>FSX</li></thingDefs></filter>
+				<count>36</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCEO_Ammo_BanebladeCannon_HE>1</VCEO_Ammo_BanebladeCannon_HE>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="ArtilleryAmmoRecipeBase">
+		<defName>MakeVCEO_Ammo_BanebladeCannon_AP</defName>
+		<label>make Baneblade cannon shells (AP-HE) x1</label>
+		<description>Craft a 200mm rocket-assisted Baneblade cannon shell (AP-HE).</description>
+		<jobString>Making Baneblade cannon shells (AP-HE).</jobString>
+		<researchPrerequisite Inherit="False" />
+		<researchPrerequisites>
+			<li>Mortars</li>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<workAmount>40000</workAmount>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>Steel</li></thingDefs></filter>
+				<count>160</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>Plasteel</li></thingDefs></filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>FSX</li></thingDefs></filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCEO_Ammo_BanebladeCannon_AP>1</VCEO_Ammo_BanebladeCannon_AP>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="ArtilleryAmmoRecipeBase">
+		<defName>MakeVCEO_Ammo_BanebladeSiege_HE</defName>
+		<label>make demolisher siege shells (HE) x1</label>
+		<description>Craft a 300mm demolisher siege shell (HE).</description>
+		<jobString>Making demolisher siege shells (HE).</jobString>
+		<researchPrerequisite Inherit="False" />
+		<researchPrerequisites>
+			<li>Mortars</li>
+			<li>CE_TurretHeavyWeapons</li>
+		</researchPrerequisites>
+		<workAmount>60000</workAmount>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>Steel</li></thingDefs></filter>
+				<count>340</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>FSX</li></thingDefs></filter>
+				<count>70</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCEO_Ammo_BanebladeSiege_HE>1</VCEO_Ammo_BanebladeSiege_HE>
+		</products>
+	</RecipeDef>
+
+</Defs>

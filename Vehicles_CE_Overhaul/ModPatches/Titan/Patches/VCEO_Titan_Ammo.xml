@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: CE ammo of Spacer Vehicles (Titan) turrets on stock Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Flamethrower"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Flamethrower_Prometheum"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>20</speed>
+										<sway>0.25</sway>
+										<spread>0.3</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_SuperchiefMainCannon"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_20x102mmNATO"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_20x102mmNATO_AP"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>182</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>182</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+										<shotHeight>2.5</shotHeight>
+										<speed>182</speed>
+										<sway>0.7</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_20x102mmNATO_AP</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]</xpath>
+								<value>
+									<projectile>Bullet_20x102mmNATO_AP</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="JASV_Superchief_Turret_Autocannon"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>

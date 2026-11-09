@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: hull structure of VVE Tier 3.9 vehicles (plates, components, depth, roles) for the CE armor model. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="MainThruster"]/hitbox/cells[li="(0, 7)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="MainThruster"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PortLandingStrut"]/hitbox/cells[li="(-6, 6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PortLandingStrut"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(-2, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="StarboardLandingStrut"]/hitbox/cells[li="(6, 6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="StarboardLandingStrut"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(2, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="CentralLandingStrut"]/hitbox/cells[li="(0, -6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="CentralLandingStrut"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, -4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PortManeuveringFin"]/hitbox/cells[li="(-6, -6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PortManeuveringFin"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(-2, -4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="StarboardManeuveringFin"]/hitbox/cells[li="(6, 6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="StarboardManeuveringFin"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(2, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="FuelCoupling"]/hitbox/cells[li="(0, 7)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="FuelCoupling"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PowerCoupler"]/hitbox/cells[li="(0, 6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PowerCoupler"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="RearStabilizer"]/hitbox/cells[li="(0, -6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="RearStabilizer"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, -4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="Hull"]/hitbox/cells[li="(0, 7)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="Hull"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, 4)</li>
+					<li>(0, 0)</li>
+					<li>(0, -4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="FuelTank"]/hitbox/cells[li="(0, -6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="FuelTank"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, -4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PortWing"]/hitbox/cells[li="(-6, 6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="PortWing"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(-2, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="StarboardWing"]/hitbox/cells[li="(6, 6)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Freighter"]/components/li[key="StarboardWing"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(2, 4)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Skip"]/components/li[key="Fuselage"]/hitbox/cells[li="(0, 2)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Skip"]/components/li[key="Fuselage"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(0, 2)</li>
+					<li>(0, 1)</li>
+					<li>(0, 0)</li>
+					<li>(0, -1)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Skip"]/components/li[key="LeftWing"]/hitbox/cells[li="(-1, 1)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Skip"]/components/li[key="LeftWing"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(-1, 1)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="LeftLandingWheel"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="LeftLandingWheel"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="RightLandingWheel"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="RightLandingWheel"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="CentralLandingWheel"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="CentralLandingWheel"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="LeftHorizontalStabilizer"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="LeftHorizontalStabilizer"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="RightHorizontalStabilizer"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="RightHorizontalStabilizer"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="FuelIntake"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="FuelIntake"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Transmission"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Transmission"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Rudder"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Rudder"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Fuselage"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Fuselage"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Chemtank"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Chemtank"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="LeftWing"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="LeftWing"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="RightWing"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="RightWing"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Upholstery"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Upholstery"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Dashboard"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Dashboard"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Servos"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Pelican"]/components/li[key="Servos"]</xpath>
+		</match>
+	</Operation>
+
+</Patch>

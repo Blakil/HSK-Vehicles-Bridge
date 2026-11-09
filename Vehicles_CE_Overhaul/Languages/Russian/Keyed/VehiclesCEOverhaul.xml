@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Settings -->
+  <VCEO_Settings_FireWhileMoving>Любая техника стреляет на ходу</VCEO_Settings_FireWhileMoving>
+  <VCEO_Settings_FireWhileMovingDesc>Снимает ограничение «стрелять только стоя», которое моды машин ставят части башен (90-мм пушка Roadkill, ракетные установки Scytheman и Whirlwind): любая техника стреляет на ходу. На ходу разброс башен умножается на ползунок ниже.</VCEO_Settings_FireWhileMovingDesc>
+  <VCEO_Settings_MovingSway>Колебания башни на ходу: ×{0}</VCEO_Settings_MovingSway>
+  <VCEO_Settings_FFCountNeutrals>«Не стрелять по своим» бережёт и нейтральных</VCEO_Settings_FFCountNeutrals>
+  <VCEO_Settings_FFCountNeutralsDesc>Переключатель «Не стрелять по своим» на машине всегда бережёт колонию (её пешек, животных, технику, пленников и гостей) и союзные фракции. Включено — ещё и нейтральных: диких животных, гостей и торговцев нейтральных фракций.</VCEO_Settings_FFCountNeutralsDesc>
+  <VCEO_NoFriendlyFire>Не стрелять по своим</VCEO_NoFriendlyFire>
+  <VCEO_NoFriendlyFireDesc>Пока включено, башни этой машины не стреляют, если на линии огня или вплотную к цели свои пешки или техника — и при автонаведении, и при цели, выбранной вами. При автонаведении башня ищет другую цель. Свои — колония и союзные фракции (и нейтральные — если так в настройках мода). Выключено — стреляет в любом случае.</VCEO_NoFriendlyFireDesc>
+  <VCEO_Settings_CEAccuracy>Прицеливание башен по модели CE</VCEO_Settings_CEAccuracy>
+  <VCEO_Settings_CEAccuracyDesc>Меткость считается как у стрелка CE: навык и состояние наводчика, прицел башни, ошибка оценки дальности, упреждение по движущейся цели, свет, погода, дым, укрытия, увод в очереди; у миномёта — круговая ошибка и штраф косвенного огня. Наводчик получает опыт стрельбы. Выключено — только колебания и разброс башни.</VCEO_Settings_CEAccuracyDesc>
+  <VCEO_Settings_AutoAmmo>Патроны CE башням без них (после перезапуска)</VCEO_Settings_AutoAmmo>
+  <VCEO_Settings_AutoAmmoDesc>Башни из модов без патча Combat Extended получают набор патронов CE по виду орудия: пулемёт, крупнокалиберный пулемёт, автопушка, гранатомёт, пушка, миномёт, гаубица, ракеты, огнемёт, энергетическое оружие. Башня, чьего набора CE нет в этой игре (другая версия CE или сборка), получает ближайший набор того же вида по калибру. Башни, у которых данные CE уже есть, не трогаются. Выкл. — такие башни стреляют своими снарядами мода. Итог: режим разработчика → Debug actions → Vehicles CE → Ammo report.</VCEO_Settings_AutoAmmoDesc>
+  <VCEO_Settings_CEArmor>Броня техники по модели CE</VCEO_Settings_CEArmor>
+  <VCEO_Settings_CEArmorDesc>Бронепробитие CE (мм / МПа) против брони узлов машины: снаряд идёт по клеткам машины, остановленный острый урон переходит в тупой, броня изнашивается. Выключено — ванильная формула Vehicle Framework.</VCEO_Settings_CEArmorDesc>
+  <VCEO_SecondaryInside>Вторичный урон внутри после пробития</VCEO_SecondaryInside>
+  <VCEO_SecondaryInsideDesc>Снаряды со вторичным уроном Combat Extended (заряд бронебойно-фугасных и бронебойно-зажигательных, болты, зажигательные) срабатывают внутри машины, когда основной удар пробил корпус: вторичный урон получают узел в клетке входа и экипаж в ней, без брони листа. Не пробил — вторичного урона нет. Выкл. — по машинам такие снаряды бьют только основным уроном (сам Combat Extended применяет вторичный урон к пешкам и постройкам, но не к машинам).</VCEO_SecondaryInsideDesc>
+  <VCEO_Settings_ComponentHealth>Прочность узлов: ×{0} (после перезапуска)</VCEO_Settings_ComponentHealth>
+  <VCEO_Settings_ComponentHealthDesc>Множитель прочности всех узлов машин (двигатель, бак, ходовая, кабина…), кроме броневых листов, — для всех машин, в том числе из других модов. Урон в CE примерно вдвое выше ванильного, а прочность узлов у Vehicle Framework и модов машин ванильная. Действует после перезапуска игры; у машин из старых сейвов текущая прочность не растёт — их нужно отремонтировать. Взрыв двигателя или бака тоже растёт.</VCEO_Settings_ComponentHealthDesc>
+  <VCEO_Settings_AutoArmor>Автоадаптация брони машин без наших данных (после перезапуска)</VCEO_Settings_AutoArmor>
+  <VCEO_Settings_AutoArmorDesc>Машины из модов, для которых у нас нет таблицы брони, получают броню по классу: гражданская, броневик, БТР, лёгкий, средний или основной танк, сверхтяжёлая, авиация, корабль. Класс определяется по броневым листам, гусеницам, оружию, размеру и названию. Лоб — по классу в шкале Combat Extended, борта, корма и крыша — по пропорциям самой машины; наземным — реальная масса. Выкл. — у таких машин остаются значения мода (под CE обычно картонные). Итог: режим разработчика → Debug actions → Vehicles CE → Armor report.</VCEO_Settings_AutoArmorDesc>
+  <VCEO_Settings_ArmorProfile>Шкала брони: {0} (после перезапуска)</VCEO_Settings_ArmorProfile>
+  <VCEO_Settings_ArmorProfileDesc>Броня, рассчитанная под стоковый Combat Extended, пересчитывается под другой баланс патронов: {0}. {1} Выкл. — значения стокового CE.</VCEO_Settings_ArmorProfileDesc>
+  <VCEO_Settings_Destructible>Технику можно уничтожить</VCEO_Settings_Destructible>
+  <VCEO_Settings_DestructibleDesc>Когда разбиты все узлы машины (целостность ниже 1 %), машина уничтожается, как в Vehicle Framework. Выключено — машину можно разбить в ноль, но не уничтожить: она остаётся на карте и её можно отремонтировать.</VCEO_Settings_DestructibleDesc>
+  <VCEO_Settings_DestroyBySystems>Уничтожение по разбитым системам</VCEO_Settings_DestroyBySystems>
+  <VCEO_Settings_DestroyBySystemsDesc>Машина уничтожается окончательно, когда суммарное здоровье всех её узлов, кроме броневых листов (двигатель, ходовая, бак, кабина…), падает ниже порога — разбито всё железо. До этого она только выведена из строя по правилам Vehicle Framework (без нужных узлов не едет и не стреляет), её можно починить или захватить. Снаряд, прошедший корпус и не задевший ничего живого, бьёт случайный узел — добить можно любую машину. Экипаж, оставшийся внутри при уничтожении, ранит взрывом. Выключено — действует только правило Vehicle Framework (все узлы вместе с бронёй ниже 1 %).</VCEO_Settings_DestroyBySystemsDesc>
+  <VCEO_Settings_SystemsThreshold>Порог систем: {0}</VCEO_Settings_SystemsThreshold>
+  <VCEO_Settings_FuelDetonation>Детонация бака</VCEO_Settings_FuelDetonation>
+  <VCEO_Settings_FuelDetonationDesc>Если попадание разбивает топливный бак (у части машин он в двигателе), машина с указанным шансом уничтожается сразу.</VCEO_Settings_FuelDetonationDesc>
+  <VCEO_Settings_FuelDetonationChance>Шанс детонации: {0}</VCEO_Settings_FuelDetonationChance>
+  <VCEO_Settings_RunOverDamage>Урон при наезде: ×{0}</VCEO_Settings_RunOverDamage>
+  <VCEO_Settings_RunOverDamageDesc>Урон пешкам под машиной: удар (от скорости и реальной массы) плюс давка колёсами или гусеницами (гусеницы давят вдвое сильнее); наносится несколькими тупыми ударами один раз за проезд. Пешки, как и в Vehicle Framework, пытаются увернуться. 0 — без урона.</VCEO_Settings_RunOverDamageDesc>
+  <VCEO_Settings_EnemiesDodge>Враги уворачиваются от техники</VCEO_Settings_EnemiesDodge>
+  <VCEO_Settings_EnemiesDodgeDesc>Пешки, враждебные движущейся машине, отскакивают с её пути, когда видят её. Vehicle Framework связывает уворот со своей настройкой «шанс задавить своих»: при None (её умолчание) не уворачивается никто, и машина давит врагов, которые просто стоят. С этой галочкой враги уворачиваются при любой той настройке; свои и союзники — как решит Vehicle Framework.</VCEO_Settings_EnemiesDodgeDesc>
+  <VCEO_Settings_AnimalsDodge>Животные уворачиваются от техники</VCEO_Settings_AnimalsDodge>
+  <VCEO_Settings_AnimalsDodgeDesc>Животные отскакивают с пути движущейся машины, когда видят её, как и люди. Vehicle Framework 1.6 никогда не уводит животных, и машина давит дичь и скот на своём пути. Кроме животных в припадке (бешеные бегут дальше), лежачих и насекомых.</VCEO_Settings_AnimalsDodgeDesc>
+  <VCEO_Settings_VehicleRaids>Рейды с техникой (экспериментально)</VCEO_Settings_VehicleRaids>
+  <VCEO_Settings_VehicleRaidsDesc>Рейды людских фракций, входящие с края карты, приводят боевую технику (по очкам рейда; экипаж — из налётчиков, пехоты меньше на цену машины). Кому и какую — в окне «Техника и фракции в рейдах»: без патчей — никому, HSK и аддоны ставят свои умолчания. Машины вражеских отрядов выезжают на огневые позиции, держатся своей пехоты, сильно побитые — отходят. Отряд бежит, потеряв 40–70 % силы в очках рейда (машина — по своей цене и в потерях, когда выбыла из боя): пока техника цела, воюет дольше. Машину, которая не едет и не стреляет, экипаж бросает. Действует на новые рейды.</VCEO_Settings_VehicleRaidsDesc>
+  <VCEO_Settings_VehicleSiege>    Техника рейда ломает стены</VCEO_Settings_VehicleSiege>
+  <VCEO_Settings_VehicleSiegeDesc>Колония за стенами, а позиции для стрельбы, куда можно доехать, нет — машины с пушками, гаубицами и ракетами бьют турели, двери и стены на пути (фугасом, если он есть); пулемётные ждут пролома вместе с пехотой. Числа и роли — в XML: VCEO_VehicleRaidTuning, VehicleRaidRoleExtension, VehicleRaidTurretExtension.</VCEO_Settings_VehicleSiegeDesc>
+  <VCEO_Settings_VehicleRaidsForeign>Выключено: стоит {0} — он сам приводит и водит технику рейдов.</VCEO_Settings_VehicleRaidsForeign>
+  <VCEO_CaptureVehicle>Захватить {0}</VCEO_CaptureVehicle>
+  <VCEO_Capture_Crew>внутри экипаж</VCEO_Capture_Crew>
+  <VCEO_Capture_Hostiles>на карте ещё её бойцы</VCEO_Capture_Hostiles>
+  <VCEO_VehicleCaptured>Машина {1} захвачена ({0}).</VCEO_VehicleCaptured>
+  <VCEO_Settings_RaidShare>Доля очков рейда на технику: {0}</VCEO_Settings_RaidShare>
+  <VCEO_Settings_RaidShareDesc>Сколько очков рейда может забрать техника. Машина дороже — не приходит; что забрала техника, снимается с пехоты.</VCEO_Settings_RaidShareDesc>
+  <VCEO_Settings_RaidGate>Порог техники: ×{0}</VCEO_Settings_RaidGate>
+  <VCEO_Settings_RaidGateDesc>Для техники рейд считается во столько раз слабее: при ×1,5 рейд на 7650 очков выбирает машины как рейд на 5100. Техника приходит позже — и первая, и тяжёлая; пехота платит полную цену машины.</VCEO_Settings_RaidGateDesc>
+  <VCEO_Settings_RaidCost>Цена техники в рейде: ×{0}</VCEO_Settings_RaidCost>
+  <VCEO_Settings_RaidCostDesc>Множитель цены всех машин в очках рейда. Дороже — приходит позже и снимает больше пехоты. Цену отдельной машины — в окне «Техника и фракции в рейдах».</VCEO_Settings_RaidCostDesc>
+  <VCEO_Settings_RaidCostStock>По умолчанию ×{0}: моды машин ставят технике низкие цены (Bulldog — 4765 серебра).</VCEO_Settings_RaidCostStock>
+  <VCEO_Settings_RaidCostModpack>По умолчанию ×{0}: сборка (HSK) уже пересчитала цены машин в своём масштабе.</VCEO_Settings_RaidCostModpack>
+  <VCEO_Settings_RaidUnadapted>Наценка для неадаптированных аддонов: ×{0}</VCEO_Settings_RaidUnadapted>
+  <VCEO_Settings_RaidUnadaptedDesc>For not adapted addons. Машины модов, чью стоимость сборка (мост HSK) не пересчитала под свою экономику: стоимость у них в ванильном масштабе, и в очках рейда такая машина вышла бы в разы дешевле своих — танк пришёл бы в маленький рейд. Наценка выравнивает; адаптированные машины — без неё. Ползунок есть, только когда сборка это понятие вводит (с HSK).</VCEO_Settings_RaidUnadaptedDesc>
+  <VCEO_Settings_RaidRoster>Техника и фракции в рейдах…</VCEO_Settings_RaidRoster>
+  <VCEO_Settings_RaidReset>Сбросить рейды с техникой к умолчаниям</VCEO_Settings_RaidReset>
+  <VCEO_RaidRoster_Title>Техника и фракции в рейдах</VCEO_RaidRoster_Title>
+  <VCEO_RaidRoster_Hint>Слева — фракции, что приводят технику «по техуровню». Посередине — машины, которые ИИ рейда умеет водить; «от N» — с какого рейда (очков) машина может прийти, при доле {0} и пороге ×{1}. Справа — настройка выбранной машины. Изменённое подсвечено; верните значение по умолчанию — правка исчезнет.</VCEO_RaidRoster_Hint>
+  <VCEO_RaidRoster_Factions>Фракции «по техуровню»</VCEO_RaidRoster_Factions>
+  <VCEO_RaidRoster_FactionsDesc>Отмеченные фракции приводят технику в режиме «по техуровню» — машины своего техуровня и ниже. Машины со своим списком фракций эта отметка не касается.</VCEO_RaidRoster_FactionsDesc>
+  <VCEO_RaidRoster_AllFactions>Всем фракциям по техуровню</VCEO_RaidRoster_AllFactions>
+  <VCEO_RaidRoster_AllFactionsDesc>Отмечает все фракции, что ходят в рейды: каждая приводит технику своего техуровня и ниже (племена — без индустриальной, чужаки — индустриальную, космические фракции — до космической). У машин со своим списком фракций — их список. Грубо, зато техника в рейдах появится сразу.</VCEO_RaidRoster_AllFactionsDesc>
+  <VCEO_RaidRoster_DefaultFactions>По умолчанию</VCEO_RaidRoster_DefaultFactions>
+  <VCEO_RaidRoster_DefaultFactionsDesc>Вернуть отметки по умолчанию (список сборки или никого).</VCEO_RaidRoster_DefaultFactionsDesc>
+  <VCEO_RaidRoster_NoFactions>Ни одна фракция не отмечена: машины «по техуровню» не придут ни к кому.</VCEO_RaidRoster_NoFactions>
+  <VCEO_RaidRoster_Vehicles>Техника</VCEO_RaidRoster_Vehicles>
+  <VCEO_RaidRoster_Filter>поиск</VCEO_RaidRoster_Filter>
+  <VCEO_RaidRoster_ModeTechLevel>По техуровню</VCEO_RaidRoster_ModeTechLevel>
+  <VCEO_RaidRoster_ModeFactions>Фракции</VCEO_RaidRoster_ModeFactions>
+  <VCEO_RaidRoster_ModeOff>Нет в рейдах</VCEO_RaidRoster_ModeOff>
+  <VCEO_RaidRoster_TechLevelFrom>{0}+</VCEO_RaidRoster_TechLevelFrom>
+  <VCEO_RaidRoster_FactionCount>Фракций: {0}</VCEO_RaidRoster_FactionCount>
+  <VCEO_RaidRoster_From>от {0}</VCEO_RaidRoster_From>
+  <VCEO_RaidRoster_ModeTechLevelDesc>Приходит с отмеченными слева фракциями этого техуровня и выше.</VCEO_RaidRoster_ModeTechLevelDesc>
+  <VCEO_RaidRoster_ModeFactionsDesc>Приходит только с выбранными фракциями — отметка слева не нужна.</VCEO_RaidRoster_ModeFactionsDesc>
+  <VCEO_RaidRoster_ModeOffDesc>Не приходит ни с кем.</VCEO_RaidRoster_ModeOffDesc>
+  <VCEO_RaidRoster_Mode>Режим</VCEO_RaidRoster_Mode>
+  <VCEO_RaidRoster_TechLevel>Техуровень фракций</VCEO_RaidRoster_TechLevel>
+  <VCEO_RaidRoster_FactionList>Фракции</VCEO_RaidRoster_FactionList>
+  <VCEO_RaidRoster_Adapted>Стоимость пересчитана под сборку — без наценки</VCEO_RaidRoster_Adapted>
+  <VCEO_RaidRoster_Unadapted>Аддон не адаптирован под сборку — наценка ×{0}</VCEO_RaidRoster_Unadapted>
+  <VCEO_RaidRoster_Price>Стоимость {0} серебра → {1} очков рейда</VCEO_RaidRoster_Price>
+  <VCEO_RaidRoster_FirstRaid>Может прийти с рейда от {0} очков</VCEO_RaidRoster_FirstRaid>
+  <VCEO_RaidRoster_CostFactor>Множитель цены этой машины: ×{0}</VCEO_RaidRoster_CostFactor>
+  <VCEO_RaidRoster_CostFactorDesc>Только для этой машины, поверх общего множителя. Дороже — приходит позже и снимает больше пехоты. По умолчанию ×1.</VCEO_RaidRoster_CostFactorDesc>
+  <VCEO_RaidRoster_ResetVehicle>Вернуть машину к умолчанию</VCEO_RaidRoster_ResetVehicle>
+  <VCEO_RaidRoster_Default>По умолчанию: {0}</VCEO_RaidRoster_Default>
+  <VCEO_RaidRoster_FactionsFor>С какими фракциями приходит:</VCEO_RaidRoster_FactionsFor>
+  <VCEO_Settings_DamageReport>Писать в лог отчёт по каждому попаданию</VCEO_Settings_DamageReport>
+
+  <!-- Ammo selection -->
+  <VCEO_AmmoMenuTooltip>Выбрать тип боеприпаса / перезарядить</VCEO_AmmoMenuTooltip>
+  <VCEO_AmmoSelectedNotInCargo>{0}: выбран «{1}». В грузе его нет — с включённым Auto Refill поселенцы подвезут.</VCEO_AmmoSelectedNotInCargo>
+
+  <!-- Vehicle info card -->
+  <VCEO_BuildCost>Стоимость постройки</VCEO_BuildCost>
+  <VCEO_BuildCostDesc>Машина строится как постройка (меню «Транспорт»), а не изготавливается на станке.</VCEO_BuildCostDesc>
+  <VCEO_Loaded>заряжено: {0}</VCEO_Loaded>
+  <VCEO_Projectile>Снаряд</VCEO_Projectile>
+  <VCEO_FireModes>Режимы огня</VCEO_FireModes>
+  <VCEO_BurstPause>пауза</VCEO_BurstPause>
+  <VCEO_ProjectileSpeed>Скорость снаряда</VCEO_ProjectileSpeed>
+  <VCEO_MovingSwayNote>На ходу колебания ×{0} (настройки Vehicles CE Overhaul).</VCEO_MovingSwayNote>
+  <VCEO_ShotHeight>Высота выстрела</VCEO_ShotHeight>
+  <VCEO_TurretRotation>Поворот башни</VCEO_TurretRotation>
+  <VCEO_DegreesPerTick>°/тик</VCEO_DegreesPerTick>
+  <VCEO_FireWhileMoving>Огонь на ходу</VCEO_FireWhileMoving>
+
+  <VCEO_UpgradeInstalling>Устанавливается: {0}</VCEO_UpgradeInstalling>
+  <VCEO_UpgradeWorkLeft>Осталось работы: {0}</VCEO_UpgradeWorkLeft>
+  <VCEO_UpgradeWaitingMaterials>Ждём, пока поселенцы принесут материалы (переноска), затем установка (строительство).</VCEO_UpgradeWaitingMaterials>
+
+  <!-- Active protection -->
+  <VCEO_Settings_ActiveProtection>Комплексы активной защиты на технике</VCEO_Settings_ActiveProtection>
+  <VCEO_Settings_ActiveProtectionDesc>На БТР, танки и сверхтяжёлую технику можно поставить модуль активной защиты (вкладка улучшений машины): он сбивает летящие в машину вражеские ракеты, тратя заряды, которые поселенцы ставят снаружи. Хайтек-техника (космическая эра, Warhammer 40k, Titan) получает комплекс намного сильнее. Только техника игрока. Выкл. — ни одна машина ничего не сбивает, кнопки и работа по зарядке пропадают; модули и заряды остаются.</VCEO_Settings_ActiveProtectionDesc>
+  <VCEO_APS_Toggle>КАЗ вкл/выкл</VCEO_APS_Toggle>
+  <VCEO_APS_ToggleDesc>Выключить комплекс активной защиты — например, когда рядом с машиной своя пехота: заряд рвётся в воздухе, осколки могут её задеть.</VCEO_APS_ToggleDesc>
+  <VCEO_APS_NodeLabel>Активная защита</VCEO_APS_NodeLabel>
+  <VCEO_APS_NodeDesc>Поставить модуль активной защиты: он сбивает летящие в машину вражеские ракеты, гранаты РПГ и ПТУР. На этой машине: зарядов {0}, дальность {1} клеток от корпуса, попадает примерно в {2} случаев. Снаряды, пули и артиллерию не останавливает. Заряды поселенцы ставят снаружи.</VCEO_APS_NodeDesc>
+  <VCEO_APS_Label>КАЗ {0}/{1}</VCEO_APS_Label>
+  <VCEO_APS_Desc>Комплекс активной защиты: сбивает вражеские ракеты, гранаты РПГ и ПТУР, летящие в машину, в {0} клетках от корпуса. Зарядов {1}, попадает примерно в {2} случаев; каждый выстрел тратит заряд — и при промахе. Снаряды, пули и артиллерию не останавливает: от них защищает броня. Заряд рвётся в воздухе, осколки могут задеть пехоту рядом, в том числе свою. Заряды поселенцы ставят снаружи (переноска). Нажмите, чтобы выключить или включить.</VCEO_APS_Desc>
+  <VCEO_APS_Inspect>КАЗ: зарядов {0}/{1}</VCEO_APS_Inspect>
+  <VCEO_APS_Off>(выкл.)</VCEO_APS_Off>
+
+</LanguageData>

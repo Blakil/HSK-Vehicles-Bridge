@@ -1,0 +1,3232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: CE ammo of GrimWorld turrets on stock Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter75"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter75</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter75</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Vehicle_StormBolter"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_BoltersecondaryTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="VCEO_AmmoSet_BanebladeSiege"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="VCEO_Bullet_BanebladeSiege_HE"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>VCEO_AmmoSet_BanebladeSiege</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>90</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>90</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>VCEO_AmmoSet_BanebladeSiege</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>90</speed>
+										<sway>1</sway>
+										<spread>0.03</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/projectile</xpath>
+								<value>
+									<projectile>VCEO_Bullet_BanebladeSiege_HE</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]</xpath>
+								<value>
+									<projectile>VCEO_Bullet_BanebladeSiege_HE</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Demolisher"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_Lasgun"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="VCEO_AmmoSet_BanebladeCannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="VCEO_Bullet_BanebladeCannon_HE"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>VCEO_AmmoSet_BanebladeCannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>250</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>250</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>VCEO_AmmoSet_BanebladeCannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>250</speed>
+										<sway>1</sway>
+										<spread>0.03</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/projectile</xpath>
+								<value>
+									<projectile>VCEO_Bullet_BanebladeCannon_HE</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]</xpath>
+								<value>
+									<projectile>VCEO_Bullet_BanebladeCannon_HE</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Baneblade_PrimaryTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainBolter"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_20x105mmCharged"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_20x105mmCharged"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_20x105mmCharged</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>192</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>192</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_20x105mmCharged</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>192</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_20x105mmCharged</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]</xpath>
+								<value>
+									<projectile>Bullet_20x105mmCharged</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/fireModes/li[number(shotsPerBurst) &gt; 5]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/fireModes/li[number(shotsPerBurst) &gt; 5]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>5</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>30</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]</xpath>
+								<value>
+									<magazineCapacity>30</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>5</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_MainLaser"]</xpath>
+								<value>
+									<reloadTimer>5</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Chimera_Sponsor"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>2</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_AnnihilatorTurret"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_PlasmaCanister_Destroyer"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>6</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]</xpath>
+						<value>
+							<magazineCapacity>6</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_ExecutionerTurret"]</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_MeltaCharge"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>4</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]</xpath>
+						<value>
+							<magazineCapacity>4</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/maxRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]/maxRange</xpath>
+						<value>
+							<maxRange>16</maxRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_MultiMelta"]</xpath>
+						<value>
+							<maxRange>16</maxRange>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_PlasmaCanister_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>4</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]</xpath>
+						<value>
+							<magazineCapacity>4</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_PlasmaSponson"]</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>2</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Marauder_Bomber_Las"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_HeavyBolterCen"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_Lasgun"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="VCEO_AmmoSet_BanebladeCannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="VCEO_Bullet_BanebladeCannon_HE"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>VCEO_AmmoSet_BanebladeCannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>250</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>250</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>VCEO_AmmoSet_BanebladeCannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>250</speed>
+										<sway>1</sway>
+										<spread>0.03</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/projectile</xpath>
+								<value>
+									<projectile>VCEO_Bullet_BanebladeCannon_HE</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]</xpath>
+								<value>
+									<projectile>VCEO_Bullet_BanebladeCannon_HE</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhammer_PrimaryTwins"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Valkyrie_Lasgun"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonBolter"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Flamethrower"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Flamethrower_Prometheum"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>20</speed>
+										<sway>0.25</sway>
+										<spread>0.3</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonFlamer"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>1</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>5</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]</xpath>
+								<value>
+									<magazineCapacity>5</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_SponsonLas"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_AOD_PredatorRhino_StormBolter"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_20x102mmNATO"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_20x102mmNATO_AP"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>182</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>182</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>182</speed>
+										<sway>1</sway>
+										<spread>0.05</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_20x102mmNATO_AP</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]</xpath>
+								<value>
+									<projectile>Bullet_20x102mmNATO_AP</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_BaalPredator_MainTurret_Rhino"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Flamethrower"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Flamethrower_Prometheum"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>20</speed>
+										<sway>0.25</sway>
+										<spread>0.3</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Flamestorm_SideTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>2</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Lasgun"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter75"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter75</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter75</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LandRaider_Sidebolter"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>2</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Overlord_Lascannon"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>2</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>2</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorAnihilator_MainTurret_Rhino"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_PlasmaCanister_Destroyer"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>6</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]</xpath>
+						<value>
+							<magazineCapacity>6</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret"]</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_PlasmaCanister_Destroyer"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_PlasmaCanister_Destroyer</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_PlasmaCanister_Destroyer</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.9</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Laser_PlasmaDestroyer</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]</xpath>
+								<value>
+									<projectile>Bullet_Laser_PlasmaDestroyer</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>1</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>6</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]</xpath>
+								<value>
+									<magazineCapacity>6</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>8</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PredatorExecutioner_MainTurret_Rhino"]</xpath>
+								<value>
+									<reloadTimer>8</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_57x438mmBofors"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]/fireModes/li[number(shotsPerBurst) &gt; 4]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]/fireModes/li[number(shotsPerBurst) &gt; 4]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>4</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>20</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]</xpath>
+						<value>
+							<magazineCapacity>20</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_57x438mmBofors"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_AP"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_57x438mmBofors</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>183</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>183</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_57x438mmBofors</ammoSet>
+										<shotHeight>2.5</shotHeight>
+										<speed>183</speed>
+										<sway>0.7</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_57x438mmBofors_AP</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]</xpath>
+								<value>
+									<projectile>Bullet_57x438mmBofors_AP</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>2</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>20</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]</xpath>
+								<value>
+									<magazineCapacity>20</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Predator_MainTurret_Rhino"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>2</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_Lasgun"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_PlasmaCanister_Destroyer"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>1</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>6</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]</xpath>
+						<value>
+							<magazineCapacity>6</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Spitetank_Plasmagun"]</xpath>
+						<value>
+							<reloadTimer>8</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>2</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormhawk_Lastalon"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+						<value>
+							<shotsPerBurst>2</shotsPerBurst>
+						</value>
+					</match>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]</xpath>
+						<value>
+							<magazineCapacity>10</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Stormtalon_lascannon"]</xpath>
+						<value>
+							<reloadTimer>6</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>2</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalastrusTank_Lasgun"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_CalstrusTank_twinBolter"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter75"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter75</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter75</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_DawnEagleBike_Main"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Bolter"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>1</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>5</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]</xpath>
+								<value>
+									<magazineCapacity>5</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_Orion_Lascannon"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>

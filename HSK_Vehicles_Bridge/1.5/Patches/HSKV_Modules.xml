@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: interchangeable weapon modules of vehicles, adapted to the HSK balance progression. -->
+
+	<!-- VVE_Highwayman: modules go to the VVE Upgrades tree when it exists, else to our tree -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Highwayman_UpgradeTree"]</xpath>
+	<match Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Highwayman_UpgradeTree"]/nodes</xpath>
+			<value>
+				<li>
+					<key>HSKV_HW_HMG</key>
+					<label>Heavy machine gun .50 BMG</label>
+					<description>Hits harder and further than a rifle-calibre gun and can deal with light armour.</description>
+					<icon>HSKV/Parts/HSKV_Mount_MG</icon>
+					<work>1200</work>
+					<gridCoordinate>(6, 23)</gridCoordinate>
+					<drawSize>(80, 80)</drawSize>
+					<researchPrerequisites>
+						<li>VVE_CombatVehicles</li>
+						<li>SniperTurret</li>
+					</researchPrerequisites>
+					<disableIfUpgradeNodesEnabled>
+						<li>HSKV_HW_AGL</li>
+						<li>ImprovedTurret</li>
+					</disableIfUpgradeNodesEnabled>
+					<upgrades>
+						<li Class="Vehicles.TurretUpgrade">
+							<turrets>
+								<li>
+									<turretDef>HSKV_Turret_HMG50</turretDef>
+									<renderProperties>
+										<north>(0, 0.85)</north>
+										<south>(0, 0.5)</south>
+										<east>(0.1, 0.5)</east>
+									</renderProperties>
+									<gizmoLabel>HMG</gizmoLabel>
+									<angleRestricted/>
+									<aimPieOffset>(0, 0.65)</aimPieOffset>
+									<key>mainTurret</key>
+								</li>
+							</turrets>
+							<removeTurrets>
+								<li>mainTurret</li>
+							</removeTurrets>
+						</li>
+					</upgrades>
+					<ingredients>
+						<HSKV_Mount_MG>1</HSKV_Mount_MG>
+						<Weapon_Parts>5</Weapon_Parts>
+						<Heavy_Component>1</Heavy_Component>
+					</ingredients>
+				</li>
+				<li>
+					<key>HSKV_HW_AGL</key>
+					<label>Automatic grenade launcher 30×29</label>
+					<description>Lobs bursts of high-explosive grenades: deadly to infantry in the open and behind light cover, useless against armour.</description>
+					<icon>HSKV/Parts/HSKV_Mount_Rockets</icon>
+					<work>1200</work>
+					<gridCoordinate>(12, 23)</gridCoordinate>
+					<drawSize>(80, 80)</drawSize>
+					<researchPrerequisites>
+						<li>VVE_CombatVehicles</li>
+						<li>Grenade_launchers_C2</li>
+					</researchPrerequisites>
+					<disableIfUpgradeNodesEnabled>
+						<li>HSKV_HW_HMG</li>
+						<li>ImprovedTurret</li>
+					</disableIfUpgradeNodesEnabled>
+					<upgrades>
+						<li Class="Vehicles.TurretUpgrade">
+							<turrets>
+								<li>
+									<turretDef>HSKV_Turret_AGL30</turretDef>
+									<renderProperties>
+										<north>(0, 0.85)</north>
+										<south>(0, 0.5)</south>
+										<east>(0.1, 0.5)</east>
+									</renderProperties>
+									<gizmoLabel>AGL</gizmoLabel>
+									<angleRestricted/>
+									<aimPieOffset>(0, 0.65)</aimPieOffset>
+									<key>mainTurret</key>
+								</li>
+							</turrets>
+							<removeTurrets>
+								<li>mainTurret</li>
+							</removeTurrets>
+						</li>
+					</upgrades>
+					<ingredients>
+						<HSKV_Mount_Rockets>1</HSKV_Mount_Rockets>
+					</ingredients>
+				</li>
+			</value>
+		</match>
+	<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/comps</xpath>
+			<value>
+				<li Class="Vehicles.CompProperties_UpgradeTree">
+					<def>HSKV_VVE_Highwayman_UpgradeTree</def>
+				</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/comps</xpath>
+		<value>
+			<li Class="Vehicles.CompProperties_UpgradeTree">
+				<def>HSKV_VVE_Tango_UpgradeTree</def>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- VVE_Bunsen: modules go to the VVE Upgrades tree when it exists, else to our tree -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bunsen_UpgradeTree"]</xpath>
+	<match Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bunsen_UpgradeTree"]/nodes</xpath>
+			<value>
+				<li>
+					<key>HSKV_BN_AC20</key>
+					<label>Autocannon 20×102</label>
+					<description>A 20 mm autocannon: fast, flat-shooting, shreds infantry and light vehicles and wears down armoured cars.</description>
+					<icon>HSKV/Parts/HSKV_Mount_Autocannon</icon>
+					<work>1500</work>
+					<gridCoordinate>(6, 23)</gridCoordinate>
+					<drawSize>(80, 80)</drawSize>
+					<researchPrerequisites>
+						<li>HSKV_ArmoredVehicles2</li>
+						<li>Heavy_turrets_C3</li>
+					</researchPrerequisites>
+					<disableIfUpgradeNodesEnabled>
+						<li>LongBarrel</li>
+						<li>LauncherBarrel</li>
+						<li>ShortBarrel</li>
+					</disableIfUpgradeNodesEnabled>
+					<upgrades>
+						<li Class="Vehicles.TurretUpgrade">
+							<turrets>
+								<li>
+									<turretDef>HSKV_Turret_AC20</turretDef>
+									<renderProperties>
+										<north>(-0.05, 0.2)</north>
+										<south>(-0.02, 0.2)</south>
+										<east>(-0.02, 0.4)</east>
+									</renderProperties>
+									<gizmoLabel>AC20</gizmoLabel>
+									<angleRestricted/>
+									<aimPieOffset>(0, 0.65)</aimPieOffset>
+									<key>mainTurret</key>
+								</li>
+							</turrets>
+							<removeTurrets>
+								<li>mainTurret</li>
+							</removeTurrets>
+						</li>
+					</upgrades>
+					<ingredients>
+						<HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon>
+					</ingredients>
+				</li>
+			</value>
+		</match>
+	<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/comps</xpath>
+			<value>
+				<li Class="Vehicles.CompProperties_UpgradeTree">
+					<def>HSKV_VVE_Bunsen_UpgradeTree</def>
+				</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- VVE_Roadkill: modules go to the VVE Upgrades tree when it exists, else to our tree -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadkill_UpgradeTree"]</xpath>
+	<match Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadkill_UpgradeTree"]/nodes</xpath>
+			<value>
+				<li>
+					<key>HSKV_RK_AC20</key>
+					<label>Autocannon 20×102</label>
+					<description>A 20 mm autocannon: fast, flat-shooting, shreds infantry and light vehicles and wears down armoured cars.</description>
+					<icon>HSKV/Parts/HSKV_Mount_Autocannon</icon>
+					<work>1500</work>
+					<gridCoordinate>(6, 23)</gridCoordinate>
+					<drawSize>(80, 80)</drawSize>
+					<researchPrerequisites>
+						<li>HSKV_ArmoredVehicles2</li>
+						<li>Heavy_turrets_C3</li>
+					</researchPrerequisites>
+					<disableIfUpgradeNodesEnabled>
+						<li>LongBarrel</li>
+						<li>ShortBarrel</li>
+					</disableIfUpgradeNodesEnabled>
+					<upgrades>
+						<li Class="Vehicles.TurretUpgrade">
+							<turrets>
+								<li>
+									<turretDef>HSKV_Turret_AC20</turretDef>
+									<renderProperties>
+										<north>(0, 0.45)</north>
+										<south>(0, 0.25)</south>
+										<east>(0.05, 0.35)</east>
+									</renderProperties>
+									<gizmoLabel>AC20</gizmoLabel>
+									<angleRestricted/>
+									<aimPieOffset>(0, 0.65)</aimPieOffset>
+									<key>mainTurret</key>
+								</li>
+							</turrets>
+							<removeTurrets>
+								<li>mainTurret</li>
+							</removeTurrets>
+						</li>
+					</upgrades>
+					<ingredients>
+						<HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon>
+					</ingredients>
+				</li>
+			</value>
+		</match>
+	<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/comps</xpath>
+			<value>
+				<li Class="Vehicles.CompProperties_UpgradeTree">
+					<def>HSKV_VVE_Roadkill_UpgradeTree</def>
+				</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/comps</xpath>
+		<value>
+			<li Class="Vehicles.CompProperties_UpgradeTree">
+				<def>HSKV_VVE_Scytheman_UpgradeTree</def>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/comps</xpath>
+		<value>
+			<li Class="Vehicles.CompProperties_UpgradeTree">
+				<def>HSKV_VVE_Toad_UpgradeTree</def>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: mass of Vanilla Vehicles Expanded vehicles, based on real-world counterparts (run-over damage). -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/vehicleStats/Mass</xpath>
+		<value><Mass>150</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Charley"]/vehicleStats/Mass</xpath>
+		<value><Mass>250</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/vehicleStats/Mass</xpath>
+		<value><Mass>900</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Frog"]/vehicleStats/Mass</xpath>
+		<value><Mass>1500</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/vehicleStats/Mass</xpath>
+		<value><Mass>1400</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/vehicleStats/Mass</xpath>
+		<value><Mass>1600</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Snatcher"]/vehicleStats/Mass</xpath>
+		<value><Mass>2500</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/vehicleStats/Mass</xpath>
+		<value><Mass>10000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mule"]/vehicleStats/Mass</xpath>
+		<value><Mass>5000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/vehicleStats/Mass</xpath>
+		<value><Mass>7000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wisent"]/vehicleStats/Mass</xpath>
+		<value><Mass>15000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/vehicleStats/Mass</xpath>
+		<value><Mass>5000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/vehicleStats/Mass</xpath>
+		<value><Mass>10000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/vehicleStats/Mass</xpath>
+		<value><Mass>15000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/vehicleStats/Mass</xpath>
+		<value><Mass>18000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/vehicleStats/Mass</xpath>
+		<value><Mass>30000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/vehicleStats/Mass</xpath>
+		<value><Mass>55000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/vehicleStats/Mass</xpath>
+		<value><Mass>10000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dinghy"]/vehicleStats/Mass</xpath>
+		<value><Mass>300</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Trawler"]/vehicleStats/Mass</xpath>
+		<value><Mass>40000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Warbird"]/vehicleStats/Mass</xpath>
+		<value><Mass>4000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mosquito"]/vehicleStats/Mass</xpath>
+		<value><Mass>3000</Mass></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Smuggler"]/vehicleStats/Mass</xpath>
+		<value><Mass>15000</Mass></value>
+	</Operation>
+
+</Patch>

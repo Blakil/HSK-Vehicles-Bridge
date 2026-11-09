@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: .75 cal bolter -->
+	<AmmoSet_Bolter75.label>болтер .75</AmmoSet_Bolter75.label>
+	<!-- EN: .998 cal heavy bolter -->
+	<AmmoSet_Bolter998.label>тяжёлый болтер .998</AmmoSet_Bolter998.label>
+	<!-- EN: lascannon power pack -->
+	<AmmoSet_Lasgun_Cannon.label>батарея ласпушки</AmmoSet_Lasgun_Cannon.label>
+	<!-- EN: multi-laser power cell -->
+	<HSKV_AmmoSet_Multilaser.label>батарея мультилазера</HSKV_AmmoSet_Multilaser.label>
+	<!-- EN: melta charge -->
+	<AmmoSet_MeltaCharge.label>мельта-заряд</AmmoSet_MeltaCharge.label>
+	<!-- EN: heavy plasma canister (destroyer) -->
+	<AmmoSet_PlasmaCanister_Destroyer.label>тяжёлая плазменная канистра (разрушитель)</AmmoSet_PlasmaCanister_Destroyer.label>
+	<!-- EN: heavy plasma canister (cannon) -->
+	<AmmoSet_PlasmaCanister_Cannon.label>тяжёлая плазменная канистра (пушка)</AmmoSet_PlasmaCanister_Cannon.label>
+	<!-- EN: 57x438mm Bofors -->
+	<AmmoSet_57x438mmBofors.label>57x438 мм Bofors</AmmoSet_57x438mmBofors.label>
+	<!-- EN: cannon ball -->
+	<AmmoSet_CannonBall.label>пушечное ядро</AmmoSet_CannonBall.label>
+	<!-- EN: 90mm cannon shells -->
+	<HSKV_AmmoSet_90mmCannonShell.label>90 мм танковые снаряды</HSKV_AmmoSet_90mmCannonShell.label>
+	<!-- EN: 155mm howitzer shells -->
+	<HSKV_AmmoSet_155mmHowitzerShell.label>155 мм гаубичные снаряды</HSKV_AmmoSet_155mmHowitzerShell.label>
+	<!-- EN: 155mm howitzer shells (direct fire) -->
+	<HSKV_AmmoSet_155mmHowitzerShell_directfire.label>155 мм гаубичные снаряды (прямая наводка)</HSKV_AmmoSet_155mmHowitzerShell_directfire.label>
+	<!-- EN: 20x102mm -->
+	<HSKV_AmmoSet_20x102mm.label>20x102 мм</HSKV_AmmoSet_20x102mm.label>
+	<!-- EN: 30x173mm -->
+	<HSKV_AmmoSet_30x173mm.label>30x173 мм</HSKV_AmmoSet_30x173mm.label>
+
+</LanguageData>

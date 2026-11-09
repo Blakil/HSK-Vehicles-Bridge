@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: compatibility fixes for VVE Tier 3 with Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Udar"]/components/li[key="Roof"]/health[number(.) = 20]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Udar"]/components/li[key="Roof"]/health</xpath>
+			<value>
+				<health>600</health>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

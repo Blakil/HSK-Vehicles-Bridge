@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: vehicle ammo, adapted to the HSK ammo progression. -->
+
+	<!-- HSKV_AmmoSet_90mmCannonShell: Ammo_90mmCannonShell_AP → Bullet_90mmCannonShell_AP, Ammo_90mmCannonShell_APCR → Bullet_90mmCannonShell_APCR -->
+	<CombatExtended.AmmoSetDef>
+		<defName>HSKV_AmmoSet_90mmCannonShell</defName>
+		<label>90mm cannon shells</label>
+		<ammoTypes>
+			<Ammo_90mmCannonShell_AP>Bullet_90mmCannonShell_AP</Ammo_90mmCannonShell_AP>
+			<Ammo_90mmCannonShell_APCR>Bullet_90mmCannonShell_APCR</Ammo_90mmCannonShell_APCR>
+		</ammoTypes>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.VehicleAmmoSetExtension">
+				<replaces>AmmoSet_90mmCannonShell</replaces>
+			</li>
+		</modExtensions>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- HSKV_AmmoSet_155mmHowitzerShell: Ammo_155mmHowitzerShell_Incendiary → Bullet_155mmHowitzerShell_Incendiary, Ammo_155mmHowitzerShell_Smoke → Bullet_155mmHowitzerShell_Smoke -->
+	<CombatExtended.AmmoSetDef>
+		<defName>HSKV_AmmoSet_155mmHowitzerShell</defName>
+		<label>155mm howitzer shells</label>
+		<ammoTypes>
+			<Ammo_155mmHowitzerShell_Incendiary>Bullet_155mmHowitzerShell_Incendiary</Ammo_155mmHowitzerShell_Incendiary>
+			<Ammo_155mmHowitzerShell_Smoke>Bullet_155mmHowitzerShell_Smoke</Ammo_155mmHowitzerShell_Smoke>
+		</ammoTypes>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.VehicleAmmoSetExtension">
+				<replaces>AmmoSet_155mmHowitzerShell</replaces>
+			</li>
+		</modExtensions>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- HSKV_AmmoSet_155mmHowitzerShell_directfire: Ammo_155mmHowitzerShell_Incendiary → Bullet_155mmHowitzerShell_Incendiary_directfire, Ammo_155mmHowitzerShell_Smoke → Bullet_155mmHowitzerShell_Smoke_directfire -->
+	<CombatExtended.AmmoSetDef>
+		<defName>HSKV_AmmoSet_155mmHowitzerShell_directfire</defName>
+		<label>155mm howitzer shells (direct fire)</label>
+		<ammoTypes>
+			<Ammo_155mmHowitzerShell_Incendiary>Bullet_155mmHowitzerShell_Incendiary_directfire</Ammo_155mmHowitzerShell_Incendiary>
+			<Ammo_155mmHowitzerShell_Smoke>Bullet_155mmHowitzerShell_Smoke_directfire</Ammo_155mmHowitzerShell_Smoke>
+		</ammoTypes>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.VehicleAmmoSetExtension">
+				<replaces>AmmoSet_155mmHowitzerShell_directfire</replaces>
+			</li>
+		</modExtensions>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- HSKV_AmmoSet_20x102mm: Ammo_20x102mm_Sabot → Bullet_20x102mm_Sabot -->
+	<CombatExtended.AmmoSetDef>
+		<defName>HSKV_AmmoSet_20x102mm</defName>
+		<label>20x102mm</label>
+		<ammoTypes>
+			<Ammo_20x102mm_Sabot>Bullet_20x102mm_Sabot</Ammo_20x102mm_Sabot>
+		</ammoTypes>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.VehicleAmmoSetExtension">
+				<replaces>AmmoSet_20x102mm</replaces>
+			</li>
+		</modExtensions>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- HSKV_AmmoSet_30x173mm: Ammo_30x173mm_Sabot → Bullet_30x173mm_Sabot -->
+	<CombatExtended.AmmoSetDef>
+		<defName>HSKV_AmmoSet_30x173mm</defName>
+		<label>30x173mm</label>
+		<ammoTypes>
+			<Ammo_30x173mm_Sabot>Bullet_30x173mm_Sabot</Ammo_30x173mm_Sabot>
+		</ammoTypes>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.VehicleAmmoSetExtension">
+				<replaces>AmmoSet_30x173mm</replaces>
+			</li>
+		</modExtensions>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

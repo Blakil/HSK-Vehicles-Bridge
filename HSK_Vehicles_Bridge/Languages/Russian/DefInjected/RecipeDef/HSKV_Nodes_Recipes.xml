@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HSKV_Make_VVE_EngineBlock.label>изготовить: блок двигателя</HSKV_Make_VVE_EngineBlock.label>
+  <HSKV_Make_VVE_EngineBlock.description>Изготовить: блок двигателя.</HSKV_Make_VVE_EngineBlock.description>
+  <HSKV_Make_VVE_EngineBlock.jobString>Изготавливает: блок двигателя.</HSKV_Make_VVE_EngineBlock.jobString>
+  <HSKV_Make_VVE_CarAlternator.label>изготовить: генератор</HSKV_Make_VVE_CarAlternator.label>
+  <HSKV_Make_VVE_CarAlternator.description>Изготовить: генератор.</HSKV_Make_VVE_CarAlternator.description>
+  <HSKV_Make_VVE_CarAlternator.jobString>Изготавливает: генератор.</HSKV_Make_VVE_CarAlternator.jobString>
+  <HSKV_Make_VVE_CarExhaust.label>изготовить: выхлопная система</HSKV_Make_VVE_CarExhaust.label>
+  <HSKV_Make_VVE_CarExhaust.description>Изготовить: выхлопная система.</HSKV_Make_VVE_CarExhaust.description>
+  <HSKV_Make_VVE_CarExhaust.jobString>Изготавливает: выхлопная система.</HSKV_Make_VVE_CarExhaust.jobString>
+  <HSKV_Make_VVE_CarSuspension.label>изготовить: подвеска</HSKV_Make_VVE_CarSuspension.label>
+  <HSKV_Make_VVE_CarSuspension.description>Изготовить: подвеска.</HSKV_Make_VVE_CarSuspension.description>
+  <HSKV_Make_VVE_CarSuspension.jobString>Изготавливает: подвеска.</HSKV_Make_VVE_CarSuspension.jobString>
+  <HSKV_Make_VVE_CarWheel.label>изготовить: колесо</HSKV_Make_VVE_CarWheel.label>
+  <HSKV_Make_VVE_CarWheel.description>Изготовить: колесо.</HSKV_Make_VVE_CarWheel.description>
+  <HSKV_Make_VVE_CarWheel.jobString>Изготавливает: колесо.</HSKV_Make_VVE_CarWheel.jobString>
+  <HSKV_Make_VVE_CarBattery.label>изготовить: аккумулятор</HSKV_Make_VVE_CarBattery.label>
+  <HSKV_Make_VVE_CarBattery.description>Изготовить: аккумулятор.</HSKV_Make_VVE_CarBattery.description>
+  <HSKV_Make_VVE_CarBattery.jobString>Изготавливает: аккумулятор.</HSKV_Make_VVE_CarBattery.jobString>
+  <HSKV_Make_VVE_CarFuelTank.label>изготовить: топливный бак</HSKV_Make_VVE_CarFuelTank.label>
+  <HSKV_Make_VVE_CarFuelTank.description>Изготовить: топливный бак.</HSKV_Make_VVE_CarFuelTank.description>
+  <HSKV_Make_VVE_CarFuelTank.jobString>Изготавливает: топливный бак.</HSKV_Make_VVE_CarFuelTank.jobString>
+  <HSKV_Make_VVE_CarTransmission.label>изготовить: коробка передач</HSKV_Make_VVE_CarTransmission.label>
+  <HSKV_Make_VVE_CarTransmission.description>Изготовить: коробка передач.</HSKV_Make_VVE_CarTransmission.description>
+  <HSKV_Make_VVE_CarTransmission.jobString>Изготавливает: коробка передач.</HSKV_Make_VVE_CarTransmission.jobString>
+  <HSKV_Make_VVE_CarRadiator.label>изготовить: радиатор</HSKV_Make_VVE_CarRadiator.label>
+  <HSKV_Make_VVE_CarRadiator.description>Изготовить: радиатор.</HSKV_Make_VVE_CarRadiator.description>
+  <HSKV_Make_VVE_CarRadiator.jobString>Изготавливает: радиатор.</HSKV_Make_VVE_CarRadiator.jobString>
+  <HSKV_Make_VVE_CarWiring.label>изготовить: проводка</HSKV_Make_VVE_CarWiring.label>
+  <HSKV_Make_VVE_CarWiring.description>Изготовить: проводка.</HSKV_Make_VVE_CarWiring.description>
+  <HSKV_Make_VVE_CarWiring.jobString>Изготавливает: проводка.</HSKV_Make_VVE_CarWiring.jobString>
+</LanguageData>

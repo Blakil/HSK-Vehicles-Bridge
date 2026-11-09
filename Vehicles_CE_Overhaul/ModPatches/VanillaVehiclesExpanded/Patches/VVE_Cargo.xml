@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: cargo capacity of Vanilla Vehicles Expanded vehicles, based on real-world counterparts. -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>60</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Charley"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>100</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>300</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Frog"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>250</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>350</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>550</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Snatcher"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>700</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>500</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>3000</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mule"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>1600</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wisent"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>8000</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>800</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>500</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>1200</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>300</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>400</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>500</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>800</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dinghy"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>500</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Trawler"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>5000</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Warbird"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>150</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mosquito"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>800</CargoCapacity></value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Smuggler"]/vehicleStats/CargoCapacity</xpath>
+		<value><CargoCapacity>2500</CargoCapacity></value>
+	</Operation>
+
+</Patch>

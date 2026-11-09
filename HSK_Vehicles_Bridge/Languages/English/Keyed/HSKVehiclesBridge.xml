@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Modules (vehicle upgrades) -->
+  <VCEO_Module_AC20>Autocannon 20×102</VCEO_Module_AC20>
+  <VCEO_Module_AC20_Desc>A 20 mm autocannon: fast, flat-shooting, shreds infantry and light vehicles and wears down armoured cars.</VCEO_Module_AC20_Desc>
+  <VCEO_Module_Mortar81>Mortar 81 mm</VCEO_Module_Mortar81>
+  <VCEO_Module_Mortar81_Desc>Indirect fire over walls and hills. Accurate with a spotter, a gamble without one.</VCEO_Module_Mortar81_Desc>
+  <VCEO_Module_HMG50>Heavy machine gun .50 BMG</VCEO_Module_HMG50>
+  <VCEO_Module_HMG50_Desc>Hits harder and further than a rifle-calibre gun and can deal with light armour.</VCEO_Module_HMG50_Desc>
+  <VCEO_Module_AGL30>Automatic grenade launcher 30×29</VCEO_Module_AGL30>
+  <VCEO_Module_AGL30_Desc>Lobs bursts of high-explosive grenades: deadly to infantry in the open and behind light cover, useless against armour.</VCEO_Module_AGL30_Desc>
+  <VCEO_Module_ArmorKitLight>Applique armor</VCEO_Module_ArmorKitLight>
+  <VCEO_Module_ArmorKitLight_Desc>Extra steel plates bolted over the armour plating: +6 mm sharp / +60 MPa blunt.</VCEO_Module_ArmorKitLight_Desc>
+
+</LanguageData>

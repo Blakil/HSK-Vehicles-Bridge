@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Settings -->
+  <VCEO_Settings_FireWhileMoving>Any vehicle can fire while moving</VCEO_Settings_FireWhileMoving>
+  <VCEO_Settings_FireWhileMovingDesc>Lifts the "fire only when stationary" restriction that some vehicle mods put on turrets (the 90mm gun of the Roadkill, the Scytheman and Whirlwind rocket launchers): every vehicle fires on the move. While moving, turret sway is multiplied by the slider below.</VCEO_Settings_FireWhileMovingDesc>
+  <VCEO_Settings_MovingSway>Turret sway while moving: ×{0}</VCEO_Settings_MovingSway>
+  <VCEO_Settings_FFCountNeutrals>"No friendly fire" spares neutrals too</VCEO_Settings_FFCountNeutrals>
+  <VCEO_Settings_FFCountNeutralsDesc>The "No friendly fire" switch on a vehicle always spares the colony (its pawns, animals, vehicles, prisoners and guests) and allied factions. On — also neutrals: wild animals, visitors and traders of neutral factions.</VCEO_Settings_FFCountNeutralsDesc>
+  <VCEO_NoFriendlyFire>No friendly fire</VCEO_NoFriendlyFire>
+  <VCEO_NoFriendlyFireDesc>While on, the turrets of this vehicle hold fire when friendly pawns or vehicles are in the line of fire or close to the target — whether the target was picked automatically or by you. With auto-targeting the turret looks for another target. Friendly: the colony and allied factions (neutrals too, if set in the mod settings). Off — fires regardless.</VCEO_NoFriendlyFireDesc>
+  <VCEO_Settings_CEAccuracy>CE aiming for turrets</VCEO_Settings_CEAccuracy>
+  <VCEO_Settings_CEAccuracyDesc>Accuracy works like a CE shooter: gunner skill and condition, turret sights, range estimation error, leading moving targets, lighting, weather, smoke, cover, burst recoil; mortars get circular error and the indirect fire penalty. The gunner gains shooting experience. Off — only turret sway and spread.</VCEO_Settings_CEAccuracyDesc>
+  <VCEO_Settings_AutoAmmo>Pick CE ammo for turrets without it (after restart)</VCEO_Settings_AutoAmmo>
+  <VCEO_Settings_AutoAmmoDesc>Turrets from mods without a Combat Extended patch get a CE ammo set by weapon type: machine gun, heavy machine gun, autocannon, grenade launcher, cannon, mortar, howitzer, rockets, flamethrower, energy weapons. A turret whose CE set is missing in this game (another CE version or modpack) gets the nearest set of the same kind by calibre. Turrets that already have CE data keep it. Off — such turrets fire their mod's own projectile. Results: dev mode → Debug actions → Vehicles CE → Ammo report.</VCEO_Settings_AutoAmmoDesc>
+  <VCEO_Settings_CEArmor>CE armor model for vehicles</VCEO_Settings_CEArmor>
+  <VCEO_Settings_CEArmorDesc>CE penetration (mm / MPa) against vehicle component armor: the projectile travels through the vehicle cell by cell, sharp damage turns blunt when stopped, armor wears down. Off — vanilla Vehicle Framework formula.</VCEO_Settings_CEArmorDesc>
+  <VCEO_SecondaryInside>Secondary damage inside after penetration</VCEO_SecondaryInside>
+  <VCEO_SecondaryInsideDesc>Rounds with Combat Extended secondary damage (AP-HE and AP-I filler, bolter shells, incendiaries) burst inside the vehicle once the main hit has penetrated the hull: a part in the entry cell and the crew sitting there take the secondary damage with no plate armour. A hit that does not penetrate deals no secondary damage. Off: against vehicles such rounds do only their main damage (Combat Extended itself applies secondary damage to pawns and buildings, not to vehicles).</VCEO_SecondaryInsideDesc>
+  <VCEO_Settings_ComponentHealth>Component durability: ×{0} (after restart)</VCEO_Settings_ComponentHealth>
+  <VCEO_Settings_ComponentHealthDesc>Multiplies the health of every vehicle part (engine, fuel tank, running gear, cabin…) except armour plates, for all vehicles including other mods. CE damage is roughly twice vanilla, while Vehicle Framework and vehicle mods use vanilla part health. Takes effect after a game restart; vehicles in existing saves keep their current health and need repairs. Engine and fuel tank explosions scale with it.</VCEO_Settings_ComponentHealthDesc>
+  <VCEO_Settings_AutoArmor>Auto-adapt armor of vehicles without our data (after restart)</VCEO_Settings_AutoArmor>
+  <VCEO_Settings_AutoArmorDesc>Vehicles from mods we have no armor table for get armor by class: civilian, armored car, APC, light, medium or battle tank, super-heavy, aircraft, ship. The class is guessed from armor plates, tracks, weapons, size and name. The front comes from the class in the Combat Extended scale; sides, rear and roof follow the vehicle's own proportions; ground vehicles get a real mass. Off — such vehicles keep their mod's values (usually paper-thin under CE). Results: dev mode → Debug actions → Vehicles CE → Armor report.</VCEO_Settings_AutoArmorDesc>
+  <VCEO_Settings_ArmorProfile>Armor scale: {0} (after restart)</VCEO_Settings_ArmorProfile>
+  <VCEO_Settings_ArmorProfileDesc>Armor calculated for stock Combat Extended is converted to a different ammo balance: {0}. {1} Off — stock CE values.</VCEO_Settings_ArmorProfileDesc>
+  <VCEO_Settings_Destructible>Vehicles can be destroyed</VCEO_Settings_Destructible>
+  <VCEO_Settings_DestructibleDesc>When every part of a vehicle is wrecked (structural integrity below 1%), the vehicle is destroyed, as in Vehicle Framework. Off — a vehicle can be wrecked down to zero but never destroyed; it stays on the map to be repaired.</VCEO_Settings_DestructibleDesc>
+  <VCEO_Settings_DestroyBySystems>Destroyed when its systems are wrecked</VCEO_Settings_DestroyBySystems>
+  <VCEO_Settings_DestroyBySystemsDesc>A vehicle is destroyed for good when the combined health of all its parts except armour plates (engine, running gear, fuel tank, cabin…) drops below the threshold — everything mechanical is wrecked. Before that it is only knocked out by Vehicle Framework's own rules (no movement or fire once the parts that drive them are gone) and can be repaired or captured. A round that goes through the hull without hitting anything alive hits a random part, so any vehicle can be finished off. Crew still inside when the vehicle is destroyed are wounded by the blast. Off — only the Vehicle Framework rule applies (all parts, armour included, below 1%).</VCEO_Settings_DestroyBySystemsDesc>
+  <VCEO_Settings_SystemsThreshold>Systems threshold: {0}</VCEO_Settings_SystemsThreshold>
+  <VCEO_Settings_FuelDetonation>Fuel tank detonation</VCEO_Settings_FuelDetonation>
+  <VCEO_Settings_FuelDetonationDesc>When a hit wrecks the fuel tank (on some vehicles it sits in the engine), the vehicle may be destroyed outright with the chance below.</VCEO_Settings_FuelDetonationDesc>
+  <VCEO_Settings_FuelDetonationChance>Detonation chance: {0}</VCEO_Settings_FuelDetonationChance>
+  <VCEO_Settings_RunOverDamage>Run-over damage: ×{0}</VCEO_Settings_RunOverDamage>
+  <VCEO_Settings_RunOverDamageDesc>Damage to pawns run over by a vehicle: impact from speed and real mass plus crushing under wheels or tracks (tracks crush twice as hard), dealt as several blunt hits once per pass. Pawns still try to dodge, as in Vehicle Framework. 0 — no damage.</VCEO_Settings_RunOverDamageDesc>
+  <VCEO_Settings_EnemiesDodge>Enemies dodge vehicles</VCEO_Settings_EnemiesDodge>
+  <VCEO_Settings_EnemiesDodgeDesc>Pawns hostile to a moving vehicle jump out of its path when they see it coming. Vehicle Framework ties dodging to its "chance to run over friendlies" setting: at None (its default) nobody dodges and a vehicle crushes enemies who just stand there. With this on, enemies dodge whatever that setting is; friendlies and allies — as Vehicle Framework decides.</VCEO_Settings_EnemiesDodgeDesc>
+  <VCEO_Settings_AnimalsDodge>Animals dodge vehicles</VCEO_Settings_AnimalsDodge>
+  <VCEO_Settings_AnimalsDodgeDesc>Animals jump out of a moving vehicle's path when they see it coming, as people do. Vehicle Framework 1.6 never moves animals aside, so a vehicle crushes wildlife and livestock standing in its way. Not animals in a mental state (manhunters charge on), downed ones or insects.</VCEO_Settings_AnimalsDodgeDesc>
+  <VCEO_Settings_VehicleRaids>Vehicle raids (experimental)</VCEO_Settings_VehicleRaids>
+  <VCEO_Settings_VehicleRaidsDesc>Raids of human factions that walk in from the map edge bring combat vehicles (by raid points; the crew comes from the raiders, infantry is reduced by the vehicle cost). Who brings which vehicles is set in "Vehicles and factions in raids": without patches nobody does, HSK and addons set their own defaults. Vehicles of enemy groups drive to firing positions, keep up with their infantry, fall back when badly damaged. The group flees after losing 40-70% of its strength counted in raid points (a vehicle counts by its cost and is lost once out of the fight), so it fights on while its vehicles hold. A vehicle that cannot move or fire is abandoned by its crew. Takes effect for new raids.</VCEO_Settings_VehicleRaidsDesc>
+  <VCEO_Settings_VehicleSiege>    Raid vehicles break walls</VCEO_Settings_VehicleSiege>
+  <VCEO_Settings_VehicleSiegeDesc>When the colony is behind walls and a raid vehicle has no reachable firing position, vehicles with cannons, howitzers or rockets shell the turrets, doors and walls in the way (high explosive if they carry it); machine-gun vehicles wait for the breach with the infantry. Numbers and roles are in XML: VCEO_VehicleRaidTuning, VehicleRaidRoleExtension, VehicleRaidTurretExtension.</VCEO_Settings_VehicleSiegeDesc>
+  <VCEO_Settings_VehicleRaidsForeign>Off: {0} is active - it brings and drives raid vehicles itself.</VCEO_Settings_VehicleRaidsForeign>
+  <VCEO_CaptureVehicle>Capture {0}</VCEO_CaptureVehicle>
+  <VCEO_Capture_Crew>crew aboard</VCEO_Capture_Crew>
+  <VCEO_Capture_Hostiles>its fighters are still on the map</VCEO_Capture_Hostiles>
+  <VCEO_VehicleCaptured>{0} has captured {1}.</VCEO_VehicleCaptured>
+  <VCEO_Settings_RaidShare>Share of raid points for vehicles: {0}</VCEO_Settings_RaidShare>
+  <VCEO_Settings_RaidShareDesc>How much of the raid points vehicles may take. A more expensive vehicle does not come; what vehicles take is removed from the infantry.</VCEO_Settings_RaidShareDesc>
+  <VCEO_Settings_RaidGate>Vehicle threshold: ×{0}</VCEO_Settings_RaidGate>
+  <VCEO_Settings_RaidGateDesc>For vehicles a raid counts as this many times weaker: at ×1.5 a 7650-point raid picks vehicles like a 5100-point one. Vehicles come later, both the first and the heavy ones; the infantry pays the full vehicle cost.</VCEO_Settings_RaidGateDesc>
+  <VCEO_Settings_RaidCost>Vehicle raid cost: ×{0}</VCEO_Settings_RaidCost>
+  <VCEO_Settings_RaidCostDesc>Cost multiplier of all vehicles in raid points. More expensive — a vehicle comes later and replaces more infantry. The cost of a single vehicle is set in "Vehicles and factions in raids".</VCEO_Settings_RaidCostDesc>
+  <VCEO_Settings_RaidCostStock>Default ×{0}: vehicle mods price their vehicles low (Bulldog — 4765 silver).</VCEO_Settings_RaidCostStock>
+  <VCEO_Settings_RaidCostModpack>Default ×{0}: the modpack (HSK) has already put vehicle prices on its own scale.</VCEO_Settings_RaidCostModpack>
+  <VCEO_Settings_RaidUnadapted>Surcharge for not adapted addons: ×{0}</VCEO_Settings_RaidUnadapted>
+  <VCEO_Settings_RaidUnadaptedDesc>For not adapted addons. Vehicles of mods whose cost the modpack (the HSK bridge) did not recalculate for its economy: their cost is on the vanilla scale, so in raid points such a vehicle would be several times cheaper than the adapted ones — a tank would come with a small raid. The surcharge evens that out; adapted vehicles do not get it. The slider exists only when the modpack introduces this (with HSK).</VCEO_Settings_RaidUnadaptedDesc>
+  <VCEO_Settings_RaidRoster>Vehicles and factions in raids…</VCEO_Settings_RaidRoster>
+  <VCEO_Settings_RaidReset>Reset vehicle raids to defaults</VCEO_Settings_RaidReset>
+  <VCEO_RaidRoster_Title>Vehicles and factions in raids</VCEO_RaidRoster_Title>
+  <VCEO_RaidRoster_Hint>Left — factions that bring vehicles "by tech level". Middle — vehicles the raid AI can drive; "from N" is the smallest raid (points) a vehicle can come with, at share {0} and threshold ×{1}. Right — settings of the selected vehicle. Changed entries are highlighted; set an entry back to its default and the change is gone.</VCEO_RaidRoster_Hint>
+  <VCEO_RaidRoster_Factions>Factions "by tech level"</VCEO_RaidRoster_Factions>
+  <VCEO_RaidRoster_FactionsDesc>Checked factions bring vehicles in the "by tech level" mode — vehicles of their tech level and below. Vehicles with their own faction list are not affected by this check.</VCEO_RaidRoster_FactionsDesc>
+  <VCEO_RaidRoster_AllFactions>All factions by tech level</VCEO_RaidRoster_AllFactions>
+  <VCEO_RaidRoster_AllFactionsDesc>Checks every raiding faction: each brings vehicles of its tech level and below (tribes — no industrial vehicles; outlanders — industrial ones; spacer factions — up to spacer). Vehicles with their own faction list keep it. Rough, but vehicles show up in raids right away.</VCEO_RaidRoster_AllFactionsDesc>
+  <VCEO_RaidRoster_DefaultFactions>Defaults</VCEO_RaidRoster_DefaultFactions>
+  <VCEO_RaidRoster_DefaultFactionsDesc>Back to the default checks (the modpack list, or none).</VCEO_RaidRoster_DefaultFactionsDesc>
+  <VCEO_RaidRoster_NoFactions>No faction is checked: "by tech level" vehicles come with nobody.</VCEO_RaidRoster_NoFactions>
+  <VCEO_RaidRoster_Vehicles>Vehicles</VCEO_RaidRoster_Vehicles>
+  <VCEO_RaidRoster_Filter>search</VCEO_RaidRoster_Filter>
+  <VCEO_RaidRoster_ModeTechLevel>By tech level</VCEO_RaidRoster_ModeTechLevel>
+  <VCEO_RaidRoster_ModeFactions>Factions</VCEO_RaidRoster_ModeFactions>
+  <VCEO_RaidRoster_ModeOff>Not in raids</VCEO_RaidRoster_ModeOff>
+  <VCEO_RaidRoster_TechLevelFrom>{0}+</VCEO_RaidRoster_TechLevelFrom>
+  <VCEO_RaidRoster_FactionCount>Factions: {0}</VCEO_RaidRoster_FactionCount>
+  <VCEO_RaidRoster_From>from {0}</VCEO_RaidRoster_From>
+  <VCEO_RaidRoster_ModeTechLevelDesc>Comes with the factions checked on the left of this tech level and up.</VCEO_RaidRoster_ModeTechLevelDesc>
+  <VCEO_RaidRoster_ModeFactionsDesc>Comes only with the picked factions — no check on the left needed.</VCEO_RaidRoster_ModeFactionsDesc>
+  <VCEO_RaidRoster_ModeOffDesc>Comes with nobody.</VCEO_RaidRoster_ModeOffDesc>
+  <VCEO_RaidRoster_Mode>Mode</VCEO_RaidRoster_Mode>
+  <VCEO_RaidRoster_TechLevel>Faction tech level</VCEO_RaidRoster_TechLevel>
+  <VCEO_RaidRoster_FactionList>Factions</VCEO_RaidRoster_FactionList>
+  <VCEO_RaidRoster_Adapted>Cost recalculated for the modpack — no surcharge</VCEO_RaidRoster_Adapted>
+  <VCEO_RaidRoster_Unadapted>Addon not adapted to the modpack — surcharge ×{0}</VCEO_RaidRoster_Unadapted>
+  <VCEO_RaidRoster_Price>Cost {0} silver → {1} raid points</VCEO_RaidRoster_Price>
+  <VCEO_RaidRoster_FirstRaid>Can come with raids from {0} points</VCEO_RaidRoster_FirstRaid>
+  <VCEO_RaidRoster_CostFactor>Cost multiplier of this vehicle: ×{0}</VCEO_RaidRoster_CostFactor>
+  <VCEO_RaidRoster_CostFactorDesc>Only for this vehicle, on top of the overall multiplier. More expensive — it comes later and replaces more infantry. Default ×1.</VCEO_RaidRoster_CostFactorDesc>
+  <VCEO_RaidRoster_ResetVehicle>Reset this vehicle to defaults</VCEO_RaidRoster_ResetVehicle>
+  <VCEO_RaidRoster_Default>Default: {0}</VCEO_RaidRoster_Default>
+  <VCEO_RaidRoster_FactionsFor>Comes with these factions:</VCEO_RaidRoster_FactionsFor>
+  <VCEO_Settings_DamageReport>Log a report for every hit</VCEO_Settings_DamageReport>
+
+  <!-- Ammo selection -->
+  <VCEO_AmmoMenuTooltip>Select ammo type / reload</VCEO_AmmoMenuTooltip>
+  <VCEO_AmmoSelectedNotInCargo>{0}: {1} selected. There is none in the cargo — with Auto Refill on, colonists will bring it.</VCEO_AmmoSelectedNotInCargo>
+
+  <!-- Info card -->
+  <VCEO_BuildCost>Build cost</VCEO_BuildCost>
+  <VCEO_BuildCostDesc>The vehicle is built like a structure (Architect, "Vehicles" tab), not crafted at a bench.</VCEO_BuildCostDesc>
+  <VCEO_Loaded>loaded: {0}</VCEO_Loaded>
+  <VCEO_Projectile>Projectile</VCEO_Projectile>
+  <VCEO_FireModes>Fire modes</VCEO_FireModes>
+  <VCEO_BurstPause>pause</VCEO_BurstPause>
+  <VCEO_ProjectileSpeed>Projectile speed</VCEO_ProjectileSpeed>
+  <VCEO_MovingSwayNote>While moving, sway ×{0} (Vehicles CE Overhaul settings).</VCEO_MovingSwayNote>
+  <VCEO_ShotHeight>Shot height</VCEO_ShotHeight>
+  <VCEO_TurretRotation>Turret rotation</VCEO_TurretRotation>
+  <VCEO_DegreesPerTick>°/tick</VCEO_DegreesPerTick>
+  <VCEO_FireWhileMoving>Fire while moving</VCEO_FireWhileMoving>
+
+  <VCEO_UpgradeInstalling>Installing: {0}</VCEO_UpgradeInstalling>
+  <VCEO_UpgradeWorkLeft>Work left: {0}</VCEO_UpgradeWorkLeft>
+  <VCEO_UpgradeWaitingMaterials>Waiting for colonists to bring materials (Hauling), then the upgrade is installed (Construction).</VCEO_UpgradeWaitingMaterials>
+
+  <!-- Active protection (ActiveProtection.cs) -->
+  <VCEO_Settings_ActiveProtection>Active protection systems on vehicles</VCEO_Settings_ActiveProtection>
+  <VCEO_Settings_ActiveProtectionDesc>APCs, tanks and super-heavy vehicles can be upgraded with an active protection module (vehicle upgrades tab): it shoots down enemy rockets flying at the vehicle, spending charges that colonists load from outside. High-tech vehicles (spacer tech, Warhammer 40k, Titan) get a much stronger system. Only the player's vehicles. Off — no vehicle intercepts anything, the buttons and the loading job disappear; installed modules and charges stay.</VCEO_Settings_ActiveProtectionDesc>
+  <VCEO_APS_Toggle>APS on/off</VCEO_APS_Toggle>
+  <VCEO_APS_ToggleDesc>Switch the active protection system off, for example when your own infantry is close to the vehicle: its charge bursts in the air and the fragments can hit them.</VCEO_APS_ToggleDesc>
+  <VCEO_APS_NodeLabel>Active protection</VCEO_APS_NodeLabel>
+  <VCEO_APS_NodeDesc>Install an active protection module: it shoots down enemy rockets, rocket-propelled grenades and missiles flying at the vehicle. On this vehicle: {0} charges, range {1} cells from the hull, hits about {2} of the time. Shells, bullets and artillery are not stopped. Colonists load the charges from outside.</VCEO_APS_NodeDesc>
+  <VCEO_APS_Label>APS {0}/{1}</VCEO_APS_Label>
+  <VCEO_APS_Desc>Active protection system: shoots down enemy rockets, rocket-propelled grenades and missiles flying at the vehicle within {0} cells of the hull. Holds {1} charges, hits about {2} of the time; every shot spends a charge, hit or miss. Shells, bullets and artillery are not stopped: against them the armour holds. The charge bursts in the air, so infantry nearby — your own too — can be hit. Colonists load the charges from outside (Hauling). Click to switch it off or on.</VCEO_APS_Desc>
+  <VCEO_APS_Inspect>Active protection: {0}/{1} charges</VCEO_APS_Inspect>
+  <VCEO_APS_Off>(off)</VCEO_APS_Off>
+
+</LanguageData>

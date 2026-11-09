@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: hull structure of Astartes vehicles vehicles (plates, components, depth, roles) for the CE armor model. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]/components/li[key="BackRightDriveSprocket"][not(depth)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]/components/li[key="BackRightDriveSprocket"]</xpath>
+			<value>
+				<depth>External</depth>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]/components/li[key="BackRightDriveSprocket"][not(depth)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]/components/li[key="BackRightDriveSprocket"]</xpath>
+			<value>
+				<depth>External</depth>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]/components/li[key="BackRightDriveSprocket"][not(depth)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]/components/li[key="BackRightDriveSprocket"]</xpath>
+			<value>
+				<depth>External</depth>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]/components/li[key="BackRightDriveSprocket"][not(depth)]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]/components/li[key="BackRightDriveSprocket"]</xpath>
+			<value>
+				<depth>External</depth>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

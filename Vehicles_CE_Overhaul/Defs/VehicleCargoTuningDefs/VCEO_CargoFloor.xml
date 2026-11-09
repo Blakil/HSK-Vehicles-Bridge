@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicles CE Overhaul: minimum cargo capacity of vehicles. -->
+
+	<VehiclesCEOverhaul.VehicleCargoTuningDef>
+		<defName>VCEO_CargoFloor</defName>
+		<reloads>6</reloads>
+		<bases>
+			<li><cls>ArmoredCar</cls><kg>300</kg><massShare>0.03</massShare></li>
+			<li><cls>Carrier</cls><kg>800</kg><massShare>0.04</massShare></li>
+			<li><cls>LightTank</cls><kg>300</kg><massShare>0.02</massShare></li>
+			<li><cls>MediumTank</cls><kg>400</kg><massShare>0.02</massShare></li>
+			<li><cls>BattleTank</cls><kg>500</kg><massShare>0.02</massShare></li>
+			<li><cls>SuperHeavy</cls><kg>1000</kg><massShare>0.025</massShare></li>
+		</bases>
+		<soloBase>60</soloBase>
+		<soloReloads>2</soloReloads>
+		<soloMaxMass>2000</soloMaxMass>
+	</VehiclesCEOverhaul.VehicleCargoTuningDef>
+
+</Defs>

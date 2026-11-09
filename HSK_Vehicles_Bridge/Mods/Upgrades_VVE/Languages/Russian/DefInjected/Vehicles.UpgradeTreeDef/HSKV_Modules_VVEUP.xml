@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- HSK Vehicles Bridge: weapon module upgrade trees. -->
+
+	<VVE_Highwayman_UpgradeTree.nodes.11.label>Крупнокалиберный пулемёт .50 BMG</VVE_Highwayman_UpgradeTree.nodes.11.label>
+	<VVE_Highwayman_UpgradeTree.nodes.11.description>Бьёт дальше и сильнее винтовочного калибра, берёт лёгкую броню.</VVE_Highwayman_UpgradeTree.nodes.11.description>
+	<VVE_Highwayman_UpgradeTree.nodes.12.label>Автоматический гранатомёт 30×29</VVE_Highwayman_UpgradeTree.nodes.12.label>
+	<VVE_Highwayman_UpgradeTree.nodes.12.description>Очереди осколочно-фугасных гранат навесом: смертелен для пехоты в поле и за лёгкими укрытиями, по броне бесполезен.</VVE_Highwayman_UpgradeTree.nodes.12.description>
+	<VVE_Bunsen_UpgradeTree.nodes.12.label>Автоматическая пушка 20×102</VVE_Bunsen_UpgradeTree.nodes.12.label>
+	<VVE_Bunsen_UpgradeTree.nodes.12.description>20-мм автопушка: скорострельная и настильная, косит пехоту и лёгкую технику, прогрызает броневики.</VVE_Bunsen_UpgradeTree.nodes.12.description>
+	<VVE_Roadkill_UpgradeTree.nodes.12.label>Автоматическая пушка 20×102</VVE_Roadkill_UpgradeTree.nodes.12.label>
+	<VVE_Roadkill_UpgradeTree.nodes.12.description>20-мм автопушка: скорострельная и настильная, косит пехоту и лёгкую технику, прогрызает броневики.</VVE_Roadkill_UpgradeTree.nodes.12.description>
+
+</LanguageData>

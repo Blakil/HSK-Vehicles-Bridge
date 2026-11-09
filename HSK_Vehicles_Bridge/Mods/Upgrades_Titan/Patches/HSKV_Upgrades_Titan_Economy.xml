@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Titan upgrades vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanChopper_UpgradeTree"]/nodes/li[key="SEX_PassengerCabin"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanChopper_UpgradeTree"]/nodes/li[key="SEX_PassengerCabin"]/ingredients</xpath>
+			<value><ingredients><ComponentIndustrial>8</ComponentIndustrial><Plasteel>320</Plasteel><Cloth>480</Cloth></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_ExpandedCargo"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_ExpandedCargo"]/ingredients</xpath>
+			<value><ingredients><SteelBar>25</SteelBar><VVE_CarWiring>3</VVE_CarWiring><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_ReinforcedHull"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_ReinforcedHull"]/ingredients</xpath>
+			<value><ingredients><SteelBar>120</SteelBar><ComponentIndustrial>1</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_LightHull"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_LightHull"]/ingredients</xpath>
+			<value><ingredients><SteelBar>120</SteelBar><ComponentIndustrial>1</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_RacingSuspension"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_RacingSuspension"]/ingredients</xpath>
+			<value><ingredients><SteelBar>30</SteelBar><VVE_CarSuspension>4</VVE_CarSuspension><VVE_CarWiring>1</VVE_CarWiring></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_OffRoadSuspension"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTree"]/nodes/li[key="SEX_OffRoadSuspension"]/ingredients</xpath>
+			<value><ingredients><SteelBar>15</SteelBar><VVE_CarSuspension>8</VVE_CarSuspension></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTreeAircraft"]/nodes/li[key="SEX_ExpandedCargo"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTreeAircraft"]/nodes/li[key="SEX_ExpandedCargo"]/ingredients</xpath>
+			<value><ingredients><SteelBar>25</SteelBar><VVE_CarWiring>3</VVE_CarWiring><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTreeAircraft"]/nodes/li[key="SEX_ReinforcedHull"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTreeAircraft"]/nodes/li[key="SEX_ReinforcedHull"]/ingredients</xpath>
+			<value><ingredients><SteelBar>120</SteelBar><ComponentIndustrial>1</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTreeAircraft"]/nodes/li[key="SEX_LightHull"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanGenericUpgradeTreeAircraft"]/nodes/li[key="SEX_LightHull"]/ingredients</xpath>
+			<value><ingredients><SteelBar>120</SteelBar><ComponentIndustrial>1</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_HeavyArmor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_HeavyArmor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_SuperchiefCannon"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_SuperchiefCannon"]/ingredients</xpath>
+			<value><ingredients><Plasteel>240</Plasteel><ComponentIndustrial>12</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_Flamers"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_Flamers"]/ingredients</xpath>
+			<value><ingredients><Plasteel>80</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_Cannons"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_TitanTank_UpgradeTree"]/nodes/li[key="SEX_TitanTank_Cannons"]/ingredients</xpath>
+			<value><ingredients><Plasteel>320</Plasteel><ComponentIndustrial>16</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- GrimWorld super-heavy shells (Defs/Ammo/VCEO_Ammo_Baneblade.xml). -->
+
+	<VCEO_Ammo_BanebladeCannon_HE.label>снаряд пушки Baneblade (ОФ)</VCEO_Ammo_BanebladeCannon_HE.label>
+	<VCEO_Ammo_BanebladeCannon_HE.description>Активно-реактивный снаряд 200 мм к десятиметровой пушке Baneblade: пороховой заряд выбрасывает его из ствола, затем твердотопливный ускоритель держит траекторию настильной на километры. Осколочно-фугасный.</VCEO_Ammo_BanebladeCannon_HE.description>
+	<VCEO_Ammo_BanebladeCannon_AP.label>снаряд пушки Baneblade (бронебойный)</VCEO_Ammo_BanebladeCannon_AP.label>
+	<VCEO_Ammo_BanebladeCannon_AP.description>Активно-реактивный противотанковый снаряд 200 мм к пушке Baneblade: адамантиевый наконечник пробивает лобовой лист основного танка, разрывной заряд срабатывает уже внутри.</VCEO_Ammo_BanebladeCannon_AP.description>
+	<VCEO_Ammo_BanebladeSiege_HE.label>осадный снаряд «Демолишера» (ОФ)</VCEO_Ammo_BanebladeSiege_HE.label>
+	<VCEO_Ammo_BanebladeSiege_HE.description>Короткий толстый осадный снаряд 300 мм к корпусной пушке «Демолишер» Baneblade: медленный и недальнобойный, создан сносить бункеры и крепостные стены в упор.</VCEO_Ammo_BanebladeSiege_HE.description>
+
+	<VCEO_Bullet_BanebladeCannon_HE.label>снаряд пушки Baneblade (ОФ)</VCEO_Bullet_BanebladeCannon_HE.label>
+	<VCEO_Bullet_BanebladeCannon_AP.label>снаряд пушки Baneblade (бронебойный)</VCEO_Bullet_BanebladeCannon_AP.label>
+	<VCEO_Bullet_BanebladeSiege_HE.label>осадный снаряд «Демолишера» (ОФ)</VCEO_Bullet_BanebladeSiege_HE.label>
+
+</LanguageData>

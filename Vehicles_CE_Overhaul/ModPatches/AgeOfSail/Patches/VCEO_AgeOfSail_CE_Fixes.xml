@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: compatibility fixes for Alpha Vehicles: Age of Sail with Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/minRange[number(.) &gt; number(../maxRange)]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/minRange</xpath>
+			<value>
+				<minRange>8</minRange>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/minRange[number(.) &gt; number(../maxRange)]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/minRange</xpath>
+			<value>
+				<minRange>8</minRange>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/minRange[number(.) &gt; number(../maxRange)]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/minRange</xpath>
+			<value>
+				<minRange>8</minRange>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/minRange[number(.) &gt; number(../maxRange)]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/minRange</xpath>
+			<value>
+				<minRange>8</minRange>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

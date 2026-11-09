@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: Vanilla Vehicles Expanded vehicle components with HSK recipes. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@Name="VVE_CarPartBase" or defName="VVE_EngineBlock" or defName="VVE_CarAlternator" or defName="VVE_CarExhaust" or defName="VVE_CarSuspension" or defName="VVE_CarWheel" or defName="VVE_CarBattery" or defName="VVE_CarFuelTank" or defName="VVE_CarTransmission" or defName="VVE_CarRadiator" or defName="VVE_CarWiring"]/recipeMaker</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[@Name="VVE_CarPartBase" or defName="VVE_EngineBlock" or defName="VVE_CarAlternator" or defName="VVE_CarExhaust" or defName="VVE_CarSuspension" or defName="VVE_CarWheel" or defName="VVE_CarBattery" or defName="VVE_CarFuelTank" or defName="VVE_CarTransmission" or defName="VVE_CarRadiator" or defName="VVE_CarWiring"]/recipeMaker</xpath>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]/costList</xpath>
+			<value><costList><Plasteel>30</Plasteel><SteelBar>8</SteelBar><ComponentIndustrial>3</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]</xpath>
+			<value><costList><Plasteel>30</Plasteel><SteelBar>8</SteelBar><ComponentIndustrial>3</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]/statBases/MarketValue</xpath>
+			<value><MarketValue>355</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]/statBases</xpath>
+				<value><MarketValue>355</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_EngineBlock"]</xpath>
+				<value><statBases><MarketValue>355</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]/costList</xpath>
+			<value><costList><AluminiumBar>10</AluminiumBar><Plasteel>6</Plasteel><Wire>5</Wire><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]</xpath>
+			<value><costList><AluminiumBar>10</AluminiumBar><Plasteel>6</Plasteel><Wire>5</Wire><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]/statBases/MarketValue</xpath>
+			<value><MarketValue>125</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]/statBases</xpath>
+				<value><MarketValue>125</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarAlternator"]</xpath>
+				<value><statBases><MarketValue>125</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]/costList</xpath>
+			<value><costList><Plasteel>20</Plasteel><Ceramics>2</Ceramics></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]</xpath>
+			<value><costList><Plasteel>20</Plasteel><Ceramics>2</Ceramics></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]/statBases/MarketValue</xpath>
+			<value><MarketValue>110</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]/statBases</xpath>
+				<value><MarketValue>110</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarExhaust"]</xpath>
+				<value><statBases><MarketValue>110</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]/costList</xpath>
+			<value><costList><SteelBar>4</SteelBar><Plasteel>8</Plasteel><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]</xpath>
+			<value><costList><SteelBar>4</SteelBar><Plasteel>8</Plasteel><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]/statBases/MarketValue</xpath>
+			<value><MarketValue>125</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]/statBases</xpath>
+				<value><MarketValue>125</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarSuspension"]</xpath>
+				<value><statBases><MarketValue>125</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarWheel"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarWheel"]/costList</xpath>
+			<value><costList><Rubber>5</Rubber><Plasteel>8</Plasteel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarWheel"]</xpath>
+			<value><costList><Rubber>5</Rubber><Plasteel>8</Plasteel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarWheel"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarWheel"]/statBases/MarketValue</xpath>
+			<value><MarketValue>105</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarWheel"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarWheel"]/statBases</xpath>
+				<value><MarketValue>105</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarWheel"]</xpath>
+				<value><statBases><MarketValue>105</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarBattery"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarBattery"]/costList</xpath>
+			<value><costList><LeadBar>8</LeadBar><Plastic>4</Plastic><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarBattery"]</xpath>
+			<value><costList><LeadBar>8</LeadBar><Plastic>4</Plastic><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarBattery"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarBattery"]/statBases/MarketValue</xpath>
+			<value><MarketValue>160</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarBattery"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarBattery"]/statBases</xpath>
+				<value><MarketValue>160</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarBattery"]</xpath>
+				<value><statBases><MarketValue>160</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]/costList</xpath>
+			<value><costList><Plasteel>12</Plasteel><Plastic>3</Plastic><Rubber>1</Rubber></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]</xpath>
+			<value><costList><Plasteel>12</Plasteel><Plastic>3</Plastic><Rubber>1</Rubber></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]/statBases/MarketValue</xpath>
+			<value><MarketValue>95</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]/statBases</xpath>
+				<value><MarketValue>95</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarFuelTank"]</xpath>
+				<value><statBases><MarketValue>95</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]/costList</xpath>
+			<value><costList><SteelBar>8</SteelBar><Plasteel>10</Plasteel><ComponentIndustrial>3</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]</xpath>
+			<value><costList><SteelBar>8</SteelBar><Plasteel>10</Plasteel><ComponentIndustrial>3</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]/statBases/MarketValue</xpath>
+			<value><MarketValue>280</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]/statBases</xpath>
+				<value><MarketValue>280</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarTransmission"]</xpath>
+				<value><statBases><MarketValue>280</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]/costList</xpath>
+			<value><costList><AluminiumBar>12</AluminiumBar><Plasteel>4</Plasteel><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]</xpath>
+			<value><costList><AluminiumBar>12</AluminiumBar><Plasteel>4</Plasteel><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]/statBases/MarketValue</xpath>
+			<value><MarketValue>115</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]/statBases</xpath>
+				<value><MarketValue>115</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarRadiator"]</xpath>
+				<value><statBases><MarketValue>115</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarWiring"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarWiring"]/costList</xpath>
+			<value><costList><Wire>15</Wire><AluminiumBar>6</AluminiumBar><Plastic>3</Plastic><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_CarWiring"]</xpath>
+			<value><costList><Wire>15</Wire><AluminiumBar>6</AluminiumBar><Plastic>3</Plastic><ComponentIndustrial>1</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_CarWiring"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_CarWiring"]/statBases/MarketValue</xpath>
+			<value><MarketValue>140</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_CarWiring"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarWiring"]/statBases</xpath>
+				<value><MarketValue>140</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_CarWiring"]</xpath>
+				<value><statBases><MarketValue>140</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+
+</Patch>

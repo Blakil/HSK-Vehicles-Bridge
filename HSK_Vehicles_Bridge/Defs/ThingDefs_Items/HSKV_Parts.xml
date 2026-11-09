@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: vehicle parts, adapted to the HSK balance progression. -->
+
+	<ThingCategoryDef>
+		<defName>HSKV_VehicleParts</defName>
+		<label>vehicle parts</label>
+		<parent>Manufactured</parent>
+	</ThingCategoryDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Engine_Diesel</defName>
+		<label>internal combustion engine</label>
+		<description>An engine block with radiator, alternator and exhaust, reinforced for heavy duty. Drives motorcycles, cars, trucks, armoured vehicles, boats and propeller aircraft.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Engine_Diesel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>3</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>965</MarketValue>
+			<Mass>200</Mass>
+			<Bulk>90</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleParts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Engine_Turbine</defName>
+		<label>gas turbine engine</label>
+		<description>A gas turbine for helicopters and transport aircraft, with stellite blades and a reduction gearbox.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Engine_Turbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>2</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>2515</MarketValue>
+			<Mass>200</Mass>
+			<Bulk>100</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsAdvanced</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Engine_Impulse</defName>
+		<label>impulse drive unit</label>
+		<description>A drive unit for orbital drop pods: thrusters, power cells and a flight computer.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Engine_Impulse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>2</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>5260</MarketValue>
+			<Mass>150</Mass>
+			<Bulk>80</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsAdvanced</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Chassis_WheeledLight</defName>
+		<label>wheeled chassis</label>
+		<description>A frame section with axles, suspension and wheels. Trucks and armoured cars take two or more.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Chassis_WheeledLight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>2</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>895</MarketValue>
+			<Mass>150</Mass>
+			<Bulk>120</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleParts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Chassis_Tracked</defName>
+		<label>tracked running gear</label>
+		<description>Tracks, road wheels, drive sprockets and torsion bars.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Chassis_Tracked</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>2455</MarketValue>
+			<Mass>500</Mass>
+			<Bulk>250</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleParts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Body_Car</defName>
+		<label>vehicle body</label>
+		<description>A welded body shell with glazing, wiring and a fuel tank. Sealed, it also serves as a boat hull.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Body_Car</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>625</MarketValue>
+			<Mass>180</Mass>
+			<Bulk>200</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleParts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Body_Airframe</defName>
+		<label>airframe section</label>
+		<description>A light aluminium fuselage section with a canopy, wiring and a fuel tank. Helicopters also take one for the rotor pylon and blades.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Body_Airframe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>710</MarketValue>
+			<Mass>150</Mass>
+			<Bulk>200</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleParts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Armor_Light</defName>
+		<label>light armor plate</label>
+		<description>A hardened steel plate for armoured cars, APCs and the sides of tanks.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Armor_Light</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>310</MarketValue>
+			<Mass>60</Mass>
+			<Bulk>15</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleParts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Armor_Heavy</defName>
+		<label>heavy armor plate</label>
+		<description>A thick composite plate of depleted uranium, steel, ceramics and carbon composite for tank fronts.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Armor_Heavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>820</MarketValue>
+			<Mass>120</Mass>
+			<Bulk>20</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsAdvanced</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Electronics_Onboard</defName>
+		<label>onboard electronics and radio</label>
+		<description>Wiring harness, battery, control units and a radio set of a vehicle.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Electronics_Onboard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>665</MarketValue>
+			<Mass>8</Mass>
+			<Bulk>6</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleParts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_FireControl</defName>
+		<label>fire control system</label>
+		<description>Gun sights, a rangefinder, a gun stabiliser and a ballistic computer.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_FireControl</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1530</MarketValue>
+			<Mass>15</Mass>
+			<Bulk>8</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsAdvanced</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Avionics</defName>
+		<label>avionics suite</label>
+		<description>Flight instruments, navigation, autopilot and a compact search radar.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Avionics</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>2225</MarketValue>
+			<Mass>15</Mass>
+			<Bulk>8</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsAdvanced</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_EngineControl_Advanced</defName>
+		<label>advanced engine control unit</label>
+		<description>A microprocessor engine controller for top-tier machines: orbital pods, main battle tanks, heavy military trucks.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_EngineControl_Advanced</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>2975</MarketValue>
+			<Mass>3</Mass>
+			<Bulk>2</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsAdvanced</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Mount_MG</defName>
+		<label>light armament mount</label>
+		<description>A turret mount for machine guns and flamethrowers: traverse ring, elevation drive, ammunition feed and fuel lines.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Mount_MG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>2</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>4190</MarketValue>
+			<Mass>60</Mass>
+			<Bulk>30</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleMounts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Mount_Rockets</defName>
+		<label>launcher mount</label>
+		<description>A mount for grenade launchers and rocket pods.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Mount_Rockets</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>5855</MarketValue>
+			<Mass>100</Mass>
+			<Bulk>50</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleMounts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Mount_Autocannon</defName>
+		<label>autocannon mount</label>
+		<description>A 20 mm autocannon on a turret mount.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Mount_Autocannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>6240</MarketValue>
+			<Mass>150</Mass>
+			<Bulk>50</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleMounts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Mount_Mortar</defName>
+		<label>mortar / howitzer mount</label>
+		<description>A breech, recoil system and elevating gear for vehicle mortars and howitzers.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Mount_Mortar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>3885</MarketValue>
+			<Mass>150</Mass>
+			<Bulk>50</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleMounts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Mount_TankGun</defName>
+		<label>tank gun</label>
+		<description>A tank gun with breech, recoil system and stabiliser.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Mount_TankGun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>9820</MarketValue>
+			<Mass>400</Mass>
+			<Bulk>150</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehicleMounts</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Armor_Superheavy</defName>
+		<label>superheavy armor plate</label>
+		<description>A ceramite-class laminate of ceramics, carbon composite, tungsten and depleted uranium for super-heavy tanks and the vehicles of power-armoured troops.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Armor_Superheavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1380</MarketValue>
+			<Mass>150</Mass>
+			<Bulk>25</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsLate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Actuator_Myomer</defName>
+		<label>myomer actuator</label>
+		<description>Bundles of synthetic muscle fibre with drivers and a controller: the actuator of walkers and heavy exoskeletons.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Actuator_Myomer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>3005</MarketValue>
+			<Mass>15</Mass>
+			<Bulk>10</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsLate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_ShieldEmitter</defName>
+		<label>shield emitter</label>
+		<description>A compact energy shield projector for vehicles, built on orbital shield technology.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_ShieldEmitter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>3</stackLimit>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>5175</MarketValue>
+			<Mass>25</Mass>
+			<Bulk>15</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>HSKV_VehiclePartsLate</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Reactor_Fusion</defName>
+		<label>fusion reactor</label>
+		<description>A magnetic-confinement fusion reactor small enough for a vehicle: power for antigrav drives, shields and spacecraft.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Reactor_Fusion</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>6370</MarketValue>
+			<Mass>250</Mass>
+			<Bulk>120</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Cogitator</defName>
+		<label>cogitator</label>
+		<description>A vehicle machine spirit built around an AI persona core: fire control, navigation and damage control of the heaviest vehicles.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Cogitator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>2</stackLimit>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>9980</MarketValue>
+			<Mass>10</Mass>
+			<Bulk>6</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>HSKV_Drive_Gravitic</defName>
+		<label>gravitic drive</label>
+		<description>An antigravity drive with antimatter-fed field coils: lets heavy vehicles hover and fly.</description>
+		<graphicData>
+			<texPath>HSKV/Parts/HSKV_Drive_Gravitic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<techLevel>Ultra</techLevel>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>6385</MarketValue>
+			<Mass>300</Mass>
+			<Bulk>150</Bulk>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>HSKV_VehicleParts</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

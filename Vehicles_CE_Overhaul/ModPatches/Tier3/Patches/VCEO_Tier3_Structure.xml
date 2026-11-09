@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: hull structure of VVE Tier 3 vehicles (plates, components, depth, roles) for the CE armor model. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Cherokee"]/components/li[key="RearLeftLandingWheel"]/hitbox/cells[li="(1, -2)"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Cherokee"]/components/li[key="RearLeftLandingWheel"]/hitbox/cells</xpath>
+			<value>
+				<cells>
+					<li>(-1, -2)</li>
+				</cells>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

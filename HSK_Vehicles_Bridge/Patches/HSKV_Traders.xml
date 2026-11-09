@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: vehicle parts at traders. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="Base_Outlander_Standard"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehicleParts</tradeTag>
+					<countRange>1~2</countRange>
+					<thingDefCountRange>1~3</thingDefCountRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehiclePartsAdvanced</tradeTag>
+					<countRange>1~1</countRange>
+					<thingDefCountRange>0~2</thingDefCountRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehicleParts</tradeTag>
+					<countRange>1~2</countRange>
+					<thingDefCountRange>1~2</thingDefCountRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="ManufacturedGoodsTrader"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="ManufacturedGoodsTrader"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>VVE_CarPartBasic</tradeTag>
+					<countRange>2~4</countRange>
+					<thingDefCountRange>2~4</thingDefCountRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>VVE_CarPartAdvanced</tradeTag>
+					<countRange>1~2</countRange>
+					<thingDefCountRange>1~3</thingDefCountRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehicleParts</tradeTag>
+					<countRange>1~2</countRange>
+					<thingDefCountRange>1~2</thingDefCountRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehiclePartsAdvanced</tradeTag>
+					<countRange>1~2</countRange>
+					<thingDefCountRange>1~2</thingDefCountRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="Orbital_Exotic"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehiclePartsAdvanced</tradeTag>
+					<countRange>1~3</countRange>
+					<thingDefCountRange>1~3</thingDefCountRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehiclePartsLate</tradeTag>
+					<countRange>-2~2</countRange>
+					<thingDefCountRange>1~1</thingDefCountRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="Orbital_CombatSupplier"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehicleMounts</tradeTag>
+					<countRange>1~2</countRange>
+					<thingDefCountRange>1~2</thingDefCountRange>
+					<price>Expensive</price>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="Caravan_Outlander_CombatSupplier"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehicleMounts</tradeTag>
+					<countRange>1~1</countRange>
+					<thingDefCountRange>0~1</thingDefCountRange>
+					<price>Expensive</price>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/TraderKindDef[defName="Base_Empire_Standard"]/stockGenerators</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/TraderKindDef[defName="Base_Empire_Standard"]/stockGenerators</xpath>
+			<value>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehiclePartsAdvanced</tradeTag>
+					<countRange>1~1</countRange>
+					<thingDefCountRange>0~2</thingDefCountRange>
+				</li>
+				<li Class="StockGenerator_Tag">
+					<tradeTag>HSKV_VehiclePartsLate</tradeTag>
+					<countRange>-2~1</countRange>
+					<thingDefCountRange>1~1</thingDefCountRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Misc. Robots</li>
+		</mods>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/TraderKindDef[defName="AIRobotsTrader"]/stockGenerators</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/TraderKindDef[defName="AIRobotsTrader"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>HSKV_Cogitator</thingDef>
+						<countRange>-4~1</countRange>
+						<price>Expensive</price>
+					</li>
+				</value>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>

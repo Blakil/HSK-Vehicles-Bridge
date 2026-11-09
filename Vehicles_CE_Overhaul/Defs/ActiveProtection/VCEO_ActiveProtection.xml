@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Active protection system (APS). Works on 1.5+ (CE BlockerRegistry); on 1.4 the defs load but APS does nothing. Given automatically by armor class (carriers, tanks, super-heavies); the core adds the upgrade tree node with the module itself, a patch can give a vehicle its own config. One module and one charge for all levels; recipes here are vanilla, the HSK bridge replaces them. -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VCEO_Module_APS</defName>
+		<label>active protection module</label>
+		<description>An active protection system for a vehicle: a short-range radar and a block of launch tubes. It sees an incoming rocket and fires a charge that bursts in front of it. Installed on a tank or an APC as an upgrade; how many rockets it stops depends on the vehicle. Needs charges, loaded from outside.</description>
+		<graphicData>
+			<texPath>Things/Item/VCEO_Module_APS</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>1400</MarketValue>
+			<Mass>60</Mass>
+			<Bulk>40</Bulk>
+			<Flammability>0.3</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>VCEO_MakeModuleAPS</defName>
+		<label>make active protection module</label>
+		<description>Make an active protection module for a vehicle.</description>
+		<jobString>Making an active protection module.</jobString>
+		<workAmount>9000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>Steel</li></thingDefs></filter>
+				<count>80</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>Chemfuel</li></thingDefs></filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>ComponentSpacer</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCEO_Module_APS>1</VCEO_Module_APS>
+		</products>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+	</RecipeDef>
+
+	<JobDef>
+		<defName>VCEO_LoadActiveProtection</defName>
+		<driverClass>VehiclesCEOverhaul.JobDriver_LoadActiveProtection</driverClass>
+		<reportString>loading active protection charges into TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<WorkGiverDef>
+		<defName>VCEO_LoadActiveProtection</defName>
+		<label>load active protection charges</label>
+		<giverClass>VehiclesCEOverhaul.WorkGiver_LoadActiveProtection</giverClass>
+		<workType>Hauling</workType>
+		<verb>load</verb>
+		<gerund>loading active protection charges into</gerund>
+		<priorityInType>30</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VCEO_APSCharge</defName>
+		<label>active protection charge</label>
+		<description>A charge for a vehicle active protection system: a short canister that bursts into a cone of fragments in front of an incoming rocket and destroys it in the air. Loaded into the vehicle's launcher from outside.</description>
+		<graphicData>
+			<texPath>Things/Item/VCEO_APSCharge</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>12</stackLimit>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>48</MarketValue>
+			<Mass>3</Mass>
+			<Bulk>4</Bulk>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>VCEO_MakeAPSCharge</defName>
+		<label>make active protection charges</label>
+		<description>Make two charges for vehicle active protection systems.</description>
+		<jobString>Making active protection charges.</jobString>
+		<workAmount>1600</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>Steel</li></thingDefs></filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>Chemfuel</li></thingDefs></filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCEO_APSCharge>2</VCEO_APSCharge>
+		</products>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

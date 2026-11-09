@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Astartes vehicles come in raids only with the Adeptus Astartes (GrimWorld: Angels of Death). Without that faction they come to nobody; the player can change it in the mod settings. Whirlwind is artillery and is not driven by the raid AI. -->
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino" or defName="GF40K_LandRaider" or defName="GF40K_LandRaiderRDMR" or defName="Destructor" or defName="Annihilator" or defName="GF40K_Whirlwind"]</xpath>
+		<value>
+			<li Class="VehiclesCEOverhaul.VehicleRaidExtension">
+				<factions>
+					<li>GW_SM_AdeptusAstartes</li>
+				</factions>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

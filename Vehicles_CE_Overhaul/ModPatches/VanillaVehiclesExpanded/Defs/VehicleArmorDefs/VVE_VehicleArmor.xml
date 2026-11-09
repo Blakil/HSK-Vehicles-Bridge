@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicles CE Overhaul: CE armor tables for Vanilla Vehicles Expanded vehicles, adapted to the vehicle class progression (armored car, carrier, light, medium and battle tank). -->
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Bunsen</defName>
+		<vehicle>VVE_Bunsen</vehicle>
+		<hullSharp>15</hullSharp>
+		<hullBlunt>100</hullBlunt>
+		<components>
+			<li><key>FrontArmorPlating</key><sharp>60</sharp><blunt>840</blunt><health>660</health></li>
+			<li><key>LeftArmorPlating</key><sharp>36</sharp><blunt>504</blunt><health>600</health></li>
+			<li><key>RightArmorPlating</key><sharp>36</sharp><blunt>504</blunt><health>600</health></li>
+			<li><key>BackArmorPlating</key><sharp>28</sharp><blunt>392</blunt><health>540</health></li>
+			<li><key>Roof</key><sharp>20</sharp><blunt>70</blunt><health>450</health></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Roadkill</defName>
+		<vehicle>VVE_Roadkill</vehicle>
+		<hullSharp>25</hullSharp>
+		<hullBlunt>120</hullBlunt>
+		<components>
+			<li><key>FrontArmorPlating</key><sharp>200</sharp><blunt>2800</blunt><health>750</health></li>
+			<li><key>LeftArmorPlating</key><sharp>80</sharp><blunt>1120</blunt><health>700</health></li>
+			<li><key>RightArmorPlating</key><sharp>80</sharp><blunt>1120</blunt><health>700</health></li>
+			<li><key>BackArmorPlating</key><sharp>40</sharp><blunt>560</blunt><health>600</health></li>
+			<li><key>Roof</key><sharp>30</sharp><blunt>105</blunt><health>500</health></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Tango</defName>
+		<vehicle>VVE_Tango</vehicle>
+		<hullSharp>10</hullSharp>
+		<hullBlunt>80</hullBlunt>
+		<components>
+			<li><key>FrontArmorPlating</key><sharp>45</sharp><blunt>630</blunt><health>660</health></li>
+			<li><key>LeftArmorPlating</key><sharp>28</sharp><blunt>392</blunt><health>660</health></li>
+			<li><key>RightArmorPlating</key><sharp>28</sharp><blunt>392</blunt><health>660</health></li>
+			<li><key>BackArmorPlating</key><sharp>20</sharp><blunt>280</blunt><health>510</health></li>
+			<li><key>Roof</key><sharp>14</sharp><blunt>49</blunt><health>400</health></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Bulldog</defName>
+		<vehicle>VVE_Bulldog</vehicle>
+		<hullSharp>30</hullSharp>
+		<hullBlunt>150</hullBlunt>
+		<components>
+			<li><key>FrontArmorPlating</key><sharp>700</sharp><blunt>9800</blunt><health>900</health></li>
+			<li><key>LeftArmorPlating</key><sharp>250</sharp><blunt>3500</blunt><health>850</health></li>
+			<li><key>RightArmorPlating</key><sharp>250</sharp><blunt>3500</blunt><health>850</health></li>
+			<li><key>BackArmorPlating</key><sharp>60</sharp><blunt>840</blunt><health>700</health></li>
+			<li><key>Roof</key><sharp>50</sharp><blunt>175</blunt><health>600</health></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Highwayman</defName>
+		<vehicle>VVE_Highwayman</vehicle>
+		<hullSharp>5</hullSharp>
+		<hullBlunt>50</hullBlunt>
+		<components>
+			<li><key>FrontArmorPlating</key><sharp>28</sharp><blunt>392</blunt><health>450</health></li>
+			<li><key>LeftArmorPlating</key><sharp>20</sharp><blunt>280</blunt><health>400</health></li>
+			<li><key>RightArmorPlating</key><sharp>20</sharp><blunt>280</blunt><health>400</health></li>
+			<li><key>BackArmorPlating</key><sharp>14</sharp><blunt>196</blunt><health>360</health></li>
+			<li><key>Roof</key><sharp>8</sharp><blunt>28</blunt><health>300</health></li>
+			<li><key>FrontLeftWheel</key><sharp>6</sharp><blunt>60</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>6</sharp><blunt>60</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>6</sharp><blunt>60</blunt></li>
+			<li><key>BackRightWheel</key><sharp>6</sharp><blunt>60</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Scytheman</defName>
+		<vehicle>VVE_Scytheman</vehicle>
+		<hullSharp>3</hullSharp>
+		<hullBlunt>30</hullBlunt>
+		<components>
+			<li><key>Roof</key><sharp>3</sharp><blunt>10</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Frog</defName>
+		<vehicle>VVE_Frog</vehicle>
+		<hullSharp>10</hullSharp>
+		<hullBlunt>120</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Toad</defName>
+		<vehicle>VVE_Toad</vehicle>
+		<hullSharp>25</hullSharp>
+		<hullBlunt>350</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Dirtbike</defName>
+		<vehicle>VVE_Dirtbike</vehicle>
+		<hullSharp>1</hullSharp>
+		<hullBlunt>10</hullBlunt>
+		<components>
+			<li><key>FrontWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Charley</defName>
+		<vehicle>VVE_Charley</vehicle>
+		<hullSharp>1</hullSharp>
+		<hullBlunt>10</hullBlunt>
+		<components>
+			<li><key>FrontWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Prowler</defName>
+		<vehicle>VVE_Prowler</vehicle>
+		<hullSharp>2</hullSharp>
+		<hullBlunt>20</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackRightWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>Roof</key><sharp>2</sharp><blunt>7</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Traveller</defName>
+		<vehicle>VVE_Traveller</vehicle>
+		<hullSharp>2</hullSharp>
+		<hullBlunt>20</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackRightWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>Roof</key><sharp>2</sharp><blunt>7</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Wagon</defName>
+		<vehicle>VVE_Wagon</vehicle>
+		<hullSharp>2</hullSharp>
+		<hullBlunt>20</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>BackRightWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>Roof</key><sharp>2</sharp><blunt>7</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Snatcher</defName>
+		<vehicle>VVE_Snatcher</vehicle>
+		<hullSharp>2</hullSharp>
+		<hullBlunt>25</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>Roof</key><sharp>2</sharp><blunt>7</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_BangBus</defName>
+		<vehicle>VVE_BangBus</vehicle>
+		<hullSharp>2</hullSharp>
+		<hullBlunt>25</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>LeftSidePanel</key><sharp>4</sharp><blunt>40</blunt><health>270</health></li>
+			<li><key>RightSidePanel</key><sharp>4</sharp><blunt>40</blunt><health>270</health></li>
+			<li><key>Roof</key><sharp>2</sharp><blunt>7</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Mule</defName>
+		<vehicle>VVE_Mule</vehicle>
+		<hullSharp>3</hullSharp>
+		<hullBlunt>30</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>Roof</key><sharp>3</sharp><blunt>10</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Roadrunner</defName>
+		<vehicle>VVE_Roadrunner</vehicle>
+		<hullSharp>3</hullSharp>
+		<hullBlunt>35</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>BackRightWheel</key><sharp>2</sharp><blunt>20</blunt></li>
+			<li><key>Roof</key><sharp>3</sharp><blunt>10</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Wisent</defName>
+		<vehicle>VVE_Wisent</vehicle>
+		<hullSharp>5</hullSharp>
+		<hullBlunt>50</hullBlunt>
+		<components>
+			<li><key>FrontLeftWheel</key><sharp>3</sharp><blunt>30</blunt></li>
+			<li><key>FrontRightWheel</key><sharp>3</sharp><blunt>30</blunt></li>
+			<li><key>MiddleLeftWheel</key><sharp>3</sharp><blunt>30</blunt></li>
+			<li><key>MiddleRightWheel</key><sharp>3</sharp><blunt>30</blunt></li>
+			<li><key>BackLeftWheel</key><sharp>3</sharp><blunt>30</blunt></li>
+			<li><key>BackRightWheel</key><sharp>3</sharp><blunt>30</blunt></li>
+			<li><key>LeftBackPanel</key><sharp>8</sharp><blunt>80</blunt><health>120</health></li>
+			<li><key>RightBackPanel</key><sharp>8</sharp><blunt>80</blunt><health>120</health></li>
+			<li><key>Roof</key><sharp>5</sharp><blunt>18</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Dinghy</defName>
+		<vehicle>VVE_Dinghy</vehicle>
+		<hullSharp>1</hullSharp>
+		<hullBlunt>10</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Trawler</defName>
+		<vehicle>VVE_Trawler</vehicle>
+		<hullSharp>3</hullSharp>
+		<hullBlunt>30</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Warbird</defName>
+		<vehicle>VVE_Warbird</vehicle>
+		<hullSharp>3</hullSharp>
+		<hullBlunt>30</hullBlunt>
+		<components>
+			<li><key>LeftLandingWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>RightLandingWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>CentralLandingWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Mosquito</defName>
+		<vehicle>VVE_Mosquito</vehicle>
+		<hullSharp>2</hullSharp>
+		<hullBlunt>20</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Smuggler</defName>
+		<vehicle>VVE_Smuggler</vehicle>
+		<hullSharp>2</hullSharp>
+		<hullBlunt>20</hullBlunt>
+		<components>
+			<li><key>LeftLandingWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>RightLandingWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+			<li><key>CentralLandingWheel</key><sharp>1</sharp><blunt>10</blunt></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+</Defs>

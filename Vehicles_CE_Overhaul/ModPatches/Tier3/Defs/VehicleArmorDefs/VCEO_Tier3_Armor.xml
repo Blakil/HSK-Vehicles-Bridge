@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicles CE Overhaul: CE armor tables for VVE Tier 3 vehicles, adapted to the vehicle class progression (armored car, carrier, light, medium and battle tank). -->
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Goliath</defName>
+		<vehicle>VVE_Goliath</vehicle>
+		<hullSharp>28</hullSharp>
+		<hullBlunt>392</hullBlunt>
+		<components>
+			<li><key>BlastShield</key><sharp>70</sharp><blunt>980</blunt><health>900</health></li>
+			<li><key>Hull</key><sharp>28</sharp><blunt>392</blunt><health>660</health></li>
+		</components>
+		<plates>
+			<li>BlastShield</li>
+			<li>Hull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Louie</defName>
+		<vehicle>VVE_Louie</vehicle>
+		<hullSharp>7</hullSharp>
+		<hullBlunt>70</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Cherokee</defName>
+		<vehicle>VVE_Cherokee</vehicle>
+		<hullSharp>9</hullSharp>
+		<hullBlunt>90</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+</Defs>

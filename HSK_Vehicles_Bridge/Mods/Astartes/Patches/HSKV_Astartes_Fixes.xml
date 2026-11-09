@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Astartes fixes for HSK. The built-in Astartes CE patch (1.6) gives the Rhino smoke launcher an ammo filter with the stock Ammo_40x53mmGrenade_Smoke, which HSK CE does not have (cross-reference error at load). The bridge sets an HSK turret set (HSKV_Astartes_Ammo.xml) and the core builds the filter from it; here only the broken reference is removed. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/ammunition/thingDefs/li[text()="Ammo_40x53mmGrenade_Smoke"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/ammunition/thingDefs/li[text()="Ammo_40x53mmGrenade_Smoke"]</xpath>
+			<value>
+				<li>Ammo_30x29mmGrenade_Smoke</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

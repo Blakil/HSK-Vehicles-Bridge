@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of secondary weapon upgrades vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunPKM"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunPKM"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunMaxim"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunMaxim"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunDShK"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunDShK"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="GrenadeMachineGunAGS"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="GrenadeMachineGunAGS"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="RecoillessRifleSPG"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="RecoillessRifleSPG"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="GrenadeMachineGun"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="GrenadeMachineGun"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="RecoillessRifle"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mule_UpgradeTree"]/nodes/li[key="RecoillessRifle"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_CargoPlane_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_CargoPlane_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel><ComponentIndustrial>10</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_CargoPlane_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_CargoPlane_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>410</Plasteel><ComponentIndustrial>12</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_CargoPlane_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_CargoPlane_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+			<value><ingredients><Plasteel>270</Plasteel><ComponentIndustrial>22</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Chopper_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Chopper_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel><ComponentIndustrial>10</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Chopper_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Chopper_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>410</Plasteel><ComponentIndustrial>12</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Chopper_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Chopper_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+			<value><ingredients><Plasteel>270</Plasteel><ComponentIndustrial>22</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyNine"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyNine"]/ingredients</xpath>
+			<value><ingredients><Plasteel>125</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMarkNineteen"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_Humvee_UpgradeTree"]/nodes/li[key="MachineGunMarkNineteen"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_T3_LAV_UpgradeTree"]/nodes/li[key="TankTurret"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_T3_LAV_UpgradeTree"]/nodes/li[key="TankTurret"]/ingredients</xpath>
+			<value><ingredients><Plasteel>500</Plasteel><ComponentIndustrial>8</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_T3_LAV_UpgradeTree"]/nodes/li[key="CavalryTurret"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_T3_LAV_UpgradeTree"]/nodes/li[key="CavalryTurret"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel><ComponentIndustrial>8</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_SiegeEngine_UpgradeTree"]/nodes/li[key="BowAutocannon"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_SiegeEngine_UpgradeTree"]/nodes/li[key="BowAutocannon"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_T3_Tank_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="SEX_T3_Tank_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><ComponentIndustrial>3</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_LightCommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_LightCommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_LightCommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_LightCommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_LightCommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_LightCommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_MediumCommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_MediumCommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_MediumCommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_MediumCommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_MediumCommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_MediumCommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyCommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyCommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyCommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyCommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyCommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyCommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyACommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyACommonUpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyACommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyACommonUpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyACommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_HeavyACommonUpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Frog_UpgradeTree"]/nodes/li[key="HeavyReinforcement"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Frog_UpgradeTree"]/nodes/li[key="HeavyReinforcement"]/ingredients</xpath>
+			<value><ingredients><DepletedUranium>20</DepletedUranium></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Frog_UpgradeTree"]/nodes/li[key="LargerPod"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Frog_UpgradeTree"]/nodes/li[key="LargerPod"]/ingredients</xpath>
+			<value><ingredients><SteelBar>40</SteelBar></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="FlameLauncher"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="FlameLauncher"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="MilitaryTurret"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="MilitaryTurret"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="AirCompressor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="AirCompressor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>180</Plasteel><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="LargerPod"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="LargerPod"]/ingredients</xpath>
+			<value><ingredients><SteelBar>80</SteelBar></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="HeavyReinforcement"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Toad_UpgradeTree"]/nodes/li[key="HeavyReinforcement"]/ingredients</xpath>
+			<value><ingredients><DepletedUranium>40</DepletedUranium></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunGrenade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunGrenade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="RecoillessLauncherCG"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="RecoillessLauncherCG"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunMaxim"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunMaxim"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunDShK"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunDShK"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunGrenadeAGS"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="MachineGunGrenadeAGS"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPG"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Dinghy_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPG"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Bulldog_UpgradeTree"]/nodes/li[key="PintleMG"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Bulldog_UpgradeTree"]/nodes/li[key="PintleMG"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Bulldog_UpgradeTree"]/nodes/li[key="CoaxialFlamethrower"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Bulldog_UpgradeTree"]/nodes/li[key="CoaxialFlamethrower"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="GrenadeMachineGun"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="GrenadeMachineGun"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="RecoillessLauncherCG"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="RecoillessLauncherCG"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="TurretRocketswarm"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="TurretRocketswarm"]/ingredients</xpath>
+			<value><ingredients><Plasteel>220</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunPKM"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunPKM"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunDShK"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunDShK"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunKPV"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="MachineGunKPV"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="GrenadeMachineGunAGSThirty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="GrenadeMachineGunAGSThirty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPGNine"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Roadrunner_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPGNine"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Tango_UpgradeTree"]/nodes/li[key="BadgerTurret"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Tango_UpgradeTree"]/nodes/li[key="BadgerTurret"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel><ComponentIndustrial>8</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoHBFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoHBFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoHBBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMTwoHBBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherCGFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherCGFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherCGBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherCGBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMaximFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMaximFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMaximBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunMaximBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunKPVFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunKPVFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunKPVBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunKPVBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeAGSThirtyFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeAGSThirtyFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeAGSThirtyBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="MachineGunGrenadeAGSThirtyBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPGFront"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPGFront"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPGBack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Trawler_UpgradeTree"]/nodes/li[key="RecoillessLauncherSPGBack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Wisent_UpgradeTree"]/nodes/li[key="GunTruck"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Wisent_UpgradeTree"]/nodes/li[key="GunTruck"]/ingredients</xpath>
+			<value><ingredients><Plasteel>510</Plasteel><ComponentIndustrial>16</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Wisent_UpgradeTree"]/nodes/li[key="SPAG"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Wisent_UpgradeTree"]/nodes/li[key="SPAG"]/ingredients</xpath>
+			<value><ingredients><Plasteel>500</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="Seating"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="Seating"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel><Cloth>500</Cloth></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel><ComponentIndustrial>10</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>410</Plasteel><ComponentIndustrial>12</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Cherokee_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+			<value><ingredients><Plasteel>270</Plasteel><ComponentIndustrial>22</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Louie_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Louie_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel><ComponentIndustrial>10</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Louie_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Louie_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>410</Plasteel><ComponentIndustrial>12</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Louie_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Louie_UpgradeTree"]/nodes/li[key="MachineGunMinigun"]/ingredients</xpath>
+			<value><ingredients><Plasteel>270</Plasteel><ComponentIndustrial>22</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Marshal_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Marshal_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><ComponentIndustrial>3</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourty"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMTwoHB"]/ingredients</xpath>
+			<value><ingredients><Plasteel>210</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyNine"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMTwoFourtyNine"]/ingredients</xpath>
+			<value><ingredients><Plasteel>125</Plasteel><ComponentIndustrial>5</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMarkNineteen"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Nomad_UpgradeTree"]/nodes/li[key="MachineGunMarkNineteen"]/ingredients</xpath>
+			<value><ingredients><Plasteel>130</Plasteel><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Paladin_UpgradeTree"]/nodes/li[key="TankTurret"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Paladin_UpgradeTree"]/nodes/li[key="TankTurret"]/ingredients</xpath>
+			<value><ingredients><Plasteel>500</Plasteel><ComponentIndustrial>8</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Paladin_UpgradeTree"]/nodes/li[key="CavalryTurret"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Paladin_UpgradeTree"]/nodes/li[key="CavalryTurret"]/ingredients</xpath>
+			<value><ingredients><Plasteel>300</Plasteel><ComponentIndustrial>8</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Udar_UpgradeTree"]/nodes/li[key="BowAutocannon"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="TGBM_VVE_Udar_UpgradeTree"]/nodes/li[key="BowAutocannon"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+</Patch>

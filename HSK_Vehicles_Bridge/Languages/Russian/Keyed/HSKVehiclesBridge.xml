@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Modules (vehicle upgrades) -->
+  <VCEO_Module_AC20>Автоматическая пушка 20×102</VCEO_Module_AC20>
+  <VCEO_Module_AC20_Desc>20-мм автопушка: скорострельная и настильная, косит пехоту и лёгкую технику, прогрызает броневики.</VCEO_Module_AC20_Desc>
+  <VCEO_Module_Mortar81>Миномёт 81 мм</VCEO_Module_Mortar81>
+  <VCEO_Module_Mortar81_Desc>Навесной огонь через стены и холмы. С корректировщиком точен, без него — как повезёт.</VCEO_Module_Mortar81_Desc>
+  <VCEO_Module_HMG50>Крупнокалиберный пулемёт .50 BMG</VCEO_Module_HMG50>
+  <VCEO_Module_HMG50_Desc>Бьёт дальше и сильнее винтовочного калибра, берёт лёгкую броню.</VCEO_Module_HMG50_Desc>
+  <VCEO_Module_AGL30>Автоматический гранатомёт 30×29</VCEO_Module_AGL30>
+  <VCEO_Module_AGL30_Desc>Очереди осколочно-фугасных гранат навесом: смертелен для пехоты в поле и за лёгкими укрытиями, по броне бесполезен.</VCEO_Module_AGL30_Desc>
+  <VCEO_Module_ArmorKitLight>Навесная броня</VCEO_Module_ArmorKitLight>
+  <VCEO_Module_ArmorKitLight_Desc>Дополнительные стальные плиты поверх броневых листов: +6 мм к острой / +60 МПа к тупой броне.</VCEO_Module_ArmorKitLight_Desc>
+
+</LanguageData>

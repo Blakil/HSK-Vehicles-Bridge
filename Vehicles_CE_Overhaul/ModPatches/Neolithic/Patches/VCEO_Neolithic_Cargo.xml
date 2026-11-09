@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: cargo capacity of Alpha Vehicles: Neolithic vehicles, based on real-world counterparts. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>100</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>100</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>30</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>150</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>150</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>60</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>150</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>1000</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>800</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>200</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>250</CargoCapacity></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]/vehicleStats/CargoCapacity</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]/vehicleStats/CargoCapacity</xpath>
+			<value><CargoCapacity>150</CargoCapacity></value>
+		</match>
+	</Operation>
+
+</Patch>

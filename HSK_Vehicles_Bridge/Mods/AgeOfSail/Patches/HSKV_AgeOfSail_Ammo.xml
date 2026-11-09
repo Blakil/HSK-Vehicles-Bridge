@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: HSK ammo for Alpha Vehicles: Age of Sail turrets. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/projectile</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/projectile</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/genericAmmo</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/genericAmmo</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>3.5</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.2</spread>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>3.5</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.2</spread>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/warmUpTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/warmUpTimer</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/minRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/minRange</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/maxRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/maxRange</xpath>
+						<value>
+							<maxRange>40</maxRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<maxRange>40</maxRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/fireModes</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]/fireModes</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>5</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_MainTurret"]</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>5</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/projectile</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/projectile</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/genericAmmo</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/genericAmmo</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>3.5</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.2</spread>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>3.5</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.2</spread>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/warmUpTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/warmUpTimer</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<magazineCapacity>5</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/minRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/minRange</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/maxRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/maxRange</xpath>
+						<value>
+							<maxRange>40</maxRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<maxRange>40</maxRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/fireModes</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]/fireModes</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>5</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_Frigate_SecondTurret"]</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>5</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/projectile</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/projectile</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/genericAmmo</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/genericAmmo</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>2.75</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.25</spread>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>2.75</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.25</spread>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/warmUpTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/warmUpTimer</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>3</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<magazineCapacity>3</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/minRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/minRange</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/maxRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/maxRange</xpath>
+						<value>
+							<maxRange>32</maxRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<maxRange>32</maxRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/fireModes</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]/fireModes</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>3</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_MainTurret"]</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>3</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/projectile</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/projectile</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<projectile>Bullet_CannonBall_Round</projectile>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/genericAmmo</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/genericAmmo</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<genericAmmo>false</genericAmmo>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>2.75</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.25</spread>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<li Class="Vehicles.CETurretDataDefModExtension">
+								<ammoSet>AmmoSet_CannonBall</ammoSet>
+								<shotHeight>2.75</shotHeight>
+								<speed>99</speed>
+								<sway>0.81</sway>
+								<spread>0.25</spread>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/reloadTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/reloadTimer</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<reloadTimer>24</reloadTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/warmUpTimer</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/warmUpTimer</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<warmUpTimer>6.5</warmUpTimer>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/magazineCapacity</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/magazineCapacity</xpath>
+						<value>
+							<magazineCapacity>3</magazineCapacity>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<magazineCapacity>3</magazineCapacity>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/minRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/minRange</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<minRange>8</minRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/maxRange</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/maxRange</xpath>
+						<value>
+							<maxRange>32</maxRange>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<maxRange>32</maxRange>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/fireModes</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]/fireModes</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>3</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="AV_PirateCaravel_SecondTurret"]</xpath>
+						<value>
+							<fireModes>
+								<li>
+									<shotsPerBurst>1</shotsPerBurst>
+									<ticksBetweenShots>15</ticksBetweenShots>
+									<ticksBetweenBursts>30</ticksBetweenBursts>
+									<label>Single</label>
+									<texPath>UI/Gizmos/FireRate_Single</texPath>
+								</li>
+								<li>
+									<shotsPerBurst>3</shotsPerBurst>
+									<ticksBetweenShots>30</ticksBetweenShots>
+									<ticksBetweenBursts>60</ticksBetweenBursts>
+									<label>Broadside</label>
+									<texPath>UI/Gizmos/AV_Broadside</texPath>
+								</li>
+							</fireModes>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: make .75 cal bolt (Standard) x35 -->
+	<MakeAmmo_Bolter75_Standard.label>изготовить: болт .75 (стандартный) ×35</MakeAmmo_Bolter75_Standard.label>
+	<!-- EN: Craft 35 × .75 cal bolt (Standard). -->
+	<MakeAmmo_Bolter75_Standard.description>Изготовить 35 шт.: болт .75 (стандартный).</MakeAmmo_Bolter75_Standard.description>
+	<!-- EN: Making .75 cal bolt (Standard). -->
+	<MakeAmmo_Bolter75_Standard.jobString>Изготавливает: болт .75 (стандартный).</MakeAmmo_Bolter75_Standard.jobString>
+	<!-- EN: make .75 cal bolt (Kraken) x35 -->
+	<MakeAmmo_Bolter75_Kraken.label>изготовить: болт .75 («Кракен») ×35</MakeAmmo_Bolter75_Kraken.label>
+	<!-- EN: Craft 35 × .75 cal bolt (Kraken). -->
+	<MakeAmmo_Bolter75_Kraken.description>Изготовить 35 шт.: болт .75 («Кракен»).</MakeAmmo_Bolter75_Kraken.description>
+	<!-- EN: Making .75 cal bolt (Kraken). -->
+	<MakeAmmo_Bolter75_Kraken.jobString>Изготавливает: болт .75 («Кракен»).</MakeAmmo_Bolter75_Kraken.jobString>
+	<!-- EN: make .75 cal bolt (Inferno) x35 -->
+	<MakeAmmo_Bolter75_Inferno.label>изготовить: болт .75 («Инферно») ×35</MakeAmmo_Bolter75_Inferno.label>
+	<!-- EN: Craft 35 × .75 cal bolt (Inferno). -->
+	<MakeAmmo_Bolter75_Inferno.description>Изготовить 35 шт.: болт .75 («Инферно»).</MakeAmmo_Bolter75_Inferno.description>
+	<!-- EN: Making .75 cal bolt (Inferno). -->
+	<MakeAmmo_Bolter75_Inferno.jobString>Изготавливает: болт .75 («Инферно»).</MakeAmmo_Bolter75_Inferno.jobString>
+	<!-- EN: make .998 cal bolt (Standard) x30 -->
+	<MakeAmmo_Bolter998_Standard.label>изготовить: болт .998 (стандартный) ×30</MakeAmmo_Bolter998_Standard.label>
+	<!-- EN: Craft 30 × .998 cal bolt (Standard). -->
+	<MakeAmmo_Bolter998_Standard.description>Изготовить 30 шт.: болт .998 (стандартный).</MakeAmmo_Bolter998_Standard.description>
+	<!-- EN: Making .998 cal bolt (Standard). -->
+	<MakeAmmo_Bolter998_Standard.jobString>Изготавливает: болт .998 (стандартный).</MakeAmmo_Bolter998_Standard.jobString>
+	<!-- EN: make .998 cal bolt (Kraken) x30 -->
+	<MakeAmmo_Bolter998_Kraken.label>изготовить: болт .998 («Кракен») ×30</MakeAmmo_Bolter998_Kraken.label>
+	<!-- EN: Craft 30 × .998 cal bolt (Kraken). -->
+	<MakeAmmo_Bolter998_Kraken.description>Изготовить 30 шт.: болт .998 («Кракен»).</MakeAmmo_Bolter998_Kraken.description>
+	<!-- EN: Making .998 cal bolt (Kraken). -->
+	<MakeAmmo_Bolter998_Kraken.jobString>Изготавливает: болт .998 («Кракен»).</MakeAmmo_Bolter998_Kraken.jobString>
+	<!-- EN: make .998 cal bolt (Inferno) x30 -->
+	<MakeAmmo_Bolter998_Inferno.label>изготовить: болт .998 («Инферно») ×30</MakeAmmo_Bolter998_Inferno.label>
+	<!-- EN: Craft 30 × .998 cal bolt (Inferno). -->
+	<MakeAmmo_Bolter998_Inferno.description>Изготовить 30 шт.: болт .998 («Инферно»).</MakeAmmo_Bolter998_Inferno.description>
+	<!-- EN: Making .998 cal bolt (Inferno). -->
+	<MakeAmmo_Bolter998_Inferno.jobString>Изготавливает: болт .998 («Инферно»).</MakeAmmo_Bolter998_Inferno.jobString>
+	<!-- EN: make lascannon power pack x10 -->
+	<MakeHSKV_Ammo_LascannonPack.label>изготовить: батарея ласпушки ×10</MakeHSKV_Ammo_LascannonPack.label>
+	<!-- EN: Craft 10 × lascannon power pack. -->
+	<MakeHSKV_Ammo_LascannonPack.description>Изготовить 10 шт.: батарея ласпушки.</MakeHSKV_Ammo_LascannonPack.description>
+	<!-- EN: Making lascannon power pack. -->
+	<MakeHSKV_Ammo_LascannonPack.jobString>Изготавливает: батарея ласпушки.</MakeHSKV_Ammo_LascannonPack.jobString>
+	<!-- EN: make multi-laser power cell x30 -->
+	<MakeHSKV_Ammo_MultilaserCell.label>изготовить: батарея мультилазера ×30</MakeHSKV_Ammo_MultilaserCell.label>
+	<!-- EN: Craft 30 × multi-laser power cell. -->
+	<MakeHSKV_Ammo_MultilaserCell.description>Изготовить 30 шт.: батарея мультилазера.</MakeHSKV_Ammo_MultilaserCell.description>
+	<!-- EN: Making multi-laser power cell. -->
+	<MakeHSKV_Ammo_MultilaserCell.jobString>Изготавливает: батарея мультилазера.</MakeHSKV_Ammo_MultilaserCell.jobString>
+	<!-- EN: make melta canister x10 -->
+	<MakeAmmo_MeltaGun.label>изготовить: мельта-заряд ×10</MakeAmmo_MeltaGun.label>
+	<!-- EN: Craft 10 × melta canister. -->
+	<MakeAmmo_MeltaGun.description>Изготовить 10 шт.: мельта-заряд.</MakeAmmo_MeltaGun.description>
+	<!-- EN: Making melta canister. -->
+	<MakeAmmo_MeltaGun.jobString>Изготавливает: мельта-заряд.</MakeAmmo_MeltaGun.jobString>
+	<!-- EN: make heavy plasma canister x10 -->
+	<MakeHSKV_Ammo_PlasmaCanisterHeavy.label>изготовить: тяжёлая плазменная канистра ×10</MakeHSKV_Ammo_PlasmaCanisterHeavy.label>
+	<!-- EN: Craft 10 × heavy plasma canister. -->
+	<MakeHSKV_Ammo_PlasmaCanisterHeavy.description>Изготовить 10 шт.: тяжёлая плазменная канистра.</MakeHSKV_Ammo_PlasmaCanisterHeavy.description>
+	<!-- EN: Making heavy plasma canister. -->
+	<MakeHSKV_Ammo_PlasmaCanisterHeavy.jobString>Изготавливает: тяжёлая плазменная канистра.</MakeHSKV_Ammo_PlasmaCanisterHeavy.jobString>
+	<!-- EN: make 57x438mm Bofors cartridge (AP) x10 -->
+	<MakeAmmo_57x438mmBofors_AP.label>изготовить: 57x438 мм Bofors (AP) ×10</MakeAmmo_57x438mmBofors_AP.label>
+	<!-- EN: Craft 10 × 57x438mm Bofors cartridge (AP). -->
+	<MakeAmmo_57x438mmBofors_AP.description>Изготовить 10 шт.: 57x438 мм Bofors (AP).</MakeAmmo_57x438mmBofors_AP.description>
+	<!-- EN: Making 57x438mm Bofors cartridge (AP). -->
+	<MakeAmmo_57x438mmBofors_AP.jobString>Изготавливает: 57x438 мм Bofors (AP).</MakeAmmo_57x438mmBofors_AP.jobString>
+	<!-- EN: make 57x438mm Bofors cartridge (HE) x10 -->
+	<MakeAmmo_57x438mmBofors_HE.label>изготовить: 57x438 мм Bofors (HE) ×10</MakeAmmo_57x438mmBofors_HE.label>
+	<!-- EN: Craft 10 × 57x438mm Bofors cartridge (HE). -->
+	<MakeAmmo_57x438mmBofors_HE.description>Изготовить 10 шт.: 57x438 мм Bofors (HE).</MakeAmmo_57x438mmBofors_HE.description>
+	<!-- EN: Making 57x438mm Bofors cartridge (HE). -->
+	<MakeAmmo_57x438mmBofors_HE.jobString>Изготавливает: 57x438 мм Bofors (HE).</MakeAmmo_57x438mmBofors_HE.jobString>
+	<!-- EN: make round shot x5 -->
+	<MakeAmmo_CannonBall_Round.label>изготовить: ядро ×5</MakeAmmo_CannonBall_Round.label>
+	<!-- EN: Craft 5 × round shot. -->
+	<MakeAmmo_CannonBall_Round.description>Изготовить 5 шт.: ядро.</MakeAmmo_CannonBall_Round.description>
+	<!-- EN: Making round shot. -->
+	<MakeAmmo_CannonBall_Round.jobString>Изготавливает: ядро.</MakeAmmo_CannonBall_Round.jobString>
+	<!-- EN: make bursting shell x5 -->
+	<MakeAmmo_CannonBall_Bursting.label>изготовить: разрывное ядро ×5</MakeAmmo_CannonBall_Bursting.label>
+	<!-- EN: Craft 5 × bursting shell. -->
+	<MakeAmmo_CannonBall_Bursting.description>Изготовить 5 шт.: разрывное ядро.</MakeAmmo_CannonBall_Bursting.description>
+	<!-- EN: Making bursting shell. -->
+	<MakeAmmo_CannonBall_Bursting.jobString>Изготавливает: разрывное ядро.</MakeAmmo_CannonBall_Bursting.jobString>
+	<!-- EN: make grape shot x5 -->
+	<MakeAmmo_CannonBall_Grape.label>изготовить: картечь ×5</MakeAmmo_CannonBall_Grape.label>
+	<!-- EN: Craft 5 × grape shot. -->
+	<MakeAmmo_CannonBall_Grape.description>Изготовить 5 шт.: картечь.</MakeAmmo_CannonBall_Grape.description>
+	<!-- EN: Making grape shot. -->
+	<MakeAmmo_CannonBall_Grape.jobString>Изготавливает: картечь.</MakeAmmo_CannonBall_Grape.jobString>
+	<!-- EN: make 90mm cannon shell (AP) x1 -->
+	<MakeAmmo_90mmCannonShell_AP.label>изготовить: 90 мм снаряд (AP) ×1</MakeAmmo_90mmCannonShell_AP.label>
+	<!-- EN: Craft 1 × 90mm cannon shell (AP). -->
+	<MakeAmmo_90mmCannonShell_AP.description>Изготовить 1 шт.: 90 мм снаряд (AP).</MakeAmmo_90mmCannonShell_AP.description>
+	<!-- EN: Making 90mm cannon shell (AP). -->
+	<MakeAmmo_90mmCannonShell_AP.jobString>Изготавливает: 90 мм снаряд (AP).</MakeAmmo_90mmCannonShell_AP.jobString>
+	<!-- EN: make 90mm cannon shell (APCR) x1 -->
+	<MakeAmmo_90mmCannonShell_APCR.label>изготовить: 90 мм снаряд (APCR) ×1</MakeAmmo_90mmCannonShell_APCR.label>
+	<!-- EN: Craft 1 × 90mm cannon shell (APCR). -->
+	<MakeAmmo_90mmCannonShell_APCR.description>Изготовить 1 шт.: 90 мм снаряд (APCR).</MakeAmmo_90mmCannonShell_APCR.description>
+	<!-- EN: Making 90mm cannon shell (APCR). -->
+	<MakeAmmo_90mmCannonShell_APCR.jobString>Изготавливает: 90 мм снаряд (APCR).</MakeAmmo_90mmCannonShell_APCR.jobString>
+	<!-- EN: make 155mm howitzer shell (smoke) x1 -->
+	<MakeAmmo_155mmHowitzerShell_Smoke.label>изготовить: 155 мм снаряд (дымовой) ×1</MakeAmmo_155mmHowitzerShell_Smoke.label>
+	<!-- EN: Craft 1 × 155mm howitzer shell (smoke). -->
+	<MakeAmmo_155mmHowitzerShell_Smoke.description>Изготовить 1 шт.: 155 мм снаряд (дымовой).</MakeAmmo_155mmHowitzerShell_Smoke.description>
+	<!-- EN: Making 155mm howitzer shell (smoke). -->
+	<MakeAmmo_155mmHowitzerShell_Smoke.jobString>Изготавливает: 155 мм снаряд (дымовой).</MakeAmmo_155mmHowitzerShell_Smoke.jobString>
+	<!-- EN: make 155mm howitzer shell (incendiary) x1 -->
+	<MakeAmmo_155mmHowitzerShell_Incendiary.label>изготовить: 155 мм снаряд (зажигательный) ×1</MakeAmmo_155mmHowitzerShell_Incendiary.label>
+	<!-- EN: Craft 1 × 155mm howitzer shell (incendiary). -->
+	<MakeAmmo_155mmHowitzerShell_Incendiary.description>Изготовить 1 шт.: 155 мм снаряд (зажигательный).</MakeAmmo_155mmHowitzerShell_Incendiary.description>
+	<!-- EN: Making 155mm howitzer shell (incendiary). -->
+	<MakeAmmo_155mmHowitzerShell_Incendiary.jobString>Изготавливает: 155 мм снаряд (зажигательный).</MakeAmmo_155mmHowitzerShell_Incendiary.jobString>
+	<!-- EN: make 20x102mm cartridge (Sabot) x40 -->
+	<MakeAmmo_20x102mm_Sabot.label>изготовить: 20x102 мм (подкалиберный) ×40</MakeAmmo_20x102mm_Sabot.label>
+	<!-- EN: Craft 40 × 20x102mm cartridge (Sabot). -->
+	<MakeAmmo_20x102mm_Sabot.description>Изготовить 40 шт.: 20x102 мм (подкалиберный).</MakeAmmo_20x102mm_Sabot.description>
+	<!-- EN: Making 20x102mm cartridge (Sabot). -->
+	<MakeAmmo_20x102mm_Sabot.jobString>Изготавливает: 20x102 мм (подкалиберный).</MakeAmmo_20x102mm_Sabot.jobString>
+	<!-- EN: make 30x173mm cartridge (Sabot) x30 -->
+	<MakeAmmo_30x173mm_Sabot.label>изготовить: 30x173 мм (подкалиберный) ×30</MakeAmmo_30x173mm_Sabot.label>
+	<!-- EN: Craft 30 × 30x173mm cartridge (Sabot). -->
+	<MakeAmmo_30x173mm_Sabot.description>Изготовить 30 шт.: 30x173 мм (подкалиберный).</MakeAmmo_30x173mm_Sabot.description>
+	<!-- EN: Making 30x173mm cartridge (Sabot). -->
+	<MakeAmmo_30x173mm_Sabot.jobString>Изготавливает: 30x173 мм (подкалиберный).</MakeAmmo_30x173mm_Sabot.jobString>
+	<!-- EN: make 57x438mm Bofors cartridge (HE, time fuze) x10 -->
+	<MakeAmmo_57x438mmBofors_HE_TFuzed.label>изготовить: 57x438 мм Bofors (HE, дистанционный) ×10</MakeAmmo_57x438mmBofors_HE_TFuzed.label>
+	<!-- EN: Craft 10 × 57x438mm Bofors cartridge (HE, time fuze). -->
+	<MakeAmmo_57x438mmBofors_HE_TFuzed.description>Изготовить 10 шт.: 57x438 мм Bofors (HE, дистанционный).</MakeAmmo_57x438mmBofors_HE_TFuzed.description>
+	<!-- EN: Making 57x438mm Bofors cartridge (HE, time fuze). -->
+	<MakeAmmo_57x438mmBofors_HE_TFuzed.jobString>Изготавливает: 57x438 мм Bofors (HE, дистанционный).</MakeAmmo_57x438mmBofors_HE_TFuzed.jobString>
+	<!-- EN: make 57x438mm Bofors cartridge (Sabot) x10 -->
+	<MakeAmmo_57x438mmBofors_Sabot.label>изготовить: 57x438 мм Bofors (подкалиберный) ×10</MakeAmmo_57x438mmBofors_Sabot.label>
+	<!-- EN: Craft 10 × 57x438mm Bofors cartridge (Sabot). -->
+	<MakeAmmo_57x438mmBofors_Sabot.description>Изготовить 10 шт.: 57x438 мм Bofors (подкалиберный).</MakeAmmo_57x438mmBofors_Sabot.description>
+	<!-- EN: Making 57x438mm Bofors cartridge (Sabot). -->
+	<MakeAmmo_57x438mmBofors_Sabot.jobString>Изготавливает: 57x438 мм Bofors (подкалиберный).</MakeAmmo_57x438mmBofors_Sabot.jobString>
+
+</LanguageData>

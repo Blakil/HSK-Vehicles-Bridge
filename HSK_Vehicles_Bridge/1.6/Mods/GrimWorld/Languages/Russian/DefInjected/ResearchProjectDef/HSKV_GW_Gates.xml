@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HSKV_GW_Astartes.label>техника Адептус Астартес</HSKV_GW_Astartes.label>
+  <HSKV_GW_Astartes.description>Шаблоны техники Адептус Астартес: корпуса типа «Рино», «Лэнд Рейдеры», штурмовые корабли и десантные капсулы для космодесантников в силовой броне. Нужны астронавигация и силовая броня.</HSKV_GW_Astartes.description>
+  <HSKV_GW_Custodes.label>техника Адептус Кустодес</HSKV_GW_Custodes.label>
+  <HSKV_GW_Custodes.description>Антигравитационные шаблоны Адептус Кустодес: реактивные байки, грав-танки «Каладиус» и штурмовые корабли «Орион». Нужны астронавигация, лучшая силовая броня и гравитационные приводы.</HSKV_GW_Custodes.description>
+</LanguageData>

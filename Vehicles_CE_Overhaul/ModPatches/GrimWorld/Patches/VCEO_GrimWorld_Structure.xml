@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: hull structure of GrimWorld vehicles (plates, components, depth, roles) for the CE armor model. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]/components/li[key="BackArmorPlating"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]/components</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]/components</xpath>
+				<value>
+					<li>
+						<key>BackArmorPlating</key>
+						<label>Rear Armor Plating</label>
+						<health>1332</health>
+						<depth>External</depth>
+						<hitbox>
+							<side>Back</side>
+						</hitbox>
+					</li>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]/components/li[key="BackArmorPlating"]</xpath>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]/components</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]/components</xpath>
+				<value>
+					<li>
+						<key>BackArmorPlating</key>
+						<label>Rear Armor Plating</label>
+						<health>1572</health>
+						<depth>External</depth>
+						<hitbox>
+							<side>Back</side>
+						</hitbox>
+					</li>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/properties/roles/li[key="driver"]/turretIds</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/properties/roles/li[key="driver"]/turretIds</xpath>
+			<value>
+				<turretIds>
+					<li>mainTurret</li>
+				</turretIds>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/properties/roles/li[key="driver"]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/properties/roles/li[key="driver"]</xpath>
+				<value>
+					<turretIds>
+						<li>mainTurret</li>
+					</turretIds>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/properties/roles/li[key="rider"]/exposed</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/properties/roles/li[key="rider"]/exposed</xpath>
+			<value>
+				<exposed>true</exposed>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/properties/roles/li[key="rider"]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/properties/roles/li[key="rider"]</xpath>
+				<value>
+					<exposed>true</exposed>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/properties/roles/li[key="rider"]/exposed</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/properties/roles/li[key="rider"]/exposed</xpath>
+			<value>
+				<exposed>true</exposed>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/properties/roles/li[key="rider"]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/properties/roles/li[key="rider"]</xpath>
+				<value>
+					<exposed>true</exposed>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/properties/roles/li[key="rider"]/exposed</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/properties/roles/li[key="rider"]/exposed</xpath>
+			<value>
+				<exposed>true</exposed>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/properties/roles/li[key="rider"]</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/properties/roles/li[key="rider"]</xpath>
+				<value>
+					<exposed>true</exposed>
+				</value>
+			</match>
+		</nomatch>
+	</Operation>
+
+</Patch>

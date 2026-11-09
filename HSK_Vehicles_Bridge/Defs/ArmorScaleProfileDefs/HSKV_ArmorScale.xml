@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Armor scale profile for HSK ammo. The core (Vehicles CE Overhaul) sets vehicle armor for stock CE; this profile converts it "stock mm -> HSK mm": a plate that stops weapon X on stock CE stops the same X in HSK. Points from the same rounds on stock CE and HSK (sharp penetration, mm): pistol/shot 2-4 -> 4.5-6; rifle FMJ 5.5-7 -> 8.8-11.5; rifle AP, .50 FMJ 12-14 -> 13-18; .50 AP 28 -> 28 (AP-I); 14.5 AP 36 -> 33 (AP-I); .50 / 20 mm Sabot 49-53 -> 32-40 (HSK has no 14.5 and 20 mm Sabot; 20 mm AP-I 40); 30x173 AP 70 -> 48 (AP-I); from 170 (90 mm AP) and HEAT 400-500 the same. Blunt is against blasts (penetration 0.4 x blast damage): HSK grenades are three times stronger (9 -> 22-30 MPa); RPG, 81 mm mortar, cannon and howitzer HE are the same (23-218 MPa). -->
+	<VehiclesCEOverhaul.ArmorScaleProfileDef>
+		<defName>HSK</defName>
+		<label>HSK ammo</label>
+		<description>HSK rebalances CE ammo: small arms pierce more, heavy machine guns and autocannons less, cannons and anti-tank weapons the same, grenades explode harder. Plates are shifted so that each one stops the same weapons as in stock CE.</description>
+		<sharp>
+			<points>
+				<li>(0, 0)</li>
+				<li>(3, 4.5)</li>
+				<li>(7, 11.5)</li>
+				<li>(14, 17)</li>
+				<li>(28, 28)</li>
+				<li>(36, 33)</li>
+				<li>(50, 38)</li>
+				<li>(70, 48)</li>
+				<li>(170, 170)</li>
+				<li>(100000, 100000)</li>
+			</points>
+		</sharp>
+		<blunt>
+			<points>
+				<li>(0, 0)</li>
+				<li>(9, 24)</li>
+				<li>(25, 30)</li>
+				<li>(45, 45)</li>
+				<li>(100000, 100000)</li>
+			</points>
+		</blunt>
+	</VehiclesCEOverhaul.ArmorScaleProfileDef>
+
+</Defs>

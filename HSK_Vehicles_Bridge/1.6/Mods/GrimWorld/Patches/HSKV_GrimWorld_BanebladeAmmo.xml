@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Hammer of the Imperium super-heavy shells (defs in Vehicles CE Overhaul): their numbers are above the HSK profile thresholds and stay as they are. Under HSK only the bench (CE autocraft tag, as for HSK heavy shells) and the recipes change: Artillery_C2 research, HSK materials, scaled from the HSK 155 mm shell by shell mass. Turret sets: HSKV_GrimWorld_Ammo.xml. Without Hammer of the Imperium nothing happens. -->
+
+	<!-- bench: CE autocraft tag -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[@Name="VCEO_BanebladeShellBase"]/tradeTags/li[text()="CE_AutoEnableCrafting_TableMachining"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name="VCEO_BanebladeShellBase"]/tradeTags/li[text()="CE_AutoEnableCrafting_TableMachining"]</xpath>
+			<value>
+				<li>CE_AutoEnableCrafting_TableHeavyAmmunition</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VCEO_Ammo_BanebladeSiege_HE"]/tradeTags/li[text()="CE_AutoEnableCrafting_TableMachining"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VCEO_Ammo_BanebladeSiege_HE"]/tradeTags/li[text()="CE_AutoEnableCrafting_TableMachining"]</xpath>
+			<value>
+				<li>CE_AutoEnableCrafting_TableHeavyAmmunition</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_HE"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_HE"]/workAmount</xpath>
+					<value>
+						<workAmount>4300</workAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_HE"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Artillery_C2</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_HE"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter><categories><li>SLDBar</li><li>USLDBar</li></categories></filter>
+								<count>64</count>
+							</li>
+							<li>
+								<filter><categories><li>HeavyBar</li></categories></filter>
+								<count>21</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>Powder</li><li>FSX</li></thingDefs></filter>
+								<count>26</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+								<count>4</count>
+							</li>
+						</ingredients>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_HE"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories><li>SLDBar</li><li>USLDBar</li><li>HeavyBar</li></categories>
+							<thingDefs><li>Powder</li><li>FSX</li><li>ComponentIndustrial</li></thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_HE"]</xpath>
+					<value>
+						<skillRequirements Inherit="False">
+							<Crafting>6</Crafting>
+						</skillRequirements>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_AP"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_AP"]/workAmount</xpath>
+					<value>
+						<workAmount>4800</workAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_AP"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Artillery_C2</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_AP"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter><categories><li>SLDBar</li><li>USLDBar</li></categories></filter>
+								<count>50</count>
+							</li>
+							<li>
+								<filter><categories><li>USLDHBar</li></categories></filter>
+								<count>20</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>Powder</li><li>FSX</li></thingDefs></filter>
+								<count>18</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+								<count>4</count>
+							</li>
+						</ingredients>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_AP"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories><li>SLDBar</li><li>USLDBar</li><li>USLDHBar</li></categories>
+							<thingDefs><li>Powder</li><li>FSX</li><li>ComponentIndustrial</li></thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeCannon_AP"]</xpath>
+					<value>
+						<skillRequirements Inherit="False">
+							<Crafting>8</Crafting>
+						</skillRequirements>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeSiege_HE"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeSiege_HE"]/workAmount</xpath>
+					<value>
+						<workAmount>7700</workAmount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeSiege_HE"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Artillery_C2</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeSiege_HE"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter><categories><li>SLDBar</li><li>USLDBar</li></categories></filter>
+								<count>115</count>
+							</li>
+							<li>
+								<filter><categories><li>HeavyBar</li></categories></filter>
+								<count>38</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>Powder</li><li>FSX</li></thingDefs></filter>
+								<count>50</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+								<count>4</count>
+							</li>
+						</ingredients>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeSiege_HE"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories><li>SLDBar</li><li>USLDBar</li><li>HeavyBar</li></categories>
+							<thingDefs><li>Powder</li><li>FSX</li><li>ComponentIndustrial</li></thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/RecipeDef[defName="MakeVCEO_Ammo_BanebladeSiege_HE"]</xpath>
+					<value>
+						<skillRequirements Inherit="False">
+							<Crafting>6</Crafting>
+						</skillRequirements>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

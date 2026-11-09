@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of GrimWorld vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="GW_Make_ComponentRelic"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="GW_Make_ComponentRelic"]/ingredients</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="GW_Make_ComponentRelic"]/ingredients</xpath>
+						<value><ingredients><li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>5</count></li><li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>2</count></li><li><filter><thingDefs><li>HP_Ceramite</li></thingDefs></filter><count>25</count></li><li><filter><thingDefs><li>HP_Adamantium</li></thingDefs></filter><count>10</count></li><li><filter><thingDefs><li>GoldBar</li></thingDefs></filter><count>3</count></li><li><filter><thingDefs><li>SteelBar</li></thingDefs></filter><count>30</count></li></ingredients></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="GW_Make_ComponentRelic"]</xpath>
+						<value><ingredients><li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>5</count></li><li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>2</count></li><li><filter><thingDefs><li>HP_Ceramite</li></thingDefs></filter><count>25</count></li><li><filter><thingDefs><li>HP_Adamantium</li></thingDefs></filter><count>10</count></li><li><filter><thingDefs><li>GoldBar</li></thingDefs></filter><count>3</count></li><li><filter><thingDefs><li>SteelBar</li></thingDefs></filter><count>30</count></li></ingredients></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/RecipeDef[defName="GW_Make_ComponentRelic"]/fixedIngredientFilter</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/RecipeDef[defName="GW_Make_ComponentRelic"]/fixedIngredientFilter</xpath>
+						<value><fixedIngredientFilter><thingDefs><li>ComponentIndustrial</li><li>ComponentSpacer</li><li>HP_Ceramite</li><li>HP_Adamantium</li><li>GoldBar</li><li>SteelBar</li></thingDefs></fixedIngredientFilter></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/RecipeDef[defName="GW_Make_ComponentRelic"]</xpath>
+						<value><fixedIngredientFilter><thingDefs><li>ComponentIndustrial</li><li>ComponentSpacer</li><li>HP_Ceramite</li><li>HP_Adamantium</li><li>GoldBar</li><li>SteelBar</li></thingDefs></fixedIngredientFilter></value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_STC_Fragment"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="GW_STC_Fragment"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="GW_STC_Fragment"]/statBases/MarketValue</xpath>
+				<value><MarketValue>8000</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="GW_STC_Fragment"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GW_STC_Fragment"]/statBases</xpath>
+					<value><MarketValue>8000</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="GW_STC_Fragment"]</xpath>
+					<value><statBases><MarketValue>8000</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicles CE Overhaul: CE armor tables for XCOM Skyranger vehicles, adapted to the vehicle class progression (armored car, carrier, light, medium and battle tank). -->
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_XCOM_Skyranger</defName>
+		<vehicle>XCOM_Skyranger</vehicle>
+		<hullSharp>18</hullSharp>
+		<hullBlunt>180</hullBlunt>
+		<components>
+			<li><key>LeftSidePanel</key><sharp>28</sharp><blunt>392</blunt><health>600</health></li>
+			<li><key>RightSidePanel</key><sharp>28</sharp><blunt>392</blunt><health>600</health></li>
+		</components>
+		<plates>
+			<li>LeftSidePanel</li>
+			<li>RightSidePanel</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+</Defs>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VVE_BasicVehicles.label>моторизация</VVE_BasicVehicles.label>
+  <VVE_BasicVehicles.description>Гаражный верстак, основные автозапчасти, двигатель внутреннего сгорания и простой транспорт: мотоциклы и лёгкие машины. Отсюда параллельно расходятся ветки: легковые, грузовики, суда, авиация и военная техника.</VVE_BasicVehicles.description>
+  <VVE_ComplexVehicles.label>легковой транспорт</VVE_ComplexVehicles.label>
+  <VVE_ComplexVehicles.description>Легковые машины, фургоны и автобусы.</VVE_ComplexVehicles.description>
+  <HSKV_Ships.label>суда</HSKV_Ships.label>
+  <HSKV_Ships.description>Моторные лодки и траулеры; корпус — загерметизированный кузов.</HSKV_Ships.description>
+  <HSKV_Trucks.label>грузовики</HSKV_Trucks.label>
+  <HSKV_Trucks.description>Грузовики и военный транспорт: тяжёлые машины на нескольких колёсных шасси.</HSKV_Trucks.description>
+  <VVE_AerialVehicles.label>авиация I</VVE_AerialVehicles.label>
+  <VVE_AerialVehicles.description>Планеры и авионика: винтовые самолёты.</VVE_AerialVehicles.description>
+  <VVE_CombatVehicles.label>военная техника</VVE_CombatVehicles.label>
+  <VVE_CombatVehicles.description>Сборка броневиков, БТР и кустарных РСЗО. Отсюда параллельно — броневые плиты, оружейные установки и гусеничная техника.</VVE_CombatVehicles.description>
+  <HSKV_VehicleArmor.label>броневые плиты</HSKV_VehicleArmor.label>
+  <HSKV_VehicleArmor.description>Плиты из закалённой стали для броневиков, БТР и бортов танков.</HSKV_VehicleArmor.description>
+  <HSKV_VehicleWeapons.label>оружейные установки</HSKV_VehicleWeapons.label>
+  <HSKV_VehicleWeapons.description>Башенные установки под оружие HSK: лёгкое вооружение (пулемёты и огнемёты), гранатомёты и ракеты, автопушки и миномёты, а также системы управления огнём. Тяжёлым установкам нужно и исследование самого оружия.</HSKV_VehicleWeapons.description>
+  <HSKV_Aviation2.label>авиация II</HSKV_Aviation2.label>
+  <HSKV_Aviation2.description>Газовые турбины: вертолёты и транспортные самолёты.</HSKV_Aviation2.description>
+  <HSKV_ArmoredVehicles2.label>гусеничная техника</HSKV_ArmoredVehicles2.label>
+  <HSKV_ArmoredVehicles2.description>Гусеничная ходовая часть: огнемётные и средние танки. На ней — комбинированная броня и танковые орудия.</HSKV_ArmoredVehicles2.description>
+  <HSKV_CompositeArmor.label>комбинированная броня</HSKV_CompositeArmor.label>
+  <HSKV_CompositeArmor.description>Тяжёлые плиты из обеднённого урана, керамики и композита для лобовой брони танков.</HSKV_CompositeArmor.description>
+  <HSKV_TankGuns.label>танковые орудия</HSKV_TankGuns.label>
+  <HSKV_TankGuns.description>Танковые пушки с противооткатными устройствами и стабилизаторами.</HSKV_TankGuns.description>
+  <HSKV_OrbitalPods.label>орбитальные капсулы</HSKV_OrbitalPods.label>
+  <HSKV_OrbitalPods.description>Многоразовые капсулы высадки и их импульсные двигательные блоки: сопла, модули питания и бортовой вычислитель.</HSKV_OrbitalPods.description>
+  <HSKV_OrbitalAssault.label>штурмовые капсулы</HSKV_OrbitalAssault.label>
+  <HSKV_OrbitalAssault.description>Бронированные орбитальные штурмовые капсулы с артиллерийской установкой.</HSKV_OrbitalAssault.description>
+  <HSKV_MainBattleTank.label>основной боевой танк</HSKV_MainBattleTank.label>
+  <HSKV_MainBattleTank.description>Конструкция современного основного боевого танка.</HSKV_MainBattleTank.description>
+  <HSKV_Ceramite.label>керамитовая броня</HSKV_Ceramite.label>
+  <HSKV_Ceramite.description>Сверхтяжёлая слоистая броня из керамики, композита, вольфрама и обеднённого урана для сверхтяжёлых танков. Нужен чертёж.</HSKV_Ceramite.description>
+  <HSKV_Myomer.label>миомерные приводы</HSKV_Myomer.label>
+  <HSKV_Myomer.description>Приводы из синтетических мышц для шагающих машин и тяжёлых экзоскелетов. Нужен чертёж.</HSKV_Myomer.description>
+  <HSKV_ShieldEmitter.label>генераторы поля</HSKV_ShieldEmitter.label>
+  <HSKV_ShieldEmitter.description>Компактные проекторы энергетического поля для машин на технологиях орбитального щита. Нужен чертёж.</HSKV_ShieldEmitter.description>
+  <HSKV_FusionReactor.label>компактный термоядерный реактор</HSKV_FusionReactor.label>
+  <HSKV_FusionReactor.description>Термоядерный реактор, достаточно малый для машины: питание антигравов, полей и кораблей. Нужен чертёж.</HSKV_FusionReactor.description>
+  <HSKV_Cogitator.label>когитаторы</HSKV_Cogitator.label>
+  <HSKV_Cogitator.description>Машинные духи техники, собранные вокруг ядра ИИ. Нужен чертёж.</HSKV_Cogitator.description>
+  <HSKV_GravDrive.label>гравитационный привод</HSKV_GravDrive.label>
+  <HSKV_GravDrive.description>Антигравитационные приводы на антивеществе: парящие танки и летающие машины. Нужны чертежи.</HSKV_GravDrive.description>
+</LanguageData>

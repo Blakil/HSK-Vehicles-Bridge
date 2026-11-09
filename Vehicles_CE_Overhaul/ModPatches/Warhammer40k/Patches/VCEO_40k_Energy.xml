@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: 40k energy weapons on stock Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]/projectile</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]/projectile/damageAmountBase</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]/projectile/damageAmountBase</xpath>
+						<value>
+							<damageAmountBase>80</damageAmountBase>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]/projectile</xpath>
+						<value>
+							<damageAmountBase>80</damageAmountBase>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]/projectile/armorPenetrationSharp</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]/projectile/armorPenetrationSharp</xpath>
+						<value>
+							<armorPenetrationSharp>1000</armorPenetrationSharp>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]/projectile</xpath>
+						<value>
+							<armorPenetrationSharp>1000</armorPenetrationSharp>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]/projectile</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]/projectile/damageAmountBase</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]/projectile/damageAmountBase</xpath>
+						<value>
+							<damageAmountBase>300</damageAmountBase>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]/projectile</xpath>
+						<value>
+							<damageAmountBase>300</damageAmountBase>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]/projectile/armorPenetrationSharp</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]/projectile/armorPenetrationSharp</xpath>
+						<value>
+							<armorPenetrationSharp>1200</armorPenetrationSharp>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]/projectile</xpath>
+						<value>
+							<armorPenetrationSharp>1200</armorPenetrationSharp>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]/projectile</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]/projectile/damageAmountBase</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]/projectile/damageAmountBase</xpath>
+						<value>
+							<damageAmountBase>250</damageAmountBase>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]/projectile</xpath>
+						<value>
+							<damageAmountBase>250</damageAmountBase>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]/projectile/armorPenetrationSharp</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]/projectile/armorPenetrationSharp</xpath>
+						<value>
+							<armorPenetrationSharp>700</armorPenetrationSharp>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]/projectile</xpath>
+						<value>
+							<armorPenetrationSharp>700</armorPenetrationSharp>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]/projectile</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]/projectile/damageAmountBase</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]/projectile/damageAmountBase</xpath>
+						<value>
+							<damageAmountBase>90</damageAmountBase>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]/projectile</xpath>
+						<value>
+							<damageAmountBase>90</damageAmountBase>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]/projectile/armorPenetrationSharp</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]/projectile/armorPenetrationSharp</xpath>
+						<value>
+							<armorPenetrationSharp>700</armorPenetrationSharp>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]/projectile</xpath>
+						<value>
+							<armorPenetrationSharp>700</armorPenetrationSharp>
+						</value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicles CE Overhaul: CE armor tables for VVE Tier 3.9 vehicles, adapted to the vehicle class progression (armored car, carrier, light, medium and battle tank). -->
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Skip</defName>
+		<vehicle>VVE_Skip</vehicle>
+		<hullSharp>7</hullSharp>
+		<hullBlunt>70</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Albatross</defName>
+		<vehicle>VVE_Albatross</vehicle>
+		<hullSharp>9</hullSharp>
+		<hullBlunt>90</hullBlunt>
+		<components>
+			<li><key>Hull</key><sharp>9</sharp><blunt>90</blunt><health>900</health></li>
+		</components>
+		<plates>
+			<li>Hull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Freighter</defName>
+		<vehicle>VVE_Freighter</vehicle>
+		<hullSharp>9</hullSharp>
+		<hullBlunt>90</hullBlunt>
+		<components>
+			<li><key>Hull</key><sharp>9</sharp><blunt>90</blunt><health>900</health></li>
+		</components>
+		<plates>
+			<li>Hull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_TEKSeven</defName>
+		<vehicle>VVE_TEKSeven</vehicle>
+		<hullSharp>13</hullSharp>
+		<hullBlunt>130</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Pelican</defName>
+		<vehicle>VVE_Pelican</vehicle>
+		<hullSharp>15</hullSharp>
+		<hullBlunt>150</hullBlunt>
+		<components>
+			<li><key>Hull</key><sharp>15</sharp><blunt>150</blunt><health>900</health></li>
+		</components>
+		<plates>
+			<li>Hull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Phoenix</defName>
+		<vehicle>VVE_Phoenix</vehicle>
+		<hullSharp>18</hullSharp>
+		<hullBlunt>180</hullBlunt>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_VVE_Genesis</defName>
+		<vehicle>VVE_Genesis</vehicle>
+		<hullSharp>250</hullSharp>
+		<hullBlunt>3500</hullBlunt>
+		<components>
+			<li><key>Fuselage</key><sharp>250</sharp><blunt>3500</blunt><health>900</health></li>
+		</components>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+</Defs>

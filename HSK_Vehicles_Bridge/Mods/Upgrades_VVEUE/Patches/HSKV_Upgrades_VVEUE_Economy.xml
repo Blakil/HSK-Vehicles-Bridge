@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of VVE Upgrades Expanded vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Badger_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Badger_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Badger_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Badger_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Badger_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Badger_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_BigRig_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_BigRig_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_BigRig_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_BigRig_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_BigRig_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_BigRig_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Burya_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Burya_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Burya_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Burya_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Burya_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Burya_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Cherokee_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Cherokee_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Cherokee_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Cherokee_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Cherokee_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Cherokee_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Goliath_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Goliath_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Goliath_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Goliath_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Goliath_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Goliath_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Hermano_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Hermano_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>35</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Hermano_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Hermano_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Hermano_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Hermano_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Lightning_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Lightning_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Lightning_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Lightning_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Lightning_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Lightning_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Louie_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Louie_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>35</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Louie_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Louie_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Louie_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Louie_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Marshal_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Marshal_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Marshal_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Marshal_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Marshal_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Marshal_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Nomad_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Nomad_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>35</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Nomad_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Nomad_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Nomad_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Nomad_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Paladin_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Paladin_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Paladin_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Paladin_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Paladin_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Paladin_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Springbok_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Springbok_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>30</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Springbok_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Springbok_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Springbok_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Springbok_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Udar_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Udar_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Udar_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Udar_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Udar_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Udar_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dinghy_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dinghy_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dinghy_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dinghy_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dinghy_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dinghy_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>15</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dirtbike_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dirtbike_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>10</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dirtbike_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dirtbike_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dirtbike_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Dirtbike_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>10</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Frog_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Frog_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Frog_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Frog_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Frog_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Frog_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Scytheman_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Scytheman_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Scytheman_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Scytheman_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Scytheman_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Scytheman_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Toad_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Toad_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>35</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Toad_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Toad_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Toad_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Toad_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bulldog_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bulldog_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>30</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bulldog_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bulldog_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bulldog_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Bulldog_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Charley_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Charley_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>15</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Charley_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Charley_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Charley_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Charley_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>10</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mosquito_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mosquito_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mosquito_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mosquito_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mosquito_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Mosquito_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadrunner_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadrunner_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>35</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadrunner_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadrunner_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadrunner_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Roadrunner_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Smuggler_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Smuggler_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Smuggler_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Smuggler_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Smuggler_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Smuggler_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Snatcher_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Snatcher_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Snatcher_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Snatcher_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Snatcher_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Snatcher_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Tango_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Tango_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Tango_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Tango_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Tango_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Tango_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Trawler_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Trawler_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>35</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Trawler_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Trawler_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Trawler_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Trawler_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wagon_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wagon_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>35</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wagon_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wagon_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wagon_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wagon_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Warbird_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Warbird_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>25</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Warbird_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Warbird_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Warbird_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Warbird_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wisent_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wisent_UpgradeTree"]/nodes/li[key="CargoCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>40</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wisent_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wisent_UpgradeTree"]/nodes/li[key="Armor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wisent_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="VVE_Wisent_UpgradeTree"]/nodes/li[key="FuelCapacity"]/ingredients</xpath>
+			<value><ingredients><Plasteel>20</Plasteel></ingredients></value>
+		</match>
+	</Operation>
+
+</Patch>

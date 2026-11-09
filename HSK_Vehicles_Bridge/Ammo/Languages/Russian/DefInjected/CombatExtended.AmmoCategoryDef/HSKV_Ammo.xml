@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: Round Shot -->
+	<CannonBall.label>ядро</CannonBall.label>
+	<!-- EN: A solid metal ball fired from an early, smoothbore cannon. -->
+	<CannonBall.description>Сплошной металлический шар для гладкоствольной пушки.</CannonBall.description>
+	<!-- EN: Bursting Shell -->
+	<BurstingShell.label>разрывное ядро</BurstingShell.label>
+	<!-- EN: A crude explosive shell consisting of a hollow metal projectile filled with blackpowder to be fired from early smoothbore cannons. -->
+	<BurstingShell.description>Полое металлическое ядро, начинённое порохом: рвётся при попадании.</BurstingShell.description>
+	<!-- EN: Grapeshot -->
+	<Grapeshot.label>картечь</Grapeshot.label>
+	<!-- EN: A canister packed with numerous small projectiles, fired from early smoothbore cannons as an anti-infantry weapon. -->
+	<Grapeshot.description>Связка мелких пуль для гладкоствольной пушки — против пехоты.</Grapeshot.description>
+
+</LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<MakeVCEO_Ammo_BanebladeCannon_HE.label>изготовить: снаряд пушки Baneblade (ОФ) ×1</MakeVCEO_Ammo_BanebladeCannon_HE.label>
+	<MakeVCEO_Ammo_BanebladeCannon_HE.description>Изготовить 1 шт.: активно-реактивный снаряд 200 мм к пушке Baneblade (ОФ).</MakeVCEO_Ammo_BanebladeCannon_HE.description>
+	<MakeVCEO_Ammo_BanebladeCannon_HE.jobString>Изготавливает: снаряд пушки Baneblade (ОФ).</MakeVCEO_Ammo_BanebladeCannon_HE.jobString>
+	<MakeVCEO_Ammo_BanebladeCannon_AP.label>изготовить: снаряд пушки Baneblade (бронебойный) ×1</MakeVCEO_Ammo_BanebladeCannon_AP.label>
+	<MakeVCEO_Ammo_BanebladeCannon_AP.description>Изготовить 1 шт.: активно-реактивный снаряд 200 мм к пушке Baneblade (бронебойный).</MakeVCEO_Ammo_BanebladeCannon_AP.description>
+	<MakeVCEO_Ammo_BanebladeCannon_AP.jobString>Изготавливает: снаряд пушки Baneblade (бронебойный).</MakeVCEO_Ammo_BanebladeCannon_AP.jobString>
+	<MakeVCEO_Ammo_BanebladeSiege_HE.label>изготовить: осадный снаряд «Демолишера» (ОФ) ×1</MakeVCEO_Ammo_BanebladeSiege_HE.label>
+	<MakeVCEO_Ammo_BanebladeSiege_HE.description>Изготовить 1 шт.: осадный снаряд 300 мм к «Демолишеру» Baneblade.</MakeVCEO_Ammo_BanebladeSiege_HE.description>
+	<MakeVCEO_Ammo_BanebladeSiege_HE.jobString>Изготавливает: осадный снаряд «Демолишера».</MakeVCEO_Ammo_BanebladeSiege_HE.jobString>
+
+</LanguageData>

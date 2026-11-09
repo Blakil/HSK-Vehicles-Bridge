@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Genesis (Tier 3.9, 1.6 only): an archotech ship that flies without fuel. Own research instead of the original one, above the grav drive in the research progression; 3 blueprints from the Empire. Construction cost: HSKV_Tier39_Economy.xml. -->
+
+	<ResearchProjectDef>
+		<defName>HSKV_Genesis</defName>
+		<label>archotech vessel</label>
+		<description>The Genesis: a transport ship of a long-gone civilization that needs no fuel at all. Rebuilding one takes an AI-grade cogitator, gravitic drives and archotech parts. Requires techprints.</description>
+		<baseCost>8000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>HSKV_GravDrive</li>
+			<li>HSKV_Cogitator</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>2.5</researchViewY>
+		<techprintCount>3</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>6000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+</Defs>

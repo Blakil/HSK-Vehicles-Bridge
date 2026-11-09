@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: rear armor plates and engines behind armor for Vanilla Vehicles Expanded. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/components/li[key="BackArmorPlating"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/components</xpath>
+			<value>
+				<li>
+					<key>BackArmorPlating</key>
+					<label>Back Armor Plating</label>
+					<health>600</health>
+					<depth>External</depth>
+					<hitbox>
+						<side>Back</side>
+					</hitbox>
+				</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/components/li[key="BackArmorPlating"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/components</xpath>
+			<value>
+				<li>
+					<key>BackArmorPlating</key>
+					<label>Back Armor Plating</label>
+					<health>360</health>
+					<depth>External</depth>
+					<hitbox>
+						<side>Back</side>
+					</hitbox>
+				</li>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/components/li[key="Engine"]/depth[text()="External"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/components/li[key="Engine"]/depth</xpath>
+			<value>
+				<depth>Internal</depth>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="Engine"]/depth[text()="External"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/components/li[key="Engine"]/depth</xpath>
+			<value>
+				<depth>Internal</depth>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/components/li[key="Engine"]/depth[text()="External"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/components/li[key="Engine"]/depth</xpath>
+			<value>
+				<depth>Internal</depth>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

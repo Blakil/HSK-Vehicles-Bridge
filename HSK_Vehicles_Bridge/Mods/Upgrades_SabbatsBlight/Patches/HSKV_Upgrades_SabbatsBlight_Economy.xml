@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Sabbat's Blight upgrades vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Lemanruss_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Lemanruss_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Lemanruss_UpgradeTree"]/nodes/li[key="TurretSpikes"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Lemanruss_UpgradeTree"]/nodes/li[key="TurretSpikes"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel><HP_Ceramite>40</HP_Ceramite><GW_ChaosSpikes>7</GW_ChaosSpikes></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Lemanruss_UpgradeTree"]/nodes/li[key="TurretBarbs"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Lemanruss_UpgradeTree"]/nodes/li[key="TurretBarbs"]/ingredients</xpath>
+			<value><ingredients><Plasteel>50</Plasteel><HP_Ceramite>40</HP_Ceramite><GW_ChaosSpikes>7</GW_ChaosSpikes></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Taurox_UpgradeTree"]/nodes/li[key="PintleStubberUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Taurox_UpgradeTree"]/nodes/li[key="PintleStubberUpgrade"]/ingredients</xpath>
+				<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			</match>
+			<nomatch Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Taurox_UpgradeTree"]/nodes/li[key="PintleStubberUpgrade"]/ingredients</xpath>
+				<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Taurox_UpgradeTree"]/nodes/li[key="PintleStormBolterUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Taurox_UpgradeTree"]/nodes/li[key="PintleStormBolterUpgrade"]/ingredients</xpath>
+				<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			</match>
+			<nomatch Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.UpgradeTreeDef[defName="BP_Taurox_UpgradeTree"]/nodes/li[key="PintleStormBolterUpgrade"]/ingredients</xpath>
+				<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>

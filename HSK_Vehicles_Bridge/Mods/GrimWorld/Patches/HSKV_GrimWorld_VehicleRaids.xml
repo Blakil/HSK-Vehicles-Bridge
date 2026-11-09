@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- GrimWorld vehicles come in raids only with their own Imperium factions (VehicleRaidExtension, "factions" mode): otherwise industrial pirates would bring them. Every operation is success Always: GrimWorld add-ons may be missing. Leman Russ, Land Raider and Taurox have no turrets of their own (weapons are upgrades), so the raid AI does not take them anyway. -->
+
+	<!-- Astra Militarum (grimworld.astramilitarum) -->
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike" or defName="GW_Baneblade" or defName="GW_Stormhammer" or defName="GW_Chimera" or defName="GW_HOI_LemanRuss" or defName="GW_Taurox"]</xpath>
+		<value>
+			<li Class="VehiclesCEOverhaul.VehicleRaidExtension">
+				<factions>
+					<li>GW_HOI_AstraMilitarum</li>
+				</factions>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Adeptus Astartes (happypurging.ageofdarkness); Spite is Astraeus, not Chaos -->
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_AOD_PredatorRhino" or defName="GW_AstartesBike" or defName="GW_LandRaider" or defName="GW_SpiteTank"]</xpath>
+		<value>
+			<li Class="VehiclesCEOverhaul.VehicleRaidExtension">
+				<factions>
+					<li>GW_SM_AdeptusAstartes</li>
+				</factions>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Adeptus Custodes (grimworld.talonoftheemperor); Calastrus — Caladius -->
+	<Operation Class="PatchOperationAddModExtension">
+		<success>Always</success>
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_CalastrusTank" or defName="GW_DawnEagleBike"]</xpath>
+		<value>
+			<li Class="VehiclesCEOverhaul.VehicleRaidExtension">
+				<factions>
+					<li>GW_TotE_TalonsOfTheEmperor</li>
+				</factions>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

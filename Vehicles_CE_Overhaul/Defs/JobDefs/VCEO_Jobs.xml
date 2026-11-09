@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- A colonist captures an empty enemy vehicle; how long it takes: captureTicks in VCEO_VehicleRaidTuning -->
+	<JobDef>
+		<defName>VCEO_CaptureVehicle</defName>
+		<driverClass>VehiclesCEOverhaul.JobDriver_CaptureVehicle</driverClass>
+		<reportString>capturing TargetA.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+
+</Defs>

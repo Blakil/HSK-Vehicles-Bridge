@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: vehicle part recipes on HSK workbenches. -->
+
+	<RecipeDef>
+		<defName>HSKV_Make_Engine_Diesel</defName>
+		<label>make internal combustion engine</label>
+		<description>Make a internal combustion engine.</description>
+		<jobString>Making internal combustion engine.</jobString>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>VVE_EngineBlock</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarRadiator</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarAlternator</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarExhaust</li></thingDefs></filter><count>1</count></li>
+			<li><filter><categories><li>USLDBar</li></categories></filter><count>8</count></li>
+			<li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>VVE_EngineBlock</li>
+				<li>VVE_CarRadiator</li>
+				<li>VVE_CarAlternator</li>
+				<li>VVE_CarExhaust</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Engine_Diesel>1</HSKV_Engine_Diesel>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>VVE_BasicVehicles</researchPrerequisite>
+		<recipeUsers>
+			<li>VVE_GarageBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Engine_Turbine</defName>
+		<label>make gas turbine engine</label>
+		<description>Make a gas turbine engine.</description>
+		<jobString>Making gas turbine engine.</jobString>
+		<workAmount>7000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>VVE_CarTransmission</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarAlternator</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarExhaust</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>StelliteAlloy</li></thingDefs></filter><count>10</count></li>
+			<li><filter><thingDefs><li>AdvMechanism</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>ComponentAdvanced</li></thingDefs></filter><count>4</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VVE_CarTransmission</li>
+				<li>VVE_CarAlternator</li>
+				<li>VVE_CarExhaust</li>
+				<li>StelliteAlloy</li>
+				<li>AdvMechanism</li>
+				<li>ComponentAdvanced</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Engine_Turbine>1</HSKV_Engine_Turbine>
+		</products>
+		<skillRequirements>
+			<Crafting>11</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_Aviation2</researchPrerequisite>
+		<recipeUsers>
+			<li>AdvToolBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Engine_Impulse</defName>
+		<label>make impulse drive unit</label>
+		<description>Make a impulse drive unit.</description>
+		<jobString>Making impulse drive unit.</jobString>
+		<workAmount>8000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>VVE_CarBattery</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>VVE_CarWiring</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>Hexcell</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>HSKV_EngineControl_Advanced</li></thingDefs></filter><count>1</count></li>
+			<li><filter><categories><li>USLDBar</li></categories></filter><count>15</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>VVE_CarBattery</li>
+				<li>VVE_CarWiring</li>
+				<li>Hexcell</li>
+				<li>ComponentSpacer</li>
+				<li>HSKV_EngineControl_Advanced</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Engine_Impulse>1</HSKV_Engine_Impulse>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_OrbitalPods</researchPrerequisite>
+		<recipeUsers>
+			<li>AdvToolBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Chassis_WheeledLight</defName>
+		<label>make wheeled chassis</label>
+		<description>Make a wheeled chassis.</description>
+		<jobString>Making wheeled chassis.</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>VVE_CarWheel</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>VVE_CarSuspension</li></thingDefs></filter><count>2</count></li>
+			<li><filter><categories><li>SLDBar</li></categories></filter><count>40</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>VVE_CarWheel</li>
+				<li>VVE_CarSuspension</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Chassis_WheeledLight>1</HSKV_Chassis_WheeledLight>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>VVE_BasicVehicles</researchPrerequisite>
+		<recipeUsers>
+			<li>VVE_GarageBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Chassis_Tracked</defName>
+		<label>make tracked running gear</label>
+		<description>Make a tracked running gear.</description>
+		<jobString>Making tracked running gear.</jobString>
+		<workAmount>5500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>VVE_CarSuspension</li></thingDefs></filter><count>6</count></li>
+			<li><filter><thingDefs><li>VVE_CarWheel</li></thingDefs></filter><count>6</count></li>
+			<li><filter><categories><li>USLDBar</li></categories></filter><count>40</count></li>
+			<li><filter><thingDefs><li>Mechanism</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>VVE_CarSuspension</li>
+				<li>VVE_CarWheel</li>
+				<li>Mechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_ArmoredVehicles2</researchPrerequisite>
+		<recipeUsers>
+			<li>VVE_GarageBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Body_Car</defName>
+		<label>make vehicle body</label>
+		<description>Make a vehicle body.</description>
+		<jobString>Making vehicle body.</jobString>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><categories><li>SLDBar</li></categories></filter><count>60</count></li>
+			<li><filter><thingDefs><li>Glass</li></thingDefs></filter><count>6</count></li>
+			<li><filter><thingDefs><li>Plastic</li></thingDefs></filter><count>8</count></li>
+			<li><filter><thingDefs><li>VVE_CarWiring</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarFuelTank</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Glass</li>
+				<li>Plastic</li>
+				<li>VVE_CarWiring</li>
+				<li>VVE_CarFuelTank</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Body_Car>1</HSKV_Body_Car>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>VVE_BasicVehicles</researchPrerequisite>
+		<recipeUsers>
+			<li>VVE_GarageBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Body_Airframe</defName>
+		<label>make airframe section</label>
+		<description>Make a airframe section.</description>
+		<jobString>Making airframe section.</jobString>
+		<workAmount>5000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>AluminiumBar</li></thingDefs></filter><count>80</count></li>
+			<li><filter><categories><li>USLDBar</li></categories></filter><count>5</count></li>
+			<li><filter><thingDefs><li>ReinforcedGlass</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>VVE_CarWiring</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarFuelTank</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>AluminiumBar</li>
+				<li>ReinforcedGlass</li>
+				<li>VVE_CarWiring</li>
+				<li>VVE_CarFuelTank</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Body_Airframe>1</HSKV_Body_Airframe>
+		</products>
+		<skillRequirements>
+			<Crafting>9</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>VVE_AerialVehicles</researchPrerequisite>
+		<recipeUsers>
+			<li>VVE_GarageBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Armor_Light</defName>
+		<label>make light armor plate</label>
+		<description>Make a light armor plate.</description>
+		<jobString>Making light armor plate.</jobString>
+		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<ingredients>
+			<li><filter><categories><li>USLDBar</li></categories></filter><count>30</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Armor_Light>1</HSKV_Armor_Light>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_VehicleArmor</researchPrerequisite>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Armor_Heavy</defName>
+		<label>make heavy armor plate</label>
+		<description>Make a heavy armor plate.</description>
+		<jobString>Making heavy armor plate.</jobString>
+		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<ingredients>
+			<li><filter><categories><li>USLDHBar</li></categories></filter><count>15</count></li>
+			<li><filter><categories><li>USLDBar</li></categories></filter><count>10</count></li>
+			<li><filter><thingDefs><li>Ceramics</li></thingDefs></filter><count>10</count></li>
+			<li><filter><thingDefs><li>CarbonAlloy</li></thingDefs></filter><count>4</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDHBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Ceramics</li>
+				<li>CarbonAlloy</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Armor_Heavy>1</HSKV_Armor_Heavy>
+		</products>
+		<skillRequirements>
+			<Crafting>9</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_CompositeArmor</researchPrerequisite>
+		<recipeUsers>
+			<li>EAF</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Electronics_Onboard</defName>
+		<label>make onboard electronics and radio</label>
+		<description>Make a onboard electronics and radio.</description>
+		<jobString>Making onboard electronics and radio.</jobString>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>VVE_CarWiring</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarBattery</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>ElectronicComponents</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>Plastic</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VVE_CarWiring</li>
+				<li>VVE_CarBattery</li>
+				<li>ElectronicComponents</li>
+				<li>Plastic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard>
+		</products>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Telecommunications_C1</researchPrerequisite>
+		<recipeUsers>
+			<li>TableElectronics</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_FireControl</defName>
+		<label>make fire control system</label>
+		<description>Make a fire control system.</description>
+		<jobString>Making fire control system.</jobString>
+		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Electronics</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>ElectronicComponents</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>ReinforcedGlass</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>VVE_CarWiring</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>Mechanism</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Electronics</li>
+				<li>ElectronicComponents</li>
+				<li>ReinforcedGlass</li>
+				<li>VVE_CarWiring</li>
+				<li>Mechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_FireControl>1</HSKV_FireControl>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_VehicleWeapons</researchPrerequisite>
+		<recipeUsers>
+			<li>TableElectronics</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Avionics</defName>
+		<label>make avionics suite</label>
+		<description>Make a avionics suite.</description>
+		<jobString>Making avionics suite.</jobString>
+		<workAmount>3500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Electronics</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>ElectronicComponents</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>VVE_CarWiring</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>VVE_CarBattery</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Electronics</li>
+				<li>ElectronicComponents</li>
+				<li>VVE_CarWiring</li>
+				<li>VVE_CarBattery</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Avionics>1</HSKV_Avionics>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>VVE_AerialVehicles</researchPrerequisite>
+		<recipeUsers>
+			<li>TableElectronics</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_EngineControl_Advanced</defName>
+		<label>make advanced engine control unit</label>
+		<description>Make a advanced engine control unit.</description>
+		<jobString>Making advanced engine control unit.</jobString>
+		<workAmount>4000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Microchips</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>Electronics</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>GoldBar</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>VVE_CarWiring</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Microchips</li>
+				<li>Electronics</li>
+				<li>GoldBar</li>
+				<li>VVE_CarWiring</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Electronics_D1</researchPrerequisite>
+		<recipeUsers>
+			<li>TableElectronics</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Mount_MG</defName>
+		<label>make light armament mount</label>
+		<description>Make a light armament mount.</description>
+		<jobString>Making light armament mount.</jobString>
+		<workAmount>13500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Weapon_Parts</li></thingDefs></filter><count>13</count></li>
+			<li><filter><thingDefs><li>Heavy_Component</li></thingDefs></filter><count>1</count></li>
+			<li><filter><categories><li>SLDBar</li></categories></filter><count>45</count></li>
+			<li><filter><thingDefs><li>Mechanism</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Heavy_Component</li>
+				<li>Mechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Mount_MG>1</HSKV_Mount_MG>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_VehicleWeapons</researchPrerequisite>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Mount_Rockets</defName>
+		<label>make launcher mount</label>
+		<description>Make a launcher mount.</description>
+		<jobString>Making launcher mount.</jobString>
+		<workAmount>20000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Weapon_Parts</li></thingDefs></filter><count>16</count></li>
+			<li><filter><thingDefs><li>Launcher_Component</li></thingDefs></filter><count>1</count></li>
+			<li><filter><categories><li>SLDBar</li></categories></filter><count>40</count></li>
+			<li><filter><thingDefs><li>Rubber</li></thingDefs></filter><count>15</count></li>
+			<li><filter><thingDefs><li>Mechanism</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>ElectronicComponents</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Launcher_Component</li>
+				<li>Rubber</li>
+				<li>Mechanism</li>
+				<li>ElectronicComponents</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Mount_Rockets>1</HSKV_Mount_Rockets>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Rockets_C1</researchPrerequisite>
+		<researchPrerequisites>
+			<li>HSKV_VehicleWeapons</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Mount_Autocannon</defName>
+		<label>make autocannon mount</label>
+		<description>Make a autocannon mount.</description>
+		<jobString>Making autocannon mount.</jobString>
+		<workAmount>17500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Weapon_Parts</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>Cannon_Component</li></thingDefs></filter><count>1</count></li>
+			<li><filter><categories><li>SLDBar</li></categories></filter><count>60</count></li>
+			<li><filter><thingDefs><li>Rubber</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>Mechanism</li></thingDefs></filter><count>3</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Cannon_Component</li>
+				<li>Rubber</li>
+				<li>Mechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+		<researchPrerequisites>
+			<li>HSKV_VehicleWeapons</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>HeavyArmsBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Mount_Mortar</defName>
+		<label>make mortar / howitzer mount</label>
+		<description>Make a mortar / howitzer mount.</description>
+		<jobString>Making mortar / howitzer mount.</jobString>
+		<workAmount>16000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Weapon_Parts</li></thingDefs></filter><count>10</count></li>
+			<li><filter><thingDefs><li>Cannon_Component</li></thingDefs></filter><count>1</count></li>
+			<li><filter><categories><li>SLDBar</li></categories></filter><count>30</count></li>
+			<li><filter><thingDefs><li>Mechanism</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Cannon_Component</li>
+				<li>Mechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Mount_Mortar>1</HSKV_Mount_Mortar>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+		<researchPrerequisites>
+			<li>HSKV_VehicleWeapons</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>HeavyArmsBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Mount_TankGun</defName>
+		<label>make tank gun</label>
+		<description>Make a tank gun.</description>
+		<jobString>Making tank gun.</jobString>
+		<workAmount>19000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Weapon_Parts</li></thingDefs></filter><count>16</count></li>
+			<li><filter><thingDefs><li>Cannon_Component</li></thingDefs></filter><count>3</count></li>
+			<li><filter><categories><li>USLDBar</li></categories></filter><count>50</count></li>
+			<li><filter><thingDefs><li>Rubber</li></thingDefs></filter><count>25</count></li>
+			<li><filter><thingDefs><li>AdvMechanism</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>Mechanism</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>Cannon_Component</li>
+				<li>Rubber</li>
+				<li>AdvMechanism</li>
+				<li>Mechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Mount_TankGun>1</HSKV_Mount_TankGun>
+		</products>
+		<skillRequirements>
+			<Crafting>13</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>Mortars</researchPrerequisite>
+		<researchPrerequisites>
+			<li>HSKV_TankGuns</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>HeavyArmsBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Armor_Superheavy</defName>
+		<label>make superheavy armor plate</label>
+		<description>Make a superheavy armor plate.</description>
+		<jobString>Making superheavy armor plate.</jobString>
+		<workAmount>6000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>Ceramics</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>CarbonAlloy</li></thingDefs></filter><count>8</count></li>
+			<li><filter><thingDefs><li>Tungsten</li></thingDefs></filter><count>8</count></li>
+			<li><filter><thingDefs><li>DepletedUranium</li></thingDefs></filter><count>10</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ceramics</li>
+				<li>CarbonAlloy</li>
+				<li>Tungsten</li>
+				<li>DepletedUranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Armor_Superheavy>1</HSKV_Armor_Superheavy>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_Ceramite</researchPrerequisite>
+		<recipeUsers>
+			<li>EAF</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Actuator_Myomer</defName>
+		<label>make myomer actuator</label>
+		<description>Make a myomer actuator.</description>
+		<jobString>Making myomer actuator.</jobString>
+		<workAmount>8000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>SyntheticFibers</li></thingDefs></filter><count>20</count></li>
+			<li><filter><thingDefs><li>AdvMechanism</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>Microchips</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>BiosyntheticMaterial</li></thingDefs></filter><count>3</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SyntheticFibers</li>
+				<li>AdvMechanism</li>
+				<li>Microchips</li>
+				<li>BiosyntheticMaterial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Actuator_Myomer>1</HSKV_Actuator_Myomer>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_Myomer</researchPrerequisite>
+		<recipeUsers>
+			<li>TableBionics</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_ShieldEmitter</defName>
+		<label>make shield emitter</label>
+		<description>Make a shield emitter.</description>
+		<jobString>Making shield emitter.</jobString>
+		<workAmount>12000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>MagneticMaterial</li></thingDefs></filter><count>8</count></li>
+			<li><filter><thingDefs><li>Hexcell</li></thingDefs></filter><count>8</count></li>
+			<li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>6</count></li>
+			<li><filter><thingDefs><li>Microchips</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MagneticMaterial</li>
+				<li>Hexcell</li>
+				<li>ComponentSpacer</li>
+				<li>Microchips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_ShieldEmitter>1</HSKV_ShieldEmitter>
+		</products>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_ShieldEmitter</researchPrerequisite>
+		<recipeUsers>
+			<li>TableElectronics</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Reactor_Fusion</defName>
+		<label>make fusion reactor</label>
+		<description>Make a fusion reactor.</description>
+		<jobString>Making fusion reactor.</jobString>
+		<workAmount>16000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>MagneticMaterial</li></thingDefs></filter><count>10</count></li>
+			<li><filter><thingDefs><li>ComponentUltra</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>Hexcell</li></thingDefs></filter><count>4</count></li>
+			<li><filter><thingDefs><li>AdvMechanism</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>Tungsten</li></thingDefs></filter><count>15</count></li>
+			<li><filter><thingDefs><li>Microchips</li></thingDefs></filter><count>1</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MagneticMaterial</li>
+				<li>ComponentUltra</li>
+				<li>Hexcell</li>
+				<li>AdvMechanism</li>
+				<li>Tungsten</li>
+				<li>Microchips</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion>
+		</products>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_FusionReactor</researchPrerequisite>
+		<recipeUsers>
+			<li>RobAssem</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Cogitator</defName>
+		<label>make cogitator</label>
+		<description>Make a cogitator.</description>
+		<jobString>Making cogitator.</jobString>
+		<workAmount>14000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>AIPersonaCore</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>BioMicrochips</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>ComponentUltra</li></thingDefs></filter><count>2</count></li>
+			<li><filter><thingDefs><li>Microchips</li></thingDefs></filter><count>1</count></li>
+			<li><filter><thingDefs><li>GoldBar</li></thingDefs></filter><count>5</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AIPersonaCore</li>
+				<li>BioMicrochips</li>
+				<li>ComponentUltra</li>
+				<li>Microchips</li>
+				<li>GoldBar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Cogitator>1</HSKV_Cogitator>
+		</products>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_Cogitator</researchPrerequisite>
+		<recipeUsers>
+			<li>RobAssem</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>HSKV_Make_Drive_Gravitic</defName>
+		<label>make gravitic drive</label>
+		<description>Make a gravitic drive.</description>
+		<jobString>Making gravitic drive.</jobString>
+		<workAmount>20000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<ingredients>
+			<li><filter><thingDefs><li>MagneticMaterial</li></thingDefs></filter><count>15</count></li>
+			<li><filter><thingDefs><li>Antimatter</li></thingDefs></filter><count>6</count></li>
+			<li><filter><thingDefs><li>ComponentUltra</li></thingDefs></filter><count>6</count></li>
+			<li><filter><thingDefs><li>BiosyntheticMaterial</li></thingDefs></filter><count>6</count></li>
+			<li><filter><thingDefs><li>AdvMechanism</li></thingDefs></filter><count>2</count></li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>MagneticMaterial</li>
+				<li>Antimatter</li>
+				<li>ComponentUltra</li>
+				<li>BiosyntheticMaterial</li>
+				<li>AdvMechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Drive_Gravitic>1</HSKV_Drive_Gravitic>
+		</products>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>HSKV_GravDrive</researchPrerequisite>
+		<recipeUsers>
+			<li>RobAssem</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</Defs>

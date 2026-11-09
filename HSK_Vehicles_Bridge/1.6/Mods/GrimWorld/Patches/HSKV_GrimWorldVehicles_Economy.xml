@@ -1,0 +1,2007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of GrimWorld vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstraMilitarumBike_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstraMilitarumBike_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstraMilitarumBike_Blueprint"]/costList</xpath>
+				<value><costList><Plasteel>68</Plasteel><HP_Ceramite>15</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>1</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstraMilitarumBike_Blueprint"]</xpath>
+				<value><costList><Plasteel>68</Plasteel><HP_Ceramite>15</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>1</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/statBases/MarketValue</xpath>
+				<value><MarketValue>4650</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]/statBases</xpath>
+					<value><MarketValue>4650</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstraMilitarumBike"]</xpath>
+					<value><statBases><MarketValue>4650</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>25</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]</xpath>
+						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>25</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/statBases/MarketValue</xpath>
+				<value><MarketValue>6800</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]/statBases</xpath>
+					<value><MarketValue>6800</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_AstartesBike"]</xpath>
+					<value><statBases><MarketValue>6800</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/costList</xpath>
+						<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>12</GW_VehicleSuspension><GW_VehicleTracks>4</GW_VehicleTracks><GW_VehicleWheel>12</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]</xpath>
+						<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>12</GW_VehicleSuspension><GW_VehicleTracks>4</GW_VehicleTracks><GW_VehicleWheel>12</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/statBases/WorkToBuild</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/statBases/WorkToBuild</xpath>
+						<value><WorkToBuild>15000</WorkToBuild></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/statBases</xpath>
+							<value><WorkToBuild>15000</WorkToBuild></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]</xpath>
+							<value><statBases><WorkToBuild>15000</WorkToBuild></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Taurox"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Taurox"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Taurox"]/statBases/MarketValue</xpath>
+				<value><MarketValue>20250</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Taurox"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Taurox"]/statBases</xpath>
+					<value><MarketValue>20250</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Taurox"]</xpath>
+					<value><statBases><MarketValue>20250</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]</xpath>
+						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_AOD_PredatorRhino"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_AOD_PredatorRhino"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AOD_PredatorRhino"]/statBases/MarketValue</xpath>
+				<value><MarketValue>21600</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_AOD_PredatorRhino"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_AOD_PredatorRhino"]/statBases</xpath>
+					<value><MarketValue>21600</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_AOD_PredatorRhino"]</xpath>
+					<value><statBases><MarketValue>21600</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]</xpath>
+						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryLightVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Rhino"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Rhino"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Rhino"]/statBases/MarketValue</xpath>
+				<value><MarketValue>21600</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Rhino"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Rhino"]/statBases</xpath>
+					<value><MarketValue>21600</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Rhino"]</xpath>
+					<value><statBases><MarketValue>21600</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Chimera_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Chimera_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Chimera_Blueprint"]/costList</xpath>
+				<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>18</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Chimera_Blueprint"]</xpath>
+				<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>18</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Chimera"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Chimera"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Chimera"]/statBases/MarketValue</xpath>
+				<value><MarketValue>20050</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Chimera"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Chimera"]/statBases</xpath>
+					<value><MarketValue>20050</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Chimera"]</xpath>
+					<value><statBases><MarketValue>20050</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_HOI_LemanRuss_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_HOI_LemanRuss_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_HOI_LemanRuss_Blueprint"]/costList</xpath>
+				<value><costList><Plasteel>120</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>2</GW_VehicleCannon></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_HOI_LemanRuss_Blueprint"]</xpath>
+				<value><costList><Plasteel>120</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>2</GW_VehicleCannon></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_HOI_LemanRuss"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_HOI_LemanRuss"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_HOI_LemanRuss"]/statBases/MarketValue</xpath>
+				<value><MarketValue>21600</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_HOI_LemanRuss"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_HOI_LemanRuss"]/statBases</xpath>
+					<value><MarketValue>21600</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_HOI_LemanRuss"]</xpath>
+					<value><statBases><MarketValue>21600</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>165</Plasteel><HP_Adamantium>10</HP_Adamantium><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>14</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>22</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>1</GW_VehicleCannon></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]</xpath>
+						<value><costList><Plasteel>165</Plasteel><HP_Adamantium>10</HP_Adamantium><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>14</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>22</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>1</GW_VehicleCannon></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryHeavyVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryHeavyVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryHeavyVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryHeavyVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Predator"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Predator"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Predator"]/statBases/MarketValue</xpath>
+				<value><MarketValue>20100</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Predator"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Predator"]/statBases</xpath>
+					<value><MarketValue>20100</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Predator"]</xpath>
+					<value><statBases><MarketValue>20100</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>300</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>3</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><GW_ComponentRelic>2</GW_ComponentRelic><HSKV_Armor_Superheavy>11</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]</xpath>
+						<value><costList><Plasteel>300</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>3</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><GW_ComponentRelic>2</GW_ComponentRelic><HSKV_Armor_Superheavy>11</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/statBases/MarketValue</xpath>
+				<value><MarketValue>53150</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]/statBases</xpath>
+					<value><MarketValue>53150</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_LandRaider"]</xpath>
+					<value><statBases><MarketValue>53150</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Baneblade_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Baneblade_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Baneblade_Blueprint"]/costList</xpath>
+				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Baneblade_Blueprint"]</xpath>
+				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]/statBases/MarketValue</xpath>
+				<value><MarketValue>68500</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]/statBases</xpath>
+					<value><MarketValue>68500</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Baneblade"]</xpath>
+					<value><statBases><MarketValue>68500</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Stormhammer_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Stormhammer_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Stormhammer_Blueprint"]/costList</xpath>
+				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Stormhammer_Blueprint"]</xpath>
+				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]/statBases/MarketValue</xpath>
+				<value><MarketValue>68500</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]/statBases</xpath>
+					<value><MarketValue>68500</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_Stormhammer"]</xpath>
+					<value><statBases><MarketValue>68500</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>660</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>2</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]</xpath>
+						<value><costList><Plasteel>660</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>2</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_SpiteTank"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_SpiteTank"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_SpiteTank"]/statBases/MarketValue</xpath>
+				<value><MarketValue>63300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_SpiteTank"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_SpiteTank"]/statBases</xpath>
+					<value><MarketValue>63300</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_SpiteTank"]</xpath>
+					<value><statBases><MarketValue>63300</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>750</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]</xpath>
+						<value><costList><Plasteel>750</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialLandMilitaryTitanicVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_CalastrusTank"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_CalastrusTank"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_CalastrusTank"]/statBases/MarketValue</xpath>
+				<value><MarketValue>64950</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_CalastrusTank"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_CalastrusTank"]/statBases</xpath>
+					<value><MarketValue>64950</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_CalastrusTank"]</xpath>
+					<value><statBases><MarketValue>64950</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>30</HP_Ceramite><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>12</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Drive_Gravitic>1</HSKV_Drive_Gravitic></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]</xpath>
+						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>30</HP_Ceramite><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>12</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Drive_Gravitic>1</HSKV_Drive_Gravitic></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/statBases/MarketValue</xpath>
+				<value><MarketValue>13650</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]/statBases</xpath>
+					<value><MarketValue>13650</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_DawnEagleBike"]</xpath>
+					<value><statBases><MarketValue>13650</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="Valkyriebuild"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="Valkyriebuild"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="Valkyriebuild"]/costList</xpath>
+				<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>32</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="Valkyriebuild"]</xpath>
+				<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>32</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Valkyriepawn"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="Valkyriepawn"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Valkyriepawn"]/statBases/MarketValue</xpath>
+				<value><MarketValue>23850</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Valkyriepawn"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Valkyriepawn"]/statBases</xpath>
+					<value><MarketValue>23850</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Valkyriepawn"]</xpath>
+					<value><statBases><MarketValue>23850</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="MarauderBomberbuild"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="MarauderBomberbuild"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="MarauderBomberbuild"]/costList</xpath>
+				<value><costList><Plasteel>240</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>3</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="MarauderBomberbuild"]</xpath>
+				<value><costList><Plasteel>240</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>3</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="MarauderBomberpawn"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="MarauderBomberpawn"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MarauderBomberpawn"]/statBases/MarketValue</xpath>
+				<value><MarketValue>29500</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="MarauderBomberpawn"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MarauderBomberpawn"]/statBases</xpath>
+					<value><MarketValue>29500</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="MarauderBomberpawn"]</xpath>
+					<value><statBases><MarketValue>29500</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/costList</xpath>
+						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]</xpath>
+						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="stormHawkpawn"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="stormHawkpawn"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="stormHawkpawn"]/statBases/MarketValue</xpath>
+				<value><MarketValue>27750</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="stormHawkpawn"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="stormHawkpawn"]/statBases</xpath>
+					<value><MarketValue>27750</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="stormHawkpawn"]</xpath>
+					<value><statBases><MarketValue>27750</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/costList</xpath>
+						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>8</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]</xpath>
+						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>8</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Stormtalonpawn"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="Stormtalonpawn"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Stormtalonpawn"]/statBases/MarketValue</xpath>
+				<value><MarketValue>31800</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Stormtalonpawn"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Stormtalonpawn"]/statBases</xpath>
+					<value><MarketValue>31800</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Stormtalonpawn"]</xpath>
+					<value><statBases><MarketValue>31800</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/costList</xpath>
+						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_VehicleCannon>4</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>38</ComponentIndustrial><ComponentSpacer>10</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]</xpath>
+						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_VehicleCannon>4</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>38</ComponentIndustrial><ComponentSpacer>10</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="OverlordGunshippawn"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="OverlordGunshippawn"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="OverlordGunshippawn"]/statBases/MarketValue</xpath>
+				<value><MarketValue>54000</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="OverlordGunshippawn"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="OverlordGunshippawn"]/statBases</xpath>
+					<value><MarketValue>54000</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="OverlordGunshippawn"]</xpath>
+					<value><statBases><MarketValue>54000</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/costList</xpath>
+						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]</xpath>
+						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirMilitaryEliteVehicleResearch</li><li>HSKV_GW_Custodes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="OrionGunshippawn"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="OrionGunshippawn"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="OrionGunshippawn"]/statBases/MarketValue</xpath>
+				<value><MarketValue>41000</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="OrionGunshippawn"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="OrionGunshippawn"]/statBases</xpath>
+					<value><MarketValue>41000</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="OrionGunshippawn"]</xpath>
+					<value><statBases><MarketValue>41000</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/costList</xpath>
+						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>5</GW_VehicleExhaust><ComponentIndustrial>26</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]</xpath>
+						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>5</GW_VehicleExhaust><ComponentIndustrial>26</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GW_ImperialAirVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>GW_ImperialAirVehicleResearch</li><li>HSKV_GW_Astartes</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GW_DropPod"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GW_DropPod"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_DropPod"]/statBases/MarketValue</xpath>
+				<value><MarketValue>15250</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GW_DropPod"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_DropPod"]/statBases</xpath>
+					<value><MarketValue>15250</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GW_DropPod"]</xpath>
+					<value><statBases><MarketValue>15250</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>GW_AstraMilitarumBike</li><li>GW_AstartesBike</li><li>GW_Taurox</li><li>GW_AOD_PredatorRhino</li><li>GW_Rhino</li><li>GW_Chimera</li><li>GW_HOI_LemanRuss</li><li>GW_Predator</li><li>GW_LandRaider</li><li>GW_Baneblade</li><li>GW_Stormhammer</li><li>GW_SpiteTank</li><li>GW_CalastrusTank</li><li>GW_DawnEagleBike</li><li>Valkyriepawn</li><li>MarauderBomberpawn</li><li>stormHawkpawn</li><li>Stormtalonpawn</li><li>OverlordGunshippawn</li><li>OrionGunshippawn</li><li>GW_DropPod</li></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"][@ParentName]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]/prerequisites</xpath>
+					<value><prerequisites Inherit="False"><li>GW_VehiclesOfGrimworld</li><li>TransportPod</li><li>HSKV_Aviation2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]</xpath>
+					<value><prerequisites Inherit="False"><li>GW_VehiclesOfGrimworld</li><li>TransportPod</li><li>HSKV_Aviation2</li></prerequisites></value>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]/prerequisites</xpath>
+					<value><prerequisites><li>GW_VehiclesOfGrimworld</li><li>TransportPod</li><li>HSKV_Aviation2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="GW_ImperialAirVehicleResearch"]</xpath>
+					<value><prerequisites><li>GW_VehiclesOfGrimworld</li><li>TransportPod</li><li>HSKV_Aviation2</li></prerequisites></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="GW_SM_CodexAstartes"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"][@ParentName]</xpath>
+				<match Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+						<value><prerequisites Inherit="False"><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>GW_SM_CodexAstartes</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]</xpath>
+						<value><prerequisites Inherit="False"><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>GW_SM_CodexAstartes</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</nomatch>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+						<value><prerequisites><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>GW_SM_CodexAstartes</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]</xpath>
+						<value><prerequisites><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>GW_SM_CodexAstartes</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</nomatch>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"][@ParentName]</xpath>
+				<match Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+						<value><prerequisites Inherit="False"><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]</xpath>
+						<value><prerequisites Inherit="False"><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</nomatch>
+				</match>
+				<nomatch Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]/prerequisites</xpath>
+						<value><prerequisites><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GW_VehiclesOfGrimworld"]</xpath>
+						<value><prerequisites><li>Fabrication</li><li>GW_GrimworldMaterials</li><li>HSKV_ArmoredVehicles2</li><li>Laser_weapons_D</li></prerequisites></value>
+					</nomatch>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]/costList</xpath>
+						<value><costList><VVE_CarWheel>1</VVE_CarWheel><SteelBar>3</SteelBar></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]</xpath>
+						<value><costList><VVE_CarWheel>1</VVE_CarWheel><SteelBar>3</SteelBar></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]/statBases/MarketValue</xpath>
+						<value><MarketValue>145</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]/statBases</xpath>
+							<value><MarketValue>145</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleWheel"]</xpath>
+							<value><statBases><MarketValue>145</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]/costList</xpath>
+						<value><costList><VVE_CarSuspension>1</VVE_CarSuspension><SteelBar>4</SteelBar></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]</xpath>
+						<value><costList><VVE_CarSuspension>1</VVE_CarSuspension><SteelBar>4</SteelBar></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]/statBases/MarketValue</xpath>
+						<value><MarketValue>180</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]/statBases</xpath>
+							<value><MarketValue>180</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleSuspension"]</xpath>
+							<value><statBases><MarketValue>180</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/costList</xpath>
+						<value><costList><VVE_CarExhaust>1</VVE_CarExhaust><Plasteel>10</Plasteel></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]</xpath>
+						<value><costList><VVE_CarExhaust>1</VVE_CarExhaust><Plasteel>10</Plasteel></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/statBases/MarketValue</xpath>
+						<value><MarketValue>160</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/statBases</xpath>
+							<value><MarketValue>160</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]</xpath>
+							<value><statBases><MarketValue>160</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]/costList</xpath>
+						<value><costList><SteelBar>30</SteelBar><Mechanism>1</Mechanism><Rubber>5</Rubber></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]</xpath>
+						<value><costList><SteelBar>30</SteelBar><Mechanism>1</Mechanism><Rubber>5</Rubber></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]/statBases/MarketValue</xpath>
+						<value><MarketValue>645</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]/statBases</xpath>
+							<value><MarketValue>645</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleTracks"]</xpath>
+							<value><statBases><MarketValue>645</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]/costList</xpath>
+						<value><costList><VVE_EngineBlock>1</VVE_EngineBlock><VVE_CarRadiator>1</VVE_CarRadiator><VVE_CarAlternator>1</VVE_CarAlternator><SteelBar>15</SteelBar><Mechanism>1</Mechanism></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]</xpath>
+						<value><costList><VVE_EngineBlock>1</VVE_EngineBlock><VVE_CarRadiator>1</VVE_CarRadiator><VVE_CarAlternator>1</VVE_CarAlternator><SteelBar>15</SteelBar><Mechanism>1</Mechanism></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]/statBases/MarketValue</xpath>
+						<value><MarketValue>1070</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]/statBases</xpath>
+							<value><MarketValue>1070</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleEngine"]</xpath>
+							<value><statBases><MarketValue>1070</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_JetEngine"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_JetEngine"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_JetEngine"]/costList</xpath>
+						<value><costList><VVE_CarAlternator>1</VVE_CarAlternator><StelliteAlloy>10</StelliteAlloy><AdvMechanism>2</AdvMechanism><ComponentSpacer>2</ComponentSpacer></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_JetEngine"]</xpath>
+						<value><costList><VVE_CarAlternator>1</VVE_CarAlternator><StelliteAlloy>10</StelliteAlloy><AdvMechanism>2</AdvMechanism><ComponentSpacer>2</ComponentSpacer></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_JetEngine"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_JetEngine"]/statBases/MarketValue</xpath>
+						<value><MarketValue>1960</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_JetEngine"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_JetEngine"]/statBases</xpath>
+							<value><MarketValue>1960</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_JetEngine"]</xpath>
+							<value><statBases><MarketValue>1960</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/costList</xpath>
+						<value><costList><Weapon_Parts>6</Weapon_Parts><Heavy_Component>1</Heavy_Component><Plasteel>20</Plasteel></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]</xpath>
+						<value><costList><Weapon_Parts>6</Weapon_Parts><Heavy_Component>1</Heavy_Component><Plasteel>20</Plasteel></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/statBases/MarketValue</xpath>
+						<value><MarketValue>1235</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/statBases</xpath>
+							<value><MarketValue>1235</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]</xpath>
+							<value><statBases><MarketValue>1235</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]/costList</xpath>
+						<value><costList><Weapon_Parts>8</Weapon_Parts><Cannon_Component>1</Cannon_Component><SteelBar>20</SteelBar></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]</xpath>
+						<value><costList><Weapon_Parts>8</Weapon_Parts><Cannon_Component>1</Cannon_Component><SteelBar>20</SteelBar></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]/statBases/MarketValue</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]/statBases/MarketValue</xpath>
+						<value><MarketValue>1665</MarketValue></value>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]/statBases</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]/statBases</xpath>
+							<value><MarketValue>1665</MarketValue></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName="GW_VehicleCannon"]</xpath>
+							<value><statBases><MarketValue>1665</MarketValue></statBases></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraTurretMount"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraTurretMount"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHullFlamer"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHullFlamer"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHeavyBolterUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHeavyBolterUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraMultiLaserUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraMultiLaserUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="BattleCannonUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="BattleCannonUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="AnnihilatorUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="AnnihilatorUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExterminatorUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExterminatorUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PunisherUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PunisherUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExecutionerUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExecutionerUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="VanquisherUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="VanquisherUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DemolisherUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DemolisherUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>150</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullBolterUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullBolterUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullFlamerUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullFlamerUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullLascannonUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullLascannonUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>80</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonBolterUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonBolterUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonFlamerUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonFlamerUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonMeltaUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonMeltaUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonPlasmaUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonPlasmaUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>75</Plasteel><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="TrackArmor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="TrackArmor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PintleStormBolterUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PintleStormBolterUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseBolterTurretUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseBolterTurretUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseLasTurretUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseLasTurretUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_DorsalBolterTurretUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_DorsalBolterTurretUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailBolterTurretUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailBolterTurretUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailAsssaultTurretUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailAsssaultTurretUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseAutoCannonUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseAutoCannonUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="RedeemerUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="RedeemerUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>250</Plasteel><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="CrusaderUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="CrusaderUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>250</Plasteel><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="PhobosUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="PhobosUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>250</Plasteel><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredatorRoof"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredatorRoof"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="RhinoRoof"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="RhinoRoof"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SponsonPlatform"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SponsonPlatform"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretPlasma"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretPlasma"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretBaal"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretBaal"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretLas"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretLas"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretAutoCannon"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretAutoCannon"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Bolter"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Bolter"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Flamer"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Flamer"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Laser"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Laser"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkLasTalonUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkLasTalonUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkStormCannonUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkStormCannonUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonLascannonUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonLascannonUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonBolterUpgrade"]/ingredients</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonBolterUpgrade"]/ingredients</xpath>
+			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+		</match>
+	</Operation>
+
+</Patch>

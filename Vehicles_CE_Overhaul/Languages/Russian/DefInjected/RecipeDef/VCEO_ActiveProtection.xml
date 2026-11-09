@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VCEO_MakeModuleAPS.label>изготовить модуль активной защиты</VCEO_MakeModuleAPS.label>
+  <VCEO_MakeModuleAPS.description>Изготовить модуль комплекса активной защиты для машины.</VCEO_MakeModuleAPS.description>
+  <VCEO_MakeModuleAPS.jobString>Изготавливает модуль активной защиты.</VCEO_MakeModuleAPS.jobString>
+  <VCEO_MakeAPSCharge.label>изготовить заряды КАЗ</VCEO_MakeAPSCharge.label>
+  <VCEO_MakeAPSCharge.description>Изготовить два заряда для комплексов активной защиты машин.</VCEO_MakeAPSCharge.description>
+  <VCEO_MakeAPSCharge.jobString>Изготавливает заряды КАЗ.</VCEO_MakeAPSCharge.jobString>
+</LanguageData>

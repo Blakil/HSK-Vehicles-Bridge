@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: vehicle ammo, adapted to the HSK ammo progression. -->
+
+	<ThingCategoryDef>
+		<defName>HSKV_AmmoLascannon</defName>
+		<label>lascannon power pack</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberChargeLarge</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>HSKV_AmmoMultilaser</defName>
+		<label>multi-laser power cell</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberChargeLarge</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>HSKV_AmmoPlasmaHeavy</defName>
+		<label>heavy plasma canister</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberPlasmaLarge</iconPath>
+	</ThingCategoryDef>
+
+	<!-- HSKV_AmmoSet_Multilaser: HSKV_Ammo_MultilaserCell → HSKV_Bullet_Multilaser -->
+	<CombatExtended.AmmoSetDef>
+		<defName>HSKV_AmmoSet_Multilaser</defName>
+		<label>multi-laser power cell</label>
+		<ammoTypes>
+			<HSKV_Ammo_MultilaserCell>HSKV_Bullet_Multilaser</HSKV_Ammo_MultilaserCell>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerMediumAmmoBase">
+		<defName>HSKV_Ammo_LascannonPack</defName>
+		<label>lascannon power pack</label>
+		<description>A heavy power pack for a vehicle lascannon: one pack feeds one shot of a coherent beam able to burn through the armour of a main battle tank.</description>
+		<graphicData>
+			<texPath>Things/Ammo/LaserPack</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>103.5</MarketValue>
+			<Mass>2.8</Mass>
+			<Bulk>7</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableCrafting</li>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories>
+			<li>HSKV_AmmoLascannon</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<ammoClass>Laser</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerMediumAmmoBase">
+		<defName>HSKV_Ammo_MultilaserCell</defName>
+		<label>multi-laser power cell</label>
+		<description>A compact power cell for a vehicle multi-laser: one cell feeds one shot. Rapid fire shreds infantry and light vehicles but does not burn through heavy armour.</description>
+		<graphicData>
+			<texPath>Things/Ammo/LaserPack</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>24.1</MarketValue>
+			<Mass>0.5</Mass>
+			<Bulk>1</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableCrafting</li>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories>
+			<li>HSKV_AmmoMultilaser</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<ammoClass>Laser</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerMediumAmmoBase">
+		<defName>HSKV_Ammo_PlasmaCanisterHeavy</defName>
+		<label>heavy plasma canister</label>
+		<description>A heavy canister of pressurised hydrogen for vehicle plasma weapons — plasma destroyers and plasma cannons. Unstable when damaged.</description>
+		<graphicData>
+			<texPath>ThirdParty/Warhammer/Ammo/PlasmaGun</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>75.6</MarketValue>
+			<Mass>3</Mass>
+			<Bulk>5</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableCrafting</li>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories>
+			<li>HSKV_AmmoPlasmaHeavy</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<ammoClass>Charged</ammoClass>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+		<defName>HSKV_Bullet_Multilaser</defName>
+		<label>multi-laser beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>CE_Laser</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationSharp>120</armorPenetrationSharp>
+			<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeHSKV_Ammo_LascannonPack</defName>
+		<label>make lascannon power pack x10</label>
+		<description>Craft 10 × lascannon power pack.</description>
+		<jobString>Making lascannon power pack.</jobString>
+		<workAmount>4000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hexcell</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MagneticMaterial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Hexcell</li>
+				<li>MagneticMaterial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Ammo_LascannonPack>10</HSKV_Ammo_LascannonPack>
+		</products>
+		<researchPrerequisites>
+			<li>Laser_weapons_D</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeHSKV_Ammo_MultilaserCell</defName>
+		<label>make multi-laser power cell x30</label>
+		<description>Craft 30 × multi-laser power cell.</description>
+		<jobString>Making multi-laser power cell.</jobString>
+		<workAmount>4500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hexcell</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MagneticMaterial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Hexcell</li>
+				<li>MagneticMaterial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Ammo_MultilaserCell>30</HSKV_Ammo_MultilaserCell>
+		</products>
+		<researchPrerequisites>
+			<li>Laser_weapons_D</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="ChargeAmmoRecipeBase">
+		<defName>MakeHSKV_Ammo_PlasmaCanisterHeavy</defName>
+		<label>make heavy plasma canister x10</label>
+		<description>Craft 10 × heavy plasma canister.</description>
+		<jobString>Making heavy plasma canister.</jobString>
+		<workAmount>4000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>BiosyntheticMaterial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MagneticMaterial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>Chemfuel</li>
+				<li>BiosyntheticMaterial</li>
+				<li>MagneticMaterial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<HSKV_Ammo_PlasmaCanisterHeavy>10</HSKV_Ammo_PlasmaCanisterHeavy>
+		</products>
+		<researchPrerequisites>
+			<li>Plasma_weapons_D</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+</Defs>

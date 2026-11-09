@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: vehicle ammo, adapted to the HSK ammo progression. -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="HSKV_AmmoBolter75Base" ParentName="SmallAmmoBase" Abstract="True">
+		<statBases>
+			<Mass>0.1</Mass>
+			<Bulk>0.08</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoBolter75</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="HSKV_AmmoBolter998Base" ParentName="AmmoBase" Abstract="True">
+		<statBases>
+			<Mass>0.385</Mass>
+			<Bulk>0.15</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoBolter998</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="HSKV_BaseBolterBullet" ParentName="BaseExplosiveBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>CombatExtended.BulletCE</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>129</speed>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+</Defs>

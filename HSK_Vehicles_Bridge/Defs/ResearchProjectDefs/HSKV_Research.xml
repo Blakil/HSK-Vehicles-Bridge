@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: vehicle research tree, adapted to the HSK research progression. -->
+
+	<ResearchProjectDef>
+		<defName>HSKV_Ships</defName>
+		<label>boats</label>
+		<description>Motor boats and trawlers; their hulls are sealed vehicle bodies.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>VVE_BasicVehicles</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_Trucks</defName>
+		<label>trucks</label>
+		<description>Trucks and military transports: heavy machines on several wheeled chassis.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>VVE_BasicVehicles</li>
+			<li>Metals_C2</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_VehicleArmor</defName>
+		<label>armor plates</label>
+		<description>Hardened steel armour plate for armoured cars, APCs and the sides of tanks.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>VVE_CombatVehicles</li>
+			<li>Metals_C3</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>10</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_VehicleWeapons</defName>
+		<label>weapon mounts</label>
+		<description>Turret mounts that fit HSK weapons to vehicles: light armament (machine guns and flamethrowers), launchers, autocannons and mortars, and fire control systems. The heavier mounts also need the research of their weapon.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>VVE_CombatVehicles</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>12</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_Aviation2</defName>
+		<label>aviation II</label>
+		<description>Gas turbines: helicopters and transport aircraft.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>VVE_AerialVehicles</li>
+			<li>Metals_D1</li>
+			<li>Components_D1</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_ArmoredVehicles2</defName>
+		<label>tracked vehicles</label>
+		<description>Tracked running gear: flame tanks and medium tanks. Composite armour and tank guns build on it.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>VVE_CombatVehicles</li>
+			<li>Metals_C3</li>
+			<li>Electronics_C2</li>
+			<li>Oil_Industry_C6</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>11</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_CompositeArmor</defName>
+		<label>composite armor</label>
+		<description>Heavy armour plate of depleted uranium, ceramics and carbon composite for tank fronts.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>HSKV_ArmoredVehicles2</li>
+			<li>HSKV_VehicleArmor</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>10</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_TankGuns</defName>
+		<label>tank guns</label>
+		<description>Tank guns with recoil systems and stabilisers.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>HSKV_VehicleWeapons</li>
+			<li>HSKV_ArmoredVehicles2</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>11</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_OrbitalPods</defName>
+		<label>orbital drop pods</label>
+		<description>Reusable drop pods and their impulse drive units: thrusters, power cells and a flight computer.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>VVE_AerialVehicles</li>
+			<li>TransportPod</li>
+			<li>Electronics_D1</li>
+			<li>Components_D1</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>7</researchViewY>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_OrbitalAssault</defName>
+		<label>orbital assault pods</label>
+		<description>Armoured orbital assault pods with an artillery mount.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>HSKV_OrbitalPods</li>
+			<li>Artillery_C2</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>7</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_MainBattleTank</defName>
+		<label>main battle tank</label>
+		<description>The design of a modern main battle tank.</description>
+		<baseCost>4500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>HSKV_ArmoredVehicles2</li>
+			<li>Artillery_C2</li>
+			<li>Electronics_D1</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>10.5</researchViewY>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_Ceramite</defName>
+		<label>ceramite armor</label>
+		<description>Superheavy laminated armour of ceramics, carbon composite, tungsten and depleted uranium for super-heavy tanks. Requires a techprint.</description>
+		<baseCost>3500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>HSKV_ArmoredVehicles2</li>
+			<li>Metals_D1</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>9</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>2</techprintCommonality>
+		<techprintMarketValue>2000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_Myomer</defName>
+		<label>myomer actuators</label>
+		<description>Synthetic muscle actuators for walkers and heavy exoskeletons. Requires a techprint.</description>
+		<baseCost>3500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>Droids_D1</li>
+			<li>Bionics</li>
+			<li>Components_D2</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>2000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_ShieldEmitter</defName>
+		<label>vehicle shield emitters</label>
+		<description>Compact energy shield projectors for vehicles, based on orbital shield technology. Requires a techprint.</description>
+		<baseCost>4300</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>Fortification_E2</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>3000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_FusionReactor</defName>
+		<label>compact fusion reactor</label>
+		<description>A fusion reactor small enough for a vehicle: power for antigrav drives, shields and spacecraft. Requires a techprint.</description>
+		<baseCost>5000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>ShipReactor</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>3000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_Cogitator</defName>
+		<label>cogitators</label>
+		<description>Vehicle machine spirits built around an AI persona core. Requires a techprint.</description>
+		<baseCost>5400</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>ShipComputerCore</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>3</researchViewY>
+		<techprintCount>1</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>4000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_GravDrive</defName>
+		<label>gravitic drive</label>
+		<description>Antigravity drives fed by antimatter: hovering tanks and flying vehicles. Requires techprints.</description>
+		<baseCost>7200</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Vehicles</tab>
+		<prerequisites>
+			<li>HSKV_FusionReactor</li>
+			<li>ShipEngine</li>
+			<li>Super_matter_E2</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>2</researchViewY>
+		<techprintCount>2</techprintCount>
+		<techprintCommonality>1</techprintCommonality>
+		<techprintMarketValue>5000</techprintMarketValue>
+		<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+		</heldByFactionCategoryTags>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+</Defs>

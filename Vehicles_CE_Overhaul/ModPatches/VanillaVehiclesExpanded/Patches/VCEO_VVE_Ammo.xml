@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: CE ammo of Vanilla Vehicles Expanded turrets on stock Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_90mmCannonShell"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_90mmCannonShell_HEAT"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_90mmCannonShell</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>151</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>151</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_90mmCannonShell</ammoSet>
+										<shotHeight>2.5</shotHeight>
+										<speed>151</speed>
+										<sway>0.82</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_90mmCannonShell_HEAT</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]</xpath>
+								<value>
+									<projectile>Bullet_90mmCannonShell_HEAT</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Roadkill_MainTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_120mmCannonShell"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_120mmCannonShell_HEAT"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_120mmCannonShell</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>229</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>229</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_120mmCannonShell</ammoSet>
+										<shotHeight>2.5</shotHeight>
+										<speed>229</speed>
+										<sway>0.82</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_120mmCannonShell_HEAT</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]</xpath>
+								<value>
+									<projectile>Bullet_120mmCannonShell_HEAT</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Bulldog_MainTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>

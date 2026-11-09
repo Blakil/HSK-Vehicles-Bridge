@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: hull structure of Spacer Vehicles (Titan) vehicles (plates, components, depth, roles) for the CE armor model. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/properties/roles/li[key="gunner" and label="Main Cannon Gunner"]/key</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/properties/roles/li[key="gunner" and label="Main Cannon Gunner"]/key</xpath>
+			<value>
+				<key>main_gunner</key>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/properties/roles/li[key="gunner" and label="Left HMG Gunner"]/key</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/properties/roles/li[key="gunner" and label="Left HMG Gunner"]/key</xpath>
+			<value>
+				<key>left_gunner</key>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/properties/roles/li[key="gunner" and label="Right HMG Gunner"]/key</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/properties/roles/li[key="gunner" and label="Right HMG Gunner"]/key</xpath>
+			<value>
+				<key>right_gunner</key>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/properties/roles/li[key="gunner" and label="Main Cannon Gunner"]/key</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/properties/roles/li[key="gunner" and label="Main Cannon Gunner"]/key</xpath>
+			<value>
+				<key>main_gunner</key>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/properties/roles/li[key="gunner" and label="Front HMG Gunner"]/key</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/properties/roles/li[key="gunner" and label="Front HMG Gunner"]/key</xpath>
+			<value>
+				<key>front_gunner</key>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/properties/roles/li[key="gunner" and label="Rear HMG Gunner"]/key</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/properties/roles/li[key="gunner" and label="Rear HMG Gunner"]/key</xpath>
+			<value>
+				<key>rear_gunner</key>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/components/li[key="Engine"]/depth[text()="External"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/components/li[key="Engine"]/depth</xpath>
+			<value>
+				<depth>Internal</depth>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/components/li[key="Engine"]/depth[text()="External"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/components/li[key="Engine"]/depth</xpath>
+			<value>
+				<depth>Internal</depth>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

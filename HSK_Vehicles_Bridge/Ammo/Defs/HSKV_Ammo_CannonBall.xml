@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: vehicle ammo, adapted to the HSK ammo progression. -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="HSKV_AmmoCannonBallBase" ParentName="HeavyAmmoBase" Abstract="True">
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>6.6</Mass>
+			<Bulk>3.99</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>CannonBall</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<techLevel>Medieval</techLevel>
+	</ThingDef>
+
+	<ThingDef Name="HSKV_BaseCannonBall" ParentName="BaseExplosiveBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/Blackpowder/CannonBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>99</speed>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<flyOverhead>false</flyOverhead>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+		<modExtensions>
+			<li Class="ProjectileImpactFX.EffectProjectileExtension">
+				<AutoAssign>false</AutoAssign>
+				<CreateTerrainEffects>true</CreateTerrainEffects>
+				<ImpactSoundDef>CE_HeavyProjectileImpact</ImpactSoundDef>
+				<explosionFleckDef>Fleck_CECannonball</explosionFleckDef>
+				<explosionFleckSize>0.8</explosionFleckSize>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: compatibility fixes for GrimWorld with Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_twinpounder"]/maxRange[number(.) &gt; 100]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_PrimarisTank_twinpounder"]/maxRange</xpath>
+			<value>
+				<maxRange>29</maxRange>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"][modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Bolter75"]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleTurretDef[defName="GW_LemanRuss_HullLascannon"][modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Lasgun_Cannon"]]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"][ammoSet="AmmoSet_Bolter75"]</xpath>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef/ammunition/thingDefs/li[substring(., string-length(.) - 4) = "NonCE" and not(. = /Defs/ThingDef/defName)]</xpath>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/Vehicles.VehicleTurretDef/ammunition/thingDefs/li[substring(., string-length(.) - 4) = "NonCE" and not(. = /Defs/ThingDef/defName)]</xpath>
+		</match>
+	</Operation>
+
+</Patch>

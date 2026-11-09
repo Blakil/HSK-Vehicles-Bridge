@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicles CE Overhaul: CE armor tables for Alpha Vehicles: Age of Sail vehicles, adapted to the vehicle class progression (armored car, carrier, light, medium and battle tank). -->
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Cog</defName>
+		<vehicle>AV_Cog</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>8</sharp><blunt>80</blunt><health>240</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Junk</defName>
+		<vehicle>AV_Junk</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>8</sharp><blunt>80</blunt><health>240</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Longship</defName>
+		<vehicle>AV_Longship</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>8</sharp><blunt>80</blunt><health>360</health></li>
+			<li><key>Shields</key><sharp>6</sharp><blunt>60</blunt><health>60</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+			<li>Shields</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Sloop</defName>
+		<vehicle>AV_Sloop</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>FiberglassHull</key><sharp>8</sharp><blunt>80</blunt><health>360</health></li>
+		</components>
+		<plates>
+			<li>FiberglassHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Caravel</defName>
+		<vehicle>AV_Caravel</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>10</sharp><blunt>140</blunt><health>360</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_PirateCaravel</defName>
+		<vehicle>AV_PirateCaravel</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>12</sharp><blunt>168</blunt><health>360</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Brig</defName>
+		<vehicle>AV_Brig</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>12</sharp><blunt>168</blunt><health>360</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Galleon</defName>
+		<vehicle>AV_Galleon</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>15</sharp><blunt>210</blunt><health>360</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+	<VehiclesCEOverhaul.VehicleArmorDef>
+		<defName>VCEO_Armor_AV_Frigate</defName>
+		<vehicle>AV_Frigate</vehicle>
+		<hullSharp>6</hullSharp>
+		<hullBlunt>60</hullBlunt>
+		<components>
+			<li><key>WoodenHull</key><sharp>15</sharp><blunt>210</blunt><health>360</health></li>
+		</components>
+		<plates>
+			<li>WoodenHull</li>
+		</plates>
+	</VehiclesCEOverhaul.VehicleArmorDef>
+
+</Defs>

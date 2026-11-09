@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- APS charge under HSK: powder as the explosive, HSK durable bars as the metal; unlocked by the battle tank research. Without APS in the core (1.4) the recipe is missing and the operation is skipped. -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/RecipeDef[defName="VCEO_MakeAPSCharge"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeAPSCharge"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter>
+									<categories>
+										<li>SLDBar</li>
+										<li>USLDBar</li>
+									</categories>
+								</filter>
+								<count>20</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>Powder</li></thingDefs></filter>
+								<count>6</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeAPSCharge"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>SLDBar</li>
+								<li>USLDBar</li>
+							</categories>
+							<thingDefs>
+								<li>Powder</li>
+								<li>ComponentIndustrial</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeAPSCharge"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>HSKV_MainBattleTank</researchPrerequisite>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- APS module under HSK: launcher component, electronics, mechanism, durable bars; on the weapons bench like the other bridge weapon mounts. -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/RecipeDef[defName="VCEO_MakeModuleAPS"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeModuleAPS"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter><categories><li>SLDBar</li></categories></filter>
+								<count>30</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>Launcher_Component</li></thingDefs></filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>ElectronicComponents</li></thingDefs></filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>Electronics</li></thingDefs></filter>
+								<count>1</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>Mechanism</li></thingDefs></filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeModuleAPS"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>SLDBar</li>
+							</categories>
+							<thingDefs>
+								<li>Launcher_Component</li>
+								<li>ElectronicComponents</li>
+								<li>Electronics</li>
+								<li>Mechanism</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeModuleAPS"]/recipeUsers</xpath>
+					<value>
+						<recipeUsers>
+							<li>AdvWeaponCraftingWorkTable</li>
+						</recipeUsers>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeModuleAPS"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>HSKV_MainBattleTank</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeModuleAPS"]/skillRequirements</xpath>
+					<value>
+						<skillRequirements>
+							<Crafting>10</Crafting>
+						</skillRequirements>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

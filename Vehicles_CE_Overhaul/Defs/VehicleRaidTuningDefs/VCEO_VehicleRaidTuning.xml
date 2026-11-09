@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicle raids: every number is here. Change it with a regular patch on Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/<field>; a missing field takes its default. Vehicle role: VehicleRaidRoleExtension on the VehicleDef (Auto | Breacher | Support | None); turrets: VehicleRaidTurretExtension on the VehicleTurretDef (breaches, breachAmmo). Who brings a vehicle: VehicleRaidExtension on the VehicleDef (mode TechLevel | Factions | Off, techLevel, factions). The player can override all of this in the mod settings ("Vehicles and factions in raids"). -->
+
+	<VehiclesCEOverhaul.VehicleRaidTuningDef>
+		<defName>VCEO_VehicleRaidTuning</defName>
+		<label>vehicle raid tuning</label>
+
+		<!-- raid make-up: expected number of vehicles by raid points (the fraction is the chance of one more) -->
+		<vehiclesByPoints>
+			<points>
+				<li>(1500, 0)</li>
+				<li>(3000, 1)</li>
+				<li>(6000, 2)</li>
+				<li>(12000, 3)</li>
+				<li>(25000, 5)</li>
+			</points>
+		</vehiclesByPoints>
+		<budgetShare>0.35</budgetShare>        <!-- share of the raid points vehicles may take -->
+		<!-- gate: for vehicles the raid counts as this many times weaker (vehicle count and budget use points / gate; the infantry pays the full price). Share and gate are also in the mod settings. -->
+		<gate>1.5</gate>
+		<!-- factions (defName) that bring vehicles in "by tech level" mode. Empty in the core: nobody brings vehicles until a patch (the HSK bridge, an addon) or the player adds a faction. A vehicle with its own faction list (VehicleRaidExtension) comes to them without this list. -->
+		<factions />
+
+		<!-- vehicle price in points = market value / silverPerPoint, not below minCost -->
+		<silverPerPoint>12.5</silverPerPoint>
+		<minCost>240</minCost>
+		<!-- Vehicle price = max(minCost, market value / silverPerPoint x costMultiplier x unadapted markup x vehicle factor). costMultiplier is global: without HSK the market value of vehicles is low, x6 brings it to the HSK level (the HSK bridge sets 1). unadaptedCostMultiplier applies to vehicles not in adaptedVehicles (value not recalculated by a modpack economy); 0 means no such notion. The vehicle factor is VehicleRaidExtension.costFactor and the mod settings; the global multiplier and the markup are also sliders in the mod settings. -->
+		<costMultiplier>6</costMultiplier>
+		<unadaptedCostMultiplier>0</unadaptedCostMultiplier>
+		<adaptedVehicles />
+
+		<minInfantry>3</minInfantry>           <!-- at least this many raiders stay on foot -->
+		<cargoShare>0.8</cargoShare>           <!-- spare ammo: at most this share of the cargo capacity -->
+		<maxGunRange>120</maxGunRange>         <!-- turrets with a longer range are artillery: such vehicles do not join raids -->
+
+		<!-- behavior -->
+		<thinkInterval>180</thinkInterval>     <!-- a decision every this many ticks -->
+		<stuckTicks>600</stuckTicks>           <!-- has not moved for this long: another position -->
+		<engageShare>0.6</engageShare>         <!-- firing position at this share of the range -->
+		<holdShare>0.75</holdShare>            <!-- closer than this share of the range and sees the target: holds and fires -->
+		<leadLimit>20</leadLimit>              <!-- gets ahead of its infantry by at most this many cells -->
+		<maxWaitTicks>2500</maxWaitTicks>      <!-- waits for lagging infantry at most this long, then goes alone -->
+		<engageCap>45</engageCap>              <!-- range used for the position, at most (CE hardly hits beyond) -->
+		<failedCellTicks>600</failedCellTicks> <!-- a cell the drive failed to at once is not tried again for this long -->
+		<retreatHealth>0.3</retreatHealth>     <!-- below this health it falls back -->
+		<!-- friendly fire protection -->
+		<friendlyMargin>1.5</friendlyMargin>   <!-- does not fire at a target with own infantry closer than the blast radius plus this -->
+		<friendlyLineWidth>0.8</friendlyLineWidth>     <!-- ...or with own infantry closer than this (plus the blast radius) to the line of fire -->
+		<safeAmmoShare>0.34</safeAmmoShare>    <!-- turrets with an explosive main shell: share of spare ammo without blast, used when own infantry blocks the explosive one -->
+		<explosiveMargin>2</explosiveMargin>   <!-- explosive shells: this much more to the margin at the target and to the line width; own infantry closer - a shell without blast -->
+
+		<friendlyLineSpread>0</friendlyLineSpread>     <!-- ...and wider by this many cells per cell along the line (CE spread cone); 0 - a strip -->
+		<friendlyEscortRadius>0</friendlyEscortRadius>  <!-- ...except own infantry within this many cells of the hull (0 - only under the hull) -->
+
+		<!-- siege: no reachable firing position with a line of fire at any target for siegeAfterTicks in a row -->
+		<siege>true</siege>
+		<siegeAfterTicks>720</siegeAfterTicks>
+		<breachSearchRadius>10</breachSearchRadius>   <!-- buildings within this radius of the first obstacle on the line to the target -->
+		<breachMinDistance>8</breachMinDistance>      <!-- does not stand closer to what it breaks (own high explosive) -->
+		<breachFriendlyRadius>6</breachFriendlyRadius> <!-- own infantry closer than this to what it breaks: holds fire -->
+		<breachOrder>
+			<li>Turret</li>
+			<li>Door</li>
+			<li>Wall</li>
+		</breachOrder>
+		<breachCandidates>6</breachCandidates>        <!-- buildings checked for a firing position per decision -->
+		<breachWiden>true</breachWiden>               <!-- own infantry at the nearest obstacle: a second breach in the same wall (away from them) instead of waiting -->
+		<breachAmmoShare>0.34</breachAmmoShare>       <!-- share of spare ammo of breaching turrets in breaching ammo -->
+		<breachDamage>100</breachDamage>              <!-- a turret breaches by itself if its set has a round with at least this damage... -->
+		<breachRadius>2</breachRadius>                <!-- ...or at least this blast radius -->
+
+		<!-- capture of an empty enemy vehicle: a colonist works at it this many ticks ("Capture" in the colonist menu) -->
+		<captureTicks>600</captureTicks>
+	</VehiclesCEOverhaul.VehicleRaidTuningDef>
+
+</Defs>

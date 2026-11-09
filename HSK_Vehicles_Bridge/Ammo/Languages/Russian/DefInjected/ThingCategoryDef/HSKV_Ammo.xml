@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: .75 cal bolter -->
+	<AmmoBolter75.label>болтер .75</AmmoBolter75.label>
+	<!-- EN: .998 cal bolter -->
+	<AmmoBolter998.label>тяжёлый болтер .998</AmmoBolter998.label>
+	<!-- EN: lascannon power pack -->
+	<HSKV_AmmoLascannon.label>батареи ласпушки</HSKV_AmmoLascannon.label>
+	<!-- EN: melta canister -->
+	<AmmoMeltaGun.label>мельта-заряды</AmmoMeltaGun.label>
+	<!-- EN: multi-laser power cell -->
+	<HSKV_AmmoMultilaser.label>батареи мультилазера</HSKV_AmmoMultilaser.label>
+	<!-- EN: heavy plasma canister -->
+	<HSKV_AmmoPlasmaHeavy.label>тяжёлые плазменные канистры</HSKV_AmmoPlasmaHeavy.label>
+	<!-- EN: 57x438mm Bofors -->
+	<Ammo57x438mmBofors.label>57x438 мм Bofors</Ammo57x438mmBofors.label>
+	<!-- EN: cannon ball -->
+	<CannonBall.label>пушечные ядра</CannonBall.label>
+
+</LanguageData>

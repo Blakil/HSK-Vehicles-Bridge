@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VVE_EngineBlock.label>блок двигателя</VVE_EngineBlock.label>
+  <VVE_EngineBlock.description>Блок цилиндров с коленчатым валом — основа двигателя. Без него машину не собрать; большим и тяжёлым машинам нужно несколько.</VVE_EngineBlock.description>
+  <VVE_CarAlternator.label>генератор</VVE_CarAlternator.label>
+  <VVE_CarAlternator.description>Генератор: питает электросистемы машины и заряжает аккумулятор.</VVE_CarAlternator.description>
+  <VVE_CarExhaust.label>выхлопная система</VVE_CarExhaust.label>
+  <VVE_CarExhaust.description>Трубы, катализатор и глушитель: отводят выхлоп двигателя от кабины.</VVE_CarExhaust.description>
+  <VVE_CarSuspension.label>подвеска</VVE_CarSuspension.label>
+  <VVE_CarSuspension.description>Пружины, амортизаторы и рычаги: гасят удары, которые передаются через колёса. Чем тяжелее машина, тем больше подвесок.</VVE_CarSuspension.description>
+  <VVE_CarWheel.label>колесо</VVE_CarWheel.label>
+  <VVE_CarWheel.description>Колесо с шиной. Большим и тяжёлым машинам нужно много колёс.</VVE_CarWheel.description>
+  <VVE_CarBattery.label>аккумулятор</VVE_CarBattery.label>
+  <VVE_CarBattery.description>Свинцовый аккумулятор: запускает двигатель и питает электронику машины.</VVE_CarBattery.description>
+  <VVE_CarFuelTank.label>топливный бак</VVE_CarFuelTank.label>
+  <VVE_CarFuelTank.description>Топливный бак с насосом и подачей топлива.</VVE_CarFuelTank.description>
+  <VVE_CarTransmission.label>коробка передач</VVE_CarTransmission.label>
+  <VVE_CarTransmission.description>Коробка передач из закалённой стали: нужна машинам с большим крутящим моментом.</VVE_CarTransmission.description>
+  <VVE_CarRadiator.label>радиатор</VVE_CarRadiator.label>
+  <VVE_CarRadiator.description>Радиатор с насосом и вентилятором: охлаждает двигатель под нагрузкой.</VVE_CarRadiator.description>
+  <VVE_CarWiring.label>проводка</VVE_CarWiring.label>
+  <VVE_CarWiring.description>Жгуты проводов с разъёмами для электросистем машины.</VVE_CarWiring.description>
+</LanguageData>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Alpha Vehicles: Neolithic vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Balloon_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Balloon_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Balloon_Blueprint"]/costList</xpath>
+				<value><costList><Cloth>150</Cloth><Plasteel>10</Plasteel><WoodLog>30</WoodLog></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Balloon_Blueprint"]</xpath>
+				<value><costList><Cloth>150</Cloth><Plasteel>10</Plasteel><WoodLog>30</WoodLog></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]/statBases/MarketValue</xpath>
+				<value><MarketValue>300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]/statBases</xpath>
+					<value><MarketValue>300</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Balloon"]</xpath>
+					<value><statBases><MarketValue>300</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Chariot_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Chariot_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Chariot_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>150</WoodLog><Plasteel>10</Plasteel><Hay>100</Hay></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Chariot_Blueprint"]</xpath>
+				<value><costList><WoodLog>150</WoodLog><Plasteel>10</Plasteel><Hay>100</Hay></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]/statBases/MarketValue</xpath>
+				<value><MarketValue>300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]/statBases</xpath>
+					<value><MarketValue>300</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Chariot"]</xpath>
+					<value><statBases><MarketValue>300</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_CoveredCarriage_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_CoveredCarriage_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_CoveredCarriage_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>200</WoodLog><Plasteel>30</Plasteel><Hay>100</Hay></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_CoveredCarriage_Blueprint"]</xpath>
+				<value><costList><WoodLog>200</WoodLog><Plasteel>30</Plasteel><Hay>100</Hay></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]/statBases/MarketValue</xpath>
+				<value><MarketValue>450</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]/statBases</xpath>
+					<value><MarketValue>450</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_CoveredCarriage"]</xpath>
+					<value><statBases><MarketValue>450</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]/statBases/MarketValue</xpath>
+				<value><MarketValue>300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]/statBases</xpath>
+					<value><MarketValue>300</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_DogSled"]</xpath>
+					<value><statBases><MarketValue>300</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Hwacha_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Hwacha_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Hwacha_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>125</WoodLog><Plasteel>10</Plasteel><Cloth>10</Cloth></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Hwacha_Blueprint"]</xpath>
+				<value><costList><WoodLog>125</WoodLog><Plasteel>10</Plasteel><Cloth>10</Cloth></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]/statBases/MarketValue</xpath>
+				<value><MarketValue>200</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]/statBases</xpath>
+					<value><MarketValue>200</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Hwacha"]</xpath>
+					<value><statBases><MarketValue>200</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]/statBases/MarketValue</xpath>
+				<value><MarketValue>400</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]/statBases</xpath>
+					<value><MarketValue>400</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_OutriggerCanoe"]</xpath>
+					<value><statBases><MarketValue>400</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_OxCart_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_OxCart_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_OxCart_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>150</WoodLog><Plasteel>25</Plasteel><Hay>200</Hay></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_OxCart_Blueprint"]</xpath>
+				<value><costList><WoodLog>150</WoodLog><Plasteel>25</Plasteel><Hay>200</Hay></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]/statBases/MarketValue</xpath>
+				<value><MarketValue>400</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]/statBases</xpath>
+					<value><MarketValue>400</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_OxCart"]</xpath>
+					<value><statBases><MarketValue>400</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Palanquin_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Palanquin_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Palanquin_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>250</WoodLog><Plasteel>10</Plasteel><Cloth>10</Cloth><GoldBar>2</GoldBar></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Palanquin_Blueprint"]</xpath>
+				<value><costList><WoodLog>250</WoodLog><Plasteel>10</Plasteel><Cloth>10</Cloth><GoldBar>2</GoldBar></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]/statBases/MarketValue</xpath>
+				<value><MarketValue>450</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]/statBases</xpath>
+					<value><MarketValue>450</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Palanquin"]</xpath>
+					<value><statBases><MarketValue>450</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Rickshaw_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Rickshaw_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Rickshaw_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>150</WoodLog><Plasteel>10</Plasteel></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Rickshaw_Blueprint"]</xpath>
+				<value><costList><WoodLog>150</WoodLog><Plasteel>10</Plasteel></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]/statBases/MarketValue</xpath>
+				<value><MarketValue>250</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]/statBases</xpath>
+					<value><MarketValue>250</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Rickshaw"]</xpath>
+					<value><statBases><MarketValue>250</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]/statBases/MarketValue</xpath>
+				<value><MarketValue>150</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]/statBases</xpath>
+					<value><MarketValue>150</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_RowBoat"]</xpath>
+					<value><statBases><MarketValue>150</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_WarChariot_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_WarChariot_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_WarChariot_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>200</WoodLog><Plasteel>30</Plasteel><Hay>100</Hay></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_WarChariot_Blueprint"]</xpath>
+				<value><costList><WoodLog>200</WoodLog><Plasteel>30</Plasteel><Hay>100</Hay></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]/statBases/MarketValue</xpath>
+				<value><MarketValue>450</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]/statBases</xpath>
+					<value><MarketValue>450</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_WarChariot"]</xpath>
+					<value><statBases><MarketValue>450</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Wheelbarrow_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Wheelbarrow_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Wheelbarrow_Blueprint"]/costList</xpath>
+				<value><costList><WoodLog>100</WoodLog><Plasteel>10</Plasteel></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Wheelbarrow_Blueprint"]</xpath>
+				<value><costList><WoodLog>100</WoodLog><Plasteel>10</Plasteel></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]/statBases/MarketValue</xpath>
+				<value><MarketValue>150</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]/statBases</xpath>
+					<value><MarketValue>150</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Wheelbarrow"]</xpath>
+					<value><statBases><MarketValue>150</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>AV_Balloon</li><li>AV_Chariot</li><li>AV_CoveredCarriage</li><li>AV_DogSled</li><li>AV_Hwacha</li><li>AV_OutriggerCanoe</li><li>AV_OxCart</li><li>AV_Palanquin</li><li>AV_Rickshaw</li><li>AV_RowBoat</li><li>AV_WarChariot</li><li>AV_Wheelbarrow</li></value>
+		</match>
+	</Operation>
+
+</Patch>

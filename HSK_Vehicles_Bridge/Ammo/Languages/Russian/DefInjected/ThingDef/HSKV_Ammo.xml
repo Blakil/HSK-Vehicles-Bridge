@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- EN: .75 cal bolt (Standard) -->
+	<Ammo_Bolter75_Standard.label>болт .75 (стандартный)</Ammo_Bolter75_Standard.label>
+	<!-- EN: A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.  Standard bolt: hardened tip and a mass-reactive charge that explodes after penetration. -->
+	<Ammo_Bolter75_Standard.description>Болт калибра .75: гиростабилизированный реактивный снаряд с твёрдым наконечником и масс-реактивным зарядом, который рвётся уже внутри цели. Для штормболтеров и ураганных болтеров.\n\nСтандартный болт: твёрдый наконечник и масс-реактивный заряд, рвущийся после пробития.</Ammo_Bolter75_Standard.description>
+	<!-- EN: .75 cal bolt (Kraken) -->
+	<Ammo_Bolter75_Kraken.label>болт .75 («Кракен»)</Ammo_Bolter75_Kraken.label>
+	<!-- EN: A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.  Kraken bolt: an adamantine-cored penetrator with a reduced charge, made to defeat armour. -->
+	<Ammo_Bolter75_Kraken.description>Болт калибра .75: гиростабилизированный реактивный снаряд с твёрдым наконечником и масс-реактивным зарядом, который рвётся уже внутри цели. Для штормболтеров и ураганных болтеров.\n\nБолт «Кракен»: бронебойный сердечник и уменьшенный заряд — против брони.</Ammo_Bolter75_Kraken.description>
+	<!-- EN: .75 cal bolt (Inferno) -->
+	<Ammo_Bolter75_Inferno.label>болт .75 («Инферно»)</Ammo_Bolter75_Inferno.label>
+	<!-- EN: A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.  Inferno bolt: a lighter round filled with promethium that sets the target ablaze after penetration. -->
+	<Ammo_Bolter75_Inferno.description>Болт калибра .75: гиростабилизированный реактивный снаряд с твёрдым наконечником и масс-реактивным зарядом, который рвётся уже внутри цели. Для штормболтеров и ураганных болтеров.\n\nБолт «Инферно»: облегчённый, с прометием — поджигает цель после пробития.</Ammo_Bolter75_Inferno.description>
+	<!-- EN: .998 cal bolt (Standard) -->
+	<Ammo_Bolter998_Standard.label>болт .998 (стандартный)</Ammo_Bolter998_Standard.label>
+	<!-- EN: A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.  Standard bolt: hardened tip and a mass-reactive charge that explodes after penetration. -->
+	<Ammo_Bolter998_Standard.description>Болт калибра .998: гиростабилизированный реактивный снаряд с твёрдым наконечником и масс-реактивным зарядом, который рвётся уже внутри цели. Для тяжёлых болтеров.\n\nСтандартный болт: твёрдый наконечник и масс-реактивный заряд, рвущийся после пробития.</Ammo_Bolter998_Standard.description>
+	<!-- EN: .998 cal bolt (Kraken) -->
+	<Ammo_Bolter998_Kraken.label>болт .998 («Кракен»)</Ammo_Bolter998_Kraken.label>
+	<!-- EN: A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.  Kraken bolt: an adamantine-cored penetrator with a reduced charge, made to defeat armour. -->
+	<Ammo_Bolter998_Kraken.description>Болт калибра .998: гиростабилизированный реактивный снаряд с твёрдым наконечником и масс-реактивным зарядом, который рвётся уже внутри цели. Для тяжёлых болтеров.\n\nБолт «Кракен»: бронебойный сердечник и уменьшенный заряд — против брони.</Ammo_Bolter998_Kraken.description>
+	<!-- EN: .998 cal bolt (Inferno) -->
+	<Ammo_Bolter998_Inferno.label>болт .998 («Инферно»)</Ammo_Bolter998_Inferno.label>
+	<!-- EN: A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.  Inferno bolt: a lighter round filled with promethium that sets the target ablaze after penetration. -->
+	<Ammo_Bolter998_Inferno.description>Болт калибра .998: гиростабилизированный реактивный снаряд с твёрдым наконечником и масс-реактивным зарядом, который рвётся уже внутри цели. Для тяжёлых болтеров.\n\nБолт «Инферно»: облегчённый, с прометием — поджигает цель после пробития.</Ammo_Bolter998_Inferno.description>
+	<!-- EN: lascannon power pack -->
+	<HSKV_Ammo_LascannonPack.label>батарея ласпушки</HSKV_Ammo_LascannonPack.label>
+	<!-- EN: A heavy power pack for a vehicle lascannon: one pack feeds one shot of a coherent beam able to burn through the armour of a main battle tank. -->
+	<HSKV_Ammo_LascannonPack.description>Тяжёлая батарея ласпушки машины: одна батарея — один выстрел когерентным лучом, прожигающим броню основного боевого танка.</HSKV_Ammo_LascannonPack.description>
+	<!-- EN: multi-laser power cell -->
+	<HSKV_Ammo_MultilaserCell.label>батарея мультилазера</HSKV_Ammo_MultilaserCell.label>
+	<!-- EN: A compact power cell for a vehicle multi-laser: one cell feeds one shot. Rapid fire shreds infantry and light vehicles but does not burn through heavy armour. -->
+	<HSKV_Ammo_MultilaserCell.description>Компактная батарея мультилазера машины: одна батарея — один выстрел. Частый огонь косит пехоту и лёгкую технику, но тяжёлую броню не прожигает.</HSKV_Ammo_MultilaserCell.description>
+	<!-- EN: melta canister -->
+	<Ammo_MeltaGun.label>мельта-заряд</Ammo_MeltaGun.label>
+	<!-- EN: A canister of pyrum-petrol and a sub-molecular charge for a melta weapon: a short-range beam that turns armour plate into slag. -->
+	<Ammo_MeltaGun.description>Канистра пирум-петроля с субмолекулярным зарядом для мельты: луч ближнего действия превращает броневой лист в шлак.</Ammo_MeltaGun.description>
+	<!-- EN: heavy plasma canister -->
+	<HSKV_Ammo_PlasmaCanisterHeavy.label>тяжёлая плазменная канистра</HSKV_Ammo_PlasmaCanisterHeavy.label>
+	<!-- EN: A heavy canister of pressurised hydrogen for vehicle plasma weapons — plasma destroyers and plasma cannons. Unstable when damaged. -->
+	<HSKV_Ammo_PlasmaCanisterHeavy.description>Тяжёлая канистра со сжатым водородом для плазменного оружия машин — плазменных разрушителей и пушек. Повреждённая — нестабильна.</HSKV_Ammo_PlasmaCanisterHeavy.description>
+	<!-- EN: 57x438mm Bofors cartridge (AP) -->
+	<Ammo_57x438mmBofors_AP.label>57x438 мм Bofors (AP)</Ammo_57x438mmBofors_AP.label>
+	<!-- EN: A large-calibre 57x438mm cartridge for naval and vehicle autocannons. -->
+	<Ammo_57x438mmBofors_AP.description>Крупнокалиберный выстрел 57x438 мм для корабельных и танковых автопушек.</Ammo_57x438mmBofors_AP.description>
+	<!-- EN: 57x438mm Bofors cartridge (HE) -->
+	<Ammo_57x438mmBofors_HE.label>57x438 мм Bofors (HE)</Ammo_57x438mmBofors_HE.label>
+	<!-- EN: A large-calibre 57x438mm cartridge for naval and vehicle autocannons. -->
+	<Ammo_57x438mmBofors_HE.description>Крупнокалиберный выстрел 57x438 мм для корабельных и танковых автопушек.</Ammo_57x438mmBofors_HE.description>
+	<!-- EN: round shot -->
+	<Ammo_CannonBall_Round.label>ядро</Ammo_CannonBall_Round.label>
+	<!-- EN: A solid ball of metal, capable of delivering significant damage on a direct hit. -->
+	<Ammo_CannonBall_Round.description>Сплошное металлическое ядро: страшный удар при прямом попадании, пробивает борт деревянного корабля.</Ammo_CannonBall_Round.description>
+	<!-- EN: bursting shell -->
+	<Ammo_CannonBall_Bursting.label>разрывное ядро</Ammo_CannonBall_Bursting.label>
+	<!-- EN: A round shell, hollow and filled with explosives, exploding on impact and producing razor-sharp metal splinters. -->
+	<Ammo_CannonBall_Bursting.description>Полое ядро с порохом: рвётся при попадании и даёт острые осколки.</Ammo_CannonBall_Bursting.description>
+	<!-- EN: grape shot -->
+	<Ammo_CannonBall_Grape.label>картечь</Ammo_CannonBall_Grape.label>
+	<!-- EN: A canister of numerous metal balls, fired in a wide spread to deal horrific damage against infantry. -->
+	<Ammo_CannonBall_Grape.description>Связка металлических пуль, летящих широким снопом, — против пехоты.</Ammo_CannonBall_Grape.description>
+	<!-- EN: 90mm cannon shell (AP) -->
+	<Ammo_90mmCannonShell_AP.label>90 мм снаряд (AP)</Ammo_90mmCannonShell_AP.label>
+	<!-- EN: A 90mm armour-piercing tank shell: a solid hardened steel slug. -->
+	<Ammo_90mmCannonShell_AP.description>Бронебойный танковый снаряд 90 мм: сплошная болванка из закалённой стали.</Ammo_90mmCannonShell_AP.description>
+	<!-- EN: 90mm cannon shell (APCR) -->
+	<Ammo_90mmCannonShell_APCR.label>90 мм снаряд (APCR)</Ammo_90mmCannonShell_APCR.label>
+	<!-- EN: A 90mm armour-piercing composite rigid shell: a light body with a tungsten core, fast and flat-shooting. -->
+	<Ammo_90mmCannonShell_APCR.description>Подкалиберный танковый снаряд 90 мм: лёгкий корпус с вольфрамовым сердечником, быстрый и настильный.</Ammo_90mmCannonShell_APCR.description>
+	<!-- EN: 155mm howitzer shell (smoke) -->
+	<Ammo_155mmHowitzerShell_Smoke.label>155 мм снаряд (дымовой)</Ammo_155mmHowitzerShell_Smoke.label>
+	<!-- EN: A 155mm howitzer shell that lays a wide smoke screen. -->
+	<Ammo_155mmHowitzerShell_Smoke.description>Гаубичный снаряд 155 мм: ставит широкую дымовую завесу.</Ammo_155mmHowitzerShell_Smoke.description>
+	<!-- EN: 155mm howitzer shell (incendiary) -->
+	<Ammo_155mmHowitzerShell_Incendiary.label>155 мм снаряд (зажигательный)</Ammo_155mmHowitzerShell_Incendiary.label>
+	<!-- EN: A 155mm howitzer shell filled with prometheum: a fire burst over a wide area. -->
+	<Ammo_155mmHowitzerShell_Incendiary.description>Гаубичный снаряд 155 мм с прометием: огненный разрыв на большой площади.</Ammo_155mmHowitzerShell_Incendiary.description>
+	<!-- EN: 20x102mm cartridge (Sabot) -->
+	<Ammo_20x102mm_Sabot.label>20x102 мм (подкалиберный)</Ammo_20x102mm_Sabot.label>
+	<!-- EN: A 20x102mm armour-piercing discarding-sabot cartridge with a tungsten penetrator. -->
+	<Ammo_20x102mm_Sabot.description>Подкалиберный выстрел 20x102 мм с вольфрамовым сердечником и отделяемым поддоном.</Ammo_20x102mm_Sabot.description>
+	<!-- EN: 30x173mm cartridge (Sabot) -->
+	<Ammo_30x173mm_Sabot.label>30x173 мм (подкалиберный)</Ammo_30x173mm_Sabot.label>
+	<!-- EN: A 30x173mm armour-piercing discarding-sabot cartridge with a tungsten penetrator. -->
+	<Ammo_30x173mm_Sabot.description>Подкалиберный выстрел 30x173 мм с вольфрамовым сердечником и отделяемым поддоном.</Ammo_30x173mm_Sabot.description>
+	<!-- EN: 57x438mm Bofors cartridge (HE, time fuze) -->
+	<Ammo_57x438mmBofors_HE_TFuzed.label>57x438 мм Bofors (HE, дистанционный)</Ammo_57x438mmBofors_HE_TFuzed.label>
+	<!-- EN: A large-calibre 57x438mm cartridge for naval and vehicle autocannons. -->
+	<Ammo_57x438mmBofors_HE_TFuzed.description>Крупнокалиберный выстрел 57x438 мм для корабельных и танковых автопушек.</Ammo_57x438mmBofors_HE_TFuzed.description>
+	<!-- EN: 57x438mm Bofors cartridge (Sabot) -->
+	<Ammo_57x438mmBofors_Sabot.label>57x438 мм Bofors (подкалиберный)</Ammo_57x438mmBofors_Sabot.label>
+	<!-- EN: A large-calibre 57x438mm cartridge for naval and vehicle autocannons. -->
+	<Ammo_57x438mmBofors_Sabot.description>Крупнокалиберный выстрел 57x438 мм для корабельных и танковых автопушек.</Ammo_57x438mmBofors_Sabot.description>
+	<!-- EN: .75 cal bolt (Standard) -->
+	<Bullet_Bolter75_Standard.label>болт .75 (стандартный)</Bullet_Bolter75_Standard.label>
+	<!-- EN: .75 cal bolt (Kraken) -->
+	<Bullet_Bolter75_Kraken.label>болт .75 («Кракен»)</Bullet_Bolter75_Kraken.label>
+	<!-- EN: .75 cal bolt (Inferno) -->
+	<Bullet_Bolter75_Inferno.label>болт .75 («Инферно»)</Bullet_Bolter75_Inferno.label>
+	<!-- EN: .998 cal bolt (Standard) -->
+	<Bullet_Bolter998_Standard.label>болт .998 (стандартный)</Bullet_Bolter998_Standard.label>
+	<!-- EN: .998 cal bolt (Kraken) -->
+	<Bullet_Bolter998_Kraken.label>болт .998 («Кракен»)</Bullet_Bolter998_Kraken.label>
+	<!-- EN: .998 cal bolt (Inferno) -->
+	<Bullet_Bolter998_Inferno.label>болт .998 («Инферно»)</Bullet_Bolter998_Inferno.label>
+	<!-- EN: lascannon beam -->
+	<Bullet_Lasgun_Cannon.label>луч ласпушки</Bullet_Lasgun_Cannon.label>
+	<!-- EN: multi-laser beam -->
+	<HSKV_Bullet_Multilaser.label>луч мультилазера</HSKV_Bullet_Multilaser.label>
+	<!-- EN: melta beam -->
+	<Bullet_Laser_MeltaCharge.label>мельта-луч</Bullet_Laser_MeltaCharge.label>
+	<!-- EN: plasma destroyer beam -->
+	<Bullet_Laser_PlasmaDestroyer.label>луч плазменного разрушителя</Bullet_Laser_PlasmaDestroyer.label>
+	<!-- EN: plasma cannon beam -->
+	<Bullet_PlasmaCannon.label>луч плазменной пушки</Bullet_PlasmaCannon.label>
+	<!-- EN: 57x438mm Bofors shell (AP) -->
+	<Bullet_57x438mmBofors_AP.label>снаряд 57x438 мм Bofors (AP)</Bullet_57x438mmBofors_AP.label>
+	<!-- EN: 57x438mm Bofors shell (HE) -->
+	<Bullet_57x438mmBofors_HE.label>снаряд 57x438 мм Bofors (HE)</Bullet_57x438mmBofors_HE.label>
+	<!-- EN: round shot -->
+	<Bullet_CannonBall_Round.label>ядро</Bullet_CannonBall_Round.label>
+	<!-- EN: bursting shell -->
+	<Bullet_CannonBall_Bursting.label>разрывное ядро</Bullet_CannonBall_Bursting.label>
+	<!-- EN: grape shot -->
+	<Bullet_CannonBall_Grape.label>картечь</Bullet_CannonBall_Grape.label>
+	<!-- EN: 90mm cannon shell (AP) -->
+	<Bullet_90mmCannonShell_AP.label>снаряд 90 мм (AP)</Bullet_90mmCannonShell_AP.label>
+	<!-- EN: 90mm cannon shell (APCR) -->
+	<Bullet_90mmCannonShell_APCR.label>снаряд 90 мм (APCR)</Bullet_90mmCannonShell_APCR.label>
+	<!-- EN: 20x102mm bullet (Sabot) -->
+	<Bullet_20x102mm_Sabot.label>пуля 20x102 мм (подкалиберная)</Bullet_20x102mm_Sabot.label>
+	<!-- EN: 30x173mm bullet (Sabot) -->
+	<Bullet_30x173mm_Sabot.label>пуля 30x173 мм (подкалиберная)</Bullet_30x173mm_Sabot.label>
+	<!-- EN: 57x438mm Bofors shell (Sabot) -->
+	<Bullet_57x438mmBofors_Sabot.label>снаряд 57x438 мм Bofors (подкалиберный)</Bullet_57x438mmBofors_Sabot.label>
+	<!-- EN: 155mm howitzer shell (smoke) -->
+	<Bullet_155mmHowitzerShell_Smoke.label>снаряд 155 мм (дымовой)</Bullet_155mmHowitzerShell_Smoke.label>
+	<!-- EN: 155mm howitzer shell (incendiary) -->
+	<Bullet_155mmHowitzerShell_Incendiary.label>снаряд 155 мм (зажигательный)</Bullet_155mmHowitzerShell_Incendiary.label>
+	<!-- EN: 155mm howitzer shell (smoke) -->
+	<Bullet_155mmHowitzerShell_Smoke_directfire.label>снаряд 155 мм (дымовой)</Bullet_155mmHowitzerShell_Smoke_directfire.label>
+	<!-- EN: 155mm howitzer shell (incendiary) -->
+	<Bullet_155mmHowitzerShell_Incendiary_directfire.label>снаряд 155 мм (зажигательный)</Bullet_155mmHowitzerShell_Incendiary_directfire.label>
+	<!-- EN: 57x438mm Bofors shell (HE, time fuze) -->
+	<Bullet_57x438mmBofors_HE_TFuzed.label>снаряд 57x438 мм Bofors (HE, дистанционный)</Bullet_57x438mmBofors_HE_TFuzed.label>
+
+</LanguageData>

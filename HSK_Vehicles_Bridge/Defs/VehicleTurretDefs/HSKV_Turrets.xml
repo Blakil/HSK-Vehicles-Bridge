@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge turrets, shared by vehicles (the vehicle sets the position on the hull). Graphics from VVE where it fits: Tango belt gun -> .50 BMG, Highwayman twin barrel -> 20x102 autocannon, Toad mortar -> 81 mm, Scytheman rocket pack -> 130 mm; AGL, 7.62 machine gun and 155 mm have their own sprites (painted like the vehicle). CE numbers come from HSK turrets (M2 Browning, Oerlikon, mortar, M800 howitzer), adjusted for a vehicle mount. -->
+
+	<!-- ===== .50 BMG ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_HMG50</defName>
+		<label>.50 BMG heavy machine gun mount</label>
+		<description>A heavy machine gun on a light vehicle turret. Hits harder and further than a rifle-calibre gun and can deal with light armour.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GunShotA</shotSound>
+		<projectile>Bullet_50BMG_FMJ</projectile>
+		<reloadTimer>8.5</reloadTimer>
+		<warmUpTimer>1.5</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>100</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.6</rotationSpeed>
+		<projectileOffset>2.1</projectileOffset>
+		<maxRange>70</maxRange>
+		<recoil>
+			<distanceTotal>0.2</distanceTotal>
+			<distancePerTick>0.06</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>7</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>7</ticksBetweenShots>
+				<ticksBetweenBursts>75</ticksBetweenBursts>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Tier2/Tier2_APC/Tier2_APC_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_50BMG_FMJ</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+				<shotHeight>2.0</shotHeight>
+				<speed>175</speed>
+				<sway>1.1</sway>
+				<spread>0.03</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>1.1</sightsEfficiency>
+				<recoilAmount>1.6</recoilAmount>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== AGL 30x29 ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_AGL30</defName>
+		<label>30×29 automatic grenade launcher mount</label>
+		<description>An automatic grenade launcher on a light vehicle turret. Lobs high-explosive grenades in bursts: poor against armour, devastating against infantry in the open and behind light cover.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GunShotA</shotSound>
+		<projectile>Bullet_30x29mmGrenade_HE</projectile>
+		<reloadTimer>9</reloadTimer>
+		<warmUpTimer>1.6</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>29</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.8</rotationSpeed>
+		<projectileOffset>2.1</projectileOffset>
+		<minRange>4</minRange>
+		<maxRange>60</maxRange>
+		<recoil>
+			<distanceTotal>0.15</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>HSKV/Turrets/HSKV_Turret_AGL30</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(2.4, 2.4)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_30x29mmGrenade_HE</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
+				<shotHeight>2.0</shotHeight>
+				<speed>35</speed>
+				<sway>1.2</sway>
+				<spread>0.12</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>1.0</sightsEfficiency>
+				<recoilAmount>0.8</recoilAmount>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== autocannon 20x102 (HSK Oerlikon) ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_AC20</defName>
+		<label>20×102 autocannon mount</label>
+		<description>A 20 mm autocannon on a vehicle turret. Fast, flat-shooting and hard-hitting: shreds infantry and light vehicles and can wear down armoured cars and APCs.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Shot_Autocannon</shotSound>
+		<projectile>Bullet_20x102mm_FMJ</projectile>
+		<reloadTimer>10</reloadTimer>
+		<warmUpTimer>1.6</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>120</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.6</rotationSpeed>
+		<projectileOffset>2.1</projectileOffset>
+		<maxRange>75</maxRange>
+		<recoil>
+			<distanceTotal>0.2</distanceTotal>
+			<distancePerTick>0.07</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>6</shotsPerBurst>
+				<ticksBetweenShots>8</ticksBetweenShots>
+				<ticksBetweenBursts>90</ticksBetweenBursts>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_APC/Tier1_APC_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_20x102mm_FMJ</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_20x102mm</ammoSet>
+				<shotHeight>2.0</shotHeight>
+				<speed>180</speed>
+				<sway>0.9</sway>
+				<spread>0.08</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>1.5</sightsEfficiency>
+				<recoilAmount>1.4</recoilAmount>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== mortar 81 mm (HSK mortar) ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_Mortar81</defName>
+		<label>81 mm mortar mount</label>
+		<description>An 81 mm mortar on a vehicle. Indirect fire over walls and hills; accurate enough with a spotter, a gamble without one.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>Mortar_LaunchA</shotSound>
+		<reloadSound>Artillery_ShellLoaded</reloadSound>
+		<projectile>Bullet_81mmMortarShell_HE</projectile>
+		<reloadTimer>6.5</reloadTimer>
+		<warmUpTimer>4</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>1</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		<projectileOffset>1</projectileOffset>
+		<minRange>32</minRange>
+		<maxRange>180</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_SiegePod/Tier1_SiegePod_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(1.4, 1.4)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Shell_HighExplosive</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+				<shotHeight>2</shotHeight>
+				<speed>90</speed>
+				<sway>0.82</sway>
+				<spread>0.01</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>0.8</sightsEfficiency>
+				<circularError>1</circularError>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== rocket artillery 130 mm (improvised: salvo of 8, wide spread, long reload) ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_MRL130</defName>
+		<label>130 mm rocket launcher</label>
+		<description>A makeshift multiple rocket launcher firing 130 mm thermobaric rockets. A full salvo saturates an area; individual rockets wander badly. Reloading the pod takes a long time.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>RocketswarmLauncher_Fire</shotSound>
+		<reloadSound>Artillery_ShellLoaded</reloadSound>
+		<projectile>Bullet_130mmRocketMissile</projectile>
+		<reloadTimer>30</reloadTimer>
+		<warmUpTimer>3</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>8</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1</rotationSpeed>
+		<projectileOffset>0.1</projectileOffset>
+		<minRange>35</minRange>
+		<maxRange>200</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>8</shotsPerBurst>
+				<ticksBetweenShots>15</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Salvo</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>15</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_RocketTruck/Tier1_RocketTruck_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>Cutout</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_130mmRocketMissile</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_130mmRocketMissile</ammoSet>
+				<shotHeight>2</shotHeight>
+				<speed>80</speed>
+				<sway>1.2</sway>
+				<spread>0.2</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>1.0</sightsEfficiency>
+				<circularError>2</circularError>
+				<indirectFirePenalty>0.15</indirectFirePenalty>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== howitzer 155 mm (high-tech: autoloader, low circular error) ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_Howitzer155</defName>
+		<label>155 mm howitzer</label>
+		<description>A compact 155 mm howitzer with an autoloader and a ballistic computer. Unusually accurate for artillery: shells land close to the aim point even without a spotter.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>VVE_Shot_BulldogCannonSound</shotSound>
+		<reloadSound>Artillery_ShellLoaded</reloadSound>
+		<projectile>Bullet_155mmHowitzerShell_HE</projectile>
+		<reloadTimer>8</reloadTimer>
+		<warmUpTimer>2.4</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>1</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.5</rotationSpeed>
+		<projectileOffset>1.5</projectileOffset>
+		<minRange>32</minRange>
+		<maxRange>250</maxRange>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>10</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>HSKV/Turrets/HSKV_Turret_Howitzer155</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_155mmHowitzerShell_HE</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_155mmHowitzerShell</ammoSet>
+				<shotHeight>2</shotHeight>
+				<speed>90</speed>
+				<sway>0.5</sway>
+				<spread>0.03</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>2.5</sightsEfficiency>
+				<circularError>0.4</circularError>
+				<indirectFirePenalty>0.05</indirectFirePenalty>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== machine gun 7.62x51 (HSK M240) - stock on Highwayman ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_MG762</defName>
+		<label>7.62×51 machine gun mount</label>
+		<description>A rifle-calibre general purpose machine gun on a light vehicle turret. Cheap and reliable: handles infantry, useless against armour.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>GunShotA</shotSound>
+		<projectile>Bullet_762x51mmNATO_FMJ</projectile>
+		<reloadTimer>7.8</reloadTimer>
+		<warmUpTimer>1.3</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>200</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>2</rotationSpeed>
+		<projectileOffset>2.1</projectileOffset>
+		<maxRange>55</maxRange>
+		<recoil>
+			<distanceTotal>0.15</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+		</recoil>
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>6</ticksBetweenShots>
+				<ticksBetweenBursts>45</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>5</shotsPerBurst>
+				<ticksBetweenShots>6</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>6</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>HSKV/Turrets/HSKV_Turret_MG762</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_762x51mmNATO_FMJ</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+				<shotHeight>2.0</shotHeight>
+				<speed>171</speed>
+				<sway>0.96</sway>
+				<spread>0.07</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>1.1</sightsEfficiency>
+				<recoilAmount>1.0</recoilAmount>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== flamethrower (HSK RM2; bigger tank and range on a vehicle) - stock on Bunsen ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_Flamer</defName>
+		<label>vehicle flamethrower</label>
+		<description>A heavy flamethrower fed from large fuel tanks. Short range, but sets everything in front of it ablaze.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>VVE_Shot_BunsenCannonSound</shotSound>
+		<projectile>Bullet_Flamethrower_Prometheum</projectile>
+		<reloadTimer>7</reloadTimer>
+		<warmUpTimer>1</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>200</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>3.6</rotationSpeed>
+		<projectileOffset>1.5</projectileOffset>
+		<maxRange>25</maxRange>
+		<minRange>2</minRange>
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>10</shotsPerBurst>
+				<ticksBetweenShots>3</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Burst</label>
+				<texPath>UI/Gizmos/FireRate_Burst</texPath>
+			</li>
+			<li>
+				<shotsPerBurst>20</shotsPerBurst>
+				<ticksBetweenShots>3</ticksBetweenShots>
+				<ticksBetweenBursts>60</ticksBetweenBursts>
+				<label>Auto</label>
+				<texPath>UI/Gizmos/FireRate_Auto</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_FlamerTank/Tier1_FlamerTank_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(3, 3)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_Flamethrower_Prometheum</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_Flamethrower</ammoSet>
+				<shotHeight>2.0</shotHeight>
+				<speed>20</speed>
+				<sway>0.8</sway>
+				<spread>0.17</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>1.0</sightsEfficiency>
+				<recoilAmount>0.5</recoilAmount>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== cannon 90 mm - stock on Roadkill ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_Cannon90</defName>
+		<label>90 mm tank gun</label>
+		<description>A 90 mm tank gun. HEAT shells defeat any armour short of a main battle tank's front; HE clears infantry and fortifications.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>VVE_Shot_RoadkillCannonSound</shotSound>
+		<reloadSound>VVE_RoadkillReloadSound</reloadSound>
+		<projectile>Bullet_90mmCannonShell_HE</projectile>
+		<reloadTimer>8.2</reloadTimer>
+		<warmUpTimer>3.5</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>1</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.2</rotationSpeed>
+		<projectileOffset>2.5</projectileOffset>
+		<maxRange>80</maxRange>
+		<minRange>5</minRange>
+		<recoil>
+			<distanceTotal>0.45</distanceTotal>
+			<distancePerTick>0.15</distancePerTick>
+			<speedMultiplierPostRecoil>0.35</speedMultiplierPostRecoil>
+		</recoil>
+		<restrictionType>Vehicles.TurretRestrictions_Stationary</restrictionType>
+		<vehicleRecoil>
+			<distanceTotal>0.1</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.55</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>1</ticksBetweenShots>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Tier1/Tier1_Tank/Tier1_Tank_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(4, 4)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_90mmCannonShell_HE</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_90mmCannonShell</ammoSet>
+				<shotHeight>2.5</shotHeight>
+				<speed>155</speed>
+				<sway>0.82</sway>
+				<spread>0.03</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>1.5</sightsEfficiency>
+				<recoilAmount>0</recoilAmount>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+	<!-- ===== cannon 120 mm (with fire control) - stock on Bulldog ===== -->
+	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+		<defName>HSKV_Turret_Cannon120</defName>
+		<label>120 mm tank gun</label>
+		<description>A 120 mm smoothbore tank gun with a fire-control system. Accurate at long range; HEAT shells penetrate almost anything.</description>
+		<turretType>Rotatable</turretType>
+		<shotSound>VVE_Shot_BulldogCannonSound</shotSound>
+		<reloadSound>VVE_BulldogReloadSound</reloadSound>
+		<projectile>Bullet_120mmCannonShell_HE</projectile>
+		<reloadTimer>6.2</reloadTimer>
+		<warmUpTimer>2.8</warmUpTimer>
+		<chargePerAmmoCount>1</chargePerAmmoCount>
+		<magazineCapacity>1</magazineCapacity>
+		<genericAmmo>false</genericAmmo>
+		<autoSnapTargeting>false</autoSnapTargeting>
+		<rotationSpeed>1.2</rotationSpeed>
+		<projectileOffset>5.25</projectileOffset>
+		<maxRange>100</maxRange>
+		<minRange>4</minRange>
+		<recoil>
+			<distanceTotal>0.6</distanceTotal>
+			<distancePerTick>0.2</distancePerTick>
+			<speedMultiplierPostRecoil>0.35</speedMultiplierPostRecoil>
+		</recoil>
+		<vehicleRecoil>
+			<distanceTotal>0.1</distanceTotal>
+			<distancePerTick>0.05</distancePerTick>
+			<speedMultiplierPostRecoil>0.55</speedMultiplierPostRecoil>
+		</vehicleRecoil>
+		<motes>
+			<li>
+				<cycles>1</cycles>
+				<moteDef>Mote_CannonPlume</moteDef>
+				<animationType>Reset</animationType>
+			</li>
+		</motes>
+		<attachProjectileFlag>VVE_Tank</attachProjectileFlag>
+		<fireModes>
+			<li>
+				<shotsPerBurst>1</shotsPerBurst>
+				<ticksBetweenShots>1</ticksBetweenShots>
+				<ticksBetweenBursts>1</ticksBetweenBursts>
+				<label>Single</label>
+				<texPath>UI/Gizmos/FireRate_Single</texPath>
+			</li>
+		</fireModes>
+		<graphicData>
+			<texPath>Things/Vehicles/Tier2/Tier2_Tank/Tier2_Tank_CannonTop</texPath>
+			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+			<shaderType>CutoutComplexPattern</shaderType>
+			<drawSize>(6, 6)</drawSize>
+		</graphicData>
+		<ammunition>
+			<thingDefs>
+				<li>Ammo_120mmCannonShell_HE</li>
+			</thingDefs>
+		</ammunition>
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_120mmCannonShell</ammoSet>
+				<shotHeight>2.5</shotHeight>
+				<speed>155</speed>
+				<sway>0.82</sway>
+				<spread>0.02</spread>
+			</li>
+			<li Class="VehiclesCEOverhaul.TurretAimExtension">
+				<sightsEfficiency>2.0</sightsEfficiency>
+				<recoilAmount>0</recoilAmount>
+			</li>
+		</modExtensions>
+	</Vehicles.VehicleTurretDef>
+
+</Defs>

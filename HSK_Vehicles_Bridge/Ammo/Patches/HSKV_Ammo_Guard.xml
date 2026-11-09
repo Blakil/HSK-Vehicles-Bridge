@@ -1,0 +1,5118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: vehicle ammo, projectiles and recipes missing in HSK, adapted to the HSK ammo progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingCategoryDef[defName="AmmoBolter75"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="AmmoBolter75"]</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>AmmoBolter75</defName>
+					<label>.75 cal bolter</label>
+					<parent>AmmoAdvanced</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>AmmoBolter75</defName>
+					<label>.75 cal bolter</label>
+					<parent>AmmoAdvanced</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingCategoryDef[defName="AmmoBolter998"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="AmmoBolter998"]</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>AmmoBolter998</defName>
+					<label>.998 cal bolter</label>
+					<parent>AmmoAdvanced</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>AmmoBolter998</defName>
+					<label>.998 cal bolter</label>
+					<parent>AmmoAdvanced</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_Bolter75: Ammo_Bolter75_Standard → Bullet_Bolter75_Standard, Ammo_Bolter75_Kraken → Bullet_Bolter75_Kraken, Ammo_Bolter75_Inferno → Bullet_Bolter75_Inferno -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter75"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter75"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_Bolter75</defName>
+					<label>.75 cal bolter</label>
+					<ammoTypes>
+						<Ammo_Bolter75_Standard>Bullet_Bolter75_Standard</Ammo_Bolter75_Standard>
+						<Ammo_Bolter75_Kraken>Bullet_Bolter75_Kraken</Ammo_Bolter75_Kraken>
+						<Ammo_Bolter75_Inferno>Bullet_Bolter75_Inferno</Ammo_Bolter75_Inferno>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_Bolter75</defName>
+					<label>.75 cal bolter</label>
+					<ammoTypes>
+						<Ammo_Bolter75_Standard>Bullet_Bolter75_Standard</Ammo_Bolter75_Standard>
+						<Ammo_Bolter75_Kraken>Bullet_Bolter75_Kraken</Ammo_Bolter75_Kraken>
+						<Ammo_Bolter75_Inferno>Bullet_Bolter75_Inferno</Ammo_Bolter75_Inferno>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_Bolter998: Ammo_Bolter998_Standard → Bullet_Bolter998_Standard, Ammo_Bolter998_Kraken → Bullet_Bolter998_Kraken, Ammo_Bolter998_Inferno → Bullet_Bolter998_Inferno -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_Bolter998</defName>
+					<label>.998 cal heavy bolter</label>
+					<ammoTypes>
+						<Ammo_Bolter998_Standard>Bullet_Bolter998_Standard</Ammo_Bolter998_Standard>
+						<Ammo_Bolter998_Kraken>Bullet_Bolter998_Kraken</Ammo_Bolter998_Kraken>
+						<Ammo_Bolter998_Inferno>Bullet_Bolter998_Inferno</Ammo_Bolter998_Inferno>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_Bolter998</defName>
+					<label>.998 cal heavy bolter</label>
+					<ammoTypes>
+						<Ammo_Bolter998_Standard>Bullet_Bolter998_Standard</Ammo_Bolter998_Standard>
+						<Ammo_Bolter998_Kraken>Bullet_Bolter998_Kraken</Ammo_Bolter998_Kraken>
+						<Ammo_Bolter998_Inferno>Bullet_Bolter998_Inferno</Ammo_Bolter998_Inferno>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_Bolter75_Standard"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_Bolter75_Standard"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter75Base">
+					<defName>Ammo_Bolter75_Standard</defName>
+					<label>.75 cal bolt (Standard)</label>
+					<description>A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.\n\nStandard bolt: hardened tip and a mass-reactive charge that explodes after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_Bolter/Vengeance</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>15.4</MarketValue>
+					</statBases>
+					<ammoClass>Standard</ammoClass>
+					<cookOffProjectile>Bullet_Bolter75_Standard</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter75Base">
+					<defName>Ammo_Bolter75_Standard</defName>
+					<label>.75 cal bolt (Standard)</label>
+					<description>A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.\n\nStandard bolt: hardened tip and a mass-reactive charge that explodes after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_Bolter/Vengeance</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>15.4</MarketValue>
+					</statBases>
+					<ammoClass>Standard</ammoClass>
+					<cookOffProjectile>Bullet_Bolter75_Standard</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_Bolter75_Kraken"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_Bolter75_Kraken"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter75Base">
+					<defName>Ammo_Bolter75_Kraken</defName>
+					<label>.75 cal bolt (Kraken)</label>
+					<description>A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.\n\nKraken bolt: an adamantine-cored penetrator with a reduced charge, made to defeat armour.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_Bolter/Kraken</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>14.3</MarketValue>
+					</statBases>
+					<ammoClass>Kraken</ammoClass>
+					<cookOffProjectile>Bullet_Bolter75_Kraken</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter75Base">
+					<defName>Ammo_Bolter75_Kraken</defName>
+					<label>.75 cal bolt (Kraken)</label>
+					<description>A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.\n\nKraken bolt: an adamantine-cored penetrator with a reduced charge, made to defeat armour.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_Bolter/Kraken</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>14.3</MarketValue>
+					</statBases>
+					<ammoClass>Kraken</ammoClass>
+					<cookOffProjectile>Bullet_Bolter75_Kraken</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_Bolter75_Inferno"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_Bolter75_Inferno"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter75Base">
+					<defName>Ammo_Bolter75_Inferno</defName>
+					<label>.75 cal bolt (Inferno)</label>
+					<description>A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.\n\nInferno bolt: a lighter round filled with promethium that sets the target ablaze after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_Bolter/Inferno</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>10.3</MarketValue>
+					</statBases>
+					<ammoClass>Inferno</ammoClass>
+					<cookOffProjectile>Bullet_Bolter75_Inferno</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter75Base">
+					<defName>Ammo_Bolter75_Inferno</defName>
+					<label>.75 cal bolt (Inferno)</label>
+					<description>A .75 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by storm bolters and hurricane bolters.\n\nInferno bolt: a lighter round filled with promethium that sets the target ablaze after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_Bolter/Inferno</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>10.3</MarketValue>
+					</statBases>
+					<ammoClass>Inferno</ammoClass>
+					<cookOffProjectile>Bullet_Bolter75_Inferno</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_Bolter998_Standard"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_Bolter998_Standard"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter998Base">
+					<defName>Ammo_Bolter998_Standard</defName>
+					<label>.998 cal bolt (Standard)</label>
+					<description>A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.\n\nStandard bolt: hardened tip and a mass-reactive charge that explodes after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_HeavyBolter</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>20</MarketValue>
+					</statBases>
+					<ammoClass>Standard</ammoClass>
+					<cookOffProjectile>Bullet_Bolter998_Standard</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter998Base">
+					<defName>Ammo_Bolter998_Standard</defName>
+					<label>.998 cal bolt (Standard)</label>
+					<description>A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.\n\nStandard bolt: hardened tip and a mass-reactive charge that explodes after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_HeavyBolter</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>20</MarketValue>
+					</statBases>
+					<ammoClass>Standard</ammoClass>
+					<cookOffProjectile>Bullet_Bolter998_Standard</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_Bolter998_Kraken"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_Bolter998_Kraken"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter998Base">
+					<defName>Ammo_Bolter998_Kraken</defName>
+					<label>.998 cal bolt (Kraken)</label>
+					<description>A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.\n\nKraken bolt: an adamantine-cored penetrator with a reduced charge, made to defeat armour.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_HeavyBolter</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>18.9</MarketValue>
+					</statBases>
+					<ammoClass>Kraken</ammoClass>
+					<cookOffProjectile>Bullet_Bolter998_Kraken</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter998Base">
+					<defName>Ammo_Bolter998_Kraken</defName>
+					<label>.998 cal bolt (Kraken)</label>
+					<description>A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.\n\nKraken bolt: an adamantine-cored penetrator with a reduced charge, made to defeat armour.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_HeavyBolter</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>18.9</MarketValue>
+					</statBases>
+					<ammoClass>Kraken</ammoClass>
+					<cookOffProjectile>Bullet_Bolter998_Kraken</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_Bolter998_Inferno"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_Bolter998_Inferno"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter998Base">
+					<defName>Ammo_Bolter998_Inferno</defName>
+					<label>.998 cal bolt (Inferno)</label>
+					<description>A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.\n\nInferno bolt: a lighter round filled with promethium that sets the target ablaze after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_HeavyBolter</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>13</MarketValue>
+					</statBases>
+					<ammoClass>Inferno</ammoClass>
+					<cookOffProjectile>Bullet_Bolter998_Inferno</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoBolter998Base">
+					<defName>Ammo_Bolter998_Inferno</defName>
+					<label>.998 cal bolt (Inferno)</label>
+					<description>A .998 calibre, gyro-stabilised, rocket-propelled bolt with a hardened tip and a mass-reactive charge that detonates inside the target. Fired by heavy bolters.\n\nInferno bolt: a lighter round filled with promethium that sets the target ablaze after penetration.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/GW_HeavyBolter</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>13</MarketValue>
+					</statBases>
+					<ammoClass>Inferno</ammoClass>
+					<cookOffProjectile>Bullet_Bolter998_Inferno</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Standard"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Standard"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter75_Standard</defName>
+					<label>.75 cal bolt (Standard)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>47</damageAmountBase>
+						<armorPenetrationSharp>28</armorPenetrationSharp>
+						<armorPenetrationBlunt>1070</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>36</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter75_Standard</defName>
+					<label>.75 cal bolt (Standard)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>47</damageAmountBase>
+						<armorPenetrationSharp>28</armorPenetrationSharp>
+						<armorPenetrationBlunt>1070</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>36</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Kraken"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Kraken"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter75_Kraken</defName>
+					<label>.75 cal bolt (Kraken)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>47</damageAmountBase>
+						<armorPenetrationSharp>42</armorPenetrationSharp>
+						<armorPenetrationBlunt>1070</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>18</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter75_Kraken</defName>
+					<label>.75 cal bolt (Kraken)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>47</damageAmountBase>
+						<armorPenetrationSharp>42</armorPenetrationSharp>
+						<armorPenetrationBlunt>1070</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>18</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Inferno"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Inferno"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter75_Inferno</defName>
+					<label>.75 cal bolt (Inferno)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>37</damageAmountBase>
+						<armorPenetrationSharp>28</armorPenetrationSharp>
+						<armorPenetrationBlunt>1070</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Flame_Secondary</def>
+								<amount>22</amount>
+							</li>
+						</secondaryDamage>
+						<ai_IsIncendiary>true</ai_IsIncendiary>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter75_Inferno</defName>
+					<label>.75 cal bolt (Inferno)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>37</damageAmountBase>
+						<armorPenetrationSharp>28</armorPenetrationSharp>
+						<armorPenetrationBlunt>1070</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Flame_Secondary</def>
+								<amount>22</amount>
+							</li>
+						</secondaryDamage>
+						<ai_IsIncendiary>true</ai_IsIncendiary>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter998_Standard</defName>
+					<label>.998 cal bolt (Standard)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>52</damageAmountBase>
+						<armorPenetrationSharp>31</armorPenetrationSharp>
+						<armorPenetrationBlunt>1450</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>40</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter998_Standard</defName>
+					<label>.998 cal bolt (Standard)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>52</damageAmountBase>
+						<armorPenetrationSharp>31</armorPenetrationSharp>
+						<armorPenetrationBlunt>1450</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>40</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Kraken"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Kraken"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter998_Kraken</defName>
+					<label>.998 cal bolt (Kraken)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>52</damageAmountBase>
+						<armorPenetrationSharp>46</armorPenetrationSharp>
+						<armorPenetrationBlunt>1450</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>20</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter998_Kraken</defName>
+					<label>.998 cal bolt (Kraken)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>52</damageAmountBase>
+						<armorPenetrationSharp>46</armorPenetrationSharp>
+						<armorPenetrationBlunt>1450</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Bomb_Secondary</def>
+								<amount>20</amount>
+							</li>
+						</secondaryDamage>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Inferno"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Inferno"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter998_Inferno</defName>
+					<label>.998 cal bolt (Inferno)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>41</damageAmountBase>
+						<armorPenetrationSharp>31</armorPenetrationSharp>
+						<armorPenetrationBlunt>1450</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Flame_Secondary</def>
+								<amount>24</amount>
+							</li>
+						</secondaryDamage>
+						<ai_IsIncendiary>true</ai_IsIncendiary>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseBolterBullet">
+					<defName>Bullet_Bolter998_Inferno</defName>
+					<label>.998 cal bolt (Inferno)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>129</speed>
+						<damageAmountBase>41</damageAmountBase>
+						<armorPenetrationSharp>31</armorPenetrationSharp>
+						<armorPenetrationBlunt>1450</armorPenetrationBlunt>
+						<secondaryDamage>
+							<li>
+								<def>Flame_Secondary</def>
+								<amount>24</amount>
+							</li>
+						</secondaryDamage>
+						<ai_IsIncendiary>true</ai_IsIncendiary>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Standard"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Standard"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter75_Standard</defName>
+					<label>make .75 cal bolt (Standard) x35</label>
+					<description>Craft 35 × .75 cal bolt (Standard).</description>
+					<jobString>Making .75 cal bolt (Standard).</jobString>
+					<workAmount>2700</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>41</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>12</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>FSX</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter75_Standard>35</Ammo_Bolter75_Standard>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter75_Standard</defName>
+					<label>make .75 cal bolt (Standard) x35</label>
+					<description>Craft 35 × .75 cal bolt (Standard).</description>
+					<jobString>Making .75 cal bolt (Standard).</jobString>
+					<workAmount>2700</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>41</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>12</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>FSX</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter75_Standard>35</Ammo_Bolter75_Standard>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Kraken"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Kraken"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter75_Kraken</defName>
+					<label>make .75 cal bolt (Kraken) x35</label>
+					<description>Craft 35 × .75 cal bolt (Kraken).</description>
+					<jobString>Making .75 cal bolt (Kraken).</jobString>
+					<workAmount>2700</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>41</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter75_Kraken>35</Ammo_Bolter75_Kraken>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter75_Kraken</defName>
+					<label>make .75 cal bolt (Kraken) x35</label>
+					<description>Craft 35 × .75 cal bolt (Kraken).</description>
+					<jobString>Making .75 cal bolt (Kraken).</jobString>
+					<workAmount>2700</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>41</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter75_Kraken>35</Ammo_Bolter75_Kraken>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Inferno"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter75_Inferno"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter75_Inferno</defName>
+					<label>make .75 cal bolt (Inferno) x35</label>
+					<description>Craft 35 × .75 cal bolt (Inferno).</description>
+					<jobString>Making .75 cal bolt (Inferno).</jobString>
+					<workAmount>2700</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>41</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>13</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Prometheum</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter75_Inferno>35</Ammo_Bolter75_Inferno>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter75_Inferno</defName>
+					<label>make .75 cal bolt (Inferno) x35</label>
+					<description>Craft 35 × .75 cal bolt (Inferno).</description>
+					<jobString>Making .75 cal bolt (Inferno).</jobString>
+					<workAmount>2700</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>41</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>13</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Prometheum</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter75_Inferno>35</Ammo_Bolter75_Inferno>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Standard"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Standard"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter998_Standard</defName>
+					<label>make .998 cal bolt (Standard) x30</label>
+					<description>Craft 30 × .998 cal bolt (Standard).</description>
+					<jobString>Making .998 cal bolt (Standard).</jobString>
+					<workAmount>2800</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>14</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>11</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>FSX</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter998_Standard>30</Ammo_Bolter998_Standard>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter998_Standard</defName>
+					<label>make .998 cal bolt (Standard) x30</label>
+					<description>Craft 30 × .998 cal bolt (Standard).</description>
+					<jobString>Making .998 cal bolt (Standard).</jobString>
+					<workAmount>2800</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>14</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>11</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>FSX</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter998_Standard>30</Ammo_Bolter998_Standard>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Kraken"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Kraken"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter998_Kraken</defName>
+					<label>make .998 cal bolt (Kraken) x30</label>
+					<description>Craft 30 × .998 cal bolt (Kraken).</description>
+					<jobString>Making .998 cal bolt (Kraken).</jobString>
+					<workAmount>2800</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>18</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter998_Kraken>30</Ammo_Bolter998_Kraken>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter998_Kraken</defName>
+					<label>make .998 cal bolt (Kraken) x30</label>
+					<description>Craft 30 × .998 cal bolt (Kraken).</description>
+					<jobString>Making .998 cal bolt (Kraken).</jobString>
+					<workAmount>2800</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>18</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter998_Kraken>30</Ammo_Bolter998_Kraken>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Inferno"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_Bolter998_Inferno"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter998_Inferno</defName>
+					<label>make .998 cal bolt (Inferno) x30</label>
+					<description>Craft 30 × .998 cal bolt (Inferno).</description>
+					<jobString>Making .998 cal bolt (Inferno).</jobString>
+					<workAmount>2800</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>14</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>11</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Prometheum</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter998_Inferno>30</Ammo_Bolter998_Inferno>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_Bolter998_Inferno</defName>
+					<label>make .998 cal bolt (Inferno) x30</label>
+					<description>Craft 30 × .998 cal bolt (Inferno).</description>
+					<jobString>Making .998 cal bolt (Inferno).</jobString>
+					<workAmount>2800</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>14</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>11</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>7</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Prometheum</li>
+							<li>Powder</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_Bolter998_Inferno>30</Ammo_Bolter998_Inferno>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Heavy_turrets_C3</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingCategoryDef[defName="AmmoMeltaGun"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="AmmoMeltaGun"]</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>AmmoMeltaGun</defName>
+					<label>melta canister</label>
+					<parent>AmmoAdvanced</parent>
+					<iconPath>ThirdParty/Warhammer/UI/MeltaGunAmmoUI</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>AmmoMeltaGun</defName>
+					<label>melta canister</label>
+					<parent>AmmoAdvanced</parent>
+					<iconPath>ThirdParty/Warhammer/UI/MeltaGunAmmoUI</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_Lasgun_Cannon: HSKV_Ammo_LascannonPack → Bullet_Lasgun_Cannon -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_Lasgun_Cannon</defName>
+					<label>lascannon power pack</label>
+					<ammoTypes>
+						<HSKV_Ammo_LascannonPack>Bullet_Lasgun_Cannon</HSKV_Ammo_LascannonPack>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_Lasgun_Cannon</defName>
+					<label>lascannon power pack</label>
+					<ammoTypes>
+						<HSKV_Ammo_LascannonPack>Bullet_Lasgun_Cannon</HSKV_Ammo_LascannonPack>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_MeltaCharge: Ammo_MeltaGun → Bullet_Laser_MeltaCharge -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_MeltaCharge"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_MeltaCharge"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_MeltaCharge</defName>
+					<label>melta charge</label>
+					<ammoTypes>
+						<Ammo_MeltaGun>Bullet_Laser_MeltaCharge</Ammo_MeltaGun>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_MeltaCharge</defName>
+					<label>melta charge</label>
+					<ammoTypes>
+						<Ammo_MeltaGun>Bullet_Laser_MeltaCharge</Ammo_MeltaGun>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_PlasmaCanister_Destroyer: HSKV_Ammo_PlasmaCanisterHeavy → Bullet_Laser_PlasmaDestroyer -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_PlasmaCanister_Destroyer"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_PlasmaCanister_Destroyer"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_PlasmaCanister_Destroyer</defName>
+					<label>heavy plasma canister (destroyer)</label>
+					<ammoTypes>
+						<HSKV_Ammo_PlasmaCanisterHeavy>Bullet_Laser_PlasmaDestroyer</HSKV_Ammo_PlasmaCanisterHeavy>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_PlasmaCanister_Destroyer</defName>
+					<label>heavy plasma canister (destroyer)</label>
+					<ammoTypes>
+						<HSKV_Ammo_PlasmaCanisterHeavy>Bullet_Laser_PlasmaDestroyer</HSKV_Ammo_PlasmaCanisterHeavy>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_PlasmaCanister_Cannon: HSKV_Ammo_PlasmaCanisterHeavy → Bullet_PlasmaCannon -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_PlasmaCanister_Cannon"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_PlasmaCanister_Cannon"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_PlasmaCanister_Cannon</defName>
+					<label>heavy plasma canister (cannon)</label>
+					<ammoTypes>
+						<HSKV_Ammo_PlasmaCanisterHeavy>Bullet_PlasmaCannon</HSKV_Ammo_PlasmaCanisterHeavy>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_PlasmaCanister_Cannon</defName>
+					<label>heavy plasma canister (cannon)</label>
+					<ammoTypes>
+						<HSKV_Ammo_PlasmaCanisterHeavy>Bullet_PlasmaCannon</HSKV_Ammo_PlasmaCanisterHeavy>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_MeltaGun"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_MeltaGun"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerMediumAmmoBase">
+					<defName>Ammo_MeltaGun</defName>
+					<label>melta canister</label>
+					<description>A canister of pyrum-petrol and a sub-molecular charge for a melta weapon: a short-range beam that turns armour plate into slag.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/MeltaGun</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>106.8</MarketValue>
+						<Mass>0.09</Mass>
+						<Bulk>0.081</Bulk>
+					</statBases>
+					<tradeTags>
+						<li>CE_AutoEnableCrafting</li>
+						<li>CE_AutoEnableTrade_Sellable</li>
+					</tradeTags>
+					<thingCategories>
+						<li>AmmoMeltaGun</li>
+					</thingCategories>
+					<stackLimit>75</stackLimit>
+					<ammoClass>Melta</ammoClass>
+					<comps>
+						<li Class="CompProperties_Explosive">
+							<explosiveRadius>3.5</explosiveRadius>
+							<damageAmountBase>12</damageAmountBase>
+							<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+							<explosiveExpandPerStackcount>0.15</explosiveExpandPerStackcount>
+							<startWickHitPointsPercent>0.10</startWickHitPointsPercent>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+							<explodeOnKilled>True</explodeOnKilled>
+							<wickTicks>30~50</wickTicks>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerMediumAmmoBase">
+					<defName>Ammo_MeltaGun</defName>
+					<label>melta canister</label>
+					<description>A canister of pyrum-petrol and a sub-molecular charge for a melta weapon: a short-range beam that turns armour plate into slag.</description>
+					<graphicData>
+						<texPath>ThirdParty/Warhammer/Ammo/MeltaGun</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>106.8</MarketValue>
+						<Mass>0.09</Mass>
+						<Bulk>0.081</Bulk>
+					</statBases>
+					<tradeTags>
+						<li>CE_AutoEnableCrafting</li>
+						<li>CE_AutoEnableTrade_Sellable</li>
+					</tradeTags>
+					<thingCategories>
+						<li>AmmoMeltaGun</li>
+					</thingCategories>
+					<stackLimit>75</stackLimit>
+					<ammoClass>Melta</ammoClass>
+					<comps>
+						<li Class="CompProperties_Explosive">
+							<explosiveRadius>3.5</explosiveRadius>
+							<damageAmountBase>12</damageAmountBase>
+							<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+							<explosiveExpandPerStackcount>0.15</explosiveExpandPerStackcount>
+							<startWickHitPointsPercent>0.10</startWickHitPointsPercent>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+							<explodeOnKilled>True</explodeOnKilled>
+							<wickTicks>30~50</wickTicks>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+					<defName>Bullet_Lasgun_Cannon</defName>
+					<label>lascannon beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>80</damageAmountBase>
+						<armorPenetrationSharp>1000</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletRed">
+					<defName>Bullet_Lasgun_Cannon</defName>
+					<label>lascannon beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>80</damageAmountBase>
+						<armorPenetrationSharp>1000</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Laser_MeltaCharge"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletYellow">
+					<defName>Bullet_Laser_MeltaCharge</defName>
+					<label>melta beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>300</damageAmountBase>
+						<armorPenetrationSharp>1200</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletYellow">
+					<defName>Bullet_Laser_MeltaCharge</defName>
+					<label>melta beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>300</damageAmountBase>
+						<armorPenetrationSharp>1200</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_Laser_PlasmaDestroyer"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletBlue">
+					<defName>Bullet_Laser_PlasmaDestroyer</defName>
+					<label>plasma destroyer beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>250</damageAmountBase>
+						<armorPenetrationSharp>700</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>140</damageAmountBase>
+							<explosiveDamageType>Bomb</explosiveDamageType>
+							<explosiveRadius>2.9</explosiveRadius>
+							<explosionSound>MortarBomb_Explode</explosionSound>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletBlue">
+					<defName>Bullet_Laser_PlasmaDestroyer</defName>
+					<label>plasma destroyer beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>250</damageAmountBase>
+						<armorPenetrationSharp>700</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>140</damageAmountBase>
+							<explosiveDamageType>Bomb</explosiveDamageType>
+							<explosiveRadius>2.9</explosiveRadius>
+							<explosionSound>MortarBomb_Explode</explosionSound>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_PlasmaCannon"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletBlue">
+					<defName>Bullet_PlasmaCannon</defName>
+					<label>plasma cannon beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>90</damageAmountBase>
+						<armorPenetrationSharp>700</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>50</damageAmountBase>
+							<explosiveDamageType>Bomb</explosiveDamageType>
+							<explosiveRadius>1.5</explosiveRadius>
+							<explosionSound>MortarBomb_Explode</explosionSound>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletBlue">
+					<defName>Bullet_PlasmaCannon</defName>
+					<label>plasma cannon beam</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>CE_Laser</damageDef>
+						<damageAmountBase>90</damageAmountBase>
+						<armorPenetrationSharp>700</armorPenetrationSharp>
+						<armorPenetrationBlunt>0.001</armorPenetrationBlunt>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>50</damageAmountBase>
+							<explosiveDamageType>Bomb</explosiveDamageType>
+							<explosiveRadius>1.5</explosiveRadius>
+							<explosionSound>MortarBomb_Explode</explosionSound>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_MeltaGun"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_MeltaGun"]</xpath>
+			<value>
+				<RecipeDef ParentName="ChargeAmmoRecipeBase">
+					<defName>MakeAmmo_MeltaGun</defName>
+					<label>make melta canister x10</label>
+					<description>Craft 10 × melta canister.</description>
+					<jobString>Making melta canister.</jobString>
+					<workAmount>4000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>30</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>40</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>MagneticMaterial</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>BiosyntheticMaterial</li>
+								</thingDefs>
+							</filter>
+							<count>3</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>USLDBar</li>
+						</categories>
+						<thingDefs>
+							<li>Prometheum</li>
+							<li>MagneticMaterial</li>
+							<li>BiosyntheticMaterial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_MeltaGun>10</Ammo_MeltaGun>
+					</products>
+					<researchPrerequisites>
+						<li>Plasma_weapons_D</li>
+					</researchPrerequisites>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="ChargeAmmoRecipeBase">
+					<defName>MakeAmmo_MeltaGun</defName>
+					<label>make melta canister x10</label>
+					<description>Craft 10 × melta canister.</description>
+					<jobString>Making melta canister.</jobString>
+					<workAmount>4000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>30</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>40</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>MagneticMaterial</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>BiosyntheticMaterial</li>
+								</thingDefs>
+							</filter>
+							<count>3</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>USLDBar</li>
+						</categories>
+						<thingDefs>
+							<li>Prometheum</li>
+							<li>MagneticMaterial</li>
+							<li>BiosyntheticMaterial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_MeltaGun>10</Ammo_MeltaGun>
+					</products>
+					<researchPrerequisites>
+						<li>Plasma_weapons_D</li>
+					</researchPrerequisites>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingCategoryDef[defName="Ammo57x438mmBofors"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="Ammo57x438mmBofors"]</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>Ammo57x438mmBofors</defName>
+					<label>57x438mm Bofors</label>
+					<parent>AmmoShells</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberAutocannonLarge</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>Ammo57x438mmBofors</defName>
+					<label>57x438mm Bofors</label>
+					<parent>AmmoShells</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberAutocannonLarge</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_57x438mmBofors: Ammo_57x438mmBofors_AP → Bullet_57x438mmBofors_AP, Ammo_57x438mmBofors_HE → Bullet_57x438mmBofors_HE, Ammo_57x438mmBofors_HE_TFuzed → Bullet_57x438mmBofors_HE_TFuzed, Ammo_57x438mmBofors_Sabot → Bullet_57x438mmBofors_Sabot -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_57x438mmBofors"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_57x438mmBofors"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_57x438mmBofors</defName>
+					<label>57x438mm Bofors</label>
+					<ammoTypes>
+						<Ammo_57x438mmBofors_AP>Bullet_57x438mmBofors_AP</Ammo_57x438mmBofors_AP>
+						<Ammo_57x438mmBofors_HE>Bullet_57x438mmBofors_HE</Ammo_57x438mmBofors_HE>
+						<Ammo_57x438mmBofors_HE_TFuzed>Bullet_57x438mmBofors_HE_TFuzed</Ammo_57x438mmBofors_HE_TFuzed>
+						<Ammo_57x438mmBofors_Sabot>Bullet_57x438mmBofors_Sabot</Ammo_57x438mmBofors_Sabot>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_57x438mmBofors</defName>
+					<label>57x438mm Bofors</label>
+					<ammoTypes>
+						<Ammo_57x438mmBofors_AP>Bullet_57x438mmBofors_AP</Ammo_57x438mmBofors_AP>
+						<Ammo_57x438mmBofors_HE>Bullet_57x438mmBofors_HE</Ammo_57x438mmBofors_HE>
+						<Ammo_57x438mmBofors_HE_TFuzed>Bullet_57x438mmBofors_HE_TFuzed</Ammo_57x438mmBofors_HE_TFuzed>
+						<Ammo_57x438mmBofors_Sabot>Bullet_57x438mmBofors_Sabot</Ammo_57x438mmBofors_Sabot>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_AP"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_AP"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_AP</defName>
+					<label>57x438mm Bofors cartridge (AP)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Tank/AP</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>34.4</MarketValue>
+					</statBases>
+					<ammoClass>ArmorPiercing</ammoClass>
+					<cookOffProjectile>Bullet_57x438mmBofors_AP</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_AP</defName>
+					<label>57x438mm Bofors cartridge (AP)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Tank/AP</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>34.4</MarketValue>
+					</statBases>
+					<ammoClass>ArmorPiercing</ammoClass>
+					<cookOffProjectile>Bullet_57x438mmBofors_AP</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_HE"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_HE"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_HE</defName>
+					<label>57x438mm Bofors cartridge (HE)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Flak/HE</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>54.5</MarketValue>
+					</statBases>
+					<ammoClass>GrenadeHE</ammoClass>
+					<detonateProjectile>Bullet_57x438mmBofors_HE</detonateProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_HE</defName>
+					<label>57x438mm Bofors cartridge (HE)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Flak/HE</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>54.5</MarketValue>
+					</statBases>
+					<ammoClass>GrenadeHE</ammoClass>
+					<detonateProjectile>Bullet_57x438mmBofors_HE</detonateProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_AP"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_AP"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_AP</defName>
+					<label>57x438mm Bofors shell (AP)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>183</speed>
+						<damageAmountBase>192</damageAmountBase>
+						<armorPenetrationSharp>109</armorPenetrationSharp>
+						<armorPenetrationBlunt>25709.4</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_AP</defName>
+					<label>57x438mm Bofors shell (AP)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>183</speed>
+						<damageAmountBase>192</damageAmountBase>
+						<armorPenetrationSharp>109</armorPenetrationSharp>
+						<armorPenetrationBlunt>25709.4</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_HE"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_HE"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_HE</defName>
+					<label>57x438mm Bofors shell (HE)</label>
+					<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bomb</damageDef>
+						<damageAmountBase>108</damageAmountBase>
+						<explosionRadius>2</explosionRadius>
+						<speed>183</speed>
+						<soundExplode>MortarBomb_Explode</soundExplode>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>7</Fragment_Large>
+								<Fragment_Small>14</Fragment_Small>
+							</fragments>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_HE</defName>
+					<label>57x438mm Bofors shell (HE)</label>
+					<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bomb</damageDef>
+						<damageAmountBase>108</damageAmountBase>
+						<explosionRadius>2</explosionRadius>
+						<speed>183</speed>
+						<soundExplode>MortarBomb_Explode</soundExplode>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>7</Fragment_Large>
+								<Fragment_Small>14</Fragment_Small>
+							</fragments>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_AP"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_AP"]</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_AP</defName>
+					<label>make 57x438mm Bofors cartridge (AP) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (AP).</description>
+					<jobString>Making 57x438mm Bofors cartridge (AP).</jobString>
+					<workAmount>6000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>43</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>23</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_AP>10</Ammo_57x438mmBofors_AP>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_AP</defName>
+					<label>make 57x438mm Bofors cartridge (AP) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (AP).</description>
+					<jobString>Making 57x438mm Bofors cartridge (AP).</jobString>
+					<workAmount>6000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>43</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>23</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_AP>10</Ammo_57x438mmBofors_AP>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_HE"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_HE"]</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_HE</defName>
+					<label>make 57x438mm Bofors cartridge (HE) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (HE).</description>
+					<jobString>Making 57x438mm Bofors cartridge (HE).</jobString>
+					<workAmount>6000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>13</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>8</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_HE>10</Ammo_57x438mmBofors_HE>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_HE</defName>
+					<label>make 57x438mm Bofors cartridge (HE) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (HE).</description>
+					<jobString>Making 57x438mm Bofors cartridge (HE).</jobString>
+					<workAmount>6000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>13</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>8</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_HE>10</Ammo_57x438mmBofors_HE>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingCategoryDef[defName="CannonBall"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingCategoryDef[defName="CannonBall"]</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>CannonBall</defName>
+					<label>cannon ball</label>
+					<parent>AmmoShells</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberCannon</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingCategoryDef>
+					<defName>CannonBall</defName>
+					<label>cannon ball</label>
+					<parent>AmmoShells</parent>
+					<iconPath>UI/Icons/ThingCategories/CaliberCannon</iconPath>
+				</ThingCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="CannonBall"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="CannonBall"]</xpath>
+			<value>
+				<CombatExtended.AmmoCategoryDef>
+					<defName>CannonBall</defName>
+					<label>Round Shot</label>
+					<description>A solid metal ball fired from an early, smoothbore cannon.</description>
+				</CombatExtended.AmmoCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoCategoryDef>
+					<defName>CannonBall</defName>
+					<label>Round Shot</label>
+					<description>A solid metal ball fired from an early, smoothbore cannon.</description>
+				</CombatExtended.AmmoCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="BurstingShell"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="BurstingShell"]</xpath>
+			<value>
+				<CombatExtended.AmmoCategoryDef>
+					<defName>BurstingShell</defName>
+					<label>Bursting Shell</label>
+					<description>A crude explosive shell consisting of a hollow metal projectile filled with blackpowder to be fired from early smoothbore cannons.</description>
+				</CombatExtended.AmmoCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoCategoryDef>
+					<defName>BurstingShell</defName>
+					<label>Bursting Shell</label>
+					<description>A crude explosive shell consisting of a hollow metal projectile filled with blackpowder to be fired from early smoothbore cannons.</description>
+				</CombatExtended.AmmoCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="Grapeshot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoCategoryDef[defName="Grapeshot"]</xpath>
+			<value>
+				<CombatExtended.AmmoCategoryDef>
+					<defName>Grapeshot</defName>
+					<label>Grapeshot</label>
+					<description>A canister packed with numerous small projectiles, fired from early smoothbore cannons as an anti-infantry weapon.</description>
+				</CombatExtended.AmmoCategoryDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoCategoryDef>
+					<defName>Grapeshot</defName>
+					<label>Grapeshot</label>
+					<description>A canister packed with numerous small projectiles, fired from early smoothbore cannons as an anti-infantry weapon.</description>
+				</CombatExtended.AmmoCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<!-- AmmoSet_CannonBall: Ammo_CannonBall_Round → Bullet_CannonBall_Round, Ammo_CannonBall_Bursting → Bullet_CannonBall_Bursting, Ammo_CannonBall_Grape → Bullet_CannonBall_Grape -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_CannonBall"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_CannonBall"]</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_CannonBall</defName>
+					<label>cannon ball</label>
+					<ammoTypes>
+						<Ammo_CannonBall_Round>Bullet_CannonBall_Round</Ammo_CannonBall_Round>
+						<Ammo_CannonBall_Bursting>Bullet_CannonBall_Bursting</Ammo_CannonBall_Bursting>
+						<Ammo_CannonBall_Grape>Bullet_CannonBall_Grape</Ammo_CannonBall_Grape>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<CombatExtended.AmmoSetDef>
+					<defName>AmmoSet_CannonBall</defName>
+					<label>cannon ball</label>
+					<ammoTypes>
+						<Ammo_CannonBall_Round>Bullet_CannonBall_Round</Ammo_CannonBall_Round>
+						<Ammo_CannonBall_Bursting>Bullet_CannonBall_Bursting</Ammo_CannonBall_Bursting>
+						<Ammo_CannonBall_Grape>Bullet_CannonBall_Grape</Ammo_CannonBall_Grape>
+					</ammoTypes>
+				</CombatExtended.AmmoSetDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_CannonBall_Round"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_CannonBall_Round"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoCannonBallBase">
+					<defName>Ammo_CannonBall_Round</defName>
+					<label>round shot</label>
+					<description>A solid ball of metal, capable of delivering significant damage on a direct hit.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/BlackPowder/Roundshot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>15.6</MarketValue>
+					</statBases>
+					<ammoClass>CannonBall</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoCannonBallBase">
+					<defName>Ammo_CannonBall_Round</defName>
+					<label>round shot</label>
+					<description>A solid ball of metal, capable of delivering significant damage on a direct hit.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/BlackPowder/Roundshot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>15.6</MarketValue>
+					</statBases>
+					<ammoClass>CannonBall</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_CannonBall_Bursting"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_CannonBall_Bursting"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoCannonBallBase">
+					<defName>Ammo_CannonBall_Bursting</defName>
+					<label>bursting shell</label>
+					<description>A round shell, hollow and filled with explosives, exploding on impact and producing razor-sharp metal splinters.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/BlackPowder/Bursting</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>23.8</MarketValue>
+					</statBases>
+					<ammoClass>BurstingShell</ammoClass>
+					<cookOffProjectile>Bullet_CannonBall_Bursting</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoCannonBallBase">
+					<defName>Ammo_CannonBall_Bursting</defName>
+					<label>bursting shell</label>
+					<description>A round shell, hollow and filled with explosives, exploding on impact and producing razor-sharp metal splinters.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/BlackPowder/Bursting</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>23.8</MarketValue>
+					</statBases>
+					<ammoClass>BurstingShell</ammoClass>
+					<cookOffProjectile>Bullet_CannonBall_Bursting</cookOffProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_CannonBall_Grape"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_CannonBall_Grape"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoCannonBallBase">
+					<defName>Ammo_CannonBall_Grape</defName>
+					<label>grape shot</label>
+					<description>A canister of numerous metal balls, fired in a wide spread to deal horrific damage against infantry.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/BlackPowder/Grapeshot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>13.5</MarketValue>
+					</statBases>
+					<ammoClass>Grapeshot</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_AmmoCannonBallBase">
+					<defName>Ammo_CannonBall_Grape</defName>
+					<label>grape shot</label>
+					<description>A canister of numerous metal balls, fired in a wide spread to deal horrific damage against infantry.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/BlackPowder/Grapeshot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>13.5</MarketValue>
+					</statBases>
+					<ammoClass>Grapeshot</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_CannonBall_Round"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_CannonBall_Round"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseCannonBall">
+					<defName>Bullet_CannonBall_Round</defName>
+					<label>round shot</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>99</speed>
+						<damageAmountBase>293</damageAmountBase>
+						<armorPenetrationSharp>21.7</armorPenetrationSharp>
+						<armorPenetrationBlunt>11491</armorPenetrationBlunt>
+						<suppressionFactor>1.0</suppressionFactor>
+						<dangerFactor>1.0</dangerFactor>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseCannonBall">
+					<defName>Bullet_CannonBall_Round</defName>
+					<label>round shot</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>99</speed>
+						<damageAmountBase>293</damageAmountBase>
+						<armorPenetrationSharp>21.7</armorPenetrationSharp>
+						<armorPenetrationBlunt>11491</armorPenetrationBlunt>
+						<suppressionFactor>1.0</suppressionFactor>
+						<dangerFactor>1.0</dangerFactor>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_CannonBall_Bursting"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_CannonBall_Bursting"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseCannonBall">
+					<defName>Bullet_CannonBall_Bursting</defName>
+					<label>bursting shell</label>
+					<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bomb</damageDef>
+						<damageAmountBase>79</damageAmountBase>
+						<explosionRadius>2</explosionRadius>
+						<speed>99</speed>
+						<soundExplode>MortarBomb_Explode</soundExplode>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>19</Fragment_Large>
+								<Fragment_Small>9</Fragment_Small>
+							</fragments>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_BaseCannonBall">
+					<defName>Bullet_CannonBall_Bursting</defName>
+					<label>bursting shell</label>
+					<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bomb</damageDef>
+						<damageAmountBase>79</damageAmountBase>
+						<explosionRadius>2</explosionRadius>
+						<speed>99</speed>
+						<soundExplode>MortarBomb_Explode</soundExplode>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>19</Fragment_Large>
+								<Fragment_Small>9</Fragment_Small>
+							</fragments>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_CannonBall_Grape"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_CannonBall_Grape"]</xpath>
+			<value>
+				<ThingDef ParentName="BaseBulletCE">
+					<defName>Bullet_CannonBall_Grape</defName>
+					<label>grape shot</label>
+					<graphicData>
+						<texPath>Things/Projectile/Bullet_Big</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>99</speed>
+						<damageAmountBase>63</damageAmountBase>
+						<pelletCount>27</pelletCount>
+						<armorPenetrationSharp>12.7</armorPenetrationSharp>
+						<armorPenetrationBlunt>420.68</armorPenetrationBlunt>
+						<spreadMult>26.7</spreadMult>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="BaseBulletCE">
+					<defName>Bullet_CannonBall_Grape</defName>
+					<label>grape shot</label>
+					<graphicData>
+						<texPath>Things/Projectile/Bullet_Big</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>99</speed>
+						<damageAmountBase>63</damageAmountBase>
+						<pelletCount>27</pelletCount>
+						<armorPenetrationSharp>12.7</armorPenetrationSharp>
+						<armorPenetrationBlunt>420.68</armorPenetrationBlunt>
+						<spreadMult>26.7</spreadMult>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Round"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Round"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeBase">
+					<defName>MakeAmmo_CannonBall_Round</defName>
+					<label>make round shot x5</label>
+					<description>Craft 5 × round shot.</description>
+					<jobString>Making round shot.</jobString>
+					<workAmount>1500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Metallic</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_CannonBall_Round>5</Ammo_CannonBall_Round>
+					</products>
+					<researchPrerequisite>Ballista_B1</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeBase">
+					<defName>MakeAmmo_CannonBall_Round</defName>
+					<label>make round shot x5</label>
+					<description>Craft 5 × round shot.</description>
+					<jobString>Making round shot.</jobString>
+					<workAmount>1500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Metallic</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_CannonBall_Round>5</Ammo_CannonBall_Round>
+					</products>
+					<researchPrerequisite>Ballista_B1</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Bursting"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Bursting"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeBase">
+					<defName>MakeAmmo_CannonBall_Bursting</defName>
+					<label>make bursting shell x5</label>
+					<description>Craft 5 × bursting shell.</description>
+					<jobString>Making bursting shell.</jobString>
+					<workAmount>3000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Metallic</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_CannonBall_Bursting>5</Ammo_CannonBall_Bursting>
+					</products>
+					<researchPrerequisite>Ballista_B1</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeBase">
+					<defName>MakeAmmo_CannonBall_Bursting</defName>
+					<label>make bursting shell x5</label>
+					<description>Craft 5 × bursting shell.</description>
+					<jobString>Making bursting shell.</jobString>
+					<workAmount>3000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Metallic</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_CannonBall_Bursting>5</Ammo_CannonBall_Bursting>
+					</products>
+					<researchPrerequisite>Ballista_B1</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Grape"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_CannonBall_Grape"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeBase">
+					<defName>MakeAmmo_CannonBall_Grape</defName>
+					<label>make grape shot x5</label>
+					<description>Craft 5 × grape shot.</description>
+					<jobString>Making grape shot.</jobString>
+					<workAmount>1500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>Wooden</li>
+								</categories>
+							</filter>
+							<count>2</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Metallic</li>
+							<li>Wooden</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_CannonBall_Grape>5</Ammo_CannonBall_Grape>
+					</products>
+					<researchPrerequisite>Ballista_B1</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeBase">
+					<defName>MakeAmmo_CannonBall_Grape</defName>
+					<label>make grape shot x5</label>
+					<description>Craft 5 × grape shot.</description>
+					<jobString>Making grape shot.</jobString>
+					<workAmount>1500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>Metallic</li>
+								</categories>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>Wooden</li>
+								</categories>
+							</filter>
+							<count>2</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>Metallic</li>
+							<li>Wooden</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_CannonBall_Grape>5</Ammo_CannonBall_Grape>
+					</products>
+					<researchPrerequisite>Ballista_B1</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_AP"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_AP"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="90mmCannonShellBase">
+					<defName>Ammo_90mmCannonShell_AP</defName>
+					<label>90mm cannon shell (AP)</label>
+					<description>A 90mm armour-piercing tank shell: a solid hardened steel slug.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Tank/AP</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>78</MarketValue>
+						<Mass>19.5</Mass>
+						<Bulk>22.41</Bulk>
+					</statBases>
+					<ammoClass>ArmorPiercing</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="90mmCannonShellBase">
+					<defName>Ammo_90mmCannonShell_AP</defName>
+					<label>90mm cannon shell (AP)</label>
+					<description>A 90mm armour-piercing tank shell: a solid hardened steel slug.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Tank/AP</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>78</MarketValue>
+						<Mass>19.5</Mass>
+						<Bulk>22.41</Bulk>
+					</statBases>
+					<ammoClass>ArmorPiercing</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_APCR"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_90mmCannonShell_APCR"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="90mmCannonShellBase">
+					<defName>Ammo_90mmCannonShell_APCR</defName>
+					<label>90mm cannon shell (APCR)</label>
+					<description>A 90mm armour-piercing composite rigid shell: a light body with a tungsten core, fast and flat-shooting.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Tank/APCR</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>95</MarketValue>
+						<Mass>13.3</Mass>
+						<Bulk>22.41</Bulk>
+					</statBases>
+					<ammoClass>CompositeRigidAP</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="90mmCannonShellBase">
+					<defName>Ammo_90mmCannonShell_APCR</defName>
+					<label>90mm cannon shell (APCR)</label>
+					<description>A 90mm armour-piercing composite rigid shell: a light body with a tungsten core, fast and flat-shooting.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Tank/APCR</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>95</MarketValue>
+						<Mass>13.3</Mass>
+						<Bulk>22.41</Bulk>
+					</statBases>
+					<ammoClass>CompositeRigidAP</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_155mmHowitzerShell_Smoke"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_155mmHowitzerShell_Smoke"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerShellBase">
+					<defName>Ammo_155mmHowitzerShell_Smoke</defName>
+					<label>155mm howitzer shell (smoke)</label>
+					<description>A 155mm howitzer shell that lays a wide smoke screen.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Howitzer/SMK</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>90</MarketValue>
+					</statBases>
+					<ammoClass>Smoke</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerShellBase">
+					<defName>Ammo_155mmHowitzerShell_Smoke</defName>
+					<label>155mm howitzer shell (smoke)</label>
+					<description>A 155mm howitzer shell that lays a wide smoke screen.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Howitzer/SMK</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>90</MarketValue>
+					</statBases>
+					<ammoClass>Smoke</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_155mmHowitzerShell_Incendiary"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_155mmHowitzerShell_Incendiary"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerShellBase">
+					<defName>Ammo_155mmHowitzerShell_Incendiary</defName>
+					<label>155mm howitzer shell (incendiary)</label>
+					<description>A 155mm howitzer shell filled with prometheum: a fire burst over a wide area.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Howitzer/INC</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>100</MarketValue>
+					</statBases>
+					<ammoClass>GrenadeIncendiary</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="155mmHowitzerShellBase">
+					<defName>Ammo_155mmHowitzerShell_Incendiary</defName>
+					<label>155mm howitzer shell (incendiary)</label>
+					<description>A 155mm howitzer shell filled with prometheum: a fire burst over a wide area.</description>
+					<graphicData>
+						<texPath>Things/Ammo/Cannon/Howitzer/INC</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>100</MarketValue>
+					</statBases>
+					<ammoClass>GrenadeIncendiary</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_20x102mm_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_20x102mm_Sabot"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo20x102mmBase">
+					<defName>Ammo_20x102mm_Sabot</defName>
+					<label>20x102mm cartridge (Sabot)</label>
+					<description>A 20x102mm armour-piercing discarding-sabot cartridge with a tungsten penetrator.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Sabot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>9.5</MarketValue>
+						<Mass>0.213</Mass>
+						<Bulk>0.34</Bulk>
+					</statBases>
+					<ammoClass>Sabot</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo20x102mmBase">
+					<defName>Ammo_20x102mm_Sabot</defName>
+					<label>20x102mm cartridge (Sabot)</label>
+					<description>A 20x102mm armour-piercing discarding-sabot cartridge with a tungsten penetrator.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Sabot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>9.5</MarketValue>
+						<Mass>0.213</Mass>
+						<Bulk>0.34</Bulk>
+					</statBases>
+					<ammoClass>Sabot</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_30x173mm_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_30x173mm_Sabot"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo30x173mmBase">
+					<defName>Ammo_30x173mm_Sabot</defName>
+					<label>30x173mm cartridge (Sabot)</label>
+					<description>A 30x173mm armour-piercing discarding-sabot cartridge with a tungsten penetrator.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Sabot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>11</MarketValue>
+						<Mass>0.678</Mass>
+						<Bulk>1.1</Bulk>
+					</statBases>
+					<ammoClass>Sabot</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo30x173mmBase">
+					<defName>Ammo_30x173mm_Sabot</defName>
+					<label>30x173mm cartridge (Sabot)</label>
+					<description>A 30x173mm armour-piercing discarding-sabot cartridge with a tungsten penetrator.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Sabot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>11</MarketValue>
+						<Mass>0.678</Mass>
+						<Bulk>1.1</Bulk>
+					</statBases>
+					<ammoClass>Sabot</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_HE_TFuzed"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_HE_TFuzed"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_HE_TFuzed</defName>
+					<label>57x438mm Bofors cartridge (HE, time fuze)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Bofors/HE</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>58</MarketValue>
+					</statBases>
+					<ammoClass>GrenadeHETF</ammoClass>
+					<detonateProjectile>Bullet_57x438mmBofors_HE</detonateProjectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_HE_TFuzed</defName>
+					<label>57x438mm Bofors cartridge (HE, time fuze)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Bofors/HE</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>58</MarketValue>
+					</statBases>
+					<ammoClass>GrenadeHETF</ammoClass>
+					<detonateProjectile>Bullet_57x438mmBofors_HE</detonateProjectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Ammo_57x438mmBofors_Sabot"]</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_Sabot</defName>
+					<label>57x438mm Bofors cartridge (Sabot)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Bofors/Sabot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>48</MarketValue>
+						<Mass>5.071</Mass>
+						<Bulk>10.56</Bulk>
+					</statBases>
+					<ammoClass>Sabot</ammoClass>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef Class="CombatExtended.AmmoDef" ParentName="HSKV_Ammo57x438mmBoforsBase">
+					<defName>Ammo_57x438mmBofors_Sabot</defName>
+					<label>57x438mm Bofors cartridge (Sabot)</label>
+					<description>A large-calibre 57x438mm cartridge for naval and vehicle autocannons.</description>
+					<graphicData>
+						<texPath>Things/Ammo/HighCaliber/Bofors/Sabot</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+					</graphicData>
+					<statBases>
+						<MarketValue>48</MarketValue>
+						<Mass>5.071</Mass>
+						<Bulk>10.56</Bulk>
+					</statBases>
+					<ammoClass>Sabot</ammoClass>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_90mmCannonShell_AP"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_90mmCannonShell_AP"]</xpath>
+			<value>
+				<ThingDef ParentName="Base90mmCannonShell">
+					<defName>Bullet_90mmCannonShell_AP</defName>
+					<label>90mm cannon shell (AP)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/AP</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>151</speed>
+						<damageAmountBase>318</damageAmountBase>
+						<armorPenetrationSharp>170</armorPenetrationSharp>
+						<armorPenetrationBlunt>70400</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base90mmCannonShell">
+					<defName>Bullet_90mmCannonShell_AP</defName>
+					<label>90mm cannon shell (AP)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/AP</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>151</speed>
+						<damageAmountBase>318</damageAmountBase>
+						<armorPenetrationSharp>170</armorPenetrationSharp>
+						<armorPenetrationBlunt>70400</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_90mmCannonShell_APCR"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_90mmCannonShell_APCR"]</xpath>
+			<value>
+				<ThingDef ParentName="Base90mmCannonShell">
+					<defName>Bullet_90mmCannonShell_APCR</defName>
+					<label>90mm cannon shell (APCR)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/APCR</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>204</speed>
+						<damageAmountBase>304</damageAmountBase>
+						<armorPenetrationSharp>300</armorPenetrationSharp>
+						<armorPenetrationBlunt>90720</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base90mmCannonShell">
+					<defName>Bullet_90mmCannonShell_APCR</defName>
+					<label>90mm cannon shell (APCR)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/APCR</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>204</speed>
+						<damageAmountBase>304</damageAmountBase>
+						<armorPenetrationSharp>300</armorPenetrationSharp>
+						<armorPenetrationBlunt>90720</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_20x102mm_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_20x102mm_Sabot"]</xpath>
+			<value>
+				<ThingDef ParentName="Base20x102mmBullet">
+					<defName>Bullet_20x102mm_Sabot</defName>
+					<label>20x102mm bullet (Sabot)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>244</speed>
+						<damageAmountBase>39</damageAmountBase>
+						<armorPenetrationSharp>70</armorPenetrationSharp>
+						<armorPenetrationBlunt>1115</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base20x102mmBullet">
+					<defName>Bullet_20x102mm_Sabot</defName>
+					<label>20x102mm bullet (Sabot)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>244</speed>
+						<damageAmountBase>39</damageAmountBase>
+						<armorPenetrationSharp>70</armorPenetrationSharp>
+						<armorPenetrationBlunt>1115</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_30x173mm_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_30x173mm_Sabot"]</xpath>
+			<value>
+				<ThingDef ParentName="Base30x173mmBullet">
+					<defName>Bullet_30x173mm_Sabot</defName>
+					<label>30x173mm bullet (Sabot)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>250</speed>
+						<damageAmountBase>40</damageAmountBase>
+						<armorPenetrationSharp>84</armorPenetrationSharp>
+						<armorPenetrationBlunt>2141</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base30x173mmBullet">
+					<defName>Bullet_30x173mm_Sabot</defName>
+					<label>30x173mm bullet (Sabot)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>250</speed>
+						<damageAmountBase>40</damageAmountBase>
+						<armorPenetrationSharp>84</armorPenetrationSharp>
+						<armorPenetrationBlunt>2141</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_Sabot"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_Sabot</defName>
+					<label>57x438mm Bofors shell (Sabot)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>248</speed>
+						<damageAmountBase>183</damageAmountBase>
+						<armorPenetrationSharp>210</armorPenetrationSharp>
+						<armorPenetrationBlunt>33023.3</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_Sabot</defName>
+					<label>57x438mm Bofors shell (Sabot)</label>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bullet</damageDef>
+						<speed>248</speed>
+						<damageAmountBase>183</damageAmountBase>
+						<armorPenetrationSharp>210</armorPenetrationSharp>
+						<armorPenetrationBlunt>33023.3</armorPenetrationBlunt>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Smoke"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Smoke"]</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShell">
+					<defName>Bullet_155mmHowitzerShell_Smoke</defName>
+					<label>155mm howitzer shell (smoke)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/SMK</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Smoke</damageDef>
+						<suppressionFactor>0.0</suppressionFactor>
+						<dangerFactor>0.0</dangerFactor>
+						<explosionRadius>10.5</explosionRadius>
+						<flyOverhead>true</flyOverhead>
+						<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+						<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+						<soundAmbient>MortarRound_Ambient</soundAmbient>
+						<soundExplode>Explosion_EMP</soundExplode>
+						<postExplosionGasType>BlindSmoke</postExplosionGasType>
+						<preExplosionSpawnChance>1</preExplosionSpawnChance>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						<explosionEffect>ExtinguisherExplosion</explosionEffect>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShell">
+					<defName>Bullet_155mmHowitzerShell_Smoke</defName>
+					<label>155mm howitzer shell (smoke)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/SMK</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Smoke</damageDef>
+						<suppressionFactor>0.0</suppressionFactor>
+						<dangerFactor>0.0</dangerFactor>
+						<explosionRadius>10.5</explosionRadius>
+						<flyOverhead>true</flyOverhead>
+						<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+						<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+						<soundAmbient>MortarRound_Ambient</soundAmbient>
+						<soundExplode>Explosion_EMP</soundExplode>
+						<postExplosionGasType>BlindSmoke</postExplosionGasType>
+						<preExplosionSpawnChance>1</preExplosionSpawnChance>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						<explosionEffect>ExtinguisherExplosion</explosionEffect>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Incendiary"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Incendiary"]</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShell">
+					<defName>Bullet_155mmHowitzerShell_Incendiary</defName>
+					<label>155mm howitzer shell (incendiary)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/INC</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>PrometheumFlame</damageDef>
+						<damageAmountBase>31</damageAmountBase>
+						<explosionRadius>11.5</explosionRadius>
+						<flyOverhead>true</flyOverhead>
+						<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+						<preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+						<soundExplode>MortarIncendiary_Explode</soundExplode>
+						<shellingProps>
+							<damage>0.33</damage>
+						</shellingProps>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>253</damageAmountBase>
+							<explosiveDamageType>Thermobaric</explosiveDamageType>
+							<explosiveRadius>4</explosiveRadius>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShell">
+					<defName>Bullet_155mmHowitzerShell_Incendiary</defName>
+					<label>155mm howitzer shell (incendiary)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/INC</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>PrometheumFlame</damageDef>
+						<damageAmountBase>31</damageAmountBase>
+						<explosionRadius>11.5</explosionRadius>
+						<flyOverhead>true</flyOverhead>
+						<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+						<preExplosionSpawnChance>0.3</preExplosionSpawnChance>
+						<soundExplode>MortarIncendiary_Explode</soundExplode>
+						<shellingProps>
+							<damage>0.33</damage>
+						</shellingProps>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>253</damageAmountBase>
+							<explosiveDamageType>Thermobaric</explosiveDamageType>
+							<explosiveRadius>4</explosiveRadius>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Smoke_directfire"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Smoke_directfire"]</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
+					<defName>Bullet_155mmHowitzerShell_Smoke_directfire</defName>
+					<label>155mm howitzer shell (smoke)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/SMK</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Smoke</damageDef>
+						<suppressionFactor>0.0</suppressionFactor>
+						<dangerFactor>0.0</dangerFactor>
+						<explosionRadius>10.5</explosionRadius>
+						<soundExplode>Explosion_EMP</soundExplode>
+						<postExplosionGasType>BlindSmoke</postExplosionGasType>
+						<preExplosionSpawnChance>1</preExplosionSpawnChance>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						<explosionEffect>ExtinguisherExplosion</explosionEffect>
+					</projectile>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
+					<defName>Bullet_155mmHowitzerShell_Smoke_directfire</defName>
+					<label>155mm howitzer shell (smoke)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/SMK</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Smoke</damageDef>
+						<suppressionFactor>0.0</suppressionFactor>
+						<dangerFactor>0.0</dangerFactor>
+						<explosionRadius>10.5</explosionRadius>
+						<soundExplode>Explosion_EMP</soundExplode>
+						<postExplosionGasType>BlindSmoke</postExplosionGasType>
+						<preExplosionSpawnChance>1</preExplosionSpawnChance>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						<explosionEffect>ExtinguisherExplosion</explosionEffect>
+					</projectile>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Incendiary_directfire"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_155mmHowitzerShell_Incendiary_directfire"]</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
+					<defName>Bullet_155mmHowitzerShell_Incendiary_directfire</defName>
+					<label>155mm howitzer shell (incendiary)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/INC</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>PrometheumFlame</damageDef>
+						<damageAmountBase>31</damageAmountBase>
+						<explosionRadius>11.5</explosionRadius>
+						<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+						<preExplosionSpawnChance>0.20</preExplosionSpawnChance>
+						<soundExplode>MortarIncendiary_Explode</soundExplode>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>253</damageAmountBase>
+							<explosiveDamageType>Thermobaric</explosiveDamageType>
+							<explosiveRadius>4</explosiveRadius>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
+					<defName>Bullet_155mmHowitzerShell_Incendiary_directfire</defName>
+					<label>155mm howitzer shell (incendiary)</label>
+					<graphicData>
+						<texPath>Things/Projectile/Cannon/Howitzer/INC</texPath>
+						<graphicClass>Graphic_Single</graphicClass>
+					</graphicData>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>PrometheumFlame</damageDef>
+						<damageAmountBase>31</damageAmountBase>
+						<explosionRadius>11.5</explosionRadius>
+						<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+						<preExplosionSpawnChance>0.20</preExplosionSpawnChance>
+						<soundExplode>MortarIncendiary_Explode</soundExplode>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_ExplosiveCE">
+							<damageAmountBase>253</damageAmountBase>
+							<explosiveDamageType>Thermobaric</explosiveDamageType>
+							<explosiveRadius>4</explosiveRadius>
+							<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_HE_TFuzed"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_HE_TFuzed"]</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_HE_TFuzed</defName>
+					<label>57x438mm Bofors shell (HE, time fuze)</label>
+					<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bomb</damageDef>
+						<damageAmountBase>108</damageAmountBase>
+						<explosionRadius>2</explosionRadius>
+						<soundExplode>MortarBomb_Explode</soundExplode>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						<aimHeightOffset>2</aimHeightOffset>
+						<armingDelay>2</armingDelay>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>7</Fragment_Large>
+								<Fragment_Small>14</Fragment_Small>
+							</fragments>
+							<fragAngleRange>-60~-2</fragAngleRange>
+							<fragXZAngleRange>-45~45</fragXZAngleRange>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<ThingDef ParentName="HSKV_Base57x438mmBoforsBullet">
+					<defName>Bullet_57x438mmBofors_HE_TFuzed</defName>
+					<label>57x438mm Bofors shell (HE, time fuze)</label>
+					<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
+					<projectile Class="CombatExtended.ProjectilePropertiesCE">
+						<damageDef>Bomb</damageDef>
+						<damageAmountBase>108</damageAmountBase>
+						<explosionRadius>2</explosionRadius>
+						<soundExplode>MortarBomb_Explode</soundExplode>
+						<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+						<aimHeightOffset>2</aimHeightOffset>
+						<armingDelay>2</armingDelay>
+					</projectile>
+					<comps>
+						<li Class="CombatExtended.CompProperties_Fragments">
+							<fragments>
+								<Fragment_Large>7</Fragment_Large>
+								<Fragment_Small>14</Fragment_Small>
+							</fragments>
+							<fragAngleRange>-60~-2</fragAngleRange>
+							<fragXZAngleRange>-45~45</fragXZAngleRange>
+						</li>
+					</comps>
+				</ThingDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_90mmCannonShell_AP"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_90mmCannonShell_AP"]</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_90mmCannonShell_AP</defName>
+					<label>make 90mm cannon shell (AP) x1</label>
+					<description>Craft 1 × 90mm cannon shell (AP).</description>
+					<jobString>Making 90mm cannon shell (AP).</jobString>
+					<workAmount>1200</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>12</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>9</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_90mmCannonShell_AP>1</Ammo_90mmCannonShell_AP>
+					</products>
+					<skillRequirements>
+						<Crafting>4</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_90mmCannonShell_AP</defName>
+					<label>make 90mm cannon shell (AP) x1</label>
+					<description>Craft 1 × 90mm cannon shell (AP).</description>
+					<jobString>Making 90mm cannon shell (AP).</jobString>
+					<workAmount>1200</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>12</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>9</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_90mmCannonShell_AP>1</Ammo_90mmCannonShell_AP>
+					</products>
+					<skillRequirements>
+						<Crafting>4</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_90mmCannonShell_APCR"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_90mmCannonShell_APCR"]</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_90mmCannonShell_APCR</defName>
+					<label>make 90mm cannon shell (APCR) x1</label>
+					<description>Craft 1 × 90mm cannon shell (APCR).</description>
+					<jobString>Making 90mm cannon shell (APCR).</jobString>
+					<workAmount>1500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>8</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>9</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_90mmCannonShell_APCR>1</Ammo_90mmCannonShell_APCR>
+					</products>
+					<skillRequirements>
+						<Crafting>6</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_90mmCannonShell_APCR</defName>
+					<label>make 90mm cannon shell (APCR) x1</label>
+					<description>Craft 1 × 90mm cannon shell (APCR).</description>
+					<jobString>Making 90mm cannon shell (APCR).</jobString>
+					<workAmount>1500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>15</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>8</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>9</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>1</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_90mmCannonShell_APCR>1</Ammo_90mmCannonShell_APCR>
+					</products>
+					<skillRequirements>
+						<Crafting>6</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_155mmHowitzerShell_Smoke"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_155mmHowitzerShell_Smoke"]</xpath>
+			<value>
+				<RecipeDef ParentName="ArtilleryAmmoRecipeBase">
+					<defName>MakeAmmo_155mmHowitzerShell_Smoke</defName>
+					<label>make 155mm howitzer shell (smoke) x1</label>
+					<description>Craft 1 × 155mm howitzer shell (smoke).</description>
+					<jobString>Making 155mm howitzer shell (smoke).</jobString>
+					<workAmount>2000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>30</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>Chemical</li>
+								</categories>
+							</filter>
+							<count>8</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>4</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>3</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+							<li>Chemical</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_155mmHowitzerShell_Smoke>1</Ammo_155mmHowitzerShell_Smoke>
+					</products>
+					<skillRequirements>
+						<Crafting>4</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="ArtilleryAmmoRecipeBase">
+					<defName>MakeAmmo_155mmHowitzerShell_Smoke</defName>
+					<label>make 155mm howitzer shell (smoke) x1</label>
+					<description>Craft 1 × 155mm howitzer shell (smoke).</description>
+					<jobString>Making 155mm howitzer shell (smoke).</jobString>
+					<workAmount>2000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>30</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>Chemical</li>
+								</categories>
+							</filter>
+							<count>8</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>4</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>3</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+							<li>Chemical</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_155mmHowitzerShell_Smoke>1</Ammo_155mmHowitzerShell_Smoke>
+					</products>
+					<skillRequirements>
+						<Crafting>4</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_155mmHowitzerShell_Incendiary"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_155mmHowitzerShell_Incendiary"]</xpath>
+			<value>
+				<RecipeDef ParentName="ArtilleryAmmoRecipeBase">
+					<defName>MakeAmmo_155mmHowitzerShell_Incendiary</defName>
+					<label>make 155mm howitzer shell (incendiary) x1</label>
+					<description>Craft 1 × 155mm howitzer shell (incendiary).</description>
+					<jobString>Making 155mm howitzer shell (incendiary).</jobString>
+					<workAmount>2000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>30</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>6</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>Prometheum</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_155mmHowitzerShell_Incendiary>1</Ammo_155mmHowitzerShell_Incendiary>
+					</products>
+					<skillRequirements>
+						<Crafting>4</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="ArtilleryAmmoRecipeBase">
+					<defName>MakeAmmo_155mmHowitzerShell_Incendiary</defName>
+					<label>make 155mm howitzer shell (incendiary) x1</label>
+					<description>Craft 1 × 155mm howitzer shell (incendiary).</description>
+					<jobString>Making 155mm howitzer shell (incendiary).</jobString>
+					<workAmount>2000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>30</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Prometheum</li>
+								</thingDefs>
+							</filter>
+							<count>6</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>Prometheum</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_155mmHowitzerShell_Incendiary>1</Ammo_155mmHowitzerShell_Incendiary>
+					</products>
+					<skillRequirements>
+						<Crafting>4</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_20x102mm_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_20x102mm_Sabot"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_20x102mm_Sabot</defName>
+					<label>make 20x102mm cartridge (Sabot) x40</label>
+					<description>Craft 40 × 20x102mm cartridge (Sabot).</description>
+					<jobString>Making 20x102mm cartridge (Sabot).</jobString>
+					<workAmount>3200</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>50</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>12</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>8</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_20x102mm_Sabot>40</Ammo_20x102mm_Sabot>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_20x102mm_Sabot</defName>
+					<label>make 20x102mm cartridge (Sabot) x40</label>
+					<description>Craft 40 × 20x102mm cartridge (Sabot).</description>
+					<jobString>Making 20x102mm cartridge (Sabot).</jobString>
+					<workAmount>3200</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>50</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>12</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>8</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_20x102mm_Sabot>40</Ammo_20x102mm_Sabot>
+					</products>
+					<skillRequirements>
+						<Crafting>10</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_30x173mm_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_30x173mm_Sabot"]</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_30x173mm_Sabot</defName>
+					<label>make 30x173mm cartridge (Sabot) x30</label>
+					<description>Craft 30 × 30x173mm cartridge (Sabot).</description>
+					<jobString>Making 30x173mm cartridge (Sabot).</jobString>
+					<workAmount>3200</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>60</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>14</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>9</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_30x173mm_Sabot>30</Ammo_30x173mm_Sabot>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="AmmoRecipeHighCaliber">
+					<defName>MakeAmmo_30x173mm_Sabot</defName>
+					<label>make 30x173mm cartridge (Sabot) x30</label>
+					<description>Craft 30 × 30x173mm cartridge (Sabot).</description>
+					<jobString>Making 30x173mm cartridge (Sabot).</jobString>
+					<workAmount>3200</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>60</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>14</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+								</thingDefs>
+							</filter>
+							<count>9</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_30x173mm_Sabot>30</Ammo_30x173mm_Sabot>
+					</products>
+					<skillRequirements>
+						<Crafting>11</Crafting>
+					</skillRequirements>
+					<researchPrerequisite>Range_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_HE_TFuzed"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_HE_TFuzed"]</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_HE_TFuzed</defName>
+					<label>make 57x438mm Bofors cartridge (HE, time fuze) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (HE, time fuze).</description>
+					<jobString>Making 57x438mm Bofors cartridge (HE, time fuze).</jobString>
+					<workAmount>6500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>13</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_HE_TFuzed>10</Ammo_57x438mmBofors_HE_TFuzed>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_HE_TFuzed</defName>
+					<label>make 57x438mm Bofors cartridge (HE, time fuze) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (HE, time fuze).</description>
+					<jobString>Making 57x438mm Bofors cartridge (HE, time fuze).</jobString>
+					<workAmount>6500</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>51</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>HeavyBar</li>
+								</categories>
+							</filter>
+							<count>20</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>13</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</filter>
+							<count>10</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>HeavyBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+							<li>ComponentIndustrial</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_HE_TFuzed>10</Ammo_57x438mmBofors_HE_TFuzed>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_Sabot"]</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/RecipeDef[defName="MakeAmmo_57x438mmBofors_Sabot"]</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_Sabot</defName>
+					<label>make 57x438mm Bofors cartridge (Sabot) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (Sabot).</description>
+					<jobString>Making 57x438mm Bofors cartridge (Sabot).</jobString>
+					<workAmount>7000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>35</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>18</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>23</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_Sabot>10</Ammo_57x438mmBofors_Sabot>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<RecipeDef ParentName="CannonAmmoRecipeBase">
+					<defName>MakeAmmo_57x438mmBofors_Sabot</defName>
+					<label>make 57x438mm Bofors cartridge (Sabot) x10</label>
+					<description>Craft 10 × 57x438mm Bofors cartridge (Sabot).</description>
+					<jobString>Making 57x438mm Bofors cartridge (Sabot).</jobString>
+					<workAmount>7000</workAmount>
+					<ingredients>
+						<li>
+							<filter>
+								<categories>
+									<li>SLDBar</li>
+									<li>USLDBar</li>
+								</categories>
+							</filter>
+							<count>35</count>
+						</li>
+						<li>
+							<filter>
+								<categories>
+									<li>USLDHBar</li>
+								</categories>
+							</filter>
+							<count>18</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Powder</li>
+									<li>FSX</li>
+								</thingDefs>
+							</filter>
+							<count>23</count>
+						</li>
+					</ingredients>
+					<fixedIngredientFilter>
+						<categories>
+							<li>SLDBar</li>
+							<li>USLDBar</li>
+							<li>USLDHBar</li>
+						</categories>
+						<thingDefs>
+							<li>Powder</li>
+							<li>FSX</li>
+						</thingDefs>
+					</fixedIngredientFilter>
+					<products>
+						<Ammo_57x438mmBofors_Sabot>10</Ammo_57x438mmBofors_Sabot>
+					</products>
+					<researchPrerequisite>Artillery_C2</researchPrerequisite>
+				</RecipeDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+</Patch>

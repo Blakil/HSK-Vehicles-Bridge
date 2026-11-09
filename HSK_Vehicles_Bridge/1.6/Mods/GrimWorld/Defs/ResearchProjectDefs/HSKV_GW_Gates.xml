@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of GrimWorld vehicles, adapted to the HSK balance progression. -->
+
+	<ResearchProjectDef>
+		<defName>HSKV_GW_Astartes</defName>
+		<label>Adeptus Astartes vehicles</label>
+		<description>Vehicle patterns of the Adeptus Astartes: Rhino-pattern hulls, Land Raiders, gunships and drop pods for power-armoured Space Marines. Needs astronavigation and powered armour.</description>
+		<baseCost>5400</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>GW_GrimTech</tab>
+		<prerequisites>
+			<li>ShipBasics</li>
+			<li>PoweredArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>HSKV_GW_Custodes</defName>
+		<label>Adeptus Custodes vehicles</label>
+		<description>Antigrav patterns of the Adeptus Custodes: jetbikes, Caladius grav-tanks and Orion gunships. Needs astronavigation, the finest power armour and gravitic drives.</description>
+		<baseCost>7200</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>GW_GrimTech</tab>
+		<prerequisites>
+			<li>ShipBasics</li>
+			<li>Armor_E3</li>
+			<li>HSKV_GravDrive</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>13.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

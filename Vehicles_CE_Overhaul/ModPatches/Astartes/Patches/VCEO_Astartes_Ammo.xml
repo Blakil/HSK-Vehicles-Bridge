@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: CE ammo of Astartes vehicles turrets on stock Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>2</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Annihilator_MainCannon"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter75"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter75_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter75</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter75</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter75_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_MainTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_57x438mmBofors"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_57x438mmBofors_AP"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_57x438mmBofors</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>183</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>183</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_57x438mmBofors</ammoSet>
+										<shotHeight>2.5</shotHeight>
+										<speed>183</speed>
+										<sway>0.7</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_57x438mmBofors_AP</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]</xpath>
+								<value>
+									<projectile>Bullet_57x438mmBofors_AP</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/fireModes/li[number(shotsPerBurst) &gt; 1]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>1</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="Destructor_MainCannon"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_left"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="HeavyBolter_right"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Bolter998"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Bolter998_Standard"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Bolter998</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>129</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Bolter998</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>129</speed>
+										<sway>1</sway>
+										<spread>0.02</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]</xpath>
+								<value>
+									<projectile>Bullet_Bolter998_Standard</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_MainTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>2</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretLeft"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Lasgun_Cannon"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Lasgun_Cannon"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>300</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Lasgun_Cannon</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>300</speed>
+										<sway>0.8</sway>
+										<spread>0.01</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]</xpath>
+								<value>
+									<projectile>Bullet_Lasgun_Cannon</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/fireModes/li[number(shotsPerBurst) &gt; 2]/shotsPerBurst</xpath>
+								<value>
+									<shotsPerBurst>2</shotsPerBurst>
+								</value>
+							</match>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/magazineCapacity</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/magazineCapacity</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]</xpath>
+								<value>
+									<magazineCapacity>10</magazineCapacity>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/reloadTimer</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]/reloadTimer</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Land_Raider_SideTurretRight"]</xpath>
+								<value>
+									<reloadTimer>6</reloadTimer>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_20x102mmNATO"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_20x102mmNATO_AP"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>182</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>182</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_20x102mmNATO</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>182</speed>
+										<sway>1</sway>
+										<spread>0.05</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_20x102mmNATO_AP</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]</xpath>
+								<value>
+									<projectile>Bullet_20x102mmNATO_AP</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_MainTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Flamethrower"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Flamethrower_Prometheum"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>20</speed>
+										<sway>0.25</sway>
+										<spread>0.3</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretLeft"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_Flamethrower"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_Flamethrower_Prometheum"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>20</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_Flamethrower</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>20</speed>
+										<sway>0.25</sway>
+										<spread>0.3</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]</xpath>
+								<value>
+									<projectile>Bullet_Flamethrower_Prometheum</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_LandRaiderRDMR_SideTurretRight"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_40x53mmGrenade"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_40x53mmGrenade_Smoke"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_40x53mmGrenade</ammoSet>
+										</value>
+									</li>
+									<li Class="PatchOperationConditional">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+										<match Class="PatchOperationReplace">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/speed</xpath>
+											<value>
+												<speed>62</speed>
+											</value>
+										</match>
+										<nomatch Class="PatchOperationAdd">
+											<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+											<value>
+												<speed>62</speed>
+											</value>
+										</nomatch>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_40x53mmGrenade</ammoSet>
+										<shotHeight>2</shotHeight>
+										<speed>62</speed>
+										<sway>1.61</sway>
+										<spread>0.15</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_40x53mmGrenade_Smoke</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]</xpath>
+								<value>
+									<projectile>Bullet_40x53mmGrenade_Smoke</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Rhino_Smoke_Launcher"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_80mmRocket_indirect"]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="Bullet_80mmRocket_HE_indirect"]</xpath>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]</xpath>
+							<match Class="PatchOperationSequence">
+								<operations>
+									<li Class="PatchOperationReplace">
+										<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]/modExtensions/li[@Class="Vehicles.CETurretDataDefModExtension"]/ammoSet</xpath>
+										<value>
+											<ammoSet>AmmoSet_80mmRocket_indirect</ammoSet>
+										</value>
+									</li>
+								</operations>
+							</match>
+							<nomatch Class="PatchOperationAddModExtension">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]</xpath>
+								<value>
+									<li Class="Vehicles.CETurretDataDefModExtension">
+										<ammoSet>AmmoSet_80mmRocket_indirect</ammoSet>
+										<shotHeight>2</shotHeight>
+										<sway>0.82</sway>
+										<spread>4</spread>
+									</li>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]/projectile</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]/projectile</xpath>
+								<value>
+									<projectile>Bullet_80mmRocket_HE_indirect</projectile>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]</xpath>
+								<value>
+									<projectile>Bullet_80mmRocket_HE_indirect</projectile>
+								</value>
+							</nomatch>
+						</li>
+						<li Class="PatchOperationConditional">
+							<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]/genericAmmo</xpath>
+							<match Class="PatchOperationReplace">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]/genericAmmo</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</match>
+							<nomatch Class="PatchOperationAdd">
+								<xpath>Defs/Vehicles.VehicleTurretDef[defName="GF40K_Whirlwind_MainTurret"]</xpath>
+								<value>
+									<genericAmmo>false</genericAmmo>
+								</value>
+							</nomatch>
+						</li>
+					</operations>
+				</match>
+			</match>
+		</match>
+	</Operation>
+
+</Patch>

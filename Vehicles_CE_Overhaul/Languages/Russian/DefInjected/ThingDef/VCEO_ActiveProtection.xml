@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VCEO_Module_APS.label>модуль активной защиты</VCEO_Module_APS.label>
+  <VCEO_Module_APS.description>Комплекс активной защиты машины: радар ближнего действия и блок пусковых труб. Видит летящую ракету и стреляет зарядом, который рвётся перед ней. Ставится на танк или БТР как улучшение; сколько ракет он сбивает — зависит от машины. Нужны заряды, их ставят снаружи.</VCEO_Module_APS.description>
+  <VCEO_APSCharge.label>заряд КАЗ</VCEO_APSCharge.label>
+  <VCEO_APSCharge.description>Заряд комплекса активной защиты машины: короткий цилиндр, который рвётся конусом осколков перед летящей ракетой и сбивает её в воздухе. Ставится в пусковую установку машины снаружи.</VCEO_APSCharge.description>
+</LanguageData>

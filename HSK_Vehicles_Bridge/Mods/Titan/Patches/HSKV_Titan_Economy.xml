@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Spacer Vehicles (Titan) vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Avenger_Buildable"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Avenger_Buildable"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Avenger_Buildable"]/costList</xpath>
+				<value><costList><ComponentSpacer>6</ComponentSpacer><GoldBar>6</GoldBar><ComponentIndustrial>30</ComponentIndustrial><Plasteel>288</Plasteel><HSKV_Engine_Turbine>4</HSKV_Engine_Turbine><HSKV_Body_Airframe>8</HSKV_Body_Airframe><VVE_CarTransmission>2</VVE_CarTransmission><HSKV_Avionics>2</HSKV_Avionics><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Avenger_Buildable"]</xpath>
+				<value><costList><ComponentSpacer>6</ComponentSpacer><GoldBar>6</GoldBar><ComponentIndustrial>30</ComponentIndustrial><Plasteel>288</Plasteel><HSKV_Engine_Turbine>4</HSKV_Engine_Turbine><HSKV_Body_Airframe>8</HSKV_Body_Airframe><VVE_CarTransmission>2</VVE_CarTransmission><HSKV_Avionics>2</HSKV_Avionics><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Avenger"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Avenger"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Avenger"]/statBases/MarketValue</xpath>
+				<value><MarketValue>24600</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Avenger"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Avenger"]/statBases</xpath>
+					<value><MarketValue>24600</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Avenger"]</xpath>
+					<value><statBases><MarketValue>24600</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Conquistador_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Conquistador_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Conquistador_Blueprint"]/costList</xpath>
+				<value><costList><ComponentSpacer>6</ComponentSpacer><GoldBar>24</GoldBar><ComponentIndustrial>34</ComponentIndustrial><Plasteel>386</Plasteel><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><HSKV_Body_Car>4</HSKV_Body_Car><HSKV_Armor_Heavy>4</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_Mount_TankGun>2</HSKV_Mount_TankGun><HSKV_Mount_MG>2</HSKV_Mount_MG></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JAHV_Conquistador_Blueprint"]</xpath>
+				<value><costList><ComponentSpacer>6</ComponentSpacer><GoldBar>24</GoldBar><ComponentIndustrial>34</ComponentIndustrial><Plasteel>386</Plasteel><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><HSKV_Body_Car>4</HSKV_Body_Car><HSKV_Armor_Heavy>4</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_Mount_TankGun>2</HSKV_Mount_TankGun><HSKV_Mount_MG>2</HSKV_Mount_MG></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Conquistador"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Conquistador"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Conquistador"]/statBases/MarketValue</xpath>
+				<value><MarketValue>44700</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Conquistador"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Conquistador"]/statBases</xpath>
+					<value><MarketValue>44700</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JAHV_Conquistador"]</xpath>
+					<value><statBases><MarketValue>44700</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Warchief_Buildable"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Warchief_Buildable"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Warchief_Buildable"]/costList</xpath>
+				<value><costList><ComponentSpacer>6</ComponentSpacer><ComponentIndustrial>25</ComponentIndustrial><GoldBar>15</GoldBar><Plasteel>278</Plasteel><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>3</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>10</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><HSKV_Mount_TankGun>2</HSKV_Mount_TankGun><HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon><HSKV_ShieldEmitter>1</HSKV_ShieldEmitter><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Warchief_Buildable"]</xpath>
+				<value><costList><ComponentSpacer>6</ComponentSpacer><ComponentIndustrial>25</ComponentIndustrial><GoldBar>15</GoldBar><Plasteel>278</Plasteel><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>3</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>10</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><HSKV_Mount_TankGun>2</HSKV_Mount_TankGun><HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon><HSKV_ShieldEmitter>1</HSKV_ShieldEmitter><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/statBases/MarketValue</xpath>
+				<value><MarketValue>65500</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]/statBases</xpath>
+					<value><MarketValue>65500</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Warchief"]</xpath>
+					<value><statBases><MarketValue>65500</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Superchief_Buildable"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Superchief_Buildable"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Superchief_Buildable"]/costList</xpath>
+				<value><costList><ComponentSpacer>12</ComponentSpacer><ComponentIndustrial>25</ComponentIndustrial><GoldBar>15</GoldBar><Plasteel>278</Plasteel><SteelBar>120</SteelBar><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>3</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>10</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><HSKV_Mount_TankGun>2</HSKV_Mount_TankGun></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="JASV_Superchief_Buildable"]</xpath>
+				<value><costList><ComponentSpacer>12</ComponentSpacer><ComponentIndustrial>25</ComponentIndustrial><GoldBar>15</GoldBar><Plasteel>278</Plasteel><SteelBar>120</SteelBar><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>3</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>10</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><HSKV_Mount_TankGun>2</HSKV_Mount_TankGun></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/statBases/MarketValue</xpath>
+				<value><MarketValue>49550</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]/statBases</xpath>
+					<value><MarketValue>49550</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="JASV_Superchief"]</xpath>
+					<value><statBases><MarketValue>49550</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>JAHV_Avenger</li><li>JAHV_Conquistador</li><li>JASV_Warchief</li><li>JASV_Superchief</li></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"][@ParentName]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"]/prerequisites</xpath>
+					<value><prerequisites Inherit="False"><li>HSKV_Aviation2</li><li>Components_D2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"]</xpath>
+					<value><prerequisites Inherit="False"><li>HSKV_Aviation2</li><li>Components_D2</li></prerequisites></value>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"]/prerequisites</xpath>
+					<value><prerequisites><li>HSKV_Aviation2</li><li>Components_D2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Avenger"]</xpath>
+					<value><prerequisites><li>HSKV_Aviation2</li><li>Components_D2</li></prerequisites></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"][@ParentName]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"]/prerequisites</xpath>
+					<value><prerequisites Inherit="False"><li>HSKV_Ships</li><li>HSKV_ArmoredVehicles2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"]</xpath>
+					<value><prerequisites Inherit="False"><li>HSKV_Ships</li><li>HSKV_ArmoredVehicles2</li></prerequisites></value>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"]/prerequisites</xpath>
+					<value><prerequisites><li>HSKV_Ships</li><li>HSKV_ArmoredVehicles2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Conquistador"]</xpath>
+					<value><prerequisites><li>HSKV_Ships</li><li>HSKV_ArmoredVehicles2</li></prerequisites></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"][@ParentName]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"]/prerequisites</xpath>
+					<value><prerequisites Inherit="False"><li>HSKV_ArmoredVehicles2</li><li>Artillery_C2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"]</xpath>
+					<value><prerequisites Inherit="False"><li>HSKV_ArmoredVehicles2</li><li>Artillery_C2</li></prerequisites></value>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"]/prerequisites</xpath>
+					<value><prerequisites><li>HSKV_ArmoredVehicles2</li><li>Artillery_C2</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="JAHV_RE_Warchief"]</xpath>
+					<value><prerequisites><li>HSKV_ArmoredVehicles2</li><li>Artillery_C2</li></prerequisites></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>

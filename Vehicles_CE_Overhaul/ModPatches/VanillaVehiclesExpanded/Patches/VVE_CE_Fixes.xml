@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicles CE Overhaul: compatibility fixes for Vanilla Vehicles Expanded with Combat Extended. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleTurretDef[defName="Toad_MainTurret"]/projectile</xpath>
+		<nomatch Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Toad_MainTurret"]/ammunition</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="Toad_MainTurret"]/ammunition</xpath>
+						<value>
+							<ammunition><thingDefs><li>Shell_HighExplosive</li></thingDefs></ammunition>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleTurretDef[defName="Toad_MainTurret"]</xpath>
+						<value>
+							<ammunition><thingDefs><li>Shell_HighExplosive</li></thingDefs></ammunition>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Toad_MainTurret"]</xpath>
+					<value>
+						<projectile>Bullet_81mmMortarShell_HE</projectile>
+						<genericAmmo>false</genericAmmo>
+					</value>
+				</li>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/Vehicles.VehicleTurretDef[defName="Toad_MainTurret"]</xpath>
+					<value>
+						<li Class="Vehicles.CETurretDataDefModExtension">
+							<ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+							<shotHeight>2</shotHeight>
+							<speed>90</speed>
+							<sway>0.82</sway>
+							<spread>0.01</spread>
+						</li>
+					</value>
+				</li>
+			</operations>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[starts-with(defName, "VVE_")]/components/li[key="Engine"]/reactors/li[@Class="Vehicles.Reactor_Explosive"]/damageDef</xpath>
+		<value>
+			<damageDef>Bomb</damageDef>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/Vehicles.VehicleDef[starts-with(defName, "VVE_")]/components/li[key="Engine"]/reactors/li[@Class="Vehicles.Reactor_Explosive"]/radius</xpath>
+		<value>
+			<radius>1</radius>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[starts-with(defName, "VVE_")]/components/li[contains(key, "Chemtank")]/reactors/li[@Class="Vehicles.Reactor_Explosive"]/damageDef</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[starts-with(defName, "VVE_")]/components/li[contains(key, "Chemtank")]/reactors/li[@Class="Vehicles.Reactor_Explosive"]/damageDef</xpath>
+			<value><damageDef>Bomb</damageDef></value>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- HSK Vehicles Bridge: weapon module upgrade trees. -->
+
+	<!-- VVE_Highwayman: modules HMG, AGL -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>HSKV_VVE_Highwayman_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>HSKV_HW_HMG</key>
+				<label>Heavy machine gun .50 BMG</label>
+				<description>Hits harder and further than a rifle-calibre gun and can deal with light armour.</description>
+				<icon>HSKV/Parts/HSKV_Mount_MG</icon>
+				<work>1200</work>
+				<gridCoordinate>(6, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>VVE_CombatVehicles</li>
+					<li>SniperTurret</li>
+				</researchPrerequisites>
+				<disableIfUpgradeNodesEnabled>
+					<li>HSKV_HW_AGL</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_HMG50</turretDef>
+								<renderProperties>
+									<north>(0, 0.85)</north>
+									<south>(0, 0.5)</south>
+									<east>(0.1, 0.5)</east>
+								</renderProperties>
+								<gizmoLabel>HMG</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.65)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_MG>1</HSKV_Mount_MG>
+					<Weapon_Parts>5</Weapon_Parts>
+					<Heavy_Component>1</Heavy_Component>
+				</ingredients>
+			</li>
+			<li>
+				<key>HSKV_HW_AGL</key>
+				<label>Automatic grenade launcher 30×29</label>
+				<description>Lobs bursts of high-explosive grenades: deadly to infantry in the open and behind light cover, useless against armour.</description>
+				<icon>HSKV/Parts/HSKV_Mount_Rockets</icon>
+				<work>1200</work>
+				<gridCoordinate>(12, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>VVE_CombatVehicles</li>
+					<li>Grenade_launchers_C2</li>
+				</researchPrerequisites>
+				<disableIfUpgradeNodesEnabled>
+					<li>HSKV_HW_HMG</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_AGL30</turretDef>
+								<renderProperties>
+									<north>(0, 0.85)</north>
+									<south>(0, 0.5)</south>
+									<east>(0.1, 0.5)</east>
+								</renderProperties>
+								<gizmoLabel>AGL</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.65)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_Rockets>1</HSKV_Mount_Rockets>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+	<!-- VVE_Tango: modules AC20, AGL -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>HSKV_VVE_Tango_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>HSKV_TG_AC20</key>
+				<label>Autocannon 20×102</label>
+				<description>A 20 mm autocannon: fast, flat-shooting, shreds infantry and light vehicles and wears down armoured cars.</description>
+				<icon>HSKV/Parts/HSKV_Mount_Autocannon</icon>
+				<work>1500</work>
+				<gridCoordinate>(6, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>VVE_CombatVehicles</li>
+					<li>Heavy_turrets_C3</li>
+				</researchPrerequisites>
+				<disableIfUpgradeNodesEnabled>
+					<li>HSKV_TG_AGL</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_AC20</turretDef>
+								<renderProperties>
+									<north>(0, 0.55)</north>
+									<south>(0, 0.8)</south>
+									<east>(-0.05, 0.45)</east>
+								</renderProperties>
+								<gizmoLabel>AC20</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.65)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon>
+				</ingredients>
+			</li>
+			<li>
+				<key>HSKV_TG_AGL</key>
+				<label>Automatic grenade launcher 30×29</label>
+				<description>Lobs bursts of high-explosive grenades: deadly to infantry in the open and behind light cover, useless against armour.</description>
+				<icon>HSKV/Parts/HSKV_Mount_Rockets</icon>
+				<work>1200</work>
+				<gridCoordinate>(12, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>VVE_CombatVehicles</li>
+					<li>Grenade_launchers_C2</li>
+				</researchPrerequisites>
+				<disableIfUpgradeNodesEnabled>
+					<li>HSKV_TG_AC20</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_AGL30</turretDef>
+								<renderProperties>
+									<north>(0, 0.55)</north>
+									<south>(0, 0.8)</south>
+									<east>(-0.05, 0.45)</east>
+								</renderProperties>
+								<gizmoLabel>AGL</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.65)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_Rockets>1</HSKV_Mount_Rockets>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+	<!-- VVE_Bunsen: modules AC20 -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>HSKV_VVE_Bunsen_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>HSKV_BN_AC20</key>
+				<label>Autocannon 20×102</label>
+				<description>A 20 mm autocannon: fast, flat-shooting, shreds infantry and light vehicles and wears down armoured cars.</description>
+				<icon>HSKV/Parts/HSKV_Mount_Autocannon</icon>
+				<work>1500</work>
+				<gridCoordinate>(6, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>HSKV_ArmoredVehicles2</li>
+					<li>Heavy_turrets_C3</li>
+				</researchPrerequisites>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_AC20</turretDef>
+								<renderProperties>
+									<north>(-0.05, 0.2)</north>
+									<south>(-0.02, 0.2)</south>
+									<east>(-0.02, 0.4)</east>
+								</renderProperties>
+								<gizmoLabel>AC20</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.65)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+	<!-- VVE_Roadkill: modules AC20 -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>HSKV_VVE_Roadkill_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>HSKV_RK_AC20</key>
+				<label>Autocannon 20×102</label>
+				<description>A 20 mm autocannon: fast, flat-shooting, shreds infantry and light vehicles and wears down armoured cars.</description>
+				<icon>HSKV/Parts/HSKV_Mount_Autocannon</icon>
+				<work>1500</work>
+				<gridCoordinate>(6, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>HSKV_ArmoredVehicles2</li>
+					<li>Heavy_turrets_C3</li>
+				</researchPrerequisites>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_AC20</turretDef>
+								<renderProperties>
+									<north>(0, 0.45)</north>
+									<south>(0, 0.25)</south>
+									<east>(0.05, 0.35)</east>
+								</renderProperties>
+								<gizmoLabel>AC20</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.65)</aimPieOffset>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+	<!-- VVE_Scytheman: modules Mortar81 -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>HSKV_VVE_Scytheman_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>HSKV_SC_Mortar81</key>
+				<label>Mortar 81 mm</label>
+				<description>Indirect fire over walls and hills. Accurate with a spotter, a gamble without one.</description>
+				<icon>HSKV/Parts/HSKV_Mount_Mortar</icon>
+				<work>1200</work>
+				<gridCoordinate>(6, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>VVE_CombatVehicles</li>
+					<li>Mortars</li>
+				</researchPrerequisites>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_Mortar81</turretDef>
+								<renderProperties>
+									<north>(0, -1)</north>
+									<south>(0, 1.9)</south>
+									<east>(-1.55, 0.53)</east>
+								</renderProperties>
+								<gizmoLabel>Mortar81</gizmoLabel>
+								<defaultAngleRotated>180</defaultAngleRotated>
+								<angleRestricted/>
+								<aimPieOffset>(0, 0.1)</aimPieOffset>
+								<autoTargeting>false</autoTargeting>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_Mortar>1</HSKV_Mount_Mortar>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+	<!-- VVE_Toad: modules Mortar81 -->
+	<Vehicles.UpgradeTreeDef>
+		<defName>HSKV_VVE_Toad_UpgradeTree</defName>
+		<nodes>
+			<li>
+				<key>HSKV_TD_Mortar81</key>
+				<label>Mortar 81 mm</label>
+				<description>Indirect fire over walls and hills. Accurate with a spotter, a gamble without one.</description>
+				<icon>HSKV/Parts/HSKV_Mount_Mortar</icon>
+				<work>1200</work>
+				<gridCoordinate>(6, 7)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<researchPrerequisites>
+					<li>HSKV_OrbitalPods</li>
+					<li>Mortars</li>
+				</researchPrerequisites>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>HSKV_Turret_Mortar81</turretDef>
+								<renderProperties>
+									<north>(0, 0.3755)</north>
+									<south>(0, 0.3755)</south>
+									<east>(0, 0.3755)</east>
+								</renderProperties>
+								<gizmoLabel>Mortar81</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, -0.35)</aimPieOffset>
+								<autoTargeting>false</autoTargeting>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+						<removeTurrets>
+							<li>mainTurret</li>
+						</removeTurrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<HSKV_Mount_Mortar>1</HSKV_Mount_Mortar>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+</Defs>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HSKV_Engine_Diesel.label>двигатель внутреннего сгорания</HSKV_Engine_Diesel.label>
+  <HSKV_Engine_Diesel.description>Двигатель внутреннего сгорания: блок, радиатор, генератор и выхлоп, усиленные под нагрузку. Ставится на мотоциклы, машины, грузовики, бронетехнику, суда и винтовые самолёты.</HSKV_Engine_Diesel.description>
+  <HSKV_Engine_Turbine.label>газотурбинный двигатель</HSKV_Engine_Turbine.label>
+  <HSKV_Engine_Turbine.description>Газовая турбина для вертолётов и транспортных самолётов: лопатки из стеллита, редуктор.</HSKV_Engine_Turbine.description>
+  <HSKV_Engine_Impulse.label>импульсный двигательный блок</HSKV_Engine_Impulse.label>
+  <HSKV_Engine_Impulse.description>Двигательный блок орбитальной капсулы: сопла, модули питания и бортовой вычислитель.</HSKV_Engine_Impulse.description>
+  <HSKV_Chassis_WheeledLight.label>колёсное шасси</HSKV_Chassis_WheeledLight.label>
+  <HSKV_Chassis_WheeledLight.description>Секция рамы с мостами, подвеской и колёсами. Грузовикам и броневикам нужно две и больше.</HSKV_Chassis_WheeledLight.description>
+  <HSKV_Chassis_Tracked.label>гусеничная ходовая часть</HSKV_Chassis_Tracked.label>
+  <HSKV_Chassis_Tracked.description>Гусеницы, опорные катки, ведущие колёса и торсионы.</HSKV_Chassis_Tracked.description>
+  <HSKV_Body_Car.label>кузов</HSKV_Body_Car.label>
+  <HSKV_Body_Car.description>Сварной каркас кузова с остеклением, проводкой и топливным баком. Загерметизированный, служит и корпусом лодки.</HSKV_Body_Car.description>
+  <HSKV_Body_Airframe.label>секция планера</HSKV_Body_Airframe.label>
+  <HSKV_Body_Airframe.description>Лёгкая алюминиевая секция фюзеляжа с фонарём, проводкой и топливным баком. Вертолётам ещё одна идёт на пилон и лопасти несущего винта.</HSKV_Body_Airframe.description>
+  <HSKV_Armor_Light.label>лёгкая броневая плита</HSKV_Armor_Light.label>
+  <HSKV_Armor_Light.description>Плита из закалённой стали для броневиков, БТР и бортов танков.</HSKV_Armor_Light.description>
+  <HSKV_Armor_Heavy.label>тяжёлая броневая плита</HSKV_Armor_Heavy.label>
+  <HSKV_Armor_Heavy.description>Толстая комбинированная плита из обеднённого урана, стали, керамики и композита для лобовой брони танков.</HSKV_Armor_Heavy.description>
+  <HSKV_Electronics_Onboard.label>бортовая электроника и связь</HSKV_Electronics_Onboard.label>
+  <HSKV_Electronics_Onboard.description>Жгуты проводов, аккумулятор, блоки управления и радиостанция машины.</HSKV_Electronics_Onboard.description>
+  <HSKV_FireControl.label>система управления огнём</HSKV_FireControl.label>
+  <HSKV_FireControl.description>Прицелы, дальномер, стабилизатор орудия и баллистический вычислитель.</HSKV_FireControl.description>
+  <HSKV_Avionics.label>авионика</HSKV_Avionics.label>
+  <HSKV_Avionics.description>Пилотажные приборы, навигация, автопилот и компактная обзорная РЛС.</HSKV_Avionics.description>
+  <HSKV_EngineControl_Advanced.label>продвинутый блок управления двигателем</HSKV_EngineControl_Advanced.label>
+  <HSKV_EngineControl_Advanced.description>Микропроцессорный блок управления двигателем для самой сложной техники: орбитальных капсул, основных боевых танков, тяжёлых военных грузовиков.</HSKV_EngineControl_Advanced.description>
+  <HSKV_Mount_MG.label>установка лёгкого вооружения</HSKV_Mount_MG.label>
+  <HSKV_Mount_MG.description>Башенная установка под пулемёт или огнемёт: погон, привод наведения, подача ленты и топливные магистрали.</HSKV_Mount_MG.description>
+  <HSKV_Mount_Rockets.label>пусковая установка</HSKV_Mount_Rockets.label>
+  <HSKV_Mount_Rockets.description>Установка под автоматический гранатомёт или пакет реактивных снарядов.</HSKV_Mount_Rockets.description>
+  <HSKV_Mount_Autocannon.label>установка автопушки</HSKV_Mount_Autocannon.label>
+  <HSKV_Mount_Autocannon.description>20-мм автоматическая пушка на башенной установке.</HSKV_Mount_Autocannon.description>
+  <HSKV_Mount_Mortar.label>миномётно-гаубичная установка</HSKV_Mount_Mortar.label>
+  <HSKV_Mount_Mortar.description>Казённик, противооткатные устройства и подъёмный механизм для миномёта или гаубицы на машине.</HSKV_Mount_Mortar.description>
+  <HSKV_Mount_TankGun.label>танковое орудие</HSKV_Mount_TankGun.label>
+  <HSKV_Mount_TankGun.description>Танковая пушка с казёнником, противооткатными устройствами и стабилизатором.</HSKV_Mount_TankGun.description>
+  <HSKV_Armor_Superheavy.label>сверхтяжёлая броня (керамит)</HSKV_Armor_Superheavy.label>
+  <HSKV_Armor_Superheavy.description>Слоистая броня класса керамита: керамика, композит, вольфрам и обеднённый уран. Для сверхтяжёлых танков и машин космодесанта.</HSKV_Armor_Superheavy.description>
+  <HSKV_Actuator_Myomer.label>миомерный привод</HSKV_Actuator_Myomer.label>
+  <HSKV_Actuator_Myomer.description>Пучки синтетических мышечных волокон с приводами и контроллером: привод шагающих машин и тяжёлых экзоскелетов.</HSKV_Actuator_Myomer.description>
+  <HSKV_ShieldEmitter.label>генератор поля</HSKV_ShieldEmitter.label>
+  <HSKV_ShieldEmitter.description>Компактный проектор энергетического поля для машин на технологиях орбитального щита.</HSKV_ShieldEmitter.description>
+  <HSKV_Reactor_Fusion.label>термоядерный реактор</HSKV_Reactor_Fusion.label>
+  <HSKV_Reactor_Fusion.description>Термоядерный реактор с магнитным удержанием, достаточно малый для машины: питание антигравов, полей и кораблей.</HSKV_Reactor_Fusion.description>
+  <HSKV_Cogitator.label>когитатор</HSKV_Cogitator.label>
+  <HSKV_Cogitator.description>Машинный дух, собранный вокруг ядра ИИ: управление огнём, навигация и живучесть самых тяжёлых машин.</HSKV_Cogitator.description>
+  <HSKV_Drive_Gravitic.label>гравитационный привод</HSKV_Drive_Gravitic.label>
+  <HSKV_Drive_Gravitic.description>Антигравитационный привод с полевыми катушками на антивеществе: тяжёлые машины парят и летают.</HSKV_Drive_Gravitic.description>
+</LanguageData>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>HSK Vehicles Bridge</name>
+  <author>Blakil</author>
+  <packageId>blakil.hsk.vehiclesbridge</packageId>
+  <modVersion>1.0.0</modVersion>
+  <supportedVersions>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>blakil.vehiclesceoverhaul</packageId>
+      <displayName>Vehicles CE Overhaul</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3836521434</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>skyarkhangel.HSK</packageId>
+      <displayName>Hardcore SK</displayName>
+      <downloadUrl>https://github.com/HardcoreSK/Hardcore-SK</downloadUrl>
+    </li>
+    <li>
+      <packageId>SmashPhil.VehicleFramework</packageId>
+      <displayName>Vehicle Framework</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3014915404</steamWorkshopUrl>
+      <downloadUrl>https://github.com/SmashPhil/Vehicle-Framework/releases</downloadUrl>
+    </li>
+    <li>
+      <packageId>OskarPotocki.VanillaVehiclesExpanded</packageId>
+      <displayName>Vanilla Vehicles Expanded</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3014906877</steamWorkshopUrl>
+      <downloadUrl>https://github.com/Vanilla-Expanded/VanillaVehiclesExpanded</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <!-- vehicle addons: transitively, through the core -->
+    <li>blakil.vehiclesceoverhaul</li>
+    <li>CETeam.CombatExtended</li>
+    <li>skyarkhangel.HSK</li>
+    <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    <li>SmashPhil.VehicleFramework</li>
+    <li>OskarPotocki.VanillaVehiclesExpanded</li>
+    <!-- addon economy (Mods/<addon>): patches of their defs go after the addons themselves -->
+    <li>Grimworld.Framework</li>
+    <li>Grimworld.Core</li>
+    <li>IDontEvenReally.WannaDoThis.Anymore</li>
+    <li>Sam.VVEUE</li>
+    <li>RoundTwo.YepAnotherUpgradeMod.SoTiredOfThisShit</li>
+    <!-- Mods/Upgrades_VVE removes trees this mod adds by patch: load after it -->
+    <li>OskarPotocki.VanillaVehiclesExpandedUpgrades</li>
+  </loadAfter>
+  <description>Vanilla Vehicles Expanded and vehicle addons in the Hardcore SK economy, adapted to the HSK balance progression: vehicle parts, recipes, a research branch, interchangeable weapon modules, HSK ammo for stock turrets, vehicle armor rescaled to HSK ammo (RimWorld 1.5, 1.6). The combat part (CE armor, damage, turrets through CE) is in Vehicles CE Overhaul: it is required and goes above this mod in the list. With VehicleRaid Framework (1.6) it adds a ready preset: which factions bring which vehicles, the same as our own vehicle raids, with HSK prices.</description>
+</ModMetaData>

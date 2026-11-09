@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HSK layer over Vehicles CE Overhaul. Root: shared by all versions (parts, VVE components, late-game parts, recipes, research, module turrets, HSK ammo for stock turrets); 1.5/: turret modules on VF upgrade trees (1.5 and 1.6). Mods/<addon>: patches of addon defs for the HSK economy, loaded when the addon is active. No assembly of its own. -->
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li>Ammo</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">Mods/Tier3</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">Mods/Tier39</li>
+    <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">Mods/Skyranger</li>
+    <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Mods/Titan</li>
+    <li IfModActive="sarg.alphavehiclesageofsail">Mods/AgeOfSail</li>
+    <li IfModActive="sarg.alphavehiclesneolithic">Mods/Neolithic</li>
+    <li IfModActive="CaptainTesss.MWB, CaptainTesss.SIMB">Mods/SimplyVehicles</li>
+    <li IfModActive="NCFC.SMVehicles">Mods/Astartes</li>
+    <li IfModActive="Grimworld.Core">Mods/GrimWorld</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedUpgrades">Mods/Upgrades_VVE</li>
+    <li IfModActive="IDontEvenReally.WannaDoThis.Anymore">Mods/Upgrades_T3</li>
+    <li IfModActive="Sam.VVEUE">Mods/Upgrades_VVEUE</li>
+    <li IfModActive="tgbm.vve.secondary.weapons">Mods/Upgrades_SecondaryWeapons</li>
+    <li IfModActive="RoundTwo.YepAnotherUpgradeMod.SoTiredOfThisShit">Mods/Upgrades_Titan</li>
+    <li IfModActive="CVN.BloodPact">Mods/Upgrades_SabbatsBlight</li>
+  </v1.5>
+  <v1.6>
+    <li>/</li>
+    <!-- turret modules: VF upgrade trees; UpgradeTreeDef / TurretUpgrade in VF 1.6 match 1.5 -->
+    <li>1.5</li>
+    <li>Ammo</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">Mods/Tier3</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">Mods/Tier39</li>
+    <!-- Genesis (1.6 only): own "archotech ship" research -->
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">1.6/Mods/Tier39</li>
+    <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">Mods/Skyranger</li>
+    <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Mods/Titan</li>
+    <li IfModActive="sarg.alphavehiclesageofsail">Mods/AgeOfSail</li>
+    <li IfModActive="sarg.alphavehiclesneolithic">Mods/Neolithic</li>
+    <li IfModActive="CaptainTesss.MWB, CaptainTesss.SIMB">Mods/SimplyVehicles</li>
+    <li IfModActive="NCFC.SMVehicles">Mods/Astartes</li>
+    <li IfModActive="Grimworld.Core">Mods/GrimWorld</li>
+    <li IfModActive="Grimworld.Core">1.6/Mods/GrimWorld</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedUpgrades">Mods/Upgrades_VVE</li>
+    <li IfModActive="IDontEvenReally.WannaDoThis.Anymore">Mods/Upgrades_T3</li>
+    <li IfModActive="Sam.VVEUE">Mods/Upgrades_VVEUE</li>
+    <li IfModActive="tgbm.vve.secondary.weapons">Mods/Upgrades_SecondaryWeapons</li>
+    <li IfModActive="RoundTwo.YepAnotherUpgradeMod.SoTiredOfThisShit">Mods/Upgrades_Titan</li>
+    <!-- VehicleRaid Framework: its natural raid preset with our factions and vehicles (Mods/VRF/NaturalRaidPresets) -->
+    <li IfModActive="gabrieel1482.raidvehicleframework">Mods/VRF</li>
+  </v1.6>
+</loadFolders>
