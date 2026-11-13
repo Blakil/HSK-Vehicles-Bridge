@@ -1,19 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- HSK layer over Vehicles CE Overhaul. Root: shared by all versions (parts, VVE components, late-game parts, recipes, research, module turrets, HSK ammo for stock turrets); 1.5/: turret modules on VF upgrade trees (1.5 and 1.6). Mods/<addon>: patches of addon defs for the HSK economy, loaded when the addon is active. No assembly of its own. -->
+<!-- HSK layer over Vehicles CE Overhaul. Root: shared by all versions (parts, VVE components, late-game parts, recipes, research, module turrets, HSK ammo for stock turrets); 1.5/: turret modules on VF upgrade trees (1.5 and 1.6). Mods/<addon>: patches of addon defs for the HSK economy, loaded when the addon is active. Economy/<version>: costs that name a concrete metal (vehicle construction, item costList) - HSK 1.6 renamed its metals (1.5 steel alloy "Plasteel" is "Steel" in 1.6), so each game version loads its own copy right after the folder it belongs to. Late/<part>: late-game parts, only with an addon that uses them. No assembly of its own. -->
 <loadFolders>
   <v1.5>
     <li>/</li>
+    <li>Economy/1.5</li>
+    <!-- late-game parts with their recipe and research: only with an addon that uses them (Tools/econ_data.LATE_USERS) -->
+    <li IfModActive="Grimworld.Core, NCFC.SMVehicles">Late/HSKV_Armor_Superheavy</li>
+    <li IfModActive="Grimworld.Core, NCFC.SMVehicles">Late/HSKV_Actuator_Myomer</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39, JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Late/HSKV_ShieldEmitter</li>
+    <li IfModActive="Grimworld.Core, HudsonRiggs.VanillaVehiclesExpandedTier39, JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Late/HSKV_Reactor_Fusion</li>
+    <li IfModActive="Grimworld.Core, HudsonRiggs.VanillaVehiclesExpandedTier39, NCFC.SMVehicles">Late/HSKV_Cogitator</li>
+    <li IfModActive="Grimworld.Core, HudsonRiggs.VanillaVehiclesExpandedTier39">Late/HSKV_Drive_Gravitic</li>
     <li>1.5</li>
     <li>Ammo</li>
     <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">Mods/Tier3</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">Economy/1.5/Mods/Tier3</li>
     <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">Mods/Tier39</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">Economy/1.5/Mods/Tier39</li>
     <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">Mods/Skyranger</li>
+    <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">Economy/1.5/Mods/Skyranger</li>
     <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Mods/Titan</li>
+    <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Economy/1.5/Mods/Titan</li>
     <li IfModActive="sarg.alphavehiclesageofsail">Mods/AgeOfSail</li>
+    <li IfModActive="sarg.alphavehiclesageofsail">Economy/1.5/Mods/AgeOfSail</li>
     <li IfModActive="sarg.alphavehiclesneolithic">Mods/Neolithic</li>
+    <li IfModActive="sarg.alphavehiclesneolithic">Economy/1.5/Mods/Neolithic</li>
     <li IfModActive="CaptainTesss.MWB, CaptainTesss.SIMB">Mods/SimplyVehicles</li>
+    <li IfModActive="CaptainTesss.MWB, CaptainTesss.SIMB">Economy/1.5/Mods/SimplyVehicles</li>
     <li IfModActive="NCFC.SMVehicles">Mods/Astartes</li>
+    <li IfModActive="NCFC.SMVehicles">Economy/1.5/Mods/Astartes</li>
     <li IfModActive="Grimworld.Core">Mods/GrimWorld</li>
+    <li IfModActive="Grimworld.Core">Economy/1.5/Mods/GrimWorld</li>
     <li IfModActive="OskarPotocki.VanillaVehiclesExpandedUpgrades">Mods/Upgrades_VVE</li>
     <li IfModActive="IDontEvenReally.WannaDoThis.Anymore">Mods/Upgrades_T3</li>
     <li IfModActive="Sam.VVEUE">Mods/Upgrades_VVEUE</li>
@@ -23,20 +40,37 @@
   </v1.5>
   <v1.6>
     <li>/</li>
+    <li>Economy/1.6</li>
+    <!-- late-game parts with their recipe and research: only with an addon that uses them (Tools/econ_data.LATE_USERS) -->
+    <li IfModActive="Grimworld.Core, NCFC.SMVehicles">Late/HSKV_Armor_Superheavy</li>
+    <li IfModActive="Grimworld.Core, NCFC.SMVehicles">Late/HSKV_Actuator_Myomer</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39, JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Late/HSKV_ShieldEmitter</li>
+    <li IfModActive="Grimworld.Core, HudsonRiggs.VanillaVehiclesExpandedTier39, JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Late/HSKV_Reactor_Fusion</li>
+    <li IfModActive="Grimworld.Core, HudsonRiggs.VanillaVehiclesExpandedTier39, NCFC.SMVehicles">Late/HSKV_Cogitator</li>
+    <li IfModActive="Grimworld.Core, HudsonRiggs.VanillaVehiclesExpandedTier39">Late/HSKV_Drive_Gravitic</li>
     <!-- turret modules: VF upgrade trees; UpgradeTreeDef / TurretUpgrade in VF 1.6 match 1.5 -->
     <li>1.5</li>
     <li>Ammo</li>
     <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">Mods/Tier3</li>
+    <li IfModActive="OskarPotocki.VanillaVehiclesExpandedTier3">Economy/1.6/Mods/Tier3</li>
     <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">Mods/Tier39</li>
+    <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">Economy/1.6/Mods/Tier39</li>
     <!-- Genesis (1.6 only): own "archotech ship" research -->
     <li IfModActive="HudsonRiggs.VanillaVehiclesExpandedTier39">1.6/Mods/Tier39</li>
     <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">Mods/Skyranger</li>
+    <li IfModActive="flangopink.xcomSkyranger, Mlie.VehiclesSkyranger">Economy/1.6/Mods/Skyranger</li>
     <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Mods/Titan</li>
+    <li IfModActive="JAHV.SpacerVehiclesHAL, JAHV.SpacerVehiclesHAL.CONTINUED">Economy/1.6/Mods/Titan</li>
     <li IfModActive="sarg.alphavehiclesageofsail">Mods/AgeOfSail</li>
+    <li IfModActive="sarg.alphavehiclesageofsail">Economy/1.6/Mods/AgeOfSail</li>
     <li IfModActive="sarg.alphavehiclesneolithic">Mods/Neolithic</li>
+    <li IfModActive="sarg.alphavehiclesneolithic">Economy/1.6/Mods/Neolithic</li>
     <li IfModActive="CaptainTesss.MWB, CaptainTesss.SIMB">Mods/SimplyVehicles</li>
+    <li IfModActive="CaptainTesss.MWB, CaptainTesss.SIMB">Economy/1.6/Mods/SimplyVehicles</li>
     <li IfModActive="NCFC.SMVehicles">Mods/Astartes</li>
+    <li IfModActive="NCFC.SMVehicles">Economy/1.6/Mods/Astartes</li>
     <li IfModActive="Grimworld.Core">Mods/GrimWorld</li>
+    <li IfModActive="Grimworld.Core">Economy/1.6/Mods/GrimWorld</li>
     <li IfModActive="Grimworld.Core">1.6/Mods/GrimWorld</li>
     <li IfModActive="OskarPotocki.VanillaVehiclesExpandedUpgrades">Mods/Upgrades_VVE</li>
     <li IfModActive="IDontEvenReally.WannaDoThis.Anymore">Mods/Upgrades_T3</li>

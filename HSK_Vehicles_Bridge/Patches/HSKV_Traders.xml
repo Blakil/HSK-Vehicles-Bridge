@@ -134,21 +134,24 @@
 			</value>
 		</match>
 	</Operation>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Misc. Robots</li>
-		</mods>
-		<match Class="PatchOperationConditional">
-			<xpath>Defs/TraderKindDef[defName="AIRobotsTrader"]/stockGenerators</xpath>
-			<match Class="PatchOperationAdd">
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="HSKV_Cogitator"]</xpath>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Misc. Robots</li>
+			</mods>
+			<match Class="PatchOperationConditional">
 				<xpath>Defs/TraderKindDef[defName="AIRobotsTrader"]/stockGenerators</xpath>
-				<value>
-					<li Class="StockGenerator_SingleDef">
-						<thingDef>HSKV_Cogitator</thingDef>
-						<countRange>-4~1</countRange>
-						<price>Expensive</price>
-					</li>
-				</value>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/TraderKindDef[defName="AIRobotsTrader"]/stockGenerators</xpath>
+					<value>
+						<li Class="StockGenerator_SingleDef">
+							<thingDef>HSKV_Cogitator</thingDef>
+							<countRange>-4~1</countRange>
+							<price>Expensive</price>
+						</li>
+					</value>
+				</match>
 			</match>
 		</match>
 	</Operation>

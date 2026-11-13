@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Vehicle repair kit under HSK (core: Vehicles_CE_Overhaul/Defs/Repair): any durable bar instead of vanilla steel plus an electronic component, made on the VVE garage bench after motorization; MarketValue by the bridge price rule (1.3 x raw). Without the kit in the core the operation is skipped. -->
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/RecipeDef[defName="VCEO_MakeRepairKit"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeRepairKit"]/ingredients</xpath>
+					<value>
+						<ingredients>
+							<li>
+								<filter><categories><li>SLDBar</li></categories></filter>
+								<count>30</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+								<count>2</count>
+							</li>
+							<li>
+								<filter><thingDefs><li>ElectronicComponents</li></thingDefs></filter>
+								<count>1</count>
+							</li>
+						</ingredients>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeRepairKit"]/fixedIngredientFilter</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<categories>
+								<li>SLDBar</li>
+							</categories>
+							<thingDefs>
+								<li>ComponentIndustrial</li>
+								<li>ElectronicComponents</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeRepairKit"]/recipeUsers</xpath>
+					<value>
+						<recipeUsers>
+							<li>VVE_GarageBench</li>
+						</recipeUsers>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="VCEO_MakeRepairKit"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>VVE_BasicVehicles</researchPrerequisite>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="VCEO_RepairKit"]/statBases/MarketValue</xpath>
+					<value>
+						<MarketValue>535</MarketValue>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

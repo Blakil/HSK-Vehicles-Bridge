@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Vehicle repair kit (Source/RepairKit.cs): one use, spent by the repairer during Vehicle Framework repairs. Numbers in VehicleRepairKitExtension; a repair station is a building with VehicleRepairStationExtension (the core puts one on the VVE garage bench). The recipe here is vanilla, the HSK bridge replaces it. -->
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VCEO_RepairKit</defName>
+		<label>vehicle repair kit</label>
+		<description>Tools, fasteners, patches, seals and small spare parts for fixing a vehicle. A colonist repairing a vehicle opens one and works twenty times faster; a kit restores about 1000 points of part health and is used up: two get a knocked-out truck going, three a tank. Away from a repair station a kit only brings a part up to half of its health, enough to drive a wreck home. Next to a repair station (the garage bench) repairs go forty times faster and all the way. Kits are taken from the repairer's inventory, the vehicle's own cargo, or from within 8 cells of the vehicle.</description>
+		<graphicData>
+			<texPath>Things/Item/VCEO_RepairKit</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<MarketValue>150</MarketValue>
+			<Mass>4</Mass>
+			<Bulk>6</Bulk>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeability>All</tradeability>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.VehicleRepairKitExtension" />
+		</modExtensions>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>VCEO_MakeRepairKit</defName>
+		<label>make vehicle repair kit</label>
+		<description>Make a vehicle repair kit.</description>
+		<jobString>Making a vehicle repair kit.</jobString>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workSkill>Crafting</workSkill>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter><thingDefs><li>Steel</li></thingDefs></filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<VCEO_RepairKit>1</VCEO_RepairKit>
+		</products>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

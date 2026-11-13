@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- "Any of a set" ingredients of upgrade nodes (core: VehiclesCEOverhaul.AnyIngredientExtension). VF takes only a specific item in a node: this is a placeholder, real items of the set are hauled and spent, the cheapest available first. Set: categories + thingDefs minus exclude. In the bridge root (2026-11-10): the upgrade trees of every addon use them, metal by category instead of a concrete bar (HSK 1.6 renamed its metals). -->
+
+	<ThingDef Name="HSKV_AnyIngredientBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<drawerType>MapMeshOnly</drawerType>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>None</tradeability>
+		<stackLimit>9999</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<drawGUIOverlay>true</drawGUIOverlay>
+	</ThingDef>
+
+	<ThingDef ParentName="HSKV_AnyIngredientBase">
+		<defName>HSKV_AnySturdyMetal</defName>
+		<label>sturdy metal (any)</label>
+		<description>Any sturdy structural metal: steel, alsifer, bioferrite, invar, ferrotitanium, titanium. No copper alloys, polymers or exotic alloys. Haulers bring the cheapest one in stock first.</description>
+		<graphicData>
+			<texPath>Things/Item/Ingot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(150,150,155)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.AnyIngredientExtension">
+				<categories>
+					<li>SLDBar</li>   <!-- "Durable": steel, alsifer, bioferrite, bronze, cupronickel -->
+					<li>USLDBar</li>  <!-- "Extra durable": invar, ferrotitanium, titanium, ... -->
+				</categories>
+				<exclude>
+					<li>Bronze</li>
+					<li>CupronickelAlloy</li>
+					<li>AlnicoAlloy</li>
+					<li>AlphaPoly</li>
+					<li>BetaPoly</li>
+					<li>NitinolAlloy</li>
+					<li>StelliteAlloy</li>
+					<li>PobediteAlloy</li>
+				</exclude>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="HSKV_AnyIngredientBase">
+		<defName>HSKV_AnyExtraDurableMetal</defName>
+		<label>extra durable metal (any)</label>
+		<description>Any extra durable structural metal: stein (invar), titanium, ferrotitanium. No exotic alloys or polymers. Haulers bring the cheapest one in stock first.</description>
+		<graphicData>
+			<texPath>Things/Item/Ingot</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(115,120,135)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>8</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.AnyIngredientExtension">
+				<categories>
+					<li>USLDBar</li>  <!-- "Extra durable": stein, titanium, ferrotitanium, ... -->
+				</categories>
+				<exclude>
+					<li>AlnicoAlloy</li>
+					<li>AlphaPoly</li>
+					<li>BetaPoly</li>
+					<li>NitinolAlloy</li>
+					<li>StelliteAlloy</li>
+					<li>PobediteAlloy</li>
+				</exclude>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="HSKV_AnyIngredientBase">
+		<defName>HSKV_AnyFabric</defName>
+		<label>fabric (any)</label>
+		<description>Any fabric: cotton, flax, hemp, wool, synthread, kevlar and the like. Not leather. Haulers bring the cheapest one in stock first.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Cloth</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.03</Mass>
+		</statBases>
+		<modExtensions>
+			<li Class="VehiclesCEOverhaul.AnyIngredientExtension">
+				<categories>
+					<li>BTextiles</li>  <!-- "Basic" -->
+					<li>HTextiles</li>  <!-- "Advanced" -->
+				</categories>
+				<thingDefs>
+					<li>Cloth</li>
+					<li>Synthread</li>
+				</thingDefs>
+				<exclude>
+					<li>ChitinPlating</li>
+				</exclude>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

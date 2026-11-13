@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Alpha Vehicles: Age of Sail vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Cog"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Cog"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Cog"]/statBases/MarketValue</xpath>
+				<value><MarketValue>700</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Cog"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Cog"]/statBases</xpath>
+					<value><MarketValue>700</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Cog"]</xpath>
+					<value><statBases><MarketValue>700</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Junk"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Junk"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Junk"]/statBases/MarketValue</xpath>
+				<value><MarketValue>450</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Junk"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Junk"]/statBases</xpath>
+					<value><MarketValue>450</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Junk"]</xpath>
+					<value><statBases><MarketValue>450</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Longship"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Longship"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Longship"]/statBases/MarketValue</xpath>
+				<value><MarketValue>500</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Longship"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Longship"]/statBases</xpath>
+					<value><MarketValue>500</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Longship"]</xpath>
+					<value><statBases><MarketValue>500</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Caravel"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Caravel"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Caravel"]/statBases/MarketValue</xpath>
+				<value><MarketValue>1100</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Caravel"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Caravel"]/statBases</xpath>
+					<value><MarketValue>1100</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Caravel"]</xpath>
+					<value><statBases><MarketValue>1100</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Sloop"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Sloop"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Sloop"]/statBases/MarketValue</xpath>
+				<value><MarketValue>600</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Sloop"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Sloop"]/statBases</xpath>
+					<value><MarketValue>600</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Sloop"]</xpath>
+					<value><statBases><MarketValue>600</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]/costList</xpath>
+						<value><costList><AV_MastAndSails>3</AV_MastAndSails><AV_Rigging>3</AV_Rigging><AV_SailingInstruments>1</AV_SailingInstruments><WoodLog>100</WoodLog><Steel>50</Steel><Weapon_Parts>3</Weapon_Parts></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]</xpath>
+						<value><costList><AV_MastAndSails>3</AV_MastAndSails><AV_Rigging>3</AV_Rigging><AV_SailingInstruments>1</AV_SailingInstruments><WoodLog>100</WoodLog><Steel>50</Steel><Weapon_Parts>3</Weapon_Parts></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>AV_NavalTactics</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>AV_NavalTactics</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>AV_NavalTactics</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_PirateCaravel_Blueprint"]</xpath>
+							<value><researchPrerequisites><li>AV_NavalTactics</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_PirateCaravel"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_PirateCaravel"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_PirateCaravel"]/statBases/MarketValue</xpath>
+				<value><MarketValue>1450</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_PirateCaravel"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_PirateCaravel"]/statBases</xpath>
+					<value><MarketValue>1450</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_PirateCaravel"]</xpath>
+					<value><statBases><MarketValue>1450</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Brig_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Brig_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Brig_Blueprint"]/costList</xpath>
+				<value><costList><AV_MastAndSails>2</AV_MastAndSails><AV_Rigging>6</AV_Rigging><AV_SailingInstruments>7</AV_SailingInstruments><AV_ReinforcedWood>2</AV_ReinforcedWood><GoldBar>12</GoldBar></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Brig_Blueprint"]</xpath>
+				<value><costList><AV_MastAndSails>2</AV_MastAndSails><AV_Rigging>6</AV_Rigging><AV_SailingInstruments>7</AV_SailingInstruments><AV_ReinforcedWood>2</AV_ReinforcedWood><GoldBar>12</GoldBar></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Brig"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Brig"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Brig"]/statBases/MarketValue</xpath>
+				<value><MarketValue>2150</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Brig"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Brig"]/statBases</xpath>
+					<value><MarketValue>2150</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Brig"]</xpath>
+					<value><statBases><MarketValue>2150</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Galleon"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Galleon"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Galleon"]/statBases/MarketValue</xpath>
+				<value><MarketValue>1400</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Galleon"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Galleon"]/statBases</xpath>
+					<value><MarketValue>1400</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Galleon"]</xpath>
+					<value><statBases><MarketValue>1400</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Frigate_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Frigate_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Frigate_Blueprint"]/costList</xpath>
+				<value><costList><AV_MastAndSails>3</AV_MastAndSails><AV_Rigging>4</AV_Rigging><AV_SailingInstruments>5</AV_SailingInstruments><AV_ReinforcedWood>4</AV_ReinforcedWood><Steel>50</Steel><Weapon_Parts>6</Weapon_Parts></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="AV_Frigate_Blueprint"]</xpath>
+				<value><costList><AV_MastAndSails>3</AV_MastAndSails><AV_Rigging>4</AV_Rigging><AV_SailingInstruments>5</AV_SailingInstruments><AV_ReinforcedWood>4</AV_ReinforcedWood><Steel>50</Steel><Weapon_Parts>6</Weapon_Parts></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="AV_Frigate"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="AV_Frigate"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Frigate"]/statBases/MarketValue</xpath>
+				<value><MarketValue>2300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="AV_Frigate"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Frigate"]/statBases</xpath>
+					<value><MarketValue>2300</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="AV_Frigate"]</xpath>
+					<value><statBases><MarketValue>2300</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>AV_Cog</li><li>AV_Junk</li><li>AV_Longship</li><li>AV_Caravel</li><li>AV_Sloop</li><li>AV_PirateCaravel</li><li>AV_Brig</li><li>AV_Galleon</li><li>AV_Frigate</li></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"][@ParentName]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"]/prerequisites</xpath>
+					<value><prerequisites Inherit="False"><li>Craft_B1</li><li>Apparel_B1</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"]</xpath>
+					<value><prerequisites Inherit="False"><li>Craft_B1</li><li>Apparel_B1</li></prerequisites></value>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"]/prerequisites</xpath>
+					<value><prerequisites><li>Craft_B1</li><li>Apparel_B1</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="AV_LateenSails"]</xpath>
+					<value><prerequisites><li>Craft_B1</li><li>Apparel_B1</li></prerequisites></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"][@ParentName]</xpath>
+			<match Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"]/prerequisites</xpath>
+					<value><prerequisites Inherit="False"><li>AV_LateenSails</li><li>Machining</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"]</xpath>
+					<value><prerequisites Inherit="False"><li>AV_LateenSails</li><li>Machining</li></prerequisites></value>
+				</nomatch>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"]/prerequisites</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"]/prerequisites</xpath>
+					<value><prerequisites><li>AV_LateenSails</li><li>Machining</li></prerequisites></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/ResearchProjectDef[defName="AV_NavalTactics"]</xpath>
+					<value><prerequisites><li>AV_LateenSails</li><li>Machining</li></prerequisites></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="AV_Rigging"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="AV_Rigging"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AV_Rigging"]/costList</xpath>
+				<value><costList><Steel>10</Steel><Cloth>10</Cloth></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AV_Rigging"]</xpath>
+				<value><costList><Steel>10</Steel><Cloth>10</Cloth></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="AV_SailingInstruments"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="AV_SailingInstruments"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AV_SailingInstruments"]/costList</xpath>
+				<value><costList><Steel>40</Steel><ComponentIndustrial>3</ComponentIndustrial></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AV_SailingInstruments"]</xpath>
+				<value><costList><Steel>40</Steel><ComponentIndustrial>3</ComponentIndustrial></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="AV_ReinforcedWood"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="AV_ReinforcedWood"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="AV_ReinforcedWood"]/costList</xpath>
+				<value><costList><WoodLog>100</WoodLog><Steel>15</Steel></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AV_ReinforcedWood"]</xpath>
+				<value><costList><WoodLog>100</WoodLog><Steel>15</Steel></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>

@@ -25,8 +25,10 @@ Vehicles for **Hardcore SK**: Vehicle Framework vehicles fight by Combat Extende
 
 - **Real armor and penetration.** CE sharp and blunt penetration against every vehicle part, cell by cell through the hull: plate, what is behind it, the crew. Front, sides, rear and roof have their own plates; plates wear down; airbursts hit the roof.
 - **Crew and damage.** Crews get hurt inside, exposed gunners can be shot. A vehicle is knocked out first and destroyed once its vital systems are wrecked.
+- **Running gear.** A shot-off track, a dead engine or gearbox stops the vehicle; a holed fuel tank leaks.
 - **Turrets through CE:** CE ammo, ballistics and aiming (gunner skill, range estimation, leading, weather, smoke), ammo menu, fire on the move, a "no friendly fire" switch.
 - **Active protection (APS)** upgrade for APCs and tanks: shoots down incoming rockets.
+- **Repair kits.** A colonist repairing a vehicle uses them up and works 20 times faster, in the field up to half of each part; next to a garage bench 40 times faster and all the way.
 - **Vehicle raids** (optional): raiders bring combat vehicles by raid points; vehicles take firing positions, keep up with their infantry, shell walls in the way. Empty enemy vehicles can be captured. With VehicleRaid Framework or VVE Raid our raids switch off by themselves.
 - **Any vehicle mod** works: vehicles without hand-made tables get armor by class and CE ammo by weapon type.
 
@@ -45,12 +47,14 @@ Vehicles for **Hardcore SK**: Vehicle Framework vehicles fight by Combat Extende
 - **HSK economy.** Vanilla Vehicles Expanded and vehicle addons get vehicle parts, recipes and a research branch in the HSK progression, with HSK materials and prices.
 - **Weapon modules.** Interchangeable weapon modules in the vehicle upgrade trees.
 - **HSK ammo.** Stock vehicle turrets fire HSK ammo; vehicle armor is rescaled to HSK calibers.
-- **APS** module and charges are crafted from HSK materials.
+- **APS** module and charges, and the repair kit, are crafted from HSK materials.
+- **Garage.** The garage bench, cabinet and refueling pump are built from the metal you choose.
+- **Disassembly.** Vehicle parts are taken apart on the garage bench; each piece comes back with a chance that grows with Crafting (about half for a skilled crafter).
 - **VehicleRaid Framework (1.6):** a ready preset of which factions bring which vehicles, with HSK prices.
 
 ### Supported addons
 
-Each part loads only when its addon is active.
+Each part loads only when its addon is active. Late-game parts (ceramite plate, cogitator, fusion reactor, gravitic drive, shield emitter) appear only with an addon that uses them.
 
 - Vanilla Vehicles Expanded – Tier 3
 - Tier 3.9
@@ -120,8 +124,10 @@ License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) for the
 
 - **Настоящая броня и пробитие.** Пробитие CE (острое и тупое) по каждой части машины, клетка за клеткой через корпус: плита, то, что за ней, экипаж. У лба, бортов, кормы и крыши свои плиты; плиты изнашиваются; подрывы в воздухе бьют в крышу.
 - **Экипаж и повреждения.** Экипаж ранит внутри, открытых стрелков можно подстрелить. Машина сначала выходит из строя, а уничтожается, когда разбиты важные системы.
+- **Ходовая.** Сбитая гусеница, убитый двигатель или коробка останавливают машину; пробитый бак течёт.
 - **Башни через CE:** патроны, баллистика и прицеливание CE (навык стрелка, оценка дальности, упреждение, погода, дым), меню патронов, стрельба на ходу, режим «не стрелять по своим».
 - **Активная защита (КАЗ)** как улучшение для БТР и танков: сбивает летящие ракеты.
+- **Ремкомплекты.** Поселенец, чинящий машину, тратит их и работает в 20 раз быстрее, в поле — до половины каждой детали; у верстака гаража в 40 раз быстрее и до конца.
 - **Рейды с техникой** (по желанию): налётчики приводят боевые машины по очкам рейда; машины занимают огневые позиции, держатся рядом с пехотой, расстреливают стены на пути. Пустую вражескую технику можно захватить. С VehicleRaid Framework или VVE Raid наши рейды отключаются сами.
 - **Любой мод на технику** работает: машины без ручных таблиц получают броню по классу и патроны CE по типу оружия.
 
@@ -140,12 +146,14 @@ License: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) for the
 - **Экономика HSK.** Vanilla Vehicles Expanded и аддоны получают детали, рецепты и ветку исследований в прогрессии HSK, с материалами и ценами HSK.
 - **Оружейные модули.** Сменные оружейные модули в деревьях улучшений техники.
 - **Патроны HSK.** Штатные башни стреляют патронами HSK; броня техники пересчитана под калибры HSK.
-- **КАЗ:** модуль и заряды крафтятся из материалов HSK.
+- **КАЗ** (модуль и заряды) и ремкомплект крафтятся из материалов HSK.
+- **Гараж.** Верстак гаража, шкаф и заправка строятся из металла на выбор.
+- **Разборка.** Детали техники разбираются на верстаке гаража; каждая составляющая возвращается с шансом, который растёт с ремеслом (у умелого мастера около половины).
 - **VehicleRaid Framework (1.6):** готовый пресет, какие фракции приводят какую технику, с ценами HSK.
 
 ### Поддерживаемые аддоны
 
-Каждая часть грузится, только если её аддон включён.
+Каждая часть грузится, только если её аддон включён. Поздние детали (керамитовая плита, когитатор, термояд, гравидвигатель, генератор поля) появляются только с аддоном, который их использует.
 
 - Vanilla Vehicles Expanded – Tier 3
 - Tier 3.9

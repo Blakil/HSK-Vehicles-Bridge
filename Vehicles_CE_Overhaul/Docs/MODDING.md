@@ -157,6 +157,17 @@ Every raid number (vehicle share of raid points, price per point, AI distances, 
 Armored vehicles get a cargo capacity floor by class, enough for a few reloads of real-weight shells:
 `Defs/VehicleCargoTuningDefs/VCEO_CargoFloor.xml`.
 
+## 5.1 Repair and running gear
+- **Repair station:** add `<li Class="VehiclesCEOverhaul.VehicleRepairStationExtension" />` to the `modExtensions` of a
+  building (fields `radius` 8, `speedFactor` 40, `maxHealth` 1). Player vehicles within `radius` are repaired with repair
+  kits `speedFactor` times faster, up to `maxHealth` of each part. The core does this for the VVE garage bench.
+- **Repair kit:** `VCEO_RepairKit` carries `VehicleRepairKitExtension` (`repairPoints` 1000, `speedFactor` 20 away from a
+  station, `fieldMaxHealth` 0.5, `kitRadius` 8); patch the numbers like any def.
+- **Running gear:** a vehicle cannot move while any MoveSpeed component named "track" is at zero, or every "engine" /
+  "motor", or every "gearbox" / "transmission", or half of its "wheel" components (not sprockets or road wheels). Name
+  your components accordingly (key or label). Fuel tanks ("fuel", "chemtank" in key or label) without a
+  `Reactor_FuelLeak` get one that starts below half health.
+
 ## 6. Loading your files only when the core is there
 Our def types and extensions exist only when Vehicles CE Overhaul is loaded. Put your data in a folder that loads only
 then (`LoadFolders.xml` in your mod's root folder):

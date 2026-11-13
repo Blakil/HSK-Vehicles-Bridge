@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HSKV_DisassembleVehicleParts.label>разобрать детали техники</HSKV_DisassembleVehicleParts.label>
+  <HSKV_DisassembleVehicleParts.description>Разобрать детали техники и автозапчасти. Каждая составляющая детали возвращается с шансом, равным эффективности разборки деталей техники у разборщика (около половины у умелого мастера): узлы — целиком или никак, металл — основным слитком своего вида, компоненты.</HSKV_DisassembleVehicleParts.description>
+  <HSKV_DisassembleVehicleParts.jobString>Разбирает деталь техники.</HSKV_DisassembleVehicleParts.jobString>
+</LanguageData>

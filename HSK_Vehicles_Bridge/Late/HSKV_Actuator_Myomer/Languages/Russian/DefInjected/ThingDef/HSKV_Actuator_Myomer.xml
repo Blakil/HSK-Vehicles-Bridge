@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HSKV_Actuator_Myomer.label>миомерный привод</HSKV_Actuator_Myomer.label>
+  <HSKV_Actuator_Myomer.description>Пучки синтетических мышечных волокон с приводами и контроллером: привод шагающих машин и тяжёлых экзоскелетов.</HSKV_Actuator_Myomer.description>
+</LanguageData>

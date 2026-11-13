@@ -36,16 +36,4 @@
   <HSKV_Mount_Mortar.description>Казённик, противооткатные устройства и подъёмный механизм для миномёта или гаубицы на машине.</HSKV_Mount_Mortar.description>
   <HSKV_Mount_TankGun.label>танковое орудие</HSKV_Mount_TankGun.label>
   <HSKV_Mount_TankGun.description>Танковая пушка с казёнником, противооткатными устройствами и стабилизатором.</HSKV_Mount_TankGun.description>
-  <HSKV_Armor_Superheavy.label>сверхтяжёлая броня (керамит)</HSKV_Armor_Superheavy.label>
-  <HSKV_Armor_Superheavy.description>Слоистая броня класса керамита: керамика, композит, вольфрам и обеднённый уран. Для сверхтяжёлых танков и машин космодесанта.</HSKV_Armor_Superheavy.description>
-  <HSKV_Actuator_Myomer.label>миомерный привод</HSKV_Actuator_Myomer.label>
-  <HSKV_Actuator_Myomer.description>Пучки синтетических мышечных волокон с приводами и контроллером: привод шагающих машин и тяжёлых экзоскелетов.</HSKV_Actuator_Myomer.description>
-  <HSKV_ShieldEmitter.label>генератор поля</HSKV_ShieldEmitter.label>
-  <HSKV_ShieldEmitter.description>Компактный проектор энергетического поля для машин на технологиях орбитального щита.</HSKV_ShieldEmitter.description>
-  <HSKV_Reactor_Fusion.label>термоядерный реактор</HSKV_Reactor_Fusion.label>
-  <HSKV_Reactor_Fusion.description>Термоядерный реактор с магнитным удержанием, достаточно малый для машины: питание антигравов, полей и кораблей.</HSKV_Reactor_Fusion.description>
-  <HSKV_Cogitator.label>когитатор</HSKV_Cogitator.label>
-  <HSKV_Cogitator.description>Машинный дух, собранный вокруг ядра ИИ: управление огнём, навигация и живучесть самых тяжёлых машин.</HSKV_Cogitator.description>
-  <HSKV_Drive_Gravitic.label>гравитационный привод</HSKV_Drive_Gravitic.label>
-  <HSKV_Drive_Gravitic.description>Антигравитационный привод с полевыми катушками на антивеществе: тяжёлые машины парят и летают.</HSKV_Drive_Gravitic.description>
 </LanguageData>

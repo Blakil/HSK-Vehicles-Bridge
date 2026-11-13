@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Astartes vehicles vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_RhinoBluePrint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_RhinoBluePrint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_RhinoBluePrint"]/costList</xpath>
+				<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>18</ComponentIndustrial><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>4</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_RhinoBluePrint"]</xpath>
+				<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>18</ComponentIndustrial><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>4</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]/statBases/MarketValue</xpath>
+				<value><MarketValue>17950</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]/statBases</xpath>
+					<value><MarketValue>17950</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Rhino"]</xpath>
+					<value><statBases><MarketValue>17950</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="DestructorBluePrint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="DestructorBluePrint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="DestructorBluePrint"]/costList</xpath>
+				<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>16</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_FireControl>1</HSKV_FireControl><HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon><HSKV_Mount_MG>2</HSKV_Mount_MG></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="DestructorBluePrint"]</xpath>
+				<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>16</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_FireControl>1</HSKV_FireControl><HSKV_Mount_Autocannon>1</HSKV_Mount_Autocannon><HSKV_Mount_MG>2</HSKV_Mount_MG></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]/statBases/MarketValue</xpath>
+				<value><MarketValue>32750</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]/statBases</xpath>
+					<value><MarketValue>32750</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Destructor"]</xpath>
+					<value><statBases><MarketValue>32750</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]/costList</xpath>
+						<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>16</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_FireControl>1</HSKV_FireControl><Laser_Component>3</Laser_Component><Weapon_Parts>12</Weapon_Parts></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]</xpath>
+						<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>16</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_FireControl>1</HSKV_FireControl><Laser_Component>3</Laser_Component><Weapon_Parts>12</Weapon_Parts></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_PredatorResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_PredatorResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GF40K_PredatorResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="AnnihilatorBluePrint"]</xpath>
+							<value><researchPrerequisites><li>GF40K_PredatorResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]/statBases/MarketValue</xpath>
+				<value><MarketValue>21900</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]/statBases</xpath>
+					<value><MarketValue>21900</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="Annihilator"]</xpath>
+					<value><statBases><MarketValue>21900</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]/costList</xpath>
+						<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>18</ComponentIndustrial><ComponentSpacer>3</ComponentSpacer><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>4</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_FireControl>1</HSKV_FireControl><HSKV_Mount_Rockets>1</HSKV_Mount_Rockets><Launcher_Component>1</Launcher_Component></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]</xpath>
+						<value><costList><Steel>150</Steel><SteelBar>100</SteelBar><ComponentIndustrial>18</ComponentIndustrial><ComponentSpacer>3</ComponentSpacer><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>4</HSKV_Armor_Superheavy><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_FireControl>1</HSKV_FireControl><HSKV_Mount_Rockets>1</HSKV_Mount_Rockets><Launcher_Component>1</Launcher_Component></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_WhirlwindResearch</li><li>Rockets_C1</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_WhirlwindResearch</li><li>Rockets_C1</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GF40K_WhirlwindResearch</li><li>Rockets_C1</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_WhirlwindBluePrint"]</xpath>
+							<value><researchPrerequisites><li>GF40K_WhirlwindResearch</li><li>Rockets_C1</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]/statBases/MarketValue</xpath>
+				<value><MarketValue>22350</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]/statBases</xpath>
+					<value><MarketValue>22350</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_Whirlwind"]</xpath>
+					<value><statBases><MarketValue>22350</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]/costList</xpath>
+						<value><costList><Steel>188</Steel><SteelBar>225</SteelBar><GoldBar>18</GoldBar><ComponentIndustrial>20</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>12</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component><Weapon_Parts>16</Weapon_Parts><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]</xpath>
+						<value><costList><Steel>188</Steel><SteelBar>225</SteelBar><GoldBar>18</GoldBar><ComponentIndustrial>20</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>12</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component><Weapon_Parts>16</Weapon_Parts><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_LandRaiderResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_LandRaiderResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GF40K_LandRaiderResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderBlueprint"]</xpath>
+							<value><researchPrerequisites><li>GF40K_LandRaiderResearch</li><li>Laser_weapons_D</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaider"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaider"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaider"]/statBases/MarketValue</xpath>
+				<value><MarketValue>50100</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaider"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaider"]/statBases</xpath>
+					<value><MarketValue>50100</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaider"]</xpath>
+					<value><statBases><MarketValue>50100</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]/costList</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]/costList</xpath>
+						<value><costList><Steel>188</Steel><SteelBar>225</SteelBar><GoldBar>18</GoldBar><ComponentIndustrial>20</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>12</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Mount_MG>3</HSKV_Mount_MG></costList></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]</xpath>
+						<value><costList><Steel>188</Steel><SteelBar>225</SteelBar><GoldBar>18</GoldBar><ComponentIndustrial>20</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><HSKV_Engine_Diesel>2</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Superheavy>12</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Mount_MG>3</HSKV_Mount_MG></costList></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_LandRaiderResearch</li><li>HeavyTurrets</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]</xpath>
+							<value><researchPrerequisites Inherit="False"><li>GF40K_LandRaiderResearch</li><li>HeavyTurrets</li></researchPrerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]/researchPrerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]/researchPrerequisites</xpath>
+							<value><researchPrerequisites><li>GF40K_LandRaiderResearch</li><li>HeavyTurrets</li></researchPrerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/Vehicles.VehicleBuildDef[defName="GF40K_LandRaiderRDMRBlueprint"]</xpath>
+							<value><researchPrerequisites><li>GF40K_LandRaiderResearch</li><li>HeavyTurrets</li></researchPrerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaiderRDMR"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaiderRDMR"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaiderRDMR"]/statBases/MarketValue</xpath>
+				<value><MarketValue>53400</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaiderRDMR"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaiderRDMR"]/statBases</xpath>
+					<value><MarketValue>53400</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="GF40K_LandRaiderRDMR"]</xpath>
+					<value><statBases><MarketValue>53400</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>GF40K_Rhino</li><li>Destructor</li><li>Annihilator</li><li>GF40K_Whirlwind</li><li>GF40K_LandRaider</li><li>GF40K_LandRaiderRDMR</li></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]/baseCost</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]/baseCost</xpath>
+				<value><baseCost>10800</baseCost></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_LandRaiderResearch"]</xpath>
+				<value><baseCost>10800</baseCost></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]/baseCost</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]/baseCost</xpath>
+				<value><baseCost>4800</baseCost></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_PredatorResearch"]</xpath>
+				<value><baseCost>4800</baseCost></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]/baseCost</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]/baseCost</xpath>
+				<value><baseCost>3600</baseCost></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_RhinoBaseResearch"]</xpath>
+				<value><baseCost>3600</baseCost></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/baseCost</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/baseCost</xpath>
+						<value><baseCost>2400</baseCost></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]</xpath>
+						<value><baseCost>2400</baseCost></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/prerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/prerequisites</xpath>
+							<value><prerequisites Inherit="False"><li>BiofuelRefining</li><li>AdvancedFabrication</li><li>ShipBasics</li><li>PoweredArmor</li></prerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]</xpath>
+							<value><prerequisites Inherit="False"><li>BiofuelRefining</li><li>AdvancedFabrication</li><li>ShipBasics</li><li>PoweredArmor</li></prerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/prerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]/prerequisites</xpath>
+							<value><prerequisites><li>BiofuelRefining</li><li>AdvancedFabrication</li><li>ShipBasics</li><li>PoweredArmor</li></prerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="GF40K_SpaceMarineVehicles"]</xpath>
+							<value><prerequisites><li>BiofuelRefining</li><li>AdvancedFabrication</li><li>ShipBasics</li><li>PoweredArmor</li></prerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]/baseCost</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]/baseCost</xpath>
+				<value><baseCost>4800</baseCost></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ResearchProjectDef[defName="GF40K_WhirlwindResearch"]</xpath>
+				<value><baseCost>4800</baseCost></value>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>

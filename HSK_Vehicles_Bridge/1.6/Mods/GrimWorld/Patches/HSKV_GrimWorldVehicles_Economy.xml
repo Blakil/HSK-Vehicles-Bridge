@@ -9,11 +9,11 @@
 			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstraMilitarumBike_Blueprint"]/costList</xpath>
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstraMilitarumBike_Blueprint"]/costList</xpath>
-				<value><costList><Plasteel>68</Plasteel><HP_Ceramite>15</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>1</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial></costList></value>
+				<value><costList><Steel>68</Steel><HP_Ceramite>15</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>1</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial></costList></value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstraMilitarumBike_Blueprint"]</xpath>
-				<value><costList><Plasteel>68</Plasteel><HP_Ceramite>15</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>1</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial></costList></value>
+				<value><costList><Steel>68</Steel><HP_Ceramite>15</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>1</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial></costList></value>
 			</nomatch>
 		</match>
 	</Operation>
@@ -47,11 +47,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>25</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial></costList></value>
+						<value><costList><Steel>128</Steel><HP_Ceramite>25</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AstartesBike_Blueprint"]</xpath>
-						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>25</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial></costList></value>
+						<value><costList><Steel>128</Steel><HP_Ceramite>25</HP_Ceramite><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>2</GW_VehicleSuspension><GW_VehicleWheel>2</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -112,11 +112,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]/costList</xpath>
-						<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>12</GW_VehicleSuspension><GW_VehicleTracks>4</GW_VehicleTracks><GW_VehicleWheel>12</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>142</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>12</GW_VehicleSuspension><GW_VehicleTracks>4</GW_VehicleTracks><GW_VehicleWheel>12</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Taurox_blueprint"]</xpath>
-						<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>12</GW_VehicleSuspension><GW_VehicleTracks>4</GW_VehicleTracks><GW_VehicleWheel>12</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>142</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>12</GW_VehicleSuspension><GW_VehicleTracks>4</GW_VehicleTracks><GW_VehicleWheel>12</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -170,11 +170,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>135</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_AOD_PredatorRhino_Blueprint"]</xpath>
-						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>135</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -235,11 +235,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>135</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Rhino_Blueprint"]</xpath>
-						<value><costList><Plasteel>135</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>135</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>24</ComponentIndustrial><HSKV_Armor_Superheavy>7</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -298,11 +298,11 @@
 			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Chimera_Blueprint"]/costList</xpath>
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Chimera_Blueprint"]/costList</xpath>
-				<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>18</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+				<value><costList><Steel>142</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>18</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Chimera_Blueprint"]</xpath>
-				<value><costList><Plasteel>142</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>18</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
+				<value><costList><Steel>142</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>18</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard></costList></value>
 			</nomatch>
 		</match>
 	</Operation>
@@ -334,11 +334,11 @@
 			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_HOI_LemanRuss_Blueprint"]/costList</xpath>
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_HOI_LemanRuss_Blueprint"]/costList</xpath>
-				<value><costList><Plasteel>120</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>2</GW_VehicleCannon></costList></value>
+				<value><costList><Steel>120</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>2</GW_VehicleCannon></costList></value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_HOI_LemanRuss_Blueprint"]</xpath>
-				<value><costList><Plasteel>120</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>2</GW_VehicleCannon></costList></value>
+				<value><costList><Steel>120</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSuspension>10</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>2</GW_VehicleCannon></costList></value>
 			</nomatch>
 		</match>
 	</Operation>
@@ -372,11 +372,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>165</Plasteel><HP_Adamantium>10</HP_Adamantium><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>14</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>22</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>1</GW_VehicleCannon></costList></value>
+						<value><costList><Steel>165</Steel><HP_Adamantium>10</HP_Adamantium><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>14</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>22</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>1</GW_VehicleCannon></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Predator_Blueprint"]</xpath>
-						<value><costList><Plasteel>165</Plasteel><HP_Adamantium>10</HP_Adamantium><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>14</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>22</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>1</GW_VehicleCannon></costList></value>
+						<value><costList><Steel>165</Steel><HP_Adamantium>10</HP_Adamantium><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><GW_VehicleSuspension>14</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>22</GW_VehicleWheel><ComponentIndustrial>16</ComponentIndustrial><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><GW_VehicleCannon>1</GW_VehicleCannon></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -437,11 +437,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>300</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>3</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><GW_ComponentRelic>2</GW_ComponentRelic><HSKV_Armor_Superheavy>11</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component></costList></value>
+						<value><costList><Steel>300</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>3</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><GW_ComponentRelic>2</GW_ComponentRelic><HSKV_Armor_Superheavy>11</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_LandRaider_Blueprint"]</xpath>
-						<value><costList><Plasteel>300</Plasteel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>3</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><GW_ComponentRelic>2</GW_ComponentRelic><HSKV_Armor_Superheavy>11</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component></costList></value>
+						<value><costList><Steel>300</Steel><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>3</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>10</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><GW_ComponentRelic>2</GW_ComponentRelic><HSKV_Armor_Superheavy>11</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Cogitator>1</HSKV_Cogitator><Laser_Component>4</Laser_Component></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -500,11 +500,11 @@
 			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Baneblade_Blueprint"]/costList</xpath>
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Baneblade_Blueprint"]/costList</xpath>
-				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+				<value><costList><Steel>360</Steel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Baneblade_Blueprint"]</xpath>
-				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+				<value><costList><Steel>360</Steel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
 			</nomatch>
 		</match>
 	</Operation>
@@ -536,11 +536,11 @@
 			<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Stormhammer_Blueprint"]/costList</xpath>
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Stormhammer_Blueprint"]/costList</xpath>
-				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+				<value><costList><Steel>360</Steel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_Stormhammer_Blueprint"]</xpath>
-				<value><costList><Plasteel>360</Plasteel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
+				<value><costList><Steel>360</Steel><GW_VehicleCannon>4</GW_VehicleCannon><GW_VehicleEngine>1</GW_VehicleEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>6</GW_VehicleSideTurret><GW_VehicleSuspension>20</GW_VehicleSuspension><GW_VehicleTracks>2</GW_VehicleTracks><GW_VehicleWheel>16</GW_VehicleWheel><ComponentIndustrial>26</ComponentIndustrial><ComponentSpacer>11</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>18</HSKV_Armor_Superheavy><HSKV_FireControl>2</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced></costList></value>
 			</nomatch>
 		</match>
 	</Operation>
@@ -574,11 +574,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>660</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>2</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+						<value><costList><Steel>660</Steel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>2</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_SpiteTank_Blueprint"]</xpath>
-						<value><costList><Plasteel>660</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>2</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+						<value><costList><Steel>660</Steel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>2</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -639,11 +639,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>750</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+						<value><costList><Steel>750</Steel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_CalastrusTank_Blueprint"]</xpath>
-						<value><costList><Plasteel>750</Plasteel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
+						<value><costList><Steel>750</Steel><GW_VehicleEngine>3</GW_VehicleEngine><GW_VehicleSideTurret>3</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><ComponentSpacer>12</ComponentSpacer><GW_ComponentRelic>4</GW_ComponentRelic><HSKV_Armor_Superheavy>3</HSKV_Armor_Superheavy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Cogitator>1</HSKV_Cogitator><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion><HSKV_Drive_Gravitic>2</HSKV_Drive_Gravitic><Laser_Component>4</Laser_Component></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -704,11 +704,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>30</HP_Ceramite><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>12</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Drive_Gravitic>1</HSKV_Drive_Gravitic></costList></value>
+						<value><costList><Steel>128</Steel><HP_Ceramite>30</HP_Ceramite><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>12</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Drive_Gravitic>1</HSKV_Drive_Gravitic></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DawnEagleBike_Blueprint"]</xpath>
-						<value><costList><Plasteel>128</Plasteel><HP_Ceramite>30</HP_Ceramite><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>12</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Drive_Gravitic>1</HSKV_Drive_Gravitic></costList></value>
+						<value><costList><Steel>128</Steel><HP_Ceramite>30</HP_Ceramite><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>12</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer><HSKV_Drive_Gravitic>1</HSKV_Drive_Gravitic></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -767,11 +767,11 @@
 			<xpath>Defs/Vehicles.VehicleBuildDef[defName="Valkyriebuild"]/costList</xpath>
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="Valkyriebuild"]/costList</xpath>
-				<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>32</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+				<value><costList><Steel>195</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>32</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="Valkyriebuild"]</xpath>
-				<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>32</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+				<value><costList><Steel>195</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>32</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
 			</nomatch>
 		</match>
 	</Operation>
@@ -803,11 +803,11 @@
 			<xpath>Defs/Vehicles.VehicleBuildDef[defName="MarauderBomberbuild"]/costList</xpath>
 			<match Class="PatchOperationReplace">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="MarauderBomberbuild"]/costList</xpath>
-				<value><costList><Plasteel>240</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>3</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+				<value><costList><Steel>240</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>3</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
 			</match>
 			<nomatch Class="PatchOperationAdd">
 				<xpath>Defs/Vehicles.VehicleBuildDef[defName="MarauderBomberbuild"]</xpath>
-				<value><costList><Plasteel>240</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>3</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+				<value><costList><Steel>240</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>30</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>3</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
 			</nomatch>
 		</match>
 	</Operation>
@@ -841,11 +841,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]/costList</xpath>
-						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>195</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="stormHawkbuild"]</xpath>
-						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+						<value><costList><Steel>195</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -906,11 +906,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]/costList</xpath>
-						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>8</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+						<value><costList><Steel>195</Steel><GW_VehicleCannon>8</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="StormTalonbuild"]</xpath>
-						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>8</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+						<value><costList><Steel>195</Steel><GW_VehicleCannon>8</GW_VehicleCannon><GW_JetEngine>2</GW_JetEngine><GW_VehicleExhaust>2</GW_VehicleExhaust><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -971,11 +971,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]/costList</xpath>
-						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_VehicleCannon>4</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>38</ComponentIndustrial><ComponentSpacer>10</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+						<value><costList><Steel>225</Steel><HP_Adamantium>25</HP_Adamantium><GW_VehicleCannon>4</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>38</ComponentIndustrial><ComponentSpacer>10</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OverlordGunshipbuild"]</xpath>
-						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_VehicleCannon>4</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>38</ComponentIndustrial><ComponentSpacer>10</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+						<value><costList><Steel>225</Steel><HP_Adamantium>25</HP_Adamantium><GW_VehicleCannon>4</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>2</GW_VehicleSideTurret><ComponentIndustrial>38</ComponentIndustrial><ComponentSpacer>10</ComponentSpacer><GW_ComponentRelic>3</GW_ComponentRelic><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -1036,11 +1036,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]/costList</xpath>
-						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+						<value><costList><Steel>195</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="OrionGunshipbuild"]</xpath>
-						<value><costList><Plasteel>195</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
+						<value><costList><Steel>195</Steel><GW_VehicleCannon>2</GW_VehicleCannon><GW_JetEngine>4</GW_JetEngine><GW_VehicleExhaust>4</GW_VehicleExhaust><GW_VehicleSideTurret>4</GW_VehicleSideTurret><ComponentIndustrial>25</ComponentIndustrial><ComponentSpacer>5</ComponentSpacer><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>4</HSKV_Body_Airframe><HSKV_Reactor_Fusion>1</HSKV_Reactor_Fusion></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -1101,11 +1101,11 @@
 					<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]/costList</xpath>
-						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>5</GW_VehicleExhaust><ComponentIndustrial>26</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+						<value><costList><Steel>225</Steel><HP_Adamantium>25</HP_Adamantium><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>5</GW_VehicleExhaust><ComponentIndustrial>26</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/Vehicles.VehicleBuildDef[defName="GW_DropPod_Blueprint"]</xpath>
-						<value><costList><Plasteel>225</Plasteel><HP_Adamantium>25</HP_Adamantium><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>5</GW_VehicleExhaust><ComponentIndustrial>26</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+						<value><costList><Steel>225</Steel><HP_Adamantium>25</HP_Adamantium><GW_JetEngine>1</GW_JetEngine><GW_VehicleExhaust>5</GW_VehicleExhaust><ComponentIndustrial>26</ComponentIndustrial><HSKV_Armor_Superheavy>6</HSKV_Armor_Superheavy><HSKV_Avionics>1</HSKV_Avionics></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -1334,11 +1334,11 @@
 					<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]/costList</xpath>
-						<value><costList><VVE_CarExhaust>1</VVE_CarExhaust><Plasteel>10</Plasteel></costList></value>
+						<value><costList><VVE_CarExhaust>1</VVE_CarExhaust><Steel>10</Steel></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="GW_VehicleExhaust"]</xpath>
-						<value><costList><VVE_CarExhaust>1</VVE_CarExhaust><Plasteel>10</Plasteel></costList></value>
+						<value><costList><VVE_CarExhaust>1</VVE_CarExhaust><Steel>10</Steel></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -1482,11 +1482,11 @@
 					<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/costList</xpath>
 					<match Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]/costList</xpath>
-						<value><costList><Weapon_Parts>6</Weapon_Parts><Heavy_Component>1</Heavy_Component><Plasteel>20</Plasteel></costList></value>
+						<value><costList><Weapon_Parts>6</Weapon_Parts><Heavy_Component>1</Heavy_Component><Steel>20</Steel></costList></value>
 					</match>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>Defs/ThingDef[defName="GW_VehicleSideTurret"]</xpath>
-						<value><costList><Weapon_Parts>6</Weapon_Parts><Heavy_Component>1</Heavy_Component><Plasteel>20</Plasteel></costList></value>
+						<value><costList><Weapon_Parts>6</Weapon_Parts><Heavy_Component>1</Heavy_Component><Steel>20</Steel></costList></value>
 					</nomatch>
 				</li>
 				<li Class="PatchOperationConditional">
@@ -1552,70 +1552,70 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraTurretMount"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraTurretMount"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHullFlamer"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHullFlamer"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHeavyBolterUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraHeavyBolterUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraMultiLaserUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="ChimeraMultiLaserUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Chimera_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 
@@ -1623,119 +1623,119 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="BattleCannonUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="BattleCannonUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="AnnihilatorUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="AnnihilatorUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>6</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExterminatorUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExterminatorUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PunisherUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PunisherUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExecutionerUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="ExecutionerUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial><ComponentSpacer>1</ComponentSpacer></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="VanquisherUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="VanquisherUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>150</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>150</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DemolisherUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DemolisherUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>150</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>150</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullBolterUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullBolterUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullFlamerUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullFlamerUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullLascannonUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="HullLascannonUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>80</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>80</HSKV_AnySturdyMetal><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonBolterUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonBolterUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonFlamerUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonFlamerUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonMeltaUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonMeltaUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonPlasmaUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="SponsonPlasmaUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleSideTurret>2</GW_VehicleSideTurret><HP_Ceramite>60</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>75</Plasteel><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>75</HSKV_AnySturdyMetal><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="TrackArmor"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="TrackArmor"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PintleStormBolterUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_HOI_Lemanruss_UpgradeTree"]/nodes/li[key="PintleStormBolterUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleSideTurret>1</GW_VehicleSideTurret><HP_Ceramite>40</HP_Ceramite><ComponentIndustrial>2</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 
@@ -1743,42 +1743,42 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseBolterTurretUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseBolterTurretUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseLasTurretUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseLasTurretUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_DorsalBolterTurretUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_DorsalBolterTurretUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailBolterTurretUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailBolterTurretUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailAsssaultTurretUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_TailAsssaultTurretUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseAutoCannonUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Marauder_Bomber_UpgradeTree"]/nodes/li[key="GW_Marauder_NoseAutoCannonUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>6</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 
@@ -1786,21 +1786,21 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_AstartesBike_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 
@@ -1808,56 +1808,56 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="RedeemerUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="RedeemerUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>250</Plasteel><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>250</HSKV_AnySturdyMetal><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="CrusaderUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="CrusaderUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>250</Plasteel><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>250</HSKV_AnySturdyMetal><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="PhobosUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="PhobosUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>250</Plasteel><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>250</HSKV_AnySturdyMetal><HP_Ceramite>250</HP_Ceramite><ComponentIndustrial>10</ComponentIndustrial><GW_VehicleCannon>1</GW_VehicleCannon></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Landraider_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>10</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 
@@ -1865,112 +1865,112 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredatorRoof"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredatorRoof"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>10</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="RhinoRoof"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="RhinoRoof"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>10</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SponsonPlatform"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SponsonPlatform"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>10</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretPlasma"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretPlasma"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretBaal"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretBaal"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretLas"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretLas"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretAutoCannon"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="PredTurretAutoCannon"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><HP_Adamantium>5</HP_Adamantium><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Bolter"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Bolter"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Flamer"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Flamer"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Laser"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="SideSponsonUpgrade_Laser"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="DozerBlade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>10</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>10</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedArmor"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedTrack"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedCargo"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedEngine"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_AOD_RhinoChassis_UpgradeTree"]/nodes/li[key="ImprovedAspiration"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 
@@ -1978,14 +1978,14 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkLasTalonUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkLasTalonUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>1</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkStormCannonUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormHawkGunshipUpgradeTree"]/nodes/li[key="GW_StormHawkStormCannonUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 
@@ -1993,14 +1993,14 @@
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonLascannonUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonLascannonUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 	<Operation Class="PatchOperationConditional">
 		<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonBolterUpgrade"]/ingredients</xpath>
 		<match Class="PatchOperationReplace">
 			<xpath>Defs/Vehicles.UpgradeTreeDef[defName="GW_Tank_StormtalonUpgradeTree"]/nodes/li[key="GW_StormTalonBolterUpgrade"]/ingredients</xpath>
-			<value><ingredients><Plasteel>100</Plasteel><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
+			<value><ingredients><HSKV_AnySturdyMetal>100</HSKV_AnySturdyMetal><GW_VehicleCannon>2</GW_VehicleCannon><HP_Ceramite>100</HP_Ceramite><ComponentIndustrial>4</ComponentIndustrial></ingredients></value>
 		</match>
 	</Operation>
 

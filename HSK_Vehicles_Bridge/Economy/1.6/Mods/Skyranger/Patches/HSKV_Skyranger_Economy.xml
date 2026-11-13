@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of XCOM Skyranger vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="XCOM_Skyranger_Blueprint"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="XCOM_Skyranger_Blueprint"]/costList</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="XCOM_Skyranger_Blueprint"]/costList</xpath>
+				<value><costList><VVE_EngineBlock>6</VVE_EngineBlock><VVE_CarAlternator>10</VVE_CarAlternator><VVE_CarExhaust>8</VVE_CarExhaust><VVE_CarSuspension>10</VVE_CarSuspension><VVE_CarTransmission>4</VVE_CarTransmission><VVE_CarWiring>8</VVE_CarWiring><VVE_CarBattery>8</VVE_CarBattery><SteelBar>450</SteelBar><ComponentIndustrial>24</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleBuildDef[defName="XCOM_Skyranger_Blueprint"]</xpath>
+				<value><costList><VVE_EngineBlock>6</VVE_EngineBlock><VVE_CarAlternator>10</VVE_CarAlternator><VVE_CarExhaust>8</VVE_CarExhaust><VVE_CarSuspension>10</VVE_CarSuspension><VVE_CarTransmission>4</VVE_CarTransmission><VVE_CarWiring>8</VVE_CarWiring><VVE_CarBattery>8</VVE_CarBattery><SteelBar>450</SteelBar><ComponentIndustrial>24</ComponentIndustrial><ComponentSpacer>8</ComponentSpacer><HSKV_Avionics>2</HSKV_Avionics><HSKV_Body_Airframe>2</HSKV_Body_Airframe></costList></value>
+			</nomatch>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="XCOM_Skyranger"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="XCOM_Skyranger"]/statBases/MarketValue</xpath>
+			<match Class="PatchOperationReplace">
+				<xpath>Defs/Vehicles.VehicleDef[defName="XCOM_Skyranger"]/statBases/MarketValue</xpath>
+				<value><MarketValue>20650</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationConditional">
+				<xpath>Defs/Vehicles.VehicleDef[defName="XCOM_Skyranger"]/statBases</xpath>
+				<match Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="XCOM_Skyranger"]/statBases</xpath>
+					<value><MarketValue>20650</MarketValue></value>
+				</match>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/Vehicles.VehicleDef[defName="XCOM_Skyranger"]</xpath>
+					<value><statBases><MarketValue>20650</MarketValue></statBases></value>
+				</nomatch>
+			</nomatch>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>XCOM_Skyranger</li></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"][@ParentName]</xpath>
+					<match Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/prerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/prerequisites</xpath>
+							<value><prerequisites Inherit="False"><li>HSKV_Aviation2</li><li>HSKV_OrbitalPods</li></prerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]</xpath>
+							<value><prerequisites Inherit="False"><li>HSKV_Aviation2</li><li>HSKV_OrbitalPods</li></prerequisites></value>
+						</nomatch>
+					</match>
+					<nomatch Class="PatchOperationConditional">
+						<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/prerequisites</xpath>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/prerequisites</xpath>
+							<value><prerequisites><li>HSKV_Aviation2</li><li>HSKV_OrbitalPods</li></prerequisites></value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]</xpath>
+							<value><prerequisites><li>HSKV_Aviation2</li><li>HSKV_OrbitalPods</li></prerequisites></value>
+						</nomatch>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/researchViewX</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/researchViewX</xpath>
+						<value><researchViewX>4.00</researchViewX></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]</xpath>
+						<value><researchViewX>4.00</researchViewX></value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/researchViewY</xpath>
+					<match Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]/researchViewY</xpath>
+						<value><researchViewY>6.00</researchViewY></value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ResearchProjectDef[defName="Skyranger_Research"]</xpath>
+						<value><researchViewY>6.00</researchViewY></value>
+					</nomatch>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

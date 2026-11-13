@@ -1,0 +1,1301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- HSK Vehicles Bridge: costs, research and recipes of Vanilla Vehicles Expanded vehicles, adapted to the HSK balance progression. -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/label</xpath>
+			<value><label>motorization</label></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]</xpath>
+			<value><label>motorization</label></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/description</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/description</xpath>
+			<value><description>Build a garage bench, the basic car parts, the internal combustion engine and simple vehicles: motorcycles and light cars. From here the branches go in parallel: passenger cars, trucks, boats, aviation and military vehicles.</description></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]</xpath>
+			<value><description>Build a garage bench, the basic car parts, the internal combustion engine and simple vehicles: motorcycles and light cars. From here the branches go in parallel: passenger cars, trucks, boats, aviation and military vehicles.</description></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/baseCost</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/baseCost</xpath>
+			<value><baseCost>1200</baseCost></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]</xpath>
+			<value><baseCost>1200</baseCost></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/prerequisites</xpath>
+			<value><prerequisites><li>BiofuelRefining</li><li>Metals_C1</li><li>MicroelectronicsBasics</li><li>Oil_Industry_C3</li><li>Oil_Industry_C5</li></prerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]</xpath>
+			<value><prerequisites><li>BiofuelRefining</li><li>Metals_C1</li><li>MicroelectronicsBasics</li><li>Oil_Industry_C3</li><li>Oil_Industry_C5</li></prerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/researchViewX</xpath>
+			<value><researchViewX>0</researchViewX></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]</xpath>
+			<value><researchViewX>0</researchViewX></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]/researchViewY</xpath>
+			<value><researchViewY>7</researchViewY></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_BasicVehicles"]</xpath>
+			<value><researchViewY>7</researchViewY></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/label</xpath>
+			<value><label>passenger vehicles</label></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]</xpath>
+			<value><label>passenger vehicles</label></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/description</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/description</xpath>
+			<value><description>Cars, vans and buses.</description></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]</xpath>
+			<value><description>Cars, vans and buses.</description></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/baseCost</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/baseCost</xpath>
+			<value><baseCost>800</baseCost></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]</xpath>
+			<value><baseCost>800</baseCost></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/prerequisites</xpath>
+			<value><prerequisites><li>VVE_BasicVehicles</li></prerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]</xpath>
+			<value><prerequisites><li>VVE_BasicVehicles</li></prerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/researchViewX</xpath>
+			<value><researchViewX>1</researchViewX></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]</xpath>
+			<value><researchViewX>1</researchViewX></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]/researchViewY</xpath>
+			<value><researchViewY>1</researchViewY></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_ComplexVehicles"]</xpath>
+			<value><researchViewY>1</researchViewY></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/label</xpath>
+			<value><label>aviation I</label></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]</xpath>
+			<value><label>aviation I</label></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/description</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/description</xpath>
+			<value><description>Airframes and avionics: propeller aircraft.</description></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]</xpath>
+			<value><description>Airframes and avionics: propeller aircraft.</description></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/baseCost</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/baseCost</xpath>
+			<value><baseCost>1500</baseCost></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]</xpath>
+			<value><baseCost>1500</baseCost></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/prerequisites</xpath>
+			<value><prerequisites><li>VVE_BasicVehicles</li><li>Metals_C3</li><li>Electronics_C2</li></prerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]</xpath>
+			<value><prerequisites><li>VVE_BasicVehicles</li><li>Metals_C3</li><li>Electronics_C2</li></prerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/researchViewX</xpath>
+			<value><researchViewX>1</researchViewX></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]</xpath>
+			<value><researchViewX>1</researchViewX></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]/researchViewY</xpath>
+			<value><researchViewY>6</researchViewY></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_AerialVehicles"]</xpath>
+			<value><researchViewY>6</researchViewY></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/label</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/label</xpath>
+			<value><label>military vehicles</label></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]</xpath>
+			<value><label>military vehicles</label></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/description</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/description</xpath>
+			<value><description>The assembly of armoured cars, APCs and improvised rocket launchers. Armour plate, weapon mounts and tracked vehicles are parallel branches from here.</description></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]</xpath>
+			<value><description>The assembly of armoured cars, APCs and improvised rocket launchers. Armour plate, weapon mounts and tracked vehicles are parallel branches from here.</description></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/baseCost</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/baseCost</xpath>
+			<value><baseCost>2500</baseCost></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]</xpath>
+			<value><baseCost>2500</baseCost></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/prerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/prerequisites</xpath>
+			<value><prerequisites><li>VVE_BasicVehicles</li><li>Machining</li><li>Armor_C1</li></prerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]</xpath>
+			<value><prerequisites><li>VVE_BasicVehicles</li><li>Machining</li><li>Armor_C1</li></prerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/researchViewX</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/researchViewX</xpath>
+			<value><researchViewX>1</researchViewX></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]</xpath>
+			<value><researchViewX>1</researchViewX></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/researchViewY</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]/researchViewY</xpath>
+			<value><researchViewY>11</researchViewY></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ResearchProjectDef[defName="VVE_CombatVehicles"]</xpath>
+			<value><researchViewY>11</researchViewY></value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarWheel>2</VVE_CarWheel><VVE_CarSuspension>2</VVE_CarSuspension><Steel>30</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarWheel>2</VVE_CarWheel><VVE_CarSuspension>2</VVE_CarSuspension><Steel>30</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_BasicVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dirtbike_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_BasicVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarWheel>2</VVE_CarWheel><VVE_CarSuspension>2</VVE_CarSuspension><Steel>50</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarWheel>2</VVE_CarWheel><VVE_CarSuspension>2</VVE_CarSuspension><Steel>50</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_BasicVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Charley_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_BasicVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>1</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>40</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>1</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>40</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_BasicVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Prowler_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_BasicVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>1</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>1</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Traveller_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>1</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>1</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wagon_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Snatcher_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Body_Car>2</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Body_Car>2</HSKV_Body_Car><Steel>60</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_BangBus_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_ComplexVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>80</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>80</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_Trucks</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mule_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_Trucks</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>4</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>120</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>4</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><Steel>120</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_Trucks</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadrunner_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_Trucks</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>6</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><HSKV_Armor_Light>2</HSKV_Armor_Light><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><Steel>150</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>6</HSKV_Chassis_WheeledLight><HSKV_Body_Car>1</HSKV_Body_Car><HSKV_Armor_Light>2</HSKV_Armor_Light><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><Steel>150</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>Electronics_D1</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Wisent_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>Electronics_D1</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Mount_Rockets>1</HSKV_Mount_Rockets><Steel>60</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Mount_Rockets>1</HSKV_Mount_Rockets><Steel>60</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>Rockets_C1</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Scytheman_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>Rockets_C1</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>2</HSKV_Chassis_WheeledLight><HSKV_Armor_Light>4</HSKV_Armor_Light><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>MultibarrelWeapons</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Highwayman_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>MultibarrelWeapons</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>4</HSKV_Chassis_WheeledLight><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_Mount_MG>1</HSKV_Mount_MG><Weapon_Parts>5</Weapon_Parts><Heavy_Component>1</Heavy_Component></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_WheeledLight>4</HSKV_Chassis_WheeledLight><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_Electronics_Onboard>2</HSKV_Electronics_Onboard><HSKV_Mount_MG>1</HSKV_Mount_MG><Weapon_Parts>5</Weapon_Parts><Heavy_Component>1</Heavy_Component></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>SniperTurret</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Tango_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_CombatVehicles</li><li>SniperTurret</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>1</HSKV_Chassis_Tracked><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Mount_MG>1</HSKV_Mount_MG></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_ArmoredVehicles2</li><li>HeavyTurrets</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bunsen_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_ArmoredVehicles2</li><li>HeavyTurrets</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>2</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Mount_TankGun>1</HSKV_Mount_TankGun></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>2</HSKV_Armor_Heavy><HSKV_Armor_Light>6</HSKV_Armor_Light><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_Mount_TankGun>1</HSKV_Mount_TankGun></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_ArmoredVehicles2</li><li>Mortars</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Roadkill_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_ArmoredVehicles2</li><li>Mortars</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>6</HSKV_Armor_Heavy><HSKV_Armor_Light>4</HSKV_Armor_Light><CarbonAlloy>15</CarbonAlloy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><HSKV_Mount_TankGun>1</HSKV_Mount_TankGun><Weapon_Parts>4</Weapon_Parts><Rubber>10</Rubber></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Chassis_Tracked>2</HSKV_Chassis_Tracked><HSKV_Armor_Heavy>6</HSKV_Armor_Heavy><HSKV_Armor_Light>4</HSKV_Armor_Light><CarbonAlloy>15</CarbonAlloy><HSKV_FireControl>1</HSKV_FireControl><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><HSKV_EngineControl_Advanced>1</HSKV_EngineControl_Advanced><HSKV_Mount_TankGun>1</HSKV_Mount_TankGun><Weapon_Parts>4</Weapon_Parts><Rubber>10</Rubber></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_MainBattleTank</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Bulldog_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_MainBattleTank</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><HSKV_Body_Car>1</HSKV_Body_Car></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><HSKV_Body_Car>1</HSKV_Body_Car></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_Ships</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Dinghy_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_Ships</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><HSKV_Body_Car>2</HSKV_Body_Car><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><Steel>60</Steel></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><HSKV_Body_Car>2</HSKV_Body_Car><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard><Steel>60</Steel></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_Ships</li><li>HSKV_Trucks</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Trawler_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_Ships</li><li>HSKV_Trucks</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><HSKV_Body_Airframe>1</HSKV_Body_Airframe><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Diesel>1</HSKV_Engine_Diesel><HSKV_Body_Airframe>1</HSKV_Body_Airframe><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>VVE_AerialVehicles</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Warbird_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>VVE_AerialVehicles</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Turbine>1</HSKV_Engine_Turbine><HSKV_Body_Airframe>2</HSKV_Body_Airframe><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Turbine>1</HSKV_Engine_Turbine><HSKV_Body_Airframe>2</HSKV_Body_Airframe><VVE_CarTransmission>1</VVE_CarTransmission><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_Aviation2</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Mosquito_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_Aviation2</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Turbine>2</HSKV_Engine_Turbine><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Avionics>2</HSKV_Avionics><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Turbine>2</HSKV_Engine_Turbine><HSKV_Body_Airframe>2</HSKV_Body_Airframe><HSKV_Avionics>2</HSKV_Avionics><HSKV_Electronics_Onboard>1</HSKV_Electronics_Onboard></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_Aviation2</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Smuggler_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_Aviation2</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Impulse>1</HSKV_Engine_Impulse><HSKV_Body_Airframe>1</HSKV_Body_Airframe><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Impulse>1</HSKV_Engine_Impulse><HSKV_Body_Airframe>1</HSKV_Body_Airframe><HSKV_Avionics>1</HSKV_Avionics></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_OrbitalPods</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Frog_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_OrbitalPods</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]/costList</xpath>
+			<value><costList><HSKV_Engine_Impulse>2</HSKV_Engine_Impulse><DepletedUranium>40</DepletedUranium><Ceramics>20</Ceramics><HSKV_Avionics>1</HSKV_Avionics><HSKV_Mount_Mortar>1</HSKV_Mount_Mortar><Weapon_Parts>13</Weapon_Parts><Cannon_Component>2</Cannon_Component><Rubber>30</Rubber></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]</xpath>
+			<value><costList><HSKV_Engine_Impulse>2</HSKV_Engine_Impulse><DepletedUranium>40</DepletedUranium><Ceramics>20</Ceramics><HSKV_Avionics>1</HSKV_Avionics><HSKV_Mount_Mortar>1</HSKV_Mount_Mortar><Weapon_Parts>13</Weapon_Parts><Cannon_Component>2</Cannon_Component><Rubber>30</Rubber></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]/researchPrerequisites</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]/researchPrerequisites</xpath>
+			<value><researchPrerequisites><li>HSKV_OrbitalAssault</li><li>Artillery_C2</li></researchPrerequisites></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/Vehicles.VehicleBuildDef[defName="VVE_Toad_Blueprint"]</xpath>
+			<value><researchPrerequisites><li>HSKV_OrbitalAssault</li><li>Artillery_C2</li></researchPrerequisites></value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/statBases/MarketValue</xpath>
+			<value><MarketValue>1500</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]/statBases</xpath>
+				<value><MarketValue>1500</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dirtbike"]</xpath>
+				<value><statBases><MarketValue>1500</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Charley"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Charley"]/statBases/MarketValue</xpath>
+			<value><MarketValue>1600</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Charley"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Charley"]/statBases</xpath>
+				<value><MarketValue>1600</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Charley"]</xpath>
+				<value><statBases><MarketValue>1600</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/statBases/MarketValue</xpath>
+			<value><MarketValue>2900</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]/statBases</xpath>
+				<value><MarketValue>2900</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Prowler"]</xpath>
+				<value><statBases><MarketValue>2900</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/statBases/MarketValue</xpath>
+			<value><MarketValue>2950</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]/statBases</xpath>
+				<value><MarketValue>2950</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Traveller"]</xpath>
+				<value><statBases><MarketValue>2950</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/statBases/MarketValue</xpath>
+			<value><MarketValue>2950</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]/statBases</xpath>
+				<value><MarketValue>2950</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wagon"]</xpath>
+				<value><statBases><MarketValue>2950</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Snatcher"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Snatcher"]/statBases/MarketValue</xpath>
+			<value><MarketValue>3850</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Snatcher"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Snatcher"]/statBases</xpath>
+				<value><MarketValue>3850</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Snatcher"]</xpath>
+				<value><statBases><MarketValue>3850</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/statBases/MarketValue</xpath>
+			<value><MarketValue>4450</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]/statBases</xpath>
+				<value><MarketValue>4450</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_BangBus"]</xpath>
+				<value><statBases><MarketValue>4450</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mule"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mule"]/statBases/MarketValue</xpath>
+			<value><MarketValue>3900</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mule"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mule"]/statBases</xpath>
+				<value><MarketValue>3900</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mule"]</xpath>
+				<value><statBases><MarketValue>3900</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/statBases/MarketValue</xpath>
+			<value><MarketValue>5800</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]/statBases</xpath>
+				<value><MarketValue>5800</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadrunner"]</xpath>
+				<value><statBases><MarketValue>5800</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wisent"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wisent"]/statBases/MarketValue</xpath>
+			<value><MarketValue>11300</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wisent"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wisent"]/statBases</xpath>
+				<value><MarketValue>11300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Wisent"]</xpath>
+				<value><statBases><MarketValue>11300</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/statBases/MarketValue</xpath>
+			<value><MarketValue>9050</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]/statBases</xpath>
+				<value><MarketValue>9050</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Scytheman"]</xpath>
+				<value><statBases><MarketValue>9050</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/statBases/MarketValue</xpath>
+			<value><MarketValue>9150</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]/statBases</xpath>
+				<value><MarketValue>9150</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Highwayman"]</xpath>
+				<value><statBases><MarketValue>9150</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/statBases/MarketValue</xpath>
+			<value><MarketValue>13050</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]/statBases</xpath>
+				<value><MarketValue>13050</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Tango"]</xpath>
+				<value><statBases><MarketValue>13050</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/statBases/MarketValue</xpath>
+			<value><MarketValue>11300</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]/statBases</xpath>
+				<value><MarketValue>11300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bunsen"]</xpath>
+				<value><statBases><MarketValue>11300</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/statBases/MarketValue</xpath>
+			<value><MarketValue>21650</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]/statBases</xpath>
+				<value><MarketValue>21650</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Roadkill"]</xpath>
+				<value><statBases><MarketValue>21650</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/statBases/MarketValue</xpath>
+			<value><MarketValue>28300</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]/statBases</xpath>
+				<value><MarketValue>28300</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Bulldog"]</xpath>
+				<value><statBases><MarketValue>28300</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dinghy"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dinghy"]/statBases/MarketValue</xpath>
+			<value><MarketValue>1600</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dinghy"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dinghy"]/statBases</xpath>
+				<value><MarketValue>1600</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Dinghy"]</xpath>
+				<value><statBases><MarketValue>1600</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Trawler"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Trawler"]/statBases/MarketValue</xpath>
+			<value><MarketValue>3050</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Trawler"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Trawler"]/statBases</xpath>
+				<value><MarketValue>3050</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Trawler"]</xpath>
+				<value><statBases><MarketValue>3050</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Warbird"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Warbird"]/statBases/MarketValue</xpath>
+			<value><MarketValue>3900</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Warbird"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Warbird"]/statBases</xpath>
+				<value><MarketValue>3900</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Warbird"]</xpath>
+				<value><statBases><MarketValue>3900</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mosquito"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mosquito"]/statBases/MarketValue</xpath>
+			<value><MarketValue>6450</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mosquito"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mosquito"]/statBases</xpath>
+				<value><MarketValue>6450</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Mosquito"]</xpath>
+				<value><statBases><MarketValue>6450</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Smuggler"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Smuggler"]/statBases/MarketValue</xpath>
+			<value><MarketValue>11550</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Smuggler"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Smuggler"]/statBases</xpath>
+				<value><MarketValue>11550</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Smuggler"]</xpath>
+				<value><statBases><MarketValue>11550</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Frog"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Frog"]/statBases/MarketValue</xpath>
+			<value><MarketValue>8200</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Frog"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Frog"]/statBases</xpath>
+				<value><MarketValue>8200</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Frog"]</xpath>
+				<value><statBases><MarketValue>8200</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/statBases/MarketValue</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/statBases/MarketValue</xpath>
+			<value><MarketValue>19950</MarketValue></value>
+		</match>
+		<nomatch Class="PatchOperationConditional">
+			<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]/statBases</xpath>
+				<value><MarketValue>19950</MarketValue></value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/Vehicles.VehicleDef[defName="VVE_Toad"]</xpath>
+				<value><statBases><MarketValue>19950</MarketValue></statBases></value>
+			</nomatch>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/VehiclesCEOverhaul.VehicleRaidTuningDef[defName="VCEO_VehicleRaidTuning"]/adaptedVehicles</xpath>
+			<value><li>VVE_Dirtbike</li><li>VVE_Charley</li><li>VVE_Prowler</li><li>VVE_Traveller</li><li>VVE_Wagon</li><li>VVE_Snatcher</li><li>VVE_BangBus</li><li>VVE_Mule</li><li>VVE_Roadrunner</li><li>VVE_Wisent</li><li>VVE_Scytheman</li><li>VVE_Highwayman</li><li>VVE_Tango</li><li>VVE_Bunsen</li><li>VVE_Roadkill</li><li>VVE_Bulldog</li><li>VVE_Dinghy</li><li>VVE_Trawler</li><li>VVE_Warbird</li><li>VVE_Mosquito</li><li>VVE_Smuggler</li><li>VVE_Frog</li><li>VVE_Toad</li></value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/costList</xpath>
+			<value><costList><ComponentIndustrial>15</ComponentIndustrial><ElectronicComponents>3</ElectronicComponents></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_GarageBench"]</xpath>
+			<value><costList><ComponentIndustrial>15</ComponentIndustrial><ElectronicComponents>3</ElectronicComponents></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/stuffCategories</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/stuffCategories</xpath>
+			<value><stuffCategories><li>StrongMetallic</li></stuffCategories></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_GarageBench"]</xpath>
+			<value><stuffCategories><li>StrongMetallic</li></stuffCategories></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/costStuffCount</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/costStuffCount</xpath>
+			<value><costStuffCount>220</costStuffCount></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_GarageBench"]</xpath>
+			<value><costStuffCount>220</costStuffCount></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]/costList</xpath>
+			<value><costList><ComponentIndustrial>8</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]</xpath>
+			<value><costList><ComponentIndustrial>8</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]/stuffCategories</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]/stuffCategories</xpath>
+			<value><stuffCategories><li>StrongMetallic</li></stuffCategories></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]</xpath>
+			<value><stuffCategories><li>StrongMetallic</li></stuffCategories></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]/costStuffCount</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]/costStuffCount</xpath>
+			<value><costStuffCount>140</costStuffCount></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_GarageCabinet"]</xpath>
+			<value><costStuffCount>140</costStuffCount></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/costList</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/costList</xpath>
+			<value><costList><ComponentIndustrial>10</ComponentIndustrial></costList></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]</xpath>
+			<value><costList><ComponentIndustrial>10</ComponentIndustrial></costList></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/stuffCategories</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/stuffCategories</xpath>
+			<value><stuffCategories><li>StrongMetallic</li></stuffCategories></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]</xpath>
+			<value><stuffCategories><li>StrongMetallic</li></stuffCategories></value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/costStuffCount</xpath>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]/costStuffCount</xpath>
+			<value><costStuffCount>80</costStuffCount></value>
+		</match>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="VVE_RefuelingPump"]</xpath>
+			<value><costStuffCount>80</costStuffCount></value>
+		</nomatch>
+	</Operation>
+
+</Patch>

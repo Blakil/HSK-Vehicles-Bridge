@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- The VVE garage bench is a vehicle repair station (Source/RepairKit.cs): vehicles within 8 cells are repaired with kits 40 times faster and up to full health. -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="VVE_GarageBench"]</xpath>
+		<match Class="PatchOperationConditional">
+			<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/modExtensions</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_GarageBench"]/modExtensions</xpath>
+				<value>
+					<li Class="VehiclesCEOverhaul.VehicleRepairStationExtension" />
+				</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VVE_GarageBench"]</xpath>
+				<value>
+					<modExtensions>
+						<li Class="VehiclesCEOverhaul.VehicleRepairStationExtension" />
+					</modExtensions>
+				</value>
+			</nomatch>
+		</match>
+	</Operation>
+
+</Patch>
