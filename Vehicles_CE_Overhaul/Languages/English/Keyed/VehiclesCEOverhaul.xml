@@ -116,6 +116,10 @@
   <VCEO_UpgradeInstalling>Installing: {0}</VCEO_UpgradeInstalling>
   <VCEO_UpgradeWorkLeft>Work left: {0}</VCEO_UpgradeWorkLeft>
   <VCEO_UpgradeWaitingMaterials>Waiting for colonists to bring materials (Hauling), then the upgrade is installed (Construction).</VCEO_UpgradeWaitingMaterials>
+  <VCEO_UpgradeMaterial>{0}: {1}</VCEO_UpgradeMaterial>
+  <VCEO_UpgradeMaterialAuto>auto</VCEO_UpgradeMaterialAuto>
+  <VCEO_UpgradeMaterialAutoOption>Auto: the cheapest on the map (now {0})</VCEO_UpgradeMaterialAutoOption>
+  <VCEO_UpgradeMaterialTip>Which material colonists bring for this vehicle's upgrades. Auto takes the cheapest one on the map that is not forbidden.</VCEO_UpgradeMaterialTip>
 
   <!-- Active protection (ActiveProtection.cs) -->
   <VCEO_Settings_ActiveProtection>Active protection systems on vehicles</VCEO_Settings_ActiveProtection>

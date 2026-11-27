@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Special blasts for vehicles (Source/ExoticDamage.cs). Superweapon: within radius cells of the explosion center vehicle armor
+     plates lose their armor. Melt: the blast also melts the part it hits, once per explosion, like plasma. -->
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/DamageDef[defName="BombSuper"]</xpath>
+    <value>
+      <li Class="VehiclesCEOverhaul.VehicleSuperweaponExtension">
+        <radius>10</radius>
+      </li>
+    </value>
+  </Operation>
+  <!-- Rimatomics: plasma toroids (Marauder, the nuke's blast) -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/DamageDef[defName="Bomb_PlasmaToroid"]</xpath>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/DamageDef[defName="Bomb_PlasmaToroid"]</xpath>
+      <value>
+        <li Class="VehiclesCEOverhaul.VehicleMeltExtension">
+          <factor>1</factor>
+        </li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -116,6 +116,10 @@
   <VCEO_UpgradeInstalling>Устанавливается: {0}</VCEO_UpgradeInstalling>
   <VCEO_UpgradeWorkLeft>Осталось работы: {0}</VCEO_UpgradeWorkLeft>
   <VCEO_UpgradeWaitingMaterials>Ждём, пока поселенцы принесут материалы (переноска), затем установка (строительство).</VCEO_UpgradeWaitingMaterials>
+  <VCEO_UpgradeMaterial>{0}: {1}</VCEO_UpgradeMaterial>
+  <VCEO_UpgradeMaterialAuto>авто</VCEO_UpgradeMaterialAuto>
+  <VCEO_UpgradeMaterialAutoOption>Авто: самый дешёвый на карте (сейчас {0})</VCEO_UpgradeMaterialAutoOption>
+  <VCEO_UpgradeMaterialTip>Какой материал поселенцы носят для улучшений этой машины. Авто — самый дешёвый на карте из незапрещённых.</VCEO_UpgradeMaterialTip>
 
   <!-- Active protection -->
   <VCEO_Settings_ActiveProtection>Комплексы активной защиты на технике</VCEO_Settings_ActiveProtection>

@@ -22,6 +22,13 @@ The setting *Log a report for every hit* prints how each round went through a ve
 The stock CE scale. **Sharp** armor is in mm, on the same scale as CE ammo penetration:
 7.62×51 AP 14 · .50 AP 28 · 14.5 AP 36 · 20 mm AP 30 · 30 mm AP 70 · 90 mm AP 170 · RPG-7 HEAT 500.
 **Blunt** armor of plates is about 14 × sharp (thin plates ~10 ×), roofs about 3.5 ×.
+**Heat** (and other CE "ambient" damage: fire, plasma, lasers, acid) does not penetrate, it melts the part it touches:
+damage × 50 / (50 + the part's sharp armor in mm), × 0.5 on the hull of high-tech vehicles (Spacer and above, Warhammer 40k,
+Titan). The vehicle's heat stat is not used. A plate burnt down to zero lets the next hits inside.
+**Superweapon blasts:** a DamageDef with `<li Class="VehiclesCEOverhaul.VehicleSuperweaponExtension"><radius>10</radius></li>`
+ignores plate armor within `radius` cells of the explosion center (the core marks antimatter, `BombSuper`).
+**Melting blasts:** `<li Class="VehiclesCEOverhaul.VehicleMeltExtension"><factor>1</factor></li>` on an explosive DamageDef also
+melts the part it hits, once per explosion (the core marks Rimatomics' plasma toroids, `Bomb_PlasmaToroid`).
 
 ### 1.2 Which parts are plates
 A component is an armor plate when (in this order):
